@@ -57,67 +57,54 @@ export default function Navbar({ className }) {
   return (
     <>
       <FullContainer
-        className={`z-20 sticky top-0 transition-all duration-300 bg-white text-black ${
+        className={`z-20 sticky top-0 transition-all duration-300 backdrop-blur-md bg-white/90 text-black ${
           scrolled ? "shadow-md" : `${className}`
         }`}
       >
-        <Container className="bg-white flex justify-between text-center">
+        <Container className="bg-transparent flex justify-between text-center">
           <Link
-            className="navLink text-primary text-3xl font-bold flex flex-col justify-center "
+            className="navLink flex flex-col justify-center hover:scale-105 transition-transform duration-300"
             href="/"
           >
-            <div>Devbitties</div>
+            <img
+              src="/logo-slogan.png"
+              alt="Devbitties Logo"
+              className="h-12 w-auto object-contain"
+            />
           </Link>
-          <ul className="hidden lg:flex items-center gap-6 py-6">
+          <ul className="hidden lg:flex items-center gap-8 py-6">
             <li
               className="group relative"
               onMouseEnter={() => setServicesHovered(true)}
               onMouseLeave={() => setServicesHovered(false)}
             >
-              <span className="cursor-pointer hover:text-primary">
+              <span className="cursor-pointer hover:text-primary transition-colors duration-300 flex items-center gap-1">
                 Services
+                <svg
+                  className="w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
               </span>
               <ul
                 className={`absolute ${
-                  isServicesHovered ? "block" : "hidden"
-                } bg-white mt-0 w-72 space-y-2 p-3 shadow-md rounded-md`}
+                  isServicesHovered
+                    ? "block opacity-100 translate-y-0"
+                    : "hidden opacity-0 -translate-y-2"
+                } bg-white/90 backdrop-blur-md mt-2 w-72 space-y-2 p-4 shadow-lg rounded-xl transition-all duration-300 border border-gray-100`}
               >
-                {/* <li>
-                  <Link
-                    href="/services/app-development"
-                    className="flex flex-row gap-3 items-center"
-                    onMouseEnter={() => setApp(true)}
-                    onMouseLeave={() => setApp(false)}
-                  >
-                    <MdOutlineHorizontalRule
-                      className={`transition-all duration-300 ease-in-out ${
-                        app ? "flex opacity-100" : "hidden opacity-0"
-                      } text-primary`}
-                    />
-                    <span className="hover:text-primary">App Development</span>
-                  </Link>
-                </li>
                 <li>
                   <Link
-                    href="/services/software-development"
-                    className="flex flex-row gap-3 items-center"
-                    onMouseEnter={() => setsoft(true)}
-                    onMouseLeave={() => setsoft(false)}
-                  >
-                    <MdOutlineHorizontalRule
-                      className={`transition-all duration-300 ease-in-out ${
-                        soft ? "flex opacity-100" : "hidden opacity-0"
-                      } text-primary`}
-                    />
-                    <span className="hover:text-primary">
-                      Software Development
-                    </span>
-                  </Link>
-                </li> */}
-                <li>
-                  <Link
-                  href="/services/ui-design"
-                    className="flex flex-row gap-3 items-center"
+                    href="/services/ui-design"
+                    className="flex flex-row gap-3 items-center p-2 rounded-lg hover:bg-gray-50 transition-all duration-300"
                     onMouseEnter={() => setui(true)}
                     onMouseLeave={() => setui(false)}
                   >
@@ -132,7 +119,7 @@ export default function Navbar({ className }) {
                 <li>
                   <Link
                     href="/services/web-development"
-                    className="flex flex-row gap-3 items-center"
+                    className="flex flex-row gap-3 items-center p-2 rounded-lg hover:bg-gray-50 transition-all duration-300"
                     onMouseEnter={() => setweb(true)}
                     onMouseLeave={() => setweb(false)}
                   >
@@ -156,26 +143,28 @@ export default function Navbar({ className }) {
               Contact us
             </Link> */}
           </ul>
-          <div className="lg:hiddentext-2xl">
-            <LuMenu 
-              onClick={handleSidebar}
-              className="text-primary h-7 cursor-pointer"
-            />
+          <div className="hidden lg:flex items-center justify-items-end">
+            <button
+              className="navLink bg-primary px-6 py-4 h-fit rounded-full flex gap-4 hover:bg-secondary transition-all duration-500 text-lg justify-center text-white items-center"
+              onClick={() => setShowForm(true)}
+            >
+              Get Free Consultation
+              <GoArrowDownRight className="animate-bounce w-6 h-6" />
+            </button>
           </div>
-          <div
-            className=" hidden lg:flex navLink bg-primary px-5 flex-row gap-8 hover:bg-secondary transition-all duration-500 justify-center text-white"
-            onClick={() => setShowForm(true)}
-          >
-            <button>Get Free Consultation</button>
-            <button>
-              <GoArrowDownRight />
+          <div className="lg:hidden text-2xl">
+            <button
+              onClick={handleSidebar}
+              className="p-2 hover:bg-gray-100 rounded-full transition-colors duration-300"
+            >
+              <LuMenu className="text-primary h-7" />
             </button>
           </div>
         </Container>
 
         {/* NavBar Phone */}
         {sidebar && (
-          <div className="lg:hidden fixed z-20 top-0 left-0 h-screen bg-white text-black w-full flex flex-col p-4">
+          <div className="lg:hidden fixed z-20 top-0 left-0 h-screen bg-white/95 backdrop-blur-md text-black w-full flex flex-col p-6 animate-slideIn">
             <div className="flex items-center justify-between">
               <RxCross2
                 onClick={handleSidebar}
@@ -289,7 +278,7 @@ export default function Navbar({ className }) {
 
       {/* Form Modal */}
       <div
-        className={`fixed top-0 z-50 w-full h-screen bg-gray-700/70 ${
+        className={`fixed top-0 z-50 w-full h-screen bg-gray-700/70 transition-all duration-300 ${
           showForm ? "flex flex-col opacity-100" : "hidden opacity-0"
         }`}
       >

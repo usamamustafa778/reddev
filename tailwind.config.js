@@ -4,22 +4,22 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    './src/**/*.{js,jsx,ts,tsx}',
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
-        roboto: ['Roboto', 'sans-serif'],  
+        poppins: ["Poppins", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
       },
-       
+
       colors: {
-        primary: "#0EBAB1",
-        secondary:"#042638",
-        innerbanner:"#075861",
-        button:"#00A2FF",
+        primary: "#FF332C",
+        secondary: "#870001",
+        innerbanner: "#075861",
+        button: "#00A2FF",
         colorBanner: "#0E1859",
-        heading:"#180030",
+        heading: "#180030",
       },
       gridTemplateColumns: {
         navbar: "1fr 1fr 0.4fr",
@@ -34,7 +34,16 @@ module.exports = {
         banner2: "url(/img/b3.webp)",
         dev: "url(/img/bg.avif)",
         iot: "url(/img/iotbanner.jpg)",
-        'custom-gradient': 'radial-gradient(circle, var(--tw-gradient-stops))',
+        "custom-gradient": "radial-gradient(circle, var(--tw-gradient-stops))",
+      },
+      animation: {
+        slideIn: "slideIn 0.3s ease-out",
+      },
+      keyframes: {
+        slideIn: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
       },
     },
   },
