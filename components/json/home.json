@@ -1,0 +1,92 @@
+{
+    
+    "detail": {
+      "title": "Web Development",
+      "heroheading1": "Transform Your Online Presence with Custom ",
+      "heroheading2": "Web Development",
+      "herodescription": "Build a website that not only looks great but also drives results and user engagement.",
+      "heroimage": "/img/web-hero.jpg",
+      "testimonialheading": "Client Testimonials: See What Our Partners Say",
+      "testimonialdescription": "For over a decade, we've helped businesses of all sizes grow and succeed with our web development solutions.",
+      "testimonial": [
+          {
+              "first": "Devsinc created a sleek, responsive website that has boosted our online presence.",
+              "second": "Our traffic and conversion rates have dramatically improved.",
+              "clientname": "Anna Thompson, Marketing Director, FashionCo",
+              "fade": "fade-right"
+            },
+            {
+              "first": "Their ability to handle complex web development challenges is impressive.",
+              "second": "We now have a fast, scalable platform.",
+              "clientname": "Chris Adams, CTO, FinCorp",
+              "fade": "fade-down"
+            },
+            {
+              "first": "Working with Devsinc was seamless from start to finish.",
+              "second": "They delivered an outstanding e-commerce site for us.",
+              "clientname": "Sophia Nguyen, Founder, ShopEase",
+              "fade": "fade-up"
+            },
+            {
+              "first": "Their custom solutions helped us streamline our online operations.",
+              "second": "The integration with our backend systems was flawless.",
+              "clientname": "James Lee, COO, RetailMax",
+              "fade": "fade-down"
+            },
+            {
+              "first": "Devsinc provided a user-friendly and secure platform.",
+              "second": "We are thrilled with the results and their ongoing support.",
+              "clientname": "Olivia Harris, Founder, Eventify",
+              "fade": "fade-left"
+            }
+      ],
+      "processheading": "Our Web Development Process",
+      "processdescription": "We ensure your website stands out with a 3-step process that focuses on user experience and business goals.",
+      "processcard": [
+        {
+          "img": "/img/discovery.png",
+          "heading": "Research & Strategy",
+          "keypoint": [
+            "Market analysis",
+            "Competitor research",
+            "Technical specifications",
+            "Goal alignment"
+          ]
+        },
+        {
+          "img": "/img/design.png",
+          "heading": "Design & Build",
+          "keypoint": [
+            "Custom web design",
+            "Mobile-first development",
+            "CMS integration",
+            "E-commerce solutions"
+          ]
+        },
+        {
+          "img": "/img/launch.png",
+          "heading": "Launch & Optimize",
+          "keypoint": [
+            "Deployment",
+            "Performance monitoring",
+            "SEO optimization",
+            "Ongoing improvements"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "Do you offer e-commerce solutions?",
+          "answer": "Yes, we specialize in building custom e-commerce websites tailored to your business needs."
+        },
+        {
+          "question": "How do you ensure my website is optimized for search engines?",
+          "answer": "We use industry best practices and SEO strategies to ensure your website ranks well on search engines."
+        },
+        {
+          "question": "Can you integrate third-party services into my website?",
+          "answer": "Absolutely. We can integrate various third-party tools such as payment gateways, CRM systems, and more."
+        }
+      ]
+    }
+  }

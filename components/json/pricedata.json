@@ -1,0 +1,65 @@
+{
+  "plan1": [
+    {
+      "name": "Starter Plan",
+      "description": "Designed for individuals, startups, or small businesses who need a basic online presence.",
+      "features": {
+        "design": "Template-based design with limited customization",
+        "pages": "Up to 5 pages",
+        "cms": "Basic CMS (WordPress, etc.) with user training",
+        "contact_form": "Simple contact form with standard fields",
+        "seo": "Basic on-page SEO for key pages",
+        "social_media_integration": "Links to social media platforms",
+        "hosting_and_domain_setup": "Assistance with hosting setup and domain configuration",
+        "security": "SSL installation and basic security measures",
+        "analytics": "Google Analytics integration",
+        "support": "1 month of support for minor bug fixes and questions"
+      },
+      "pricing": "$500.0 - $1,500"
+    }
+  ],
+
+  "plan2": [
+    {
+      "name": "Business Plan",
+      "description": "Targeted at medium-sized businesses looking for more customization and advanced features.",
+      "features": {
+        "design": "Custom design reflecting client branding with UX optimization",
+        "pages": "10-15 pages",
+        "cms": "Advanced CMS with more customization (WordPress, Joomla, etc.)",
+        "seo": "Full on-page SEO for all pages with keyword research",
+        "contact_form": "Advanced forms with conditional fields and file uploads",
+        "social_media_integration": "Live social media feed integration",
+        "ecommerce": "Basic e-commerce for up to 10 products",
+        "hosting_and_domain_setup": "Setup for premium hosting and SSL",
+        "security": "Advanced security with firewall, daily backups, and malware scanning",
+        "analytics": "Google Analytics with event tracking and monthly reports",
+        "content_creation": "Basic content writing for up to 5 pages",
+        "support": "3 months of extended post-launch support"
+      },
+      "pricing": "$2k - $5k"
+    }
+  ],
+
+  "plan3": [
+    {
+      "name": "Enterprise Plan",
+      "description": "Built for large businesses and enterprises requiring custom development, complex integrations, and high-level support.",
+      "features": {
+        "design": "Fully bespoke design with custom animations and interactions",
+        "pages": "Unlimited pages",
+        "cms": "Custom or advanced CMS with multiple user roles",
+        "custom_functionality": "Custom web applications and third-party integrations",
+        "seo": "Comprehensive SEO strategy with technical and off-page SEO",
+        "ecommerce": "Full-scale e-commerce with unlimited products",
+        "performance_optimization": "CDN integration and advanced caching techniques",
+        "security": "Enterprise-level security with WAF, DDoS protection, and daily backups",
+        "compliance": "GDPR/CCPA compliance",
+        "analytics_and_reporting": "Enhanced analytics, A/B testing, and monthly reports",
+        "dedicated_support": "6-12 months of ongoing support with a dedicated account manager",
+        "custom_integrations": "Integration with internal systems (CRM, ERP, etc.)"
+      },
+      "pricing": "Starting at $10k"
+    }
+  ]
+}

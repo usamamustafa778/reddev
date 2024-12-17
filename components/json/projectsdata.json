@@ -1,0 +1,402 @@
+[
+  {
+    "bannerimg": "/img/ourproject1.1.jpg",
+    "company": "STARLIGHTxSOCIETY-(SXS)",
+    "title": "A Collection of 5,000 Unique NFTs Inspired by Anime, Hip-Hop, and Streetwear Cultures",
+    "description": "STARLIGHTxSOCIETY is a music-themed NFT project that merges Japanese anime, hip-hop, streetwear culture, and the metaverse with a focus on music collaboration and world-class production.",
+    "achievements": [
+      { "stat": "737/1,000", "description": "NFTs Minted in Phase 1" },
+      {
+        "stat": "Concert 4 Charity",
+        "description": "Monthly charity concerts and NFT giveaways"
+      },
+      {
+        "stat": "ALBUM 1: OUT",
+        "description": "The Dawn album released with Phase 1 NFTs"
+      }
+    ],
+    "industry": "NFT & Music",
+    "location": "Metaverse",
+    "servicesUsed": [
+      "NFT Minting",
+      "Music Collaboration",
+      "Streetwear & Anime Design"
+    ],
+    "solutionheading": ["Innovative Solutions for STARLIGHTxSOCIETY"],
+    "solutions": [
+      {
+        "title": "Bridging Music and the Metaverse",
+        "description": "Each NFT is paired with music as a property trait, providing unique soundtracks and fostering a deeper connection between collectors and artists."
+      },
+      {
+        "title": "Concerts for Charity",
+        "description": "Monthly Twitter spaces hosted to support charitable causes with live performances, giveaways, and community engagement."
+      },
+      {
+        "title": "Exclusive Guardian NFTs",
+        "description": "Phase 1 minters receive exclusive 'Guardian' NFTs and personalized canvases, shipped to the first set of minters."
+      }
+    ],
+    "solutionimage": [
+      { "img": "/img/calltoaction.webp" },
+      { "img": "/img/calltoaction2.webp" },
+      { "img": "/img/calltoaction3.webp" },
+      { "img": "/img/calltoaction4.webp" }
+    ],
+    "operationalEfficiency": [
+      {
+        "title": "Music NFTs with Attached Soundtracks",
+        "description": "Each NFT includes a unique soundtrack, creating a personalized music experience for every holder."
+      },
+      {
+        "title": "Monthly AMA Parties",
+        "description": "DJ Kenji hosts live AMA parties every Saturday in Discord, promoting community bonding and project updates."
+      },
+      {
+        "title": "Minting Incentives",
+        "description": "First 1000 token holders participate in raffles with rewards like $APE coins, ETH giveaways, and special NFTs."
+      }
+    ],
+    "operationalEfficiencyimg": [{ "img": "/img/ourproject1.3.jpg" }],
+    "operationalEfficiencyimg2": [{ "img": "/img/ourproject1.4.png" }],
+    "benefits": [
+      "Collaborations with musicians worldwide",
+      "Bridging anime, streetwear, and music in NFTs",
+      "Exclusive concerts and raffles for NFT holders",
+      "Personalized canvases for early minters"
+    ],
+    "benefitsimg": "/img/ourproject1.5.png",
+    "url": "https://starlight-nft.netlify.app/"
+  },
+  {
+    "bannerimg": "/img/ourproject2.1.jpg",
+    "company": "Beastables",
+    "title": "DISCOVER THE LIMITLESS WORLD OF BEASTABLES",
+    "description": "Beastables herald an electrifying convergence of community-driven NFTs and the rapidly expanding metaverse frontier. As the pinnacle of Ethereum-based tokens, they serve as the golden ticket to a pulsating ecosystem where participants not only possess unparalleled digital treasures but also unlock a trove of exclusive rewards within the self-contained universe of Beastables and its forthcoming metaverse gaming enclave.",
+    "achievements": [
+      {
+        "stat": "5,000",
+        "description": "Unique NFTs in the Beastables Collection"
+      },
+      { "stat": "9 Years", "description": "Liquidity Locked for 9 Years" },
+      {
+        "stat": "1%",
+        "description": "Redistribution Rewards for Token Holders"
+      }
+    ],
+    "industry": "NFT & Metaverse",
+    "location": "Ethereum Blockchain",
+    "servicesUsed": ["NFT Minting", "Staking Platform", "Metaverse Expansion"],
+    "solutionheading": ["Innovative Solutions for Beastables"],
+    "solutions": [
+      {
+        "title": "Exclusive NFT Minting",
+        "description": "Beastables offers a collection of unique NFTs, giving holders access to exclusive rewards within the metaverse and gaming ecosystem."
+      },
+      {
+        "title": "Staking for Rewards",
+        "description": "Participants can stake Beastables tokens to earn rewards and benefits, including in-game advantages and exclusive NFTs."
+      },
+      {
+        "title": "Metaverse Expansion",
+        "description": "The Beastables metaverse platform offers immersive gaming experiences with decentralized ownership of in-game assets and items."
+      }
+    ],
+    "solutionimage": [
+      { "img": "/img/ourproject2.2.1.png" },
+      { "img": "/img/ourproject2.2.2.png" },
+      { "img": "/img/ourproject2.2.3.png" },
+      { "img": "/img/ourproject2.2.4.png" }
+    ],
+    "operationalEfficiency": [
+      {
+        "title": "Tokenomics and Liquidity",
+        "description": "Beastables ensures locked liquidity for 9 years and redistributes 1% rewards to token holders."
+      },
+      {
+        "title": "Metaverse Platform Integration",
+        "description": "Beastables integrates seamlessly with the Ethereum blockchain and provides a unique staking and rewards system for early adopters."
+      }
+    ],
+    "operationalEfficiencyimg": [{ "img": "/img/ourproject2.3.jpg" }],
+    "operationalEfficiencyimg2": [{ "img": "/img/ourproject2.4.webp" }],
+    "benefits": [
+      "Exclusive NFT rewards for early adopters",
+      "Immersive metaverse experience",
+      "Staking opportunities with unique rewards",
+      "Locked liquidity till 2033"
+    ],
+    "benefitsimg": "/img/ourproject2.5.webp",
+    "url": "https://beastables.io"
+  },
+  {
+    "bannerimg": "/img/ourproject3.1.jpg",
+    "company": "United-Insurance",
+    "title": "SECURE YOUR FUTURE WITH UNITED INSURANCE",
+    "description": "United Insurance represents the perfect blend of professionalism with innovation, focusing on customer satisfaction as the utmost priority. We provide a wide range of general insurance and takaful products tailored to meet your needs.",
+    "achievements": [
+      {
+        "stat": "4.9 Billion",
+        "description": "Number of clients joined"
+      },
+      {
+        "stat": "AA",
+        "description": "Financial Strength Rating"
+      },
+      {
+        "stat": "62+",
+        "description": "Years of Experience in the Industry"
+      }
+    ],
+    "industry": "Insurance",
+    "location": "Pakistan",
+    "servicesUsed": ["Travel Insurance", "Health Insurance", "Motor Insurance", "Policy Verification"],
+    "solutionheading": ["Customized Insurance Solutions"],
+    "solutions": [
+      {
+        "title": "Travel Insurance",
+        "description": "Comprehensive coverage for unexpected events while traveling, ensuring peace of mind for all your trips."
+      },
+      {
+        "title": "Health Insurance",
+        "description": "Protect yourself and your family with our health insurance plans, providing financial security for medical needs."
+      },
+      {
+        "title": "Motor Insurance",
+        "description": "Tailored motor insurance policies that safeguard your vehicle against accidents and theft."
+      },
+      {
+        "title": "Policy Verification",
+        "description": "Easily verify your insurance policy details through our user-friendly online portal."
+      },
+      {
+        "title": "Policy Renewal",
+        "description": "Effortlessly renew your insurance policy online, ensuring continuous coverage."
+      }
+    ],
+    "solutionimage": [
+      { "img": "/img/ourproject3.2.1.png" },
+      { "img": "/img/ourproject3.2.2.png" },
+      { "img": "/img/ourproject3.2.3.png" }
+     
+    ],
+    "operationalEfficiency": [
+      {
+        "title": "Hassle-Free Transactions",
+        "description": "Buy insurance from anywhere, anytime with secure and hassle-free online transactions."
+      },
+      {
+        "title": "24/7 Customer Support",
+        "description": "Our highly qualified insurance professionals are available around the clock to assist you with your needs."
+      }
+    ],
+    "operationalEfficiencyimg": [{ "img": "/img/ourproject3.3.jpg" }],
+    "operationalEfficiencyimg2": [{ "img": "/img/ourproject3.4.png" }],
+    "benefits": [
+      "Customized insurance plans tailored to your needs",
+      "Easy online access to view and manage your policies",
+      "Multiple options for digital payments",
+      "Instant online claim reporting"
+    ],
+    "benefitsimg": "/img/ourproject3.5.png",
+    "url": "https://united-insurance.netlify.app/"
+  },
+  {
+    "bannerimg": "/img/ourproject4.1.jpg",
+    "company": "Tekruiter",
+    "title": "Innovative Digital Solutions for the Modern Age",
+    "description": "Tekruiter is a cutting-edge technology company that specializes in providing digital solutions tailored to the needs of businesses and individuals.",
+    "achievements": [
+      { "stat": "500+", "description": "Clients Served Globally" },
+      {
+        "stat": "99%",
+        "description": "Client Satisfaction Rate"
+      },
+      {
+        "stat": "10 Years",
+        "description": "Experience in the Industry"
+      }
+    ],
+    "industry": "Technology & Innovation",
+    "location": "Global",
+    "servicesUsed": [
+      "Web Development",
+      "Mobile App Development",
+      "Digital Marketing"
+    ],
+    "solutionheading": ["Innovative Solutions for Tekruiter"],
+    "solutions": [
+      {
+        "title": "Tailored Web Solutions",
+        "description": "Custom websites built to meet the unique needs of each client, enhancing online presence and user experience."
+      },
+      {
+        "title": "Mobile Applications for All Platforms",
+        "description": "Development of cross-platform mobile applications that engage users and drive business growth."
+      },
+      {
+        "title": "Effective Digital Marketing Strategies",
+        "description": "Comprehensive marketing strategies that include SEO, social media, and content marketing to boost visibility."
+      }
+    ],
+    "solutionimage": [
+      { "img": "/img/ourproject4.2.1.webp" },
+      { "img": "/img/ourproject4.2.2.webp" },
+      { "img": "/img/ourproject4.2.3.webp" }
+      
+    ],
+    "operationalEfficiency": [
+      {
+        "title": "Streamlined Project Management",
+        "description": "Utilization of advanced project management tools to ensure timely delivery and efficient workflows."
+      },
+      {
+        "title": "Regular Client Updates",
+        "description": "Frequent updates and feedback loops with clients to ensure alignment and satisfaction."
+      },
+      {
+        "title": "Post-Launch Supporttttttt",
+        "description": "Dedicated support team available post-launch to assist with any issues and enhancements."
+      }
+    ],
+    "operationalEfficiencyimg": [{ "img": "/img/ourproject4.3.png" }],
+    "operationalEfficiencyimg2": [{ "img": "/img/ourproject4.4.webp" }],
+    "benefits": [
+      "Customized solutions to fit client needs",
+      "Expertise across multiple digital domains",
+      "Ongoing support and maintenance",
+      "A dedicated team of professionals"
+    ],
+    "benefitsimg": "/img/ourproject4.5.webp",
+    "url": "https://tekruiter.com/"
+  },
+  {
+    "bannerimg": "/img/ourproject5.1.png",
+    "company": "QuickShipCars",
+    "title": "Effortless, and Efficient Auto Shipping Company",
+    "description": "QuickShipCars offers a seamless auto shipping experience, providing instant quotes, tracking, and on-time delivery to your desired destination. With services tailored to customer needs, we ensure a hassle-free and reliable shipping process.",
+    "achievements": [
+      {
+        "stat": "50,000",
+        "description": "Vehicles Shipped Nationwide"
+      },
+      {
+        "stat": "10 Years",
+        "description": "Experience in the Auto Shipping Industry"
+      },
+      {
+        "stat": "99%",
+        "description": "Customer Satisfaction Rate"
+      }
+    ],
+    "industry": "Auto Shipping",
+    "location": "United States",
+    "servicesUsed": ["Vehicle Shipping", "Price Lock Guarantee", "Order Tracking"],
+    "solutionheading": ["Comprehensive Auto Shipping Solutions"],
+    "solutions": [
+      {
+        "title": "Clean Car Promise",
+        "description": "QuickShipCars offers complimentary car wash services after delivery, ensuring your vehicle looks its best at the time of arrival."
+      },
+      {
+        "title": "Price Lock Guarantee",
+        "description": "Enjoy transparent pricing with no hidden fees. Once you get a quote, the price is locked, giving you peace of mind throughout the process."
+      },
+      {
+        "title": "Fully Insured Shipping",
+        "description": "Every vehicle shipment is fully insured, ensuring complete coverage from pick-up to delivery."
+      }
+    ],
+    "solutionimage": [
+      { "img": "/img/ourproject5.2.1.png" },
+      { "img": "/img/ourproject5.2.2.png" },
+      { "img": "/img/ourproject5.2.3.png" }
+     
+    ],
+    "operationalEfficiency": [
+      {
+        "title": "Largest Pool of Truck Drivers",
+        "description": "QuickShipCars works with the largest pool of truck drivers across the U.S., ensuring the fastest and most efficient delivery."
+      },
+      {
+        "title": "Order Tracking",
+        "description": "Track your vehicle in real-time and stay updated on its journey until it reaches its final destination."
+      }
+    ],
+    "operationalEfficiencyimg": [{ "img": "/img/ourproject5.3.png" }],
+    "operationalEfficiencyimg2": [{ "img": "/img/ourproject5.4.webp" }],
+    "benefits": [
+      "Clean Car Promise",
+      "Price Lock Guarantee with no hidden fees",
+      "Fully insured and risk-free vehicle transport",
+      "Largest pool of truck drivers for quick delivery"
+    ],
+    "benefitsimg": "/img/ourproject5.5.webp",
+    "url": "https://quickshipcars.com"
+  },
+  {
+    "bannerimg": "/img/relikbanner.jpg",
+    "company": "relik",
+    "title": "World's Leading NFT & Metaverse Studio",
+    "description": "The RELIK brand is the embodiment of excellence in Web3 and the virtual realm. Creating immersive multiplayer metaverse experiences, ultra-realistic 4K 3D models, and turnkey NFT projects.",
+    "achievements": [
+      {
+        "stat": "4K",
+        "description": "Ultra-realistic 4K models with cinematic animations"
+      },
+      {
+        "stat": "Multiplayer",
+        "description": "Creation of complex multiplayer metaverse experiences"
+      },
+      {
+        "stat": "Turnkey",
+        "description": "Development of complete NFT projects from start to finish"
+      }
+    ],
+    "industry": "NFT & Metaverse",
+    "location": "Web3 & Virtual Realm",
+    "servicesUsed": ["Metaverse Creation", "3D Artwork", "NFT Project Development"],
+    "solutionheading": ["Innovative Solutions for RELIK"],
+    "solutions": [
+      {
+        "title": "Immersive Metaverse Experiences",
+        "description": "RELIK creates engaging multiplayer metaverse worlds, allowing users to explore dynamic virtual environments."
+      },
+      {
+        "title": "Ultra-Realistic 4K 3D Artwork",
+        "description": "RELIK designs high-quality 4K 3D models with cinematic animations, adding life to the virtual realm."
+      },
+      {
+        "title": "Turnkey NFT Project Development",
+        "description": "RELIK provides end-to-end solutions for developing NFT projects, from design to final implementation."
+      }
+    ],
+    "solutionimage": [
+      { "img": "/img/reliksolution1.jpg" },
+      { "img": "/img/reliksolution2.jpg" },
+      { "img": "/img/reliksolution3.jpg" },
+      { "img": "/img/reliksolution4.jpg" }
+    ],
+    "operationalEfficiency": [
+      {
+        "title": "Seamless Project Execution",
+        "description": "RELIK ensures seamless execution of metaverse and NFT projects, delivering top-tier results."
+      },
+      {
+        "title": "Cutting-Edge Technology",
+        "description": "By utilizing the latest tech, RELIK provides high-quality solutions that push the boundaries of Web3 and virtual realms."
+      }
+    ],
+    "operationalEfficiencyimg": [{ "img": "/img/relikefficiency.png" }],
+    "operationalEfficiencyimg2": [{ "img": "/img/relikefficiency2.webp" }],
+    "benefits": [
+      "Immersive metaverse experiences",
+      "Ultra-realistic 4K assets",
+      "Complete turnkey NFT project development",
+      "Cutting-edge Web3 and virtual solutions"
+    ],
+    "benefitsimg": "/img/relikbenefits.webp",
+    "url": "https://relik.com"
+  }
+  
+]

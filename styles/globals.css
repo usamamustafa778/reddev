@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.bg-custom-color2 {
+  background-color: rgb(214, 239, 255);
+}
+
+.bg-colorblue {
+  background-color: #005EB8;
+}
+
+.bg-custom-color1 {
+  background-color: rgb(11, 49, 85);
+}
+
+.bg-custom-color {
+  background-color: rgb(240, 249, 255);
+}
+
+.navDropdown {
+  display: none;
+}
+
+.navDropdownButton:hover>.navDropdown {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.myDIV:hover+.hide {
+  display: block;
+  color: red;
+}
+
+
+@layer components {
+
+  /* Search Bar */
+  .elementHeading {
+    @apply text-3xl lg:text-5xl font-bold capitalize
+  }
+
+  .elementHeading2 {
+    @apply text-2xl lg:text-4xl font-bold capitalize
+  }
+
+  .elementHeading3 {
+    @apply text-xl lg:text-3xl font-bold capitalize
+  }
+
+  .elementHeading4 {
+    @apply text-lg lg:text-2xl font-bold capitalize
+  }
+
+  .elementHeading5 {
+    @apply lg:text-xl font-bold capitalize
+  }
+
+  .elementHeading6 {
+    @apply lg:text-lg font-bold capitalize
+  }
+
+  .elementHeading7 {
+    @apply text-5xl lg:text-6xl font-bold capitalize
+  }
+
+  .btnPrimary {
+    @apply bg-primary hover:bg-secondary border-white border-2 hover:border-primary capitalize rounded-full whitespace-nowrap font-medium py-3 text-center px-6 transition-all text-white
+  }
+
+  .btnPrimarySmall {
+    @apply bg-primary capitalize whitespace-nowrap rounded font-medium py-2 text-center px-4 transition-all text-white
+  }
+
+  .btnPrimary:hover {
+    @apply opacity-90
+  }
+
+  .btnPrimary:hover {
+    @apply opacity-90
+  }
+
+  .btnSecondary {
+    @apply bg-secondary whitespace-nowrap capitalize rounded-md font-medium py-3 text-center px-6 transition-all text-white
+  }
+
+  .btnSecondarySmall {
+    @apply bg-secondary whitespace-nowrap capitalize rounded-md font-medium py-2 text-center px-4 transition-all text-white
+  }
+
+  .btnSecondary:hover {
+    @apply opacity-90
+  }
+
+  .btnSecondary:hover {
+    @apply opacity-90
+  }
+}

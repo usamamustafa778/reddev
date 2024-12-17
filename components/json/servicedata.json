@@ -1,0 +1,371 @@
+[
+    {
+      "service": "app development",
+      "detail": {
+        "title": "App Development",
+        "heroheading1": "Boost Your Business Growth with Expert ",
+        "heroheading2": "App Development",
+        "herodescription": "Get a custom-built, conversion-optimized app that drives your business growth.",
+        "heroimage": "/img/app-hero.jpg",
+        "testimonialheading": "Hear Directly from Our Clients: Real Stories, Real Results",
+        "testimonialdescription": "Over the last 15 years, we've been driven by our passion for helping global clients achieve their goals.",
+        "testimonial": [
+          {
+            "first": "Devsinc has stood out for their promptness and responsiveness.",
+            "second": "The client is extremely satisfied with their performance and technical skills. All in all, they're a reliable and committed partner.",
+            "clientname": "Parham, President, Kudo Westervelt",
+            "fade": "fade-right"
+          },
+          {
+            "first": "It is an absolute honor to work with such hard-working and dedicated folks.",
+            "second": "The effort that you give every month is a lot but you really surpassed it to achieve this new record.",
+            "clientname": "Nimesh Shah, CEO, Orbrick",
+            "fade": "fade-down"
+          },
+          {
+            "first": "Devsinc helped us hit the ground running on our MVP development.",
+            "second": "They helped us build out a number of important integrations across payments, authentication, and blockchain integrations.",
+            "clientname": "Ramesh Doddi, CTO, HoneyBricks",
+            "fade": "fade-up"
+          },
+          {
+            "first": "Responsive and committed, Devsinc provides quality work in a timely manner.",
+            "second": "They also ensure that the developers they provide meet the client's needs, leading to an ongoing partnership.",
+            "clientname": "Eric Hurst, Co-Founder Intellirent",
+            "fade": "fade-down"
+          },
+          {
+            "first": "After we raised our seed round, we needed to scale our engineering team quickly to deliver on a growing number of integrations.",
+            "second": "Their embedded team offering quickly became a core part of our company.",
+            "clientname": "Andy Crebar, CEO, Sapling",
+            "fade": "fade-left"
+          }
+        ],
+        "processheading": "Our Process to Launch a High-Converting App",
+        "processdescription": "We follow a proven 3-step process to ensure your app drives leads and sales.",
+        "processcard": [
+          {
+            "img": "/img/discovery.png",
+            "heading": "Discovery & Strategy",
+            "keypoint": [
+              "In-depth consultation",
+              "Audience research",
+              "Define goals and KPIs",
+              "Technical feasibility analysis"
+            ]
+          },
+          {
+            "img": "/img/design.png",
+            "heading": "Design & Development",
+            "keypoint": [
+              "Custom UI/UX design",
+              "User experience optimization",
+              "Responsive development",
+              "API integrations"
+            ]
+          },
+          {
+            "img": "/img/launch.png",
+            "heading": "Launch & Optimize",
+            "keypoint": [
+              "App launch",
+              "Ongoing optimization",
+              "Performance tracking",
+              "User feedback implementation"
+            ]
+          }
+        ],
+        "faq": [
+          {
+            "question": "What services do you offer?",
+            "answer": "We offer a wide range of software development services including web and mobile app development, cloud solutions, and more."
+          },
+          {
+            "question": "How long does it take to complete a project?",
+            "answer": "Project timelines depend on the scope and requirements, but we work closely with clients to ensure timely delivery."
+          },
+          {
+            "question": "Do you provide post-launch support?",
+            "answer": "Yes, we provide ongoing post-launch support and maintenance services to ensure your project runs smoothly."
+          }
+        ]
+      }
+    },
+    {
+      "service": "web development",
+      "detail": {
+        "title": "Web Development",
+        "heroheading1": "Transform Your Online Presence with Custom ",
+        "heroheading2": "Web Development",
+        "herodescription": "Build a website that not only looks great but also drives results and user engagement.",
+        "heroimage": "/img/web-hero.jpg",
+        "testimonialheading": "Client Testimonials: See What Our Partners Say",
+        "testimonialdescription": "For over a decade, we've helped businesses of all sizes grow and succeed with our web development solutions.",
+        "testimonial": [
+            {
+                "first": "Devsinc created a sleek, responsive website that has boosted our online presence.",
+                "second": "Our traffic and conversion rates have dramatically improved.",
+                "clientname": "Anna Thompson, Marketing Director, FashionCo",
+                "fade": "fade-right"
+              },
+              {
+                "first": "Their ability to handle complex web development challenges is impressive.",
+                "second": "We now have a fast, scalable platform.",
+                "clientname": "Chris Adams, CTO, FinCorp",
+                "fade": "fade-down"
+              },
+              {
+                "first": "Working with Devsinc was seamless from start to finish.",
+                "second": "They delivered an outstanding e-commerce site for us.",
+                "clientname": "Sophia Nguyen, Founder, ShopEase",
+                "fade": "fade-up"
+              },
+              {
+                "first": "Their custom solutions helped us streamline our online operations.",
+                "second": "The integration with our backend systems was flawless.",
+                "clientname": "James Lee, COO, RetailMax",
+                "fade": "fade-down"
+              },
+              {
+                "first": "Devsinc provided a user-friendly and secure platform.",
+                "second": "We are thrilled with the results and their ongoing support.",
+                "clientname": "Olivia Harris, Founder, Eventify",
+                "fade": "fade-left"
+              }
+        ],
+        "processheading": "Our Web Development Process",
+        "processdescription": "We ensure your website stands out with a 3-step process that focuses on user experience and business goals.",
+        "processcard": [
+          {
+            "img": "/img/discovery.png",
+            "heading": "Research & Strategy",
+            "keypoint": [
+              "Market analysis",
+              "Competitor research",
+              "Technical specifications",
+              "Goal alignment"
+            ]
+          },
+          {
+            "img": "/img/design.png",
+            "heading": "Design & Build",
+            "keypoint": [
+              "Custom web design",
+              "Mobile-first development",
+              "CMS integration",
+              "E-commerce solutions"
+            ]
+          },
+          {
+            "img": "/img/launch.png",
+            "heading": "Launch & Optimize",
+            "keypoint": [
+              "Deployment",
+              "Performance monitoring",
+              "SEO optimization",
+              "Ongoing improvements"
+            ]
+          }
+        ],
+        "faq": [
+          {
+            "question": "Do you offer e-commerce solutions?",
+            "answer": "Yes, we specialize in building custom e-commerce websites tailored to your business needs."
+          },
+          {
+            "question": "How do you ensure my website is optimized for search engines?",
+            "answer": "We use industry best practices and SEO strategies to ensure your website ranks well on search engines."
+          },
+          {
+            "question": "Can you integrate third-party services into my website?",
+            "answer": "Absolutely. We can integrate various third-party tools such as payment gateways, CRM systems, and more."
+          }
+        ]
+      }
+    },
+    {
+      "service": "software development",
+      "detail": {
+        "title": "Software Development",
+        "heroheading1": "Accelerate Your Business with ",
+        "heroheading2": "Custom Software Development",
+        "herodescription": "Tailored software solutions that meet your unique business needs and scale with your growth.",
+        "heroimage": "/img/software-hero.jpg",
+        "testimonialheading": "Our Clients' Success Stories",
+        "testimonialdescription": "We've helped businesses innovate and scale with our custom software solutions.",
+        "testimonial": [
+            {
+                "first": "The custom software Devsinc built for us has revolutionized our workflow.",
+                "second": "It’s easy to use and has made our team more efficient.",
+                "clientname": "David Wilson, Operations Manager, LogiTech",
+                "fade": "fade-right"
+              },
+              {
+                "first": "Their attention to detail and technical expertise are top-notch.",
+                "second": "We now have a software solution that is scalable and secure.",
+                "clientname": "Rebecca Jones, Founder, SecureData",
+                "fade": "fade-down"
+              },
+              {
+                "first": "Our business processes have been transformed thanks to the software Devsinc developed.",
+                "second": "It’s been a game changer for our company.",
+                "clientname": "Tom Martinez, CEO, FinTrack",
+                "fade": "fade-up"
+              },
+              {
+                "first": "Devsinc worked closely with us to ensure the software met all our requirements.",
+                "second": "The result was a robust and intuitive solution.",
+                "clientname": "Grace King, COO, MediSoft",
+                "fade": "fade-down"
+              },
+              {
+                "first": "Their software development services exceeded our expectations.",
+                "second": "The performance and reliability of the system they delivered is outstanding.",
+                "clientname": "Henry Carter, CTO, BuildTech",
+                "fade": "fade-left"
+              }
+        ],
+        "processheading": "Our Software Development Approach",
+        "processdescription": "Our 3-step approach ensures we deliver software solutions that meet your business goals.",
+        "processcard": [
+          {
+            "img": "/img/discovery.png",
+            "heading": "Requirements Gathering",
+            "keypoint": [
+              "In-depth discovery sessions",
+              "Functional requirements documentation",
+              "Feasibility study",
+              "Risk management planning"
+            ]
+          },
+          {
+            "img": "/img/design.png",
+            "heading": "Design & Development",
+            "keypoint": [
+              "Custom software architecture",
+              "Agile development",
+              "Automated testing",
+              "API integrations"
+            ]
+          },
+          {
+            "img": "/img/launch.png",
+            "heading": "Deployment & Support",
+            "keypoint": [
+              "Seamless deployment",
+              "Continuous monitoring",
+              "Bug fixing & optimization",
+              "Ongoing support"
+            ]
+          }
+        ],
+        "faq": [
+          {
+            "question": "What industries do you serve?",
+            "answer": "We have experience across various industries including finance, healthcare, retail, and more."
+          },
+          {
+            "question": "Do you offer ongoing support after the software is launched?",
+            "answer": "Yes, we offer comprehensive post-launch support to ensure smooth operation and optimization."
+          },
+          {
+            "question": "Can you build scalable software solutions?",
+            "answer": "Absolutely. We specialize in building software that can scale with your business as it grows."
+          }
+        ]
+      }
+    },
+    {
+      "service": "ui design",
+      "detail": {
+        "title": "UI Design",
+        "heroheading1": "Craft Engaging User Experiences with ",
+        "heroheading2": "UI Design",
+        "herodescription": "Create visually stunning and intuitive interfaces that captivate your users.",
+        "heroimage": "/img/ui-hero.jpg",
+        "testimonialheading": "Why Clients Love Our UI Design",
+        "testimonialdescription": "We help businesses design interfaces that are both beautiful and functional.",
+        "testimonial": [
+            {
+                "first": "Devsinc transformed our app with a sleek and modern UI.",
+                "second": "User engagement has skyrocketed since the redesign.",
+                "clientname": "Lisa Moore, Product Manager, FinX",
+                "fade": "fade-right"
+              },
+              {
+                "first": "Their attention to detail in UI design is incredible.",
+                "second": "Our website now looks professional and is easy to use.",
+                "clientname": "Tom Davis, Founder, PetStore",
+                "fade": "fade-down"
+              },
+              {
+                "first": "Devsinc delivered a user-friendly design that perfectly aligns with our brand.",
+                "second": "It’s been a game changer for customer satisfaction.",
+                "clientname": "Eva Martinez, CEO, Healthify",
+                "fade": "fade-up"
+              },
+              {
+                "first": "We now have a beautiful and functional interface thanks to Devsinc.",
+                "second": "Our users love the new look and feel of the app.",
+                "clientname": "Daniel Carter, Marketing Director, TrendApp",
+                "fade": "fade-down"
+              },
+              {
+                "first": "Their UI design has significantly improved our product’s usability.",
+                "second": "Our customer feedback has been overwhelmingly positive.",
+                "clientname": "Natalie Green, Head of Design, FitWell",
+                "fade": "fade-left"
+              }
+        ],
+        "processheading": "Our UI Design Process",
+        "processdescription": "We follow a detailed, user-focused design process to create high-converting interfaces.",
+        "processcard": [
+          {
+            "img": "/img/research.png",
+            "heading": "Research & Ideation",
+            "keypoint": [
+              "User persona creation",
+              "Market and competitor research",
+              "Wireframing",
+              "Prototyping"
+            ]
+          },
+          {
+            "img": "/img/design.png",
+            "heading": "Design & Testing",
+            "keypoint": [
+              "High-fidelity designs",
+              "User experience testing",
+              "Interactive prototypes",
+              "Client feedback loops"
+            ]
+          },
+          {
+            "img": "/img/launch.png",
+            "heading": "Delivery & Iteration",
+            "keypoint": [
+              "Final design handoff",
+              "Developer collaboration",
+              "Ongoing iteration",
+              "Post-launch support"
+            ]
+          }
+        ],
+        "faq": [
+          {
+            "question": "What kind of UI design projects do you handle?",
+            "answer": "We work on mobile apps, websites, and enterprise software UI design projects."
+          },
+          {
+            "question": "Can you improve the UI of my existing website or app?",
+            "answer": "Yes, we can revamp your current UI to make it more modern, user-friendly, and visually appealing."
+          },
+          {
+            "question": "How do you ensure the UI design aligns with my brand?",
+            "answer": "We work closely with you throughout the process to ensure the design reflects your brand’s identity and goals."
+          }
+        ]
+      }
+    }
+  ]
+  
