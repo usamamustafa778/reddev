@@ -1,263 +1,180 @@
 import React from "react";
 import FullContainer from "./FullContainer";
 import Container from "./Container";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
-import { FaLinkedinIn } from "react-icons/fa";
+import {
+  FaXTwitter,
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+} from "react-icons/fa6";
 import Link from "next/link";
 
 function Footer() {
   return (
-    <FullContainer className="bg-secondary py-12  text-white">
-      <Container>
-        <div className="grid  py-10 grid-cols-1 gap-10 sm:grid-cols-2  lg:grid-cols-5 ">
-          {/* one */}
-          <div className=" col-span-1 flex flex-col  justify-between">
-            <div className="gap-3 flex flex-col">
-              <h5 className="text-lg font-semibold text-center sm:text-left ">Devbities</h5>
-              <p className="text-center sm:text-left ">
-               1160 Battery St Suite 1111, San Francisco, CA, 94111,
-                United States
-              </p>
-            </div>
-            <Link className="navLink text-2xl text-center sm:text-left" href="/">
-              logo
-            </Link>
-            <div className="flex flex-row gap-4 pt-3 justify-center sm:justify-start ">
-              <a href="">
-                <FaFacebookF className="h-6 w-6" />
-              </a>
-              <a href="https://www.instagram.com/devbitties?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                <FaInstagram className="h-6 w-6" />
-              </a>
-              <a href="">
-                <FaLinkedinIn className="h-6 w-6" />
-              </a>
-              <a href="">
-                <FaXTwitter className="h-6 w-6" />
-              </a>
-            </div>
-          </div>
-          {/* two*/}
-          <div className=" grid grid-cols-1 gap-6 sm:gap-0 sm:grid-cols-3  col-span-2  ">
-            <div className=" col-span-1 flex flex-col gap-3">
-              <h5 className="text-lg font-semibold">Company</h5>
-              <div className=" transition-all flex flex-col gap-2">
-                <Link
-                  className="navLink text-white hover:text-primary"
-                  href="/"
-                >
-                  Home
-                </Link>
-                <Link
-                  className="navLink text-white hover:text-primary"
-                  href="/about"
-                >
-                  About
-                </Link>
-                <Link
-                  className="navLink text-white hover:text-primary"
-                  href="/work"
-                >
-                  Work
-                </Link>
-                <Link
-                  className="navLink text-white hover:text-primary"
-                  href="/client"
-                >
-                  Client
-                </Link>
-                <Link
-                  className="navLink text-white hover:text-primary"
-                  href="/contactUs"
-                >
-                  Contact us
-                </Link>
-              </div>
-            </div>
-            <div className=" flex flex-col col-span-2 gap-3 ">
-              <h5 className="text-lg font-semibold">Industries We Serve</h5>
-              <div className="grid  gap-2 grid-cols-1 sm:grid-cols-2 ">
-                <div className=" flex flex-col gap-2 px-1">
-                  <Link
-                    className="navLink text-white hover:text-primary"
-                    href="/work"
-                  >
-                    Healthcare & Pharmaceutics
-                  </Link>
-                  <Link
-                    className="navLink text-white hover:text-primary"
-                    href="/client"
-                  >
-                    Banking & FinTech
-                  </Link>
-                  <Link
-                    className="navLink text-white hover:text-primary"
-                    href="/contactUs"
-                  >
-                    E-commerce
-                  </Link>
-                  <Link
-                    className="navLink text-white hover:text-primary"
-                    href="/contactUs"
-                  >
-                    Hospitality
-                  </Link>
-                </div>
-                <div className=" gap-2 flex flex-col px-1">
-                  <Link
-                    className="navLink text-white hover:text-primary"
-                    href="/work"
-                  >
-                    Software as a Service (SaaS)
-                  </Link>
-                  <Link
-                    className="navLink text-white hover:text-primary"
-                    href="/client"
-                  >
-                    Gaming
-                  </Link>
-                  <Link
-                    className="navLink text-white hover:text-primary"
-                    href="/contactUs"
-                  >
-                    Public Sector
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* three */}
-          <div className=" grid sm:grid-cols-3 grid-cols-1 col-span-2 gap-6 sm:gap-0 ">
-            <div className=" flex flex-col col-span-2 gap-3 ">
-              <h5 className="text-lg font-semibold">Services & Solutions</h5>
-              <div className="grid  gap-2 sm:grid-cols-2 grid-cols-1 ">
-                <div className=" flex flex-col gap-2 px-1">
-                  <Link className="navLink" href="/work">
-                    Web Development
-                  </Link>
-                  <Link
-                    className="navLink text-white hover:text-primary"
-                    href="/client"
-                  >
-                    Mobile App Development
-                  </Link>
-                  <Link
-                    className="navLink text-white hover:text-primary"
-                    href="/contactUs"
-                  >
-                    Generative AI
-                  </Link>
-                  <Link
-                    className="navLink text-white hover:text-primary"
-                    href="/contactUs"
-                  >
-                    DevOps
-                  </Link>
-                  <Link
-                    className="navLink text-white hover:text-primary"
-                    href="/contactUs"
-                  >
-                    QA Testing
-                  </Link>
-                  <Link
-                    className="navLink text-white hover:text-primary"
-                    href="/contactUs"
-                  >
-                    Custom Development
-                  </Link>
-                </div>
-                <div className=" gap-2 flex flex-col px-1">
-                  <Link
-                    className="navLink text-white hover:text-primary"
-                    href="/work"
-                  >
-                    Microsoft Dynamics 365
-                  </Link>
-                  <Link
-                    className="navLink text-white hover:text-primary"
-                    href="/client"
-                  >
-                    Cybersecurity Solutions
-                  </Link>
-                  <Link
-                    className="navLink text-white hover:text-primary"
-                    href="/contactUs"
-                  >
-                    Cloud Migration & Management
-                  </Link>
-                  <Link
-                    className="navLink text-white hover:text-primary"
-                    href="/contactUs"
-                  >
-                    Digital Transformation
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className=" col-span-1 flex flex-col gap-3">
-              <h5 className="text-lg font-semibold">Resources</h5>
-              <div className="text-white hover:text-primary transition-all flex flex-col gap-2">
-                <Link
-                  className="navLink text-white hover:text-primary"
-                  href="/"
-                >
-                  Case Studies
-                </Link>
-                <Link
-                  className="navLink text-white hover:text-primary"
-                  href="/about"
-                >
-                  Learning
-                </Link>
+    <FullContainer className="bg-gradient-to-br from-secondary via-secondary/95 to-secondary relative overflow-hidden">
+      {/* Modern Background Pattern */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff1a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff1a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+      <div className="absolute inset-0">
+        <div className="absolute -left-4 -top-24 w-96 h-96 bg-primary/20 rounded-full filter blur-3xl"></div>
+        <div className="absolute right-0 bottom-0 w-96 h-96 bg-primary/20 rounded-full filter blur-3xl"></div>
+      </div>
 
-                <Link
-                  className="navLink text-white hover:text-primary"
-                  href="/work"
-                >
-                  Work
-                </Link>
-                <Link
-                  className="navLink text-white hover:text-primary"
-                  href="/client"
-                >
-                  Security
-                </Link>
-                <Link
-                  className="navLink text-white hover:text-primary"
-                  href="/contactUs"
-                >
-                  FAQ
-                </Link>
+      <Container>
+        {/* Main Footer Content */}
+        <div className="relative pt-24 pb-12 text-white/80">
+          {/* Top Section */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 pb-16 border-b border-white/10">
+            {/* Company Info */}
+            <div className="lg:col-span-4 space-y-8">
+              <Link href="/" className="block">
+                <span className="text-3xl font-bold text-white">Devbities</span>
+              </Link>
+              <p className="text-white/70 max-w-sm text-lg">
+                Transforming ideas into exceptional digital experiences. Your
+                trusted partner in innovative software solutions.
+              </p>
+              <div className="flex items-center gap-4">
+                {[
+                  { icon: FaFacebookF, link: "#" },
+                  {
+                    icon: FaInstagram,
+                    link: "https://www.instagram.com/devbitties",
+                  },
+                  { icon: FaLinkedinIn, link: "#" },
+                  { icon: FaXTwitter, link: "#" },
+                ].map((social, index) => (
+                  <a
+                    key={index}
+                    href={social.link}
+                    className="w-12 h-12 rounded-xl bg-white/10 hover:bg-primary text-white/80 hover:text-white flex items-center justify-center transition-all duration-300 backdrop-blur-sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <social.icon className="w-5 h-5" />
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            {/* Quick Links */}
+            <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-12">
+              {/* Company Links */}
+              <div className="space-y-8">
+                <h5 className="text-xl font-semibold text-white">Company</h5>
+                <div className="flex flex-col space-y-4">
+                  {["Home", "About", "Work", "Client", "Contact us"].map(
+                    (item, index) => (
+                      <Link
+                        key={index}
+                        href={`/${item.toLowerCase().replace(" ", "")}`}
+                        className="text-white/70 hover:text-white transition-colors duration-300 flex items-center group"
+                      >
+                        <span className="w-2 h-2 rounded-full bg-primary mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                        {item}
+                      </Link>
+                    )
+                  )}
+                </div>
+              </div>
+
+              {/* Industries */}
+              <div className="space-y-8">
+                <h5 className="text-xl font-semibold text-white">Industries</h5>
+                <div className="flex flex-col space-y-4">
+                  {[
+                    "Healthcare",
+                    "FinTech",
+                    "E-commerce",
+                    "Hospitality",
+                    "SaaS",
+                    "Gaming",
+                    "Public Sector",
+                  ].map((item, index) => (
+                    <Link
+                      key={index}
+                      href="/industries"
+                      className="text-white/70 hover:text-white transition-colors duration-300 flex items-center group"
+                    >
+                      <span className="w-2 h-2 rounded-full bg-primary mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                      {item}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              {/* Services */}
+              <div className="space-y-8">
+                <h5 className="text-xl font-semibold text-white">Services</h5>
+                <div className="flex flex-col space-y-4">
+                  {[
+                    "Web Development",
+                    "Mobile Apps",
+                    "Generative AI",
+                    "DevOps",
+                    "QA Testing",
+                    "Custom Solutions",
+                  ].map((item, index) => (
+                    <Link
+                      key={index}
+                      href="/services"
+                      className="text-white/70 hover:text-white transition-colors duration-300 flex items-center group"
+                    >
+                      <span className="w-2 h-2 rounded-full bg-primary mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                      {item}
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        {/* four */}
-        <div className="flex flex-col gap-3">
-          <h5 className="text-lg font-semibold">Subscribe</h5>
-          <p>Stay updated with the latest in tech.</p>
-          <div className="">
-            <label className="block text-xs">
-              Email <span className="text-red-600">*</span>{" "}
-            </label>
-            <input
-              type="email"
-              name="email"
-              className="w-[300px] px-3 py-1 h-8 rounded-sm focus:outline-none "
-              required
-            />
+
+          {/* Newsletter Section */}
+          <div className="py-16 border-b border-white/10">
+            <div className="max-w-xl">
+              <h5 className="text-2xl font-semibold text-white mb-4">
+                Stay Updated
+              </h5>
+              <p className="text-white/70 mb-8 text-lg">
+                Subscribe to our newsletter for the latest updates and insights.
+              </p>
+              <div className="flex gap-3">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="flex-1 px-6 py-3 bg-white/10 border border-white/10 rounded-xl focus:outline-none focus:border-primary text-white placeholder:text-white/50 backdrop-blur-sm"
+                />
+                <button className="px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-xl transition-colors duration-300 font-semibold">
+                  Subscribe
+                </button>
+              </div>
+            </div>
           </div>
-          <div>
-            <button className="text-xs bg-gray-600 inline h-8 text-center px-3">
-              Submit
-            </button>
+
+          {/* Copyright */}
+          <div className="pt-12">
+            <div className="flex flex-col sm:flex-row justify-between items-center gap-6">
+              <p className="text-white/70">
+                © {new Date().getFullYear()} Devbities. All rights reserved.
+              </p>
+              <div className="flex items-center gap-8">
+                <Link
+                  href="/privacy"
+                  className="text-white/70 hover:text-white transition-colors duration-300"
+                >
+                  Privacy Policy
+                </Link>
+                <Link
+                  href="/terms"
+                  className="text-white/70 hover:text-white transition-colors duration-300"
+                >
+                  Terms of Service
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </Container>
     </FullContainer>
-    
   );
 }
 

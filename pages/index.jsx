@@ -16,28 +16,46 @@ import WhyChooseUs from "@/components/services/WhyChooseUs";
 import Head from "next/head";
 
 export default function ServicePage() {
+  const {detail} = Service;
   
   return (
     <>
       <Head>
-        <title>Web Development</title>
+        <title>Web Development Services | Professional Web Solutions</title>
+        <meta name="description" content="Professional web development services offering custom solutions, responsive design, and modern web applications. Transform your online presence today." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="web development, web design, custom websites, responsive design, web applications, professional web services" />
+        
+        <meta property="og:title" content="Web Development Services | Professional Web Solutions" />
+        <meta property="og:description" content="Professional web development services offering custom solutions, responsive design, and modern web applications." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yourwebsite.com" />
+        <meta property="og:image" content="https://yourwebsite.com/og-image.jpg" />
+        
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Web Development Services" />
+        <meta name="twitter:description" content="Professional web development services offering custom solutions." />
+        <meta name="twitter:image" content="https://yourwebsite.com/twitter-image.jpg" />
+        
+        <link rel="canonical" href="https://yourwebsite.com" />
       </Head>
       <FirstNavbar />
       <Hero
-        heading1={Service.detail.heroheading1}
-        heading2={Service.detail.heroheading2}
-        des={Service.detail.herodescription}
-        img={Service.detail.heroimage}
+        heading1={detail.heroheading1}
+        heading2={detail.heroheading2}
+        des={detail.herodescription}
+        img={detail.heroimage}
       />
       <Testimonials
-        heading={Service.detail.testimonialheading}
-        des={Service.detail.testimonialdescription}
-        data={Service.detail.testimonial}
+        heading={detail.testimonialheading}
+        des={detail.testimonialdescription}
+        data={detail.testimonial}
       />
       <ProcessSection
-        heading={Service.detail.processheading}
-        des={Service.detail.processdescription}
-        data={Service.detail.processcard}
+        heading={detail.processheading}
+        des={detail.processdescription}
+        data={detail.processcard}
       />
       <WhyChooseUs />
       <GuaranteeSection />
@@ -46,7 +64,7 @@ export default function ServicePage() {
       <UrgencySection />
       <BonusesSection />
       <Portfolio />
-      <FAQSection data={Service.detail.faq} />
+      <FAQSection data={detail.faq} />
       <CallToAction />
       <Footer />
     </>
