@@ -1,20 +1,16 @@
 import React, { useState } from "react";
-import { FaQuestionCircle } from "react-icons/fa"; // Importing react-icons for the question mark icon
+import { Plus } from "lucide-react"; // Replace react-icons with lucide
 
 export default function FAQSection({ data }) {
-  // State to keep track of which question is open
   const [openQuestion, setOpenQuestion] = useState(null);
 
-  // Function to toggle the accordion
   const toggleQuestion = (index) => {
     setOpenQuestion(openQuestion === index ? null : index);
   };
 
-  // Sample FAQ data (you can replace this with dynamic content)
-
   return (
     <section className="py-32 bg-gradient-to-br from-secondary via-secondary/90 to-secondary relative overflow-hidden">
-      {/* Modern Background Elements */}
+      {/* Background grid and blur effects */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff1a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff1a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
       <div className="absolute inset-0">
         <div className="absolute -left-4 -top-24 w-96 h-96 bg-primary/20 rounded-full filter blur-3xl"></div>
@@ -44,11 +40,10 @@ export default function FAQSection({ data }) {
               className="group"
             >
               <div
-                className={`relative bg-white/10 backdrop-blur-sm rounded-2xl border border-white/10 hover:bg-white/20 transition-all duration-300 ${
+                className={`bg-white/10 backdrop-blur-sm rounded-2xl border border-white/10 hover:bg-white/20 transition-all duration-300 ${
                   openQuestion === index ? "bg-white/20" : ""
                 }`}
               >
-                {/* Question Header */}
                 <button
                   onClick={() => toggleQuestion(index)}
                   className="w-full px-8 py-6 flex items-center justify-between gap-6"
@@ -72,6 +67,7 @@ export default function FAQSection({ data }) {
                       {faq.question}
                     </h3>
                   </div>
+
                   <span
                     className={`flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center border-2 ${
                       openQuestion === index
@@ -79,27 +75,16 @@ export default function FAQSection({ data }) {
                         : "border-white/20 group-hover:border-primary/50"
                     } transition-all duration-300`}
                   >
-                    <svg
+                    <Plus
                       className={`w-5 h-5 transition-colors duration-300 ${
                         openQuestion === index
                           ? "text-white"
                           : "text-white group-hover:text-primary"
                       }`}
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 4v16m8-8H4"
-                      />
-                    </svg>
+                    />
                   </span>
                 </button>
 
-                {/* Answer Content */}
                 <div
                   className={`overflow-hidden transition-all duration-500 ease-in-out ${
                     openQuestion === index
@@ -114,16 +99,6 @@ export default function FAQSection({ data }) {
                     </p>
                   </div>
                 </div>
-
-                {/* Animated Border Effect */}
-                {openQuestion === index && (
-                  <>
-                    <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent"></div>
-                    <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent"></div>
-                    <div className="absolute top-0 left-0 w-[2px] h-full bg-gradient-to-b from-transparent via-primary to-transparent"></div>
-                    <div className="absolute top-0 right-0 w-[2px] h-full bg-gradient-to-b from-transparent via-primary to-transparent"></div>
-                  </>
-                )}
               </div>
             </div>
           ))}

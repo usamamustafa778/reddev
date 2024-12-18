@@ -38,14 +38,15 @@ const GuaranteeSection = () => {
             <div className="flex-1 space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold text-white">
                 Satisfaction{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80"></span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-white animate-gradient-x">
                   Guarantee
                 </span>
               </h2>
               <p className="text-lg text-white/80 max-w-2xl">
-                If your new website doesn't increase your leads within 30 days
-                of launch, we'll redesign it for free. Your success is our
-                priority!
+                If your new website {"doesn't"} increase your leads within 30
+                days of launch, {"we'll"} redesign it for free. Your success is
+                our priority!
               </p>
               <button className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white text-lg font-semibold rounded-xl shadow-lg hover:bg-primary/90 transition-all duration-300 group relative">
                 <div className="absolute inset-0 bg-primary/40 rounded-xl blur-lg group-hover:blur-xl transition-all duration-300"></div>

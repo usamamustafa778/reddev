@@ -80,7 +80,7 @@ export default function UrgencySection() {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-12">
-            Don't miss out on this exclusive offer. Time is running out!
+            Don&apos;t miss out on this exclusive offer. Time is running out!
           </p>
 
           <div className="mb-12">{formatTime(timeLeft)}</div>

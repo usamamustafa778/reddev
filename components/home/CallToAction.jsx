@@ -3,6 +3,7 @@ import FullContainer from "../common/FullContainer";
 import Container from "../common/Container";
 import Image from "next/image";
 import Form from "../common/Form";
+import { Check, ArrowRight } from "lucide-react";
 
 function CallToAction() {
   const [showForm, setShowForm] = useState(false);
@@ -49,19 +50,7 @@ function CallToAction() {
                         className="flex items-center space-x-3 text-gray-700"
                       >
                         <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
-                          <svg
-                            className="w-5 h-5 text-primary"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M5 13l4 4L19 7"
-                            />
-                          </svg>
+                          <Check className="w-5 h-5 text-primary" />
                         </span>
                         <span>{feature}</span>
                       </div>
@@ -75,19 +64,7 @@ function CallToAction() {
                   >
                     <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-white/0 via-white/20 to-white/0 skew-x-[-20deg] translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
                     <span className="mr-3">Get Free Consultation</span>
-                    <svg
-                      className="w-6 h-6 transform group-hover:translate-x-1 transition-transform duration-300"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                      />
-                    </svg>
+                    <ArrowRight className="w-6 h-6 transform group-hover:translate-x-2 transition-transform duration-300" />
                   </button>
                 </div>
               </div>

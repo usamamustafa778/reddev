@@ -15,7 +15,9 @@ module.exports = {
 
       colors: {
         primary: "#FF332C",
-        secondary: "#870001",
+        secondary: "#840100",
+        dgray: "#333333",
+        lgray: "#E8E8E8",
         innerbanner: "#075861",
         button: "#00A2FF",
         colorBanner: "#0E1859",
@@ -37,11 +39,11 @@ module.exports = {
         "custom-gradient": "radial-gradient(circle, var(--tw-gradient-stops))",
       },
       animation: {
-        slideIn: "slideIn 0.3s ease-out",
+        slideIn: "slideIn 0.2s ease-out",
       },
       keyframes: {
         slideIn: {
-          "0%": { transform: "translateX(-100%)" },
+          "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(0)" },
         },
       },

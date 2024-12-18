@@ -41,7 +41,7 @@ export default function ValueStack() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
             Unmatched Value for Your{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-white animate-gradient-x">
               Investment
             </span>
           </h2>

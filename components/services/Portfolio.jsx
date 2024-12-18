@@ -65,10 +65,7 @@ export default function Portfolio() {
       <Container className="relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Our Recent{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary animate-gradient-x">
-              Projects
-            </span>
+            Our Recent <span className="text-primary ml-1">Projects</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             A showcase of our innovative solutions and digital experiences.

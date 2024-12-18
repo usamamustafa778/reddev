@@ -16,8 +16,10 @@ function Testimonials({ heading, des, data }) {
       <Container className="relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            {heading}
+            Client Testimonials:
+            <span className="text-primary ml-1">See What Our Partners Say</span>
           </h2>
+
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">{des}</p>
         </div>
 
@@ -44,7 +46,7 @@ function Testimonials({ heading, des, data }) {
               <div className="relative flex flex-col gap-6 p-8">
                 {/* Quote mark */}
                 <div className="absolute top-4 right-4 text-4xl text-primary/10 font-serif">
-                  "
+                  &ldquo;
                 </div>
 
                 {/* Stars */}
@@ -60,7 +62,7 @@ function Testimonials({ heading, des, data }) {
                 {/* Testimonial content */}
                 <div className="flex-1 flex flex-col gap-4">
                   <p className="text-gray-700 text-center leading-relaxed group-hover:text-gray-900 transition-colors duration-300">
-                    "{item.first}"
+                    &ldquo;{item.first}&rdquo;
                   </p>
                   <p className="text-gray-500 text-center italic group-hover:text-gray-600 transition-colors duration-300">
                     {item.second}
