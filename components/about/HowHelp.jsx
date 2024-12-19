@@ -16,7 +16,7 @@ export default function HowHelp() {
               </button>
             </div>
             <h1 className="text-5xl font-bold text-secondary ">
-              Devsinc helps start-ups, SMEs and enterprises grow their business
+              reddev helps start-ups, SMEs and enterprises grow their business
             </h1>
             <p className="text-gray-500 text-lg">
               We&apos;ve been helping customers since 2009 and take pride in

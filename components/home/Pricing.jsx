@@ -63,7 +63,7 @@ export default function Pricing() {
           </div>
           <p className="text-lg text-gray-500">
             With tools like ChatGPT and CoPilot, software development is being
-            rapidly enabled by machines. Devsinc engineers are trained with
+            rapidly enabled by machines. reddev engineers are trained with
             these technologies, improving the ROI of your project.
           </p>
           <p className="text-lg text-gray-500 ">
@@ -89,7 +89,7 @@ const data2 = [
   {
     img: "/img/price2.svg",
     title: "Staff Augmentation",
-    des: "Add talent to your existing team through Devsinc and save time on sourcing, recruiting, and training.",
+    des: "Add talent to your existing team through reddev and save time on sourcing, recruiting, and training.",
   },
   {
     img: "/img/price3.svg",

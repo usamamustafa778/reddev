@@ -58,7 +58,7 @@ function OurWork() {
           Explore some of our latest projects
         </h3>
         <p className="py-4 text-lg font-semibold text-left sm:text-center">
-          Devsinc empowers hundreds of clients globally to embrace modern
+          reddev empowers hundreds of clients globally to embrace modern
           technology and elevate customer experiences.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">

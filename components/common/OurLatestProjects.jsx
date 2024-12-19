@@ -16,11 +16,11 @@ export default function OurLatestProjects() {
       img: "/img/project-2.png",
       title: "Automating People Operations with 30+ integrations",
       description:
-        "Devsinc helped Sapling rapidly expanded their team, improve integrations and support some of the world's fastest growing companies.",
+        "reddev helped Sapling rapidly expanded their team, improve integrations and support some of the world's fastest growing companies.",
     },
     {
       img: "/img/project-3.png",
-      title: "How Devsinc helped HoneyBricks expand investment accessibility",
+      title: "How reddev helped HoneyBricks expand investment accessibility",
       description:
         "HoneyBricks used blockchain for secure real estate investment, supporting 3,500 investors and managing over $5 million.",
     },

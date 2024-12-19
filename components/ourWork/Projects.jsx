@@ -58,7 +58,7 @@ export default function Projects() {
             Case Studies
           </h1>
           <p className="text-2xl text-start sm:text-center">
-            Explore some of the transformative journeys of Devsinc`&apos;s
+            Explore some of the transformative journeys of reddev`&apos;s
             global clients.
           </p>
         </div>

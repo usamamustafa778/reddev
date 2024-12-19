@@ -43,7 +43,7 @@ export default function TeamMembers() {
           <h1 className="text-3xl md:text-5xl font-bold  text-secondary">Leadership Team</h1>
           <p className="text-gray-500 ">
             Meet the driving force, the dreamers, the minds behind crafting a
-            cutting-edge software development company, aka, Devsinc.
+            cutting-edge software development company, aka, reddev.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 border">

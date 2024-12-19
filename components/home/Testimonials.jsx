@@ -8,7 +8,7 @@ function Testimonials() {
     { 
       id: 1,
       img: "/img/tes1.jpg",
-      title1: "Devsinc has stood out for their promptness and responsiveness.",
+      title1: "reddev has stood out for their promptness and responsiveness.",
       title2: "Parham, President, Kudo Westervelt",
       description:
         "The client is extremely satisfied with their performance and technical skills. All in all, they&apos;re a reliable and committed partner",
@@ -27,7 +27,7 @@ function Testimonials() {
     {
       id: 3,
       img: "/img/tes3.png",
-      title1: "Devsinc helped us hit the ground running on our MVP development.",
+      title1: "reddev helped us hit the ground running on our MVP development.",
       title2: "Ramesh Doddi, CTO, HoneyBricks",
       description:
         "They helped us build out a number of important integrations across payments, authentication and blockchain integrations.",
@@ -36,7 +36,7 @@ function Testimonials() {
     {
       id: 4,
       img: "/img/tes4.png",
-      title1: "Responsive and committed, Devsinc provides quality work in a timely manner.  ",
+      title1: "Responsive and committed, reddev provides quality work in a timely manner.  ",
       title2: "Eric Hurst, Co-Founder Intellirent",
       description:
         "They also ensure that the developers they provide meet the client&apos;s needs, leading to an ongoing partnership.",

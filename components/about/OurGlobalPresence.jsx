@@ -58,7 +58,7 @@ export default function OurGlobalPresence() {
               <p>Devbitties (Private) Limited</p>
               <p>
               18 S 2nd Street #120, San Jose, CA, 95113, United States
-              sales@devsinc.com
+              sales@reddev.com
               </p>
             </div>
           </div>

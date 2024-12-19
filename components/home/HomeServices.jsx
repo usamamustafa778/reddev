@@ -10,7 +10,7 @@ export default function HomeServices() {
       img: "/img/serviceicon3.png",
       title: "Mobile App Development",
       src: "/app-development",
-      des: "Make your mobile app stand out from the crowd with Devsinc's Android and iOS development.",
+      des: "Make your mobile app stand out from the crowd with reddev's Android and iOS development.",
     },
     {
       img: "/img/serviceicon1.png",
