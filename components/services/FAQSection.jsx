@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { Plus } from "lucide-react"; // Replace react-icons with lucide
+import BgAnimation from "../BgAnimation";
+import FullContainer from "../common/FullContainer";
+import Container from "../common/Container";
 
 export default function FAQSection({ data }) {
   const [openQuestion, setOpenQuestion] = useState(null);
@@ -9,15 +12,10 @@ export default function FAQSection({ data }) {
   };
 
   return (
-    <section className="py-32 bg-gradient-to-br from-secondary via-secondary/90 to-secondary relative overflow-hidden">
-      {/* Background grid and blur effects */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff1a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff1a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
-      <div className="absolute inset-0">
-        <div className="absolute -left-4 -top-24 w-96 h-96 bg-primary/20 rounded-full filter blur-3xl"></div>
-        <div className="absolute right-0 bottom-0 w-96 h-96 bg-primary/20 rounded-full filter blur-3xl"></div>
-      </div>
+    <FullContainer className="relative bg-[linear-gradient(125deg,#0a0505,#1a0808_40%,#2a0a0a_70%,#0a0505)] text-white overflow-hidden">
+      <BgAnimation />
 
-      <div className="container mx-auto px-4 relative z-10">
+      <Container className="relative z-10 py-16 md:py-24">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
             Frequently Asked{" "}
@@ -103,7 +101,7 @@ export default function FAQSection({ data }) {
             </div>
           ))}
         </div>
-      </div>
-    </section>
+      </Container>
+    </FullContainer>
   );
 }

@@ -6,7 +6,7 @@ import OurMission from "@/components/about/OurMission";
 import HowHelp from "@/components/about/HowHelp";
 import OurGlobalPresence from "@/components/about/OurGlobalPresence";
 import TeamMembers from "@/components/about/TeamMembers";
-import CallToAction from "@/components/about/CallToAction";
+import CallToAction from "@/components/home/CallToAction";
 
 export default function about() {
   return (

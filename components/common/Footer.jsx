@@ -4,17 +4,14 @@ import Container from "./Container";
 import Link from "next/link";
 import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
 import Image from "next/image";
+import BgAnimation from "../BgAnimation";
 
 function Footer() {
   return (
-    <FullContainer className="py-20 bg-gradient-to-br from-secondary via-secondary/90 to-secondary relative overflow-hidden">
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff1a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff1a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
-      <div className="absolute inset-0">
-        <div className="absolute -left-4 -top-24 w-96 h-96 bg-primary/20 rounded-full filter blur-3xl"></div>
-        <div className="absolute right-0 bottom-0 w-96 h-96 bg-primary/20 rounded-full filter blur-3xl"></div>
-      </div>
+    <FullContainer className="relative bg-[linear-gradient(125deg,#0a0505,#1a0808_40%,#2a0a0a_70%,#0a0505)] text-white overflow-hidden">
+      <BgAnimation />
 
-      <Container className="z-10">
+      <Container className="z-10 py-16 md:py-24 ">
         <div className="text-white/80">
           {/* Top Section */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
