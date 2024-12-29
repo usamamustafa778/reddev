@@ -25,7 +25,7 @@ export default function WorkHero() {
         <p className="text-xl text-gray-300 leading-relaxed">
           Following clear and consistent procedures for software development
           services, we create custom web-based, mobile, SaaS, and other
-          solutions that fit users' criteria and improve company processes and
+          solutions that fit users criteria and improve company processes and
           market presence.
         </p>
 
@@ -33,9 +33,7 @@ export default function WorkHero() {
         <div className="pt-4">
           <button className="group relative inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-red-500 to-red-700 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(220,38,38,0.3)] active:scale-95">
             Talk to an Expert
-            <ArrowRight 
-              className="w-5 h-5 transition-transform group-hover:translate-x-1"
-            />
+            <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
           </button>
         </div>
       </Container>

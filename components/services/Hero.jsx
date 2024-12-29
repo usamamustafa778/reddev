@@ -16,7 +16,7 @@ export default function Hero({ heading2, heading1, des, img }) {
     { number: "10+", label: "Years Experience" },
   ];
 
-return (
+  return (
     <FullContainer className="relative bg-[linear-gradient(125deg,#0a0505,#1a0808_40%,#2a0a0a_70%,#0a0505)] text-white overflow-hidden">
       <BgAnimation />
 
@@ -92,8 +92,8 @@ return (
                     Get Your Free Consultation
                   </h3>
                   <p className="text-white/60">
-                    Fill out the form below and we'll get back to you within 24
-                    hours
+                    Fill out the form below and {"we'll"} get back to you within
+                    24 hours
                   </p>
                 </div>
 
