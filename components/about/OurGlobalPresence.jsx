@@ -55,11 +55,11 @@ export default function OurGlobalPresence() {
       {/* Subtle Background Elements */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#0000000a_1px,transparent_1px),linear-gradient(to_bottom,#0000000a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
       <div className="absolute inset-0">
-        <div className="absolute -left-4 -top-24 w-96 h-96 bg-primary/5 rounded-full filter blur-3xl"></div>
-        <div className="absolute right-0 bottom-0 w-96 h-96 bg-secondary/5 rounded-full filter blur-3xl"></div>
+        <div className="absolute -right-4 -top-24 w-96 h-96 bg-primary/5 rounded-full filter blur-3xl"></div>
+        <div className="absolute -left-4 bottom-0 w-96 h-96 bg-secondary/5 rounded-full filter blur-3xl"></div>
       </div>
 
-      <Container className="relative py-16 md:py-24">
+      <Container className="relative">
         {/* Header Section */}
         <div className="max-w-5xl mx-auto text-center mb-20">
           <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-2xl border border-gray-200/50 shadow-sm mb-6">

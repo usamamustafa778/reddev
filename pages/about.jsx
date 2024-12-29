@@ -13,9 +13,9 @@ export default function about() {
     <>
       <Navbar className="lg:fixed" />
       <Banner />
-      <OurMission />
       <HowHelp />
       <TeamMembers />
+      <OurMission />
       <OurGlobalPresence />
       <CallToAction />
       <Footer />

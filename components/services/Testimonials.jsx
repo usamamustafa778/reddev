@@ -5,7 +5,7 @@ import { IoStar } from "react-icons/io5";
 
 function Testimonials({ heading, des, data }) {
   return (
-    <FullContainer className="py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+    <FullContainer className="py-20 md:py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
       {/* Subtle Background Elements */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#0000000a_1px,transparent_1px),linear-gradient(to_bottom,#0000000a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
       <div className="absolute inset-0">
@@ -20,7 +20,7 @@ function Testimonials({ heading, des, data }) {
             <span className="text-primary ml-1">See What Our Partners Say</span>
           </h2>
 
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">{des}</p>
+          <p className="text-base md:text-xl text-gray-600 max-w-2xl mx-auto">{des}</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">

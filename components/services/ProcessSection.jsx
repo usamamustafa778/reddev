@@ -31,7 +31,7 @@ export default function ProcessSection({ heading, des, data }) {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
             {heading}
           </h2>
-          <p className="text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
             {des}
           </p>
         </div>

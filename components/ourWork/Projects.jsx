@@ -8,145 +8,189 @@ export default function Projects() {
   const data = [
     {
       img: "/img/openproject1.png",
-      title: "STARLIGHTxSOCIETY (SXS)",
+      title: "STARLIGHTxSOCIETY",
+      aspectRatio: "aspect-video",
+      size: "large",
       company: "STARLIGHTxSOCIETY-(SXS)",
       description:
-        "devbitties helped STARLIGHTxSOCIETY scale its NFT platform, enhance its music integration, and support collaborations with global musicians, creating unique experiences for collectors and fans.",
+        "Revolutionizing the NFT music platform with seamless integration of digital collectibles and exclusive artist experiences. Supporting over 100k monthly active users and partnering with major record labels.",
+      tags: ["NFT", "Music", "Web3"],
     },
     {
       img: "/img/openproject2.png",
-      title: "United-Insurance",
+      title: "United Insurance",
+      aspectRatio: "aspect-square",
+      size: "small",
       company: "United-Insurance",
       description:
-        "Devbitties collaborated with United-Insurance to innovate their insurance solutions, streamline policy management, and enhance customer experience through technology, ensuring comprehensive coverage for all clients.",
+        "Streamlined policy management platform serving 50k+ clients.",
+      tags: ["FinTech", "Insurance"],
     },
-
     {
       img: "/img/openproject3.png",
-      title: "Beastables",
+      title: "Beastables NFT",
+      aspectRatio: "aspect-[4/5]",
+      size: "medium",
       company: "Beastables",
       description:
-        "HoneyBricks used blockchain for secure real estate investment, supporting 3,500 investors and managing over $5 million.",
+        "Revolutionary blockchain-based collectibles platform with unique gaming integrations.",
+      tags: ["Blockchain", "Gaming", "NFT"],
     },
     {
       img: "/img/openproject4.png",
-      title: "Tekruiter",
+      title: "Tekruiter AI",
+      aspectRatio: "aspect-[3/4]",
+      size: "large",
       company: "Tekruiter",
       description:
-        "devbitties helped STARLIGHTxSOCIETY scale its NFT platform, enhance its music integration, and support collaborations with global musicians, creating unique experiences for collectors and fans.",
+        "AI-powered recruitment platform revolutionizing the hiring process. Leveraging machine learning for perfect candidate matching with 98% accuracy rate. Serving over 200 enterprise clients.",
+      tags: ["AI", "HR Tech", "Machine Learning"],
     },
     {
       img: "/img/openproject5.png",
-      title: "How Recurate Unlocks ReCommerce",
+      title: "Recurate",
+      aspectRatio: "aspect-square",
+      size: "small",
       company: "QuickShipCars",
-      description:
-        "Provides the perfect solution for the resale marketplace covering the E-Commerce P2P model.",
+      description: "Next-gen P2P marketplace solution.",
+      tags: ["E-commerce", "P2P"],
     },
     {
       img: "/img/openproject6.png",
-      title: "Relik",
+      title: "Relik Metaverse",
+      aspectRatio: "aspect-video",
+      size: "medium",
       company: "relik",
       description:
-        "  RELIK provides top-notch solutions for NFT marketplaces, ensuring smooth transactions within the metaverse ecosystem.",
+        "Pioneering metaverse marketplace with virtual reality integrations and social features.",
+      tags: ["NFT", "Metaverse", "VR"],
     },
   ];
 
   return (
-    <FullContainer>
+    <FullContainer className="py-10 bg-gray-50 relative overflow-hidden">
+      {/* Subtle Background Elements */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#0000000a_1px,transparent_1px),linear-gradient(to_bottom,#0000000a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+      <div className="absolute inset-0">
+        <div className="absolute -left-4 -top-24 w-96 h-96 bg-primary/5 rounded-full filter blur-3xl"></div>
+        <div className="absolute right-0 bottom-0 w-96 h-96 bg-secondary/5 rounded-full filter blur-3xl"></div>
+      </div>
+
       <Container>
-        <div className="py-20 md:py-28 flex flex-col justify-center gap-8">
-          <h1
-            className="text-5xl md:text-6xl font-bold text-start sm:text-center 
-          bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-300"
-          >
-            Case Studies
-          </h1>
-          <p
-            className="text-2xl md:text-3xl text-gray-400 text-start sm:text-center max-w-3xl 
-          mx-auto leading-relaxed"
-          >
-            Explore some of the transformative journeys of reddev&apos;s global
-            clients.
-          </p>
-        </div>
-        <div className="flex flex-col gap-20 pb-32">
+        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 py-14 [column-fill:_balance] space-y-6">
           {data.map((item, index) => (
-            <Project
-              key={index}
-              index={index}
-              title={item.title}
-              des={item.description}
-              img={item.img}
-              company={item.company}
-            />
+            <Project key={index} {...item} index={index} />
           ))}
         </div>
       </Container>
     </FullContainer>
   );
 }
-function Project({ index, title, des, img, company }) {
+
+function Project({
+  index,
+  title,
+  description,
+  img,
+  company,
+  aspectRatio,
+  size,
+  tags,
+}) {
   return (
     <div
-      key={index}
-      className="group bg-gradient-to-br from-secondary/90 to-secondary hover:from-secondary hover:to-secondary/90 
-      transition-all duration-500 rounded-[2rem] grid grid-cols-1 md:grid-cols-2 md:px-12 px-6 py-8 lg:py-12 
-      overflow-hidden shadow-[0_0_15px_rgba(0,0,0,0.2)] hover:shadow-[0_0_30px_rgba(0,0,0,0.3)] 
-      border border-gray-700/20 backdrop-blur-sm relative"
+      className={`group relative flex flex-col items-center 
+        break-inside-avoid
+        ${size === "small" ? "p-4" : size === "large" ? "p-6" : "p-5"}
+        rounded-2xl overflow-hidden
+        bg-white
+        transition-all duration-500 hover:scale-[1.02]
+        shadow-md hover:shadow-xl border border-gray-100`}
     >
+      {/* Image Section with dynamic aspect ratio */}
       <div
-        className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-blue-500 to-purple-500 
-      opacity-50 group-hover:opacity-100 transition-opacity duration-500"
-      ></div>
-
-      <div className="text-white flex flex-col justify-center gap-7 pr-8 relative">
+        className={`w-full ${aspectRatio} relative rounded-xl overflow-hidden`}
+      >
         <div
-          className="absolute -left-6 top-0 h-full w-1 bg-primary/20 group-hover:bg-primary/40 
-        transition-colors duration-500"
-        ></div>
+          className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent 
+          opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"
+        />
+        <Image
+          className="object-cover w-full h-full rounded-xl transform transition-all duration-700
+            group-hover:scale-105"
+          src={img}
+          alt={`${title} project screenshot`}
+          width={1200}
+          height={900}
+          priority={index === 0}
+        />
+      </div>
 
+      {/* Content Section */}
+      <div
+        className={`flex flex-col gap-4 mt-5 w-full
+        ${size === "small" ? "gap-3" : size === "large" ? "gap-5" : "gap-4"}`}
+      >
         <h5
-          className="text-3xl font-bold leading-tight bg-clip-text text-transparent 
-        bg-gradient-to-r from-white to-gray-300"
+          className={`font-bold leading-tight text-gray-800
+          ${
+            size === "small"
+              ? "text-lg"
+              : size === "large"
+              ? "text-2xl"
+              : "text-xl"
+          }`}
         >
           {title}
         </h5>
 
-        <p className="text-lg text-gray-300/90 leading-relaxed">{des}</p>
+        <p
+          className={`text-gray-600 leading-relaxed
+          ${
+            size === "small"
+              ? "text-xs line-clamp-2"
+              : size === "large"
+              ? "text-sm line-clamp-4"
+              : "text-sm line-clamp-3"
+          }`}
+        >
+          {description}
+        </p>
+
+        {/* Tags */}
+        <div className="flex flex-wrap gap-2">
+          {tags?.map((tag, i) => (
+            <span
+              key={i}
+              className={`px-3 py-1 rounded-full bg-blue-50 text-blue-600
+                ${size === "small" ? "text-[10px]" : "text-xs"}`}
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
 
         <Link
-          className="group/btn bg-gradient-to-r from-primary to-primary/80 py-3.5 px-7 
-          text-center rounded-xl font-medium text-lg transition-all duration-500 w-fit 
-          hover:shadow-[0_0_15px_rgba(var(--primary-rgb),0.3)] relative overflow-hidden"
           href={`/our-work/${company}`}
+          className={`group/btn relative w-fit overflow-hidden rounded-lg
+            bg-gray-100 hover:bg-gray-200 transition-all duration-300
+            ${
+              size === "small"
+                ? "text-xs"
+                : size === "large"
+                ? "text-sm"
+                : "text-xs"
+            }`}
         >
-          <span className="relative z-10 flex items-center gap-2">
-            View Case Study
-            <span className="transform translate-x-0 group-hover/btn:translate-x-1 transition-transform duration-300">
-              →
+          <span className="block py-2 px-4 font-medium relative z-10">
+            <span className="flex items-center gap-2">
+              View Details
+              <span className="transform group-hover/btn:translate-x-1 transition-transform duration-300">
+                →
+              </span>
             </span>
           </span>
-          <div
-            className="absolute inset-0 bg-gradient-to-r from-primary/0 via-white/10 to-primary/0 
-          translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-700"
-          ></div>
         </Link>
-      </div>
-
-      <div className="relative h-full flex items-center">
-        <div
-          className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 
-        group-hover:opacity-100 transition-opacity duration-500 rounded-lg"
-        ></div>
-        <Image
-          className="transform transition-all duration-700 rounded-lg shadow-lg 
-          group-hover:scale-[1.02] group-hover:shadow-xl"
-          src={img}
-          alt={`${title} project screenshot`}
-          width={1200}
-          height={1200}
-          priority={index === 0}
-        />
       </div>
     </div>
   );

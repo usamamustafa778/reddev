@@ -4,21 +4,22 @@ import Container from "../common/Container";
 
 function OurMission() {
   return (
-    <FullContainer className="bg-gradient-to-br from-secondary via-secondary/90 to-secondary relative overflow-hidden">
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff1a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff1a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
+    <FullContainer className="bg-gray-50 relative overflow-hidden">
+      {/* Subtle Background Elements */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#0000000a_1px,transparent_1px),linear-gradient(to_bottom,#0000000a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
       <div className="absolute inset-0">
-        <div className="absolute -left-4 -top-24 w-96 h-96 bg-primary/20 rounded-full filter blur-3xl"></div>
-        <div className="absolute right-0 bottom-0 w-96 h-96 bg-primary/20 rounded-full filter blur-3xl"></div>
+        <div className="absolute -left-4 -top-24 w-96 h-96 bg-primary/5 rounded-full filter blur-3xl"></div>
+        <div className="absolute right-0 bottom-0 w-96 h-96 bg-secondary/5 rounded-full filter blur-3xl"></div>
       </div>
 
       <Container className="py-20 md:py-24 relative">
         <div className="max-w-4xl mx-auto">
           <div className="space-y-6">
-            <button className="text-white bg-white/10 px-6 py-2.5 rounded-full text-sm uppercase tracking-wider font-medium hover:bg-primary/20 transition-colors duration-300">
+            <button className="text-secondary bg-secondary/10 px-6 py-2.5 rounded-full text-sm uppercase tracking-wider font-medium hover:bg-secondary/20 transition-colors duration-300">
               Our Mission
             </button>
 
-            <h2 className="text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.2]">
+            <h2 className="text-secondary text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.2]">
               Our Mission Help companies and organizations deliver{" "}
               <span className="text-primary relative inline-block group">
                 innovative technology

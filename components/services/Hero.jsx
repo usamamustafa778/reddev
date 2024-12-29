@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import FullContainer from "../common/FullContainer";
 import Container from "../common/Container";
 import Form from "../common/Form";
-import { X } from "lucide-react";
+import { ArrowRight, X } from "lucide-react";
 import Link from "next/link";
 import BgAnimation from "../BgAnimation";
 
@@ -16,14 +16,13 @@ export default function Hero({ heading2, heading1, des, img }) {
     { number: "10+", label: "Years Experience" },
   ];
 
-  return (
+return (
     <FullContainer className="relative bg-[linear-gradient(125deg,#0a0505,#1a0808_40%,#2a0a0a_70%,#0a0505)] text-white overflow-hidden">
-      {/* Futuristic Background Elements */}
       <BgAnimation />
 
       <Container className="relative z-10">
-        <div className="w-full grid grid-cols-1 lg:grid-cols-2 py-24 gap-24">
-          <div className="flex-1 space-y-10">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 text-center md:text-left py-16 md:py-24 gap-14 md:gap-24">
+          <div className="flex-1 space-y-7 md:space-y-10">
             {/* Status Badge - changed to red */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm">
               <span className="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse"></span>
@@ -45,24 +44,23 @@ export default function Hero({ heading2, heading1, des, img }) {
             </h1>
 
             {/* Description with modern font */}
-            <p className="text-xl text-white/80 leading-relaxed max-w-2xl font-light">
+            <p className=" md:text-xl text-white/80 leading-relaxed max-w-2xl font-light">
               {des}
             </p>
 
             {/* Enhanced CTA Buttons - changed to red */}
-            <div className="flex flex-wrap gap-6">
+            <div className="flex flex-wrap gap-4 md:gap-6 justify-center md:justify-start">
               <button
                 onClick={() => setShowForm(true)}
-                className="group relative px-8 py-4 bg-red-600 hover:bg-red-700 rounded-xl text-lg font-medium transition-all duration-300 overflow-hidden"
+                className="group relative px-8 py-3 md:py-4 from-primary to-secondary bg-gradient-to-r flex items-center gap-2 rounded-xl text-lg font-medium transition-all duration-300 overflow-hidden"
               >
                 <span className="relative z-10">Get Free Consultation</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-red-400 to-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute inset-x-0 h-px bottom-0 bg-gradient-to-r from-transparent via-white/50 to-transparent"></div>
+                <ArrowRight className="w-4 h-4 md:w-6 md:h-6 transform group-hover:translate-x-2 transition-transform duration-300" />
               </button>
 
               <Link
                 href="/portfolio"
-                className="group px-8 py-4 text-lg border border-white/20 rounded-xl hover:bg-white/5 transition-all duration-300 flex items-center gap-3 relative overflow-hidden"
+                className="group px-8 py-3 md:py-4 text-lg border border-white/20 rounded-xl hover:bg-white/5 hover:backdrop-blur-sm transition-all duration-300 flex items-center gap-3 relative overflow-hidden"
               >
                 <span className="relative z-10">View Portfolio</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
@@ -70,7 +68,7 @@ export default function Hero({ heading2, heading1, des, img }) {
             </div>
 
             {/* Stats with enhanced styling */}
-            <div className="grid grid-cols-3 gap-8 pt-5">
+            <div className="grid grid-cols-3 gap-8 pt-4 md:pt-5">
               {stats.map((stat, index) => (
                 <div key={index} className="space-y-2 relative group">
                   <div className="text-3xl font-bold text-white relative">
@@ -83,17 +81,117 @@ export default function Hero({ heading2, heading1, des, img }) {
             </div>
           </div>
 
-          {/* Enhanced Image Section - changed gradient to red */}
-          <div className="relative rounded-2xl h-full overflow-hidden bg-white/5 backdrop-blur-sm border border-white/10">
-            <div className="absolute inset-0 bg-gradient-to-br from-red-600/20 via-transparent to-transparent"></div>
-            <Image
-              src={img}
-              alt="Digital Solutions"
-              fill
-              className="object-cover hover:scale-105 transition-transform duration-500"
-              priority
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0505]/50 to-transparent"></div>
+          {/* New Lead Form replacing the image */}
+          <div className="relative rounded-2xl overflow-hidden backdrop-blur-sm border border-white/10">
+            <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-transparent"></div>
+            <div className="relative p-8 md:p-10">
+              <div className="space-y-8">
+                {/* Form Header */}
+                <div className="space-y-2">
+                  <h3 className="text-2xl md:text-3xl font-bold">
+                    Get Your Free Consultation
+                  </h3>
+                  <p className="text-white/60">
+                    Fill out the form below and we'll get back to you within 24
+                    hours
+                  </p>
+                </div>
+
+                {/* Lead Form */}
+                <form className="space-y-4">
+                  <div className="space-y-4">
+                    <div>
+                      <input
+                        type="text"
+                        placeholder="Full Name"
+                        className="w-full px-5 py-4 bg-white/5 rounded-xl border border-white/10 focus:border-white/20 focus:ring-0 text-white placeholder:text-white/40 transition-colors backdrop-blur-sm"
+                      />
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <input
+                        type="email"
+                        placeholder="Email Address"
+                        className="w-full px-5 py-4 bg-white/5 rounded-xl border border-white/10 focus:border-white/20 focus:ring-0 text-white placeholder:text-white/40 transition-colors backdrop-blur-sm"
+                      />
+                      <input
+                        type="tel"
+                        placeholder="Phone Number"
+                        className="w-full px-5 py-4 bg-white/5 rounded-xl border border-white/10 focus:border-white/20 focus:ring-0 text-white placeholder:text-white/40 transition-colors backdrop-blur-sm"
+                      />
+                    </div>
+                    <div>
+                      <select className="w-full px-5 py-4 bg-white/5 rounded-xl border border-white/10 focus:border-white/20 focus:ring-0 text-white/60 transition-colors backdrop-blur-sm appearance-none">
+                        <option value="" className="text-gray-900">
+                          Select Service
+                        </option>
+                        <option value="web" className="text-gray-900">
+                          Web Development
+                        </option>
+                        <option value="app" className="text-gray-900">
+                          App Development
+                        </option>
+                        <option value="design" className="text-gray-900">
+                          UI/UX Design
+                        </option>
+                        <option value="marketing" className="text-gray-900">
+                          Digital Marketing
+                        </option>
+                      </select>
+                    </div>
+                    <div>
+                      <textarea
+                        placeholder="Tell us about your project..."
+                        rows="3"
+                        className="w-full px-5 py-4 bg-white/5 rounded-xl border border-white/10 focus:border-white/20 focus:ring-0 text-white placeholder:text-white/40 transition-colors backdrop-blur-sm resize-none"
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  {/* Submit Button */}
+                  <button
+                    type="submit"
+                    className="w-full bg-gradient-to-r from-red-500 to-red-600 text-white py-4 px-6 rounded-xl hover:shadow-lg hover:from-red-600 hover:to-red-700 transition-all duration-300 flex items-center justify-center gap-2 group"
+                  >
+                    <span>Get Free Consultation</span>
+                    <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </form>
+
+                {/* Trust Indicators */}
+                <div className="pt-6 border-t border-white/10">
+                  <div className="flex items-center justify-center gap-6 text-white/60">
+                    <div className="flex items-center gap-2">
+                      <svg
+                        className="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      <span className="text-sm">Free Consultation</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <svg
+                        className="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      <span className="text-sm">24/7 Support</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </Container>

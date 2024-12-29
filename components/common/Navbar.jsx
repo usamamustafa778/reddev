@@ -77,10 +77,12 @@ export default function Navbar({ className }) {
     <>
       <FullContainer
         className={`z-20 sticky top-0 transition-all duration-300 ${
-          scrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-transparent"
+          scrolled
+            ? "bg-white/95 backdrop-blur-md shadow-lg"
+            : "bg-[#1a0808] text-white"
         }`}
       >
-        <Container className="flex items-center justify-between h-20">
+        <Container className="flex items-center justify-between h-fit py-1.5 md:py-2.5">
           <Link
             className="relative z-10 hover:opacity-75 transition-opacity duration-300"
             href="/"
@@ -90,7 +92,7 @@ export default function Navbar({ className }) {
               alt="Devbitties Logo"
               width={180}
               height={48}
-              className="h-12 w-auto object-contain"
+              className="h-11 md:h-12 w-auto object-contain"
               priority
             />
           </Link>
