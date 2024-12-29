@@ -22,9 +22,9 @@ export default function Hero({ heading2, heading1, des, img }) {
 
       <Container className="relative z-10">
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 text-center md:text-left py-16 md:py-24 gap-14 md:gap-24">
-          <div className="flex-1 space-y-7 md:space-y-10">
+          <div className="flex-1 space-y-7 md:space-y-10 flex flex-col justify-center">
             {/* Status Badge - changed to red */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm w-fit">
               <span className="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse"></span>
               <span className="text-sm font-medium text-white/80">
                 Available for New Projects
@@ -47,25 +47,6 @@ export default function Hero({ heading2, heading1, des, img }) {
             <p className=" md:text-xl text-white/80 leading-relaxed max-w-2xl font-light">
               {des}
             </p>
-
-            {/* Enhanced CTA Buttons - changed to red */}
-            <div className="flex flex-wrap gap-4 md:gap-6 justify-center md:justify-start">
-              <button
-                onClick={() => setShowForm(true)}
-                className="group relative px-8 py-3 md:py-4 from-primary to-secondary bg-gradient-to-r flex items-center gap-2 rounded-xl text-lg font-medium transition-all duration-300 overflow-hidden"
-              >
-                <span className="relative z-10">Get Free Consultation</span>
-                <ArrowRight className="w-4 h-4 md:w-6 md:h-6 transform group-hover:translate-x-2 transition-transform duration-300" />
-              </button>
-
-              <Link
-                href="/portfolio"
-                className="group px-8 py-3 md:py-4 text-lg border border-white/20 rounded-xl hover:bg-white/5 hover:backdrop-blur-sm transition-all duration-300 flex items-center gap-3 relative overflow-hidden"
-              >
-                <span className="relative z-10">View Portfolio</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
-              </Link>
-            </div>
 
             {/* Stats with enhanced styling */}
             <div className="grid grid-cols-3 gap-8 pt-4 md:pt-5">
@@ -92,8 +73,7 @@ export default function Hero({ heading2, heading1, des, img }) {
                     Get Your Free Consultation
                   </h3>
                   <p className="text-white/60">
-                    Fill out the form below and {"we'll"} get back to you within
-                    24 hours
+                    Fill out this form and {"we'll"} contact you via email.
                   </p>
                 </div>
 

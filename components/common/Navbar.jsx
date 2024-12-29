@@ -164,14 +164,14 @@ export default function Navbar({ className }) {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center">
-            <button
-              onClick={() => setShowForm(true)}
+            <Link
+              href="/"
               className="group relative inline-flex items-center justify-center px-5 py-3 text-lg font-semibold text-white bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 rounded-xl transition-all duration-300 overflow-hidden"
             >
               <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-white/0 via-white/20 to-white/0 skew-x-[-20deg] translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
               <span className="mr-3">Get Free Consultation</span>
               <ArrowRight className="w-6 h-6 transform group-hover:translate-x-2 transition-transform duration-300" />
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -252,19 +252,6 @@ export default function Navbar({ className }) {
                 Get Free Consultation
               </button>
             </nav>
-          </div>
-        </div>
-      )}
-
-      {/* Form Modal */}
-      {showForm && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-          <div
-            className="absolute inset-0 bg-black/40 backdrop-blur-sm"
-            onClick={() => setShowForm(false)}
-          />
-          <div className="relative bg-white rounded-2xl shadow-2xl max-w-lg w-full">
-            <Form form={showForm} setform={setShowForm} />
           </div>
         </div>
       )}
