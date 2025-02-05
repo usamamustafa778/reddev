@@ -1,11 +1,11 @@
-import Image from "next/image";
 import React, { useState } from "react";
 import FullContainer from "../common/FullContainer";
 import Container from "../common/Container";
 import Form from "../common/Form";
 import { ArrowRight, X } from "lucide-react";
-import Link from "next/link";
 import BgAnimation from "../BgAnimation";
+import PhoneInput from "react-phone-number-input";
+import "react-phone-number-input/style.css";
 
 export default function Hero({ heading2, heading1, des, img }) {
   const [showForm, setShowForm] = useState(false);
@@ -93,31 +93,12 @@ export default function Hero({ heading2, heading1, des, img }) {
                         placeholder="Email Address"
                         className="w-full px-5 py-4 bg-white/5 rounded-xl border border-white/10 focus:border-white/20 focus:ring-0 text-white placeholder:text-white/40 transition-colors backdrop-blur-sm"
                       />
-                      <input
-                        type="tel"
-                        placeholder="Phone Number"
+                      <PhoneInput
+                        placeholder="Enter phone number"
                         className="w-full px-5 py-4 bg-white/5 rounded-xl border border-white/10 focus:border-white/20 focus:ring-0 text-white placeholder:text-white/40 transition-colors backdrop-blur-sm"
                       />
                     </div>
-                    <div>
-                      <select className="w-full px-5 py-4 bg-white/5 rounded-xl border border-white/10 focus:border-white/20 focus:ring-0 text-white/60 transition-colors backdrop-blur-sm appearance-none">
-                        <option value="" className="text-gray-900">
-                          Select Service
-                        </option>
-                        <option value="web" className="text-gray-900">
-                          Web Development
-                        </option>
-                        <option value="app" className="text-gray-900">
-                          App Development
-                        </option>
-                        <option value="design" className="text-gray-900">
-                          UI/UX Design
-                        </option>
-                        <option value="marketing" className="text-gray-900">
-                          Digital Marketing
-                        </option>
-                      </select>
-                    </div>
+
                     <div>
                       <textarea
                         placeholder="Tell us about your project..."

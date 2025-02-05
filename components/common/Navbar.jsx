@@ -99,7 +99,7 @@ export default function Navbar({ className }) {
 
           {/* Desktop Navigation */}
           <ul className="hidden lg:flex items-center space-x-8">
-            <li
+            {/* <li
               className="group relative"
               onMouseEnter={() => setServicesHovered(true)}
               onMouseLeave={() => setServicesHovered(false)}
@@ -113,7 +113,6 @@ export default function Navbar({ className }) {
                 />
               </span>
 
-              {/* Updated Services Dropdown */}
               <div
                 className={`absolute top-full -left-4 transform ${
                   isServicesHovered
@@ -146,7 +145,7 @@ export default function Navbar({ className }) {
                   </ul>
                 </div>
               </div>
-            </li>
+            </li> */}
 
             <Link
               className="py-2 font-medium hover:text-primary transition-colors"

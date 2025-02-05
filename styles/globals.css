@@ -106,3 +106,12 @@ body {
     @apply opacity-90
   }
 }
+
+.PhoneInputInput {
+  background-color: transparent;
+  outline: none;
+}
+
+.PhoneInputInput::placeholder {
+  color: white;
+}
