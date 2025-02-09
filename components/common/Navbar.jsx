@@ -79,7 +79,7 @@ export default function Navbar({ className }) {
         className={`z-20 sticky top-0 transition-all duration-300 ${
           scrolled
             ? "bg-white/95 backdrop-blur-md shadow-lg"
-            : "bg-[#1a0808] text-white"
+            : "bg-[#0f0404] text-white"
         }`}
       >
         <Container className="flex items-center justify-between h-fit py-1.5 md:py-2.5">

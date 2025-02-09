@@ -63,67 +63,92 @@ export default function Hero({ heading2, heading1, des, img }) {
           </div>
 
           {/* New Lead Form replacing the image */}
-          <div className="relative rounded-2xl overflow-hidden backdrop-blur-sm border border-white/10">
-            <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-transparent"></div>
+          <div className="relative rounded-2xl overflow-hidden backdrop-blur-sm border border-white/10 shadow-xl">
+            <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-white/5 to-transparent"></div>
             <div className="relative p-8 md:p-10">
               <div className="space-y-8">
                 {/* Form Header */}
-                <div className="space-y-2">
-                  <h3 className="text-2xl md:text-3xl font-bold">
+                <div className="space-y-3">
+                  <h3 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80">
                     Get Your Free Consultation
                   </h3>
-                  <p className="text-white/60">
-                    Fill out this form and {"we'll"} contact you via email.
+                  <p className="text-white/60 text-sm md:text-base">
+                    Fill out this form and we'll contact you within 24 hours.
                   </p>
                 </div>
 
                 {/* Lead Form */}
-                <form className="space-y-4">
-                  <div className="space-y-4">
-                    <div>
+                <form className="space-y-6">
+                  <div className="space-y-5">
+                    <div className="relative group">
                       <input
                         type="text"
                         placeholder="Full Name"
-                        className="w-full px-5 py-4 bg-white/5 rounded-xl border border-white/10 focus:border-white/20 focus:ring-0 text-white placeholder:text-white/40 transition-colors backdrop-blur-sm"
+                        className="w-full px-5 py-4 bg-white/5 rounded-xl border border-white/10 
+                        focus:border-white/50 focus:ring-2 focus:ring-white/20 focus:outline-none
+                        text-white placeholder:text-white/40 transition-all duration-300
+                        backdrop-blur-sm group-hover:border-white/20"
                       />
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <input
-                        type="email"
-                        placeholder="Email Address"
-                        className="w-full px-5 py-4 bg-white/5 rounded-xl border border-white/10 focus:border-white/20 focus:ring-0 text-white placeholder:text-white/40 transition-colors backdrop-blur-sm"
-                      />
-                      <PhoneInput
-                        placeholder="Enter phone number"
-                        className="w-full px-5 py-4 bg-white/5 rounded-xl border border-white/10 focus:border-white/20 focus:ring-0 text-white placeholder:text-white/40 transition-colors backdrop-blur-sm"
-                      />
+                      <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl"></div>
                     </div>
 
-                    <div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                      <div className="relative group">
+                        <input
+                          type="email"
+                          placeholder="Email Address"
+                          className="w-full px-5 py-4 bg-white/5 rounded-xl border border-white/10 
+                          focus:border-white/50 focus:ring-2 focus:ring-white/20 focus:outline-none
+                          text-white placeholder:text-white/40 transition-all duration-300
+                          backdrop-blur-sm group-hover:border-white/20"
+                        />
+                        <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl"></div>
+                      </div>
+
+                      <div className="relative group">
+                        <PhoneInput
+                          placeholder="Phone Number"
+                          className="w-full px-5 py-4 bg-white/5 rounded-xl border border-white/10 
+                          focus:border-white/50 focus:ring-2 focus:ring-white/20 focus:outline-none
+                          text-white placeholder:text-white/40 transition-all duration-300
+                          backdrop-blur-sm group-hover:border-white/20"
+                        />
+                        <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl"></div>
+                      </div>
+                    </div>
+
+                    <div className="relative group">
                       <textarea
                         placeholder="Tell us about your project..."
                         rows="3"
-                        className="w-full px-5 py-4 bg-white/5 rounded-xl border border-white/10 focus:border-white/20 focus:ring-0 text-white placeholder:text-white/40 transition-colors backdrop-blur-sm resize-none"
+                        className="w-full px-5 py-4 bg-white/5 rounded-xl border border-white/10 
+                        focus:border-white/50 focus:ring-2 focus:ring-white/20 focus:outline-none
+                        text-white placeholder:text-white/40 transition-all duration-300
+                        backdrop-blur-sm resize-none group-hover:border-white/20"
                       ></textarea>
+                      <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl"></div>
                     </div>
                   </div>
 
                   {/* Submit Button */}
                   <button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-red-500 to-red-600 text-white py-4 px-6 rounded-xl hover:shadow-lg hover:from-red-600 hover:to-red-700 transition-all duration-300 flex items-center justify-center gap-2 group"
+                    className="w-full bg-white text-slate-900 py-4 px-6 
+                    rounded-xl hover:shadow-lg hover:shadow-white/20 transition-all duration-300 
+                    flex items-center justify-center gap-2 group relative overflow-hidden font-medium
+                    hover:bg-white/90 active:bg-white/80"
                   >
-                    <span>Get Free Consultation</span>
-                    <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
+                    <span className="relative z-10">Get Free Consultation</span>
+                    <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform relative z-10" />
                   </button>
                 </form>
 
                 {/* Trust Indicators */}
                 <div className="pt-6 border-t border-white/10">
                   <div className="flex items-center justify-center gap-6 text-white/60">
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 group">
                       <svg
-                        className="w-5 h-5"
+                        className="w-5 h-5 text-white/60 group-hover:text-white/80 transition-colors"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -133,11 +158,13 @@ export default function Hero({ heading2, heading1, des, img }) {
                           clipRule="evenodd"
                         />
                       </svg>
-                      <span className="text-sm">Free Consultation</span>
+                      <span className="text-sm group-hover:text-white/80 transition-colors">
+                        Free Consultation
+                      </span>
                     </div>
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 group">
                       <svg
-                        className="w-5 h-5"
+                        className="w-5 h-5 text-white/60 group-hover:text-white/80 transition-colors"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -147,7 +174,9 @@ export default function Hero({ heading2, heading1, des, img }) {
                           clipRule="evenodd"
                         />
                       </svg>
-                      <span className="text-sm">24/7 Support</span>
+                      <span className="text-sm group-hover:text-white/80 transition-colors">
+                        24/7 Support
+                      </span>
                     </div>
                   </div>
                 </div>

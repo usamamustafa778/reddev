@@ -84,10 +84,11 @@ function Footer() {
                 <div className="flex flex-col space-y-4">
                   {[
                     "Healthcare",
-                    "FinTech",
                     "E-commerce",
                     "Hospitality",
+                    "Automotive",
                     "SaaS",
+                    "Real Estate",
                     "Gaming",
                     "Public Sector",
                   ].map((item, index) => (
@@ -108,11 +109,9 @@ function Footer() {
                 <h5 className="text-xl font-semibold text-white">Services</h5>
                 <div className="flex flex-col space-y-4">
                   {[
-                    "Web Development",
+                    "Ecommerce",
                     "Mobile Apps",
-                    "Generative AI",
-                    "DevOps",
-                    "QA Testing",
+                    "Web Development",
                     "Custom Solutions",
                   ].map((item, index) => (
                     <Link

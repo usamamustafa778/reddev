@@ -15,7 +15,7 @@ module.exports = {
 
       colors: {
         primary: "#FF332C",
-        secondary: "#840100",
+        secondary: "#DC2626",
         dgray: "#333333",
         lgray: "#E8E8E8",
         innerbanner: "#075861",

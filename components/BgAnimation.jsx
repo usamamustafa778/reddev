@@ -14,13 +14,13 @@ export default function BgAnimation() {
         <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_19px,#ffffff05_19px_21px,transparent_21px)] bg-[size:20px_40px] animate-pulse"></div>
       </div>
 
-      {/* Animated Gradients - changed to red */}
+      {/* Animated Gradients - jewel tones */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 -left-4 w-3/4 h-full bg-[conic-gradient(from_90deg_at_50%_50%,#00000000,#ff222220,#00000000)] animate-[spin_20s_linear_infinite]"></div>
-        <div className="absolute top-0 -right-4 w-3/4 h-full bg-[conic-gradient(from_270deg_at_50%_50%,#00000000,#ff222220,#00000000)] animate-[spin_40s_linear_infinite]"></div>
+        <div className="absolute top-0 -left-4 w-3/4 h-full bg-[conic-gradient(from_90deg_at_50%_50%,#00000000,#48319d20,#1a5f7a20,#00000000)] animate-[spin_20s_linear_infinite]"></div>
+        <div className="absolute top-0 -right-4 w-3/4 h-full bg-[conic-gradient(from_270deg_at_50%_50%,#00000000,#2c514520,#1e3b7020,#00000000)] animate-[spin_40s_linear_infinite]"></div>
       </div>
 
-      {/* Data Streams - changed to red */}
+      {/* Data Streams - deep colors */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(8)].map((_, i) => (
           <div
@@ -28,7 +28,9 @@ export default function BgAnimation() {
             className="absolute h-[1px] w-[120px] animate-[dataStream_3s_linear_infinite]"
             style={{
               background:
-                "linear-gradient(90deg, transparent, #ff2222, transparent)",
+                i % 2 === 0
+                  ? "linear-gradient(90deg, transparent, #48319d, transparent)"
+                  : "linear-gradient(90deg, transparent, #1e3b70, transparent)",
               top: `${Math.random() * 100}%`,
               left: "-120px",
               animationDelay: `${Math.random() * 3}s`,
@@ -38,11 +40,17 @@ export default function BgAnimation() {
         ))}
       </div>
 
-      {/* Glowing Nodes - changed to red */}
+      {/* Glowing Nodes - deep colors */}
       {[...Array(15)].map((_, i) => (
         <div
           key={i}
-          className="absolute w-[4px] h-[4px] bg-red-500/50 rounded-full animate-[glow_4s_ease-in-out_infinite]"
+          className={`absolute w-[4px] h-[4px] rounded-full animate-[glow_4s_ease-in-out_infinite] ${
+            i % 3 === 0
+              ? "bg-indigo-900/50"
+              : i % 3 === 1
+              ? "bg-blue-900/50"
+              : "bg-slate-800/50"
+          }`}
           style={{
             top: `${Math.random() * 100}%`,
             left: `${Math.random() * 100}%`,
