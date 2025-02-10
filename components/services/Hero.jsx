@@ -73,7 +73,8 @@ export default function Hero({ heading2, heading1, des, img }) {
                     Get Your Free Consultation
                   </h3>
                   <p className="text-white/60 text-sm md:text-base">
-                    Fill out this form and we'll contact you within 24 hours.
+                    Fill out this form and {"we'll"} contact you within 24
+                    hours.
                   </p>
                 </div>
 
