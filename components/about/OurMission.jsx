@@ -15,11 +15,11 @@ function OurMission() {
       <Container className="py-20 md:py-24 relative">
         <div className="max-w-4xl mx-auto">
           <div className="space-y-6">
-            <button className="text-secondary bg-secondary/10 px-6 py-2.5 rounded-full text-sm uppercase tracking-wider font-medium hover:bg-secondary/20 transition-colors duration-300">
+            <button className="text-gray-7`00 bg-secondary/10 px-6 py-2.5 rounded-full text-sm uppercase tracking-wider font-medium hover:bg-secondary/20 transition-colors duration-300">
               Our Mission
             </button>
 
-            <h2 className="text-secondary text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.2]">
+            <h2 className="text-gray-7`00 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.2]">
               Our Mission Help companies and organizations deliver{" "}
               <span className="text-primary relative inline-block group">
                 innovative technology
