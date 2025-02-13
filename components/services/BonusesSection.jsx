@@ -1,101 +1,139 @@
-import React, { useState } from "react";
+import React from "react";
+import { FaRocket, FaLightbulb, FaShieldAlt, FaCogs } from "react-icons/fa";
 import FullContainer from "../common/FullContainer";
 import Container from "../common/Container";
 import BgAnimation from "../BgAnimation";
 
-export default function BonusDetails() {
-  const [card1, opencard1] = useState(false);
-  const [card2, opencard2] = useState(false);
-  const [card3, opencard3] = useState(false);
-
+export default function BonusesSection() {
   const bonuses = [
     {
-      title: "Website Audit",
-      description: "Get a comprehensive audit of your existing website.",
-      bonus: "You've unlocked a Free SEO Optimization Package!",
-      isOpen: card1,
-      setOpen: opencard1,
-      translateClass: "-translate-x-9",
+      icon: <FaRocket />,
+      title: "Speed Optimization",
+      description:
+        "Lightning-fast loading times with advanced caching and CDN setup",
+      highlights: [
+        "50% faster load time",
+        "Mobile optimization",
+        "Performance monitoring",
+      ],
     },
     {
-      title: "1-Hour Strategy",
-      description: "We'll align your site with your growth goals.",
-      bonus: "You've unlocked a Free 1-Hour Strategy Consultation!",
-      isOpen: card2,
-      setOpen: opencard2,
-      translateClass: "",
+      icon: <FaLightbulb />,
+      title: "Smart Features",
+      description: "Intelligent solutions that adapt to your business needs",
+      highlights: [
+        "AI-powered insights",
+        "Smart automation",
+        "Custom workflows",
+      ],
     },
     {
-      title: "Post-Launch Support",
-      description: "Get dedicated support after your site goes live.",
-      bonus: "You've unlocked 30 Days of Post-Launch Support!",
-      isOpen: card3,
-      setOpen: opencard3,
-      translateClass: "translate-x-9",
+      icon: <FaShieldAlt />,
+      title: "Security Bundle",
+      description:
+        "Enterprise-grade security features to protect your platform",
+      highlights: ["24/7 monitoring", "Threat detection", "Auto-backups"],
+    },
+    {
+      icon: <FaCogs />,
+      title: "Premium Support",
+      description: "Direct access to senior developers and priority assistance",
+      highlights: ["24h response time", "Dedicated team", "Monthly reviews"],
     },
   ];
 
   return (
-    <FullContainer className="relative bg-[linear-gradient(125deg,#0a0505,#1a0808_40%,#2a0a0a_70%,#0a0505)] text-white overflow-hidden">
+    <FullContainer className="relative bg-gradient-to-br from-gray-950 via-zinc-950 to-gray-950 text-white overflow-hidden">
       <BgAnimation />
 
-      <Container className="relative z-10 py-16 md:py-24">
-        {/* Heading */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-0 -left-52 w-[50%] h-[50%] bg-red-950/50 rounded-full mix-blend-multiply filter blur-xl animate-blob" />
+        <div className="absolute top-0 -right-4 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000" />
+        <div className="absolute -bottom-8 left-20 w-72 h-72 animt bg-teal-500 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000" />
+      </div>
+
+      <Container className="relative z-10 py-32">
+        {/* Section Header */}
+        <div className="text-center mb-20" data-aos="fade-up">
+          <span className="text-primary font-semibold mb-4 block uppercase tracking-wider">
+            Premium Features
+          </span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-white">
             Exclusive{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-white animate-gradient-x">
-              Bonus Rewards
+            <span className="relative">
+              <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-primary to-rose-500">
+                Bonuses
+              </span>
+              <svg
+                className="absolute -bottom-2 left-0 w-full"
+                height="8"
+                viewBox="0 0 100 8"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M0 0L50 7L100 0L100 8L0 8Z"
+                  fill="currentColor"
+                  className="text-primary/20"
+                />
+              </svg>
             </span>
           </h2>
-          <p className="text-xl text-white/80 max-w-2xl mx-auto">
-            Unlock amazing rewards with each milestone you achieve.
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+            Unlock premium features that elevate your digital presence to new
+            heights
           </p>
         </div>
 
-        {/* Bonus Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        {/* Bonus Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {bonuses.map((bonus, index) => (
-            <div key={index} className="relative group">
-              <div
-                onMouseEnter={() => bonus.setOpen(true)}
-                onMouseLeave={() => bonus.setOpen(false)}
-                className="relative w-full h-full"
-                data-aos="fade-up"
-                data-aos-duration="800"
-                data-aos-delay={index * 100}
-              >
-                {/* Front Card */}
-                <div
-                  className={`relative bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 transition-all duration-300 ${
-                    bonus.isOpen ? "scale-105 z-20" : ""
-                  }`}
-                >
-                  <span className="absolute top-4 right-4 px-3 py-1 bg-primary/20 text-primary text-sm font-medium rounded-full">
-                    Free
-                  </span>
-                  <h3 className="text-2xl font-bold text-white mb-4">
-                    {bonus.title}
-                  </h3>
-                  <p className="text-white/80">{bonus.description}</p>
+            <div
+              key={index}
+              className="group relative"
+              data-aos="zoom-in"
+              data-aos-delay={index * 100}
+            >
+              {/* Enhanced Glowing Effect */}
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-rose-500 rounded-2xl opacity-0 group-hover:opacity-100 blur transition duration-500" />
 
-                  {/* Decorative Elements */}
-                  <div className="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-primary/20 rounded-tl-2xl"></div>
-                  <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-primary/20 rounded-br-2xl"></div>
-                </div>
-
-                {/* Back Card */}
-                <div
-                  className={`absolute z-10 w-full top-0 transition-all duration-300 ${
-                    bonus.isOpen ? `${bonus.translateClass} translate-y-28` : ""
-                  }`}
-                >
-                  <div className="bg-secondary rounded-2xl p-6 shadow-lg text-white flex items-center justify-center min-h-[160px]">
-                    <p className="text-lg font-medium text-center">
-                      {bonus.bonus}
-                    </p>
+              {/* Card Content */}
+              <div className="relative h-full flex flex-col bg-gray-800/50 backdrop-blur-xl rounded-2xl p-8 transition duration-500 group-hover:translate-y-[-8px] border border-gray-700/50">
+                {/* Icon */}
+                <div className="mb-6">
+                  <div className="relative w-16 h-16">
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary to-rose-500 rounded-xl rotate-0 group-hover:rotate-180 transition-transform duration-700" />
+                    <div className="absolute inset-[2px] bg-gray-900 rounded-xl flex items-center justify-center text-white group-hover:text-primary transition-colors duration-300">
+                      {React.cloneElement(bonus.icon, {
+                        className:
+                          "w-8 h-8 group-hover:scale-125 transition duration-500",
+                      })}
+                    </div>
                   </div>
                 </div>
+
+                {/* Title & Description */}
+                <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-primary transition duration-300">
+                  {bonus.title}
+                </h3>
+                <p className="text-gray-400 mb-8 group-hover:text-gray-300 transition duration-300">
+                  {bonus.description}
+                </p>
+
+                {/* Highlights */}
+                <div className="mt-auto space-y-3">
+                  {bonus.highlights.map((highlight, i) => (
+                    <div
+                      key={i}
+                      className="flex items-center gap-3 text-sm text-gray-400 group-hover:text-gray-300 transition duration-300"
+                    >
+                      <div className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-primary to-rose-500" />
+                      <span>{highlight}</span>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Enhanced Hover Line Effect */}
+                <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
               </div>
             </div>
           ))}

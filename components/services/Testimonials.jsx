@@ -15,12 +15,32 @@ function Testimonials({ heading, des, data }) {
 
       <Container className="relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Client Testimonials:
-            <span className="text-primary ml-1">See What Our Partners Say</span>
+          <span className="text-primary font-semibold mb-4 block uppercase tracking-wider">
+            Testimonials
+          </span>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight capitalize">
+            Hear From Our
+            <span className="relative">
+              <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80 ml-3">
+                Clients
+              </span>
+              <svg
+                className="absolute -bottom-2 left-0 w-full"
+                height="8"
+                viewBox="0 0 100 8"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M0 0L50 7L100 0L100 8L0 8Z"
+                  fill="currentColor"
+                  className="text-primary/20"
+                />
+              </svg>
+            </span>
           </h2>
-
-          <p className="text-base md:text-xl text-gray-600 max-w-2xl mx-auto">{des}</p>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Hear from our clients about their experience working with us.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">

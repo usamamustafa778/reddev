@@ -7,7 +7,7 @@ import BgAnimation from "../BgAnimation";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 
-export default function Hero({ heading2, heading1, des, img }) {
+export default function Hero({ heading2, heading1, des }) {
   const [showForm, setShowForm] = useState(false);
 
   const stats = [
@@ -17,11 +17,21 @@ export default function Hero({ heading2, heading1, des, img }) {
   ];
 
   return (
-    <FullContainer className="relative bg-[linear-gradient(125deg,#0a0505,#1a0808_40%,#2a0a0a_70%,#0a0505)] text-white overflow-hidden">
+    <FullContainer className="relative bg-gradient-to-br from-gray-950/90 via-zinc-950/90 to-gray-950/90 text-white overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: 'url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      />
       <BgAnimation />
 
       <Container className="relative z-10">
-        <div className="w-full grid grid-cols-1 lg:grid-cols-2 text-center md:text-left py-16 md:py-24 gap-14 md:gap-24">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 text-center md:text-left py-16 md:py-24 md:pt-40 gap-14 md:gap-24">
           <div className="flex-1 space-y-7 md:space-y-10 flex flex-col justify-center">
             {/* Status Badge - changed to red */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm w-fit">

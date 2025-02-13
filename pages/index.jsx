@@ -15,7 +15,7 @@ import ProcessSection from "@/components/services/ProcessSection";
 import WhyChooseUs from "@/components/services/WhyChooseUs";
 import Head from "next/head";
 
-export default function ServicePage() {
+export default function Home() {
   const { detail } = Service;
 
   return (
@@ -73,12 +73,11 @@ export default function ServicePage() {
         des={detail.testimonialdescription}
         data={detail.testimonial}
       />
-      <ProcessSection
+      {/* <ProcessSection
         heading={detail.processheading}
         des={detail.processdescription}
         data={detail.processcard}
-      />
-      <WhyChooseUs />
+      /> */}
       <GuaranteeSection />
       <PricingSection />
       <ValueStack />

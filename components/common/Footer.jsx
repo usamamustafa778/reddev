@@ -8,8 +8,14 @@ import BgAnimation from "../BgAnimation";
 
 function Footer() {
   return (
-    <FullContainer className="relative bg-[linear-gradient(125deg,#0a0505,#1a0808_40%,#2a0a0a_70%,#0a0505)] text-white overflow-hidden">
+    <FullContainer className="relative bg-gradient-to-br from-gray-950 via-zinc-950 to-gray-950 text-white overflow-hidden">
       <BgAnimation />
+
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-0 -left-52 w-[50%] h-[50%] bg-red-950/50 rounded-full mix-blend-multiply filter blur-xl animate-blob" />
+        <div className="absolute top-0 -right-4 w-[50%] h-[50%] bg-blue-500/20 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000" />
+        <div className="absolute -bottom-32 -left-32 w-[50%] h-[50%] animt bg-teal-500/10 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000" />
+      </div>
 
       <Container className="z-10 py-16 md:py-24 ">
         <div className="text-white/80">

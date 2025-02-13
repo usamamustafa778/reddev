@@ -2,58 +2,343 @@ import React from "react";
 import FullContainer from "../common/FullContainer";
 import Container from "../common/Container";
 import BgAnimation from "../BgAnimation";
+import {
+  FaCheckCircle,
+  FaRocket,
+  FaChartLine,
+  FaCode,
+  FaMobile,
+  FaSearch,
+  FaShieldAlt,
+  FaBolt,
+  FaUserFriends,
+} from "react-icons/fa";
 
 const GuaranteeSection = () => {
+  const guaranteePoints = [
+    {
+      icon: <FaRocket className="w-6 h-6 text-primary" />,
+      title: "30-Day Growth Guarantee",
+      description:
+        "We guarantee a minimum 30% increase in lead generation or conversion rate within 30 days of your website launch, backed by data-driven analytics.",
+      features: [
+        "Lead tracking system",
+        "Weekly performance reports",
+        "A/B testing implementation",
+      ],
+    },
+    {
+      icon: <FaChartLine className="w-6 h-6 text-primary" />,
+      title: "Performance Metrics",
+      description:
+        "Track your success with our comprehensive analytics dashboard showing real-time metrics that matter to your business growth.",
+      features: [
+        "Conversion tracking",
+        "User behavior analysis",
+        "ROI calculations",
+      ],
+    },
+    {
+      icon: <FaCheckCircle className="w-6 h-6 text-primary" />,
+      title: "Risk-Free Guarantee",
+      description:
+        "If we don't meet our promised metrics within 90 days, we'll redesign your website or refund your investment - your choice.",
+      features: [
+        "Money-back guarantee",
+        "Free maintenance period",
+        "24/7 support",
+      ],
+    },
+  ];
+
+  const developmentFeatures = [
+    {
+      icon: <FaCode className="w-6 h-6 text-primary" />,
+      title: "Discovery & Planning",
+      description:
+        "We begin by understanding your business, goals, and target audience. Through collaborative discussions, we define project requirements, timelines, and resources to create a roadmap for success.",
+    },
+    {
+      icon: <FaMobile className="w-6 h-6 text-primary" />,
+      title: "Design & Prototyping",
+      description:
+        "Our design team creates wireframes and prototypes that reflect the user journey and interface flow. We focus on ensuring intuitive navigation and visually appealing design to engage users from the first interaction.",
+    },
+    {
+      icon: <FaSearch className="w-6 h-6 text-primary" />,
+      title: "Development & Coding",
+      description:
+        "Once designs are approved, we start building the website using the latest technologies and frameworks like React, Node.js, and Laravel. We ensure the website is responsive, secure, and high-performance.",
+    },
+    {
+      icon: <FaShieldAlt className="w-6 h-6 text-primary" />,
+      title: "Testing & Quality Assurance",
+      description:
+        "Our team rigorously tests the website across multiple devices and browsers to ensure optimal functionality. We address bugs, fix issues, and ensure the site performs flawlessly under all conditions.",
+    },
+    {
+      icon: <FaBolt className="w-6 h-6 text-primary" />,
+      title: "Launch & Deployment",
+      description:
+        "After final approvals, we deploy the website to the live environment. Our team ensures smooth migration and scaling for minimal downtime and a successful launch.",
+    },
+    {
+      icon: <FaUserFriends className="w-6 h-6 text-primary" />,
+      title: "Post-Launch Support & Maintenance",
+      description:
+        "After launch, we offer ongoing maintenance and support services to keep your website updated, secure, and running efficiently. We regularly monitor performance and provide enhancements as needed.",
+    },
+  ];
+
   return (
-    <FullContainer className="relative bg-[linear-gradient(125deg,#0a0505,#1a0808_40%,#2a0a0a_70%,#0a0505)] text-white overflow-hidden">
+    <FullContainer className="relative bg-gradient-to-br from-gray-950 via-zinc-950 to-gray-950 text-white overflow-hidden">
       <BgAnimation />
 
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-0 -left-52 w-[50%] h-[50%] bg-red-950/50 rounded-full mix-blend-multiply filter blur-xl animate-blob" />
+        <div className="absolute top-0 -right-4 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000" />
+        <div className="absolute -bottom-8 left-20 w-72 h-72 animt bg-teal-500 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000" />
+      </div>
+
       <Container className="relative z-10 py-16 md:py-24">
-        <div
-          className="max-w-4xl mx-auto bg-white/10 backdrop-blur-xl rounded-2xl p-12 border border-white/10 relative overflow-hidden"
-          data-aos="fade-up"
-          data-aos-duration="800"
-        >
-          {/* Decorative Elements */}
-          <div className="absolute top-0 left-0 w-24 h-24 border-t-2 border-l-2 border-white/20 rounded-tl-2xl"></div>
-          <div className="absolute bottom-0 right-0 w-24 h-24 border-b-2 border-r-2 border-white/20 rounded-br-2xl"></div>
+        <div className="text-center mb-12">
+          <span className="text-primary font-semibold mb-4 block">
+            WEB DEVELOPMENT EXCELLENCE
+          </span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            Transform Your Online Presence with Our
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-white animate-gradient-x ml-2">
+              Triple Guarantee
+            </span>
+          </h2>
+          <p className="text-xl text-white/80 max-w-3xl mx-auto">
+            We don't just build websites - we create high-performing digital
+            assets that drive real business results. Our guarantees ensure your
+            investment is protected while we deliver exceptional value.
+          </p>
+        </div>
 
-          <div className="relative flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-left">
-            {/* Percentage Circle */}
-            <div className="relative group">
-              <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300"></div>
-              <div className="relative inline-flex items-center justify-center w-32 h-32 bg-white/10 backdrop-blur-xl rounded-full border border-white/20">
-                <div className="absolute inset-2 bg-gradient-to-br from-primary/20 to-transparent rounded-full animate-pulse"></div>
-                <span className="relative text-5xl text-white font-bold z-10 group-hover:scale-110 transition-transform duration-300">
-                  100%
-                </span>
+        {/* Main Guarantees Section */}
+        <div className="max-w-6xl mx-auto relative mb-28">
+          <div className="relative grid md:grid-cols-3 gap-8">
+            {guaranteePoints.map((point, index) => (
+              <div key={index} className="group relative">
+                {/* Card Background with Gradient Border */}
+                <div className="relative p-[1px] rounded-2xl bg-gradient-to-b from-primary/20 via-primary/5 group-hover:from-primary/70 to-transparent transition-all">
+                  <div className="relative h-full p-8 rounded-2xl bg-white/5 group-hover:bg-gray-950/90 transition-all backdrop-blur-sm">
+                    {/* Glowing Orb Background Effect */}
+                    <div className="absolute -top-20 -right-20 w-40 h-40 bg-cyan-500/5 rounded-full blur-3xl group-hover:bg-cyan-500/30 transition-colors duration-500" />
+
+                    {/* Content Container */}
+                    <div className="relative z-10">
+                      {/* Icon Container */}
+                      <div className="mb-8">
+                        <div className="relative w-16 h-16 mx-auto">
+                          {/* Animated Background Ring */}
+                          <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary to-rose-500 animate-spin-slow opacity-70" />
+
+                          {/* Icon Background */}
+                          <div className="absolute inset-[2px] rounded-full bg-gray-950 flex items-center justify-center">
+                            {React.cloneElement(point.icon, {
+                              className:
+                                "w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-300",
+                            })}
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Title with Gradient Underline */}
+                      <div className="relative mb-6">
+                        <h3 className="text-2xl font-bold text-white/75 text-center group-hover:text-white transition-colors duration-300">
+                          {point.title}
+                        </h3>
+                        <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-12 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent group-hover:w-24 transition-all duration-500" />
+                      </div>
+
+                      {/* Description */}
+                      <p className="text-white/70 text-center mb-8 group-hover:text-white/90 transition-colors duration-300">
+                        {point.description}
+                      </p>
+
+                      {/* Features List */}
+                      <div className="space-y-4">
+                        {point.features.map((feature, i) => (
+                          <div
+                            key={i}
+                            className="flex items-center gap-3 group/item"
+                          >
+                            {/* Feature Icon Container */}
+                            <div className="relative flex-shrink-0 w-8 h-8">
+                              <div className="absolute inset-0 rounded-full bg-primary/20 group-hover/item:bg-primary/30 transition-colors duration-300" />
+                              <div className="absolute inset-0 flex items-center justify-center">
+                                <FaCheckCircle className="w-4 h-4 text-primary" />
+                              </div>
+                            </div>
+
+                            {/* Feature Text */}
+                            <span className="text-white/70 group-hover/item:text-white/90 transition-colors duration-300">
+                              {feature}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Hover Effect Border Glow */}
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-primary/0 via-primary/0 to-transparent opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500" />
               </div>
-            </div>
+            ))}
+          </div>
+        </div>
 
-            {/* Content */}
-            <div className="flex-1 space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-white">
-                Satisfaction{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80"></span>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-white animate-gradient-x">
-                  Guarantee
+        {/* Development Features Grid */}
+        <div className="mb-16">
+          <div className="text-center mb-16">
+            <span className="text-primary font-semibold mb-4 block uppercase tracking-wider">
+              Our Development Process
+            </span>
+            <h3 className="text-4xl md:text-5xl font-bold mb-6">
+              Crafting Digital Excellence with
+              <span className="relative">
+                <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary/80 to-white ml-3">
+                  Cutting-Edge Technology
                 </span>
-              </h2>
-              <p className="text-lg text-white/80 max-w-2xl">
-                If your new website {"doesn't"} increase your leads within 30
-                days of launch, {"we'll"} redesign it for free. Your success is
-                our priority!
-              </p>
-              <button className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white text-lg font-semibold rounded-xl shadow-lg hover:bg-primary/90 transition-all duration-300 group relative">
-                <div className="absolute inset-0 bg-primary/40 rounded-xl blur-lg group-hover:blur-xl transition-all duration-300"></div>
-                <span className="relative z-10">Learn More</span>
-              </button>
-            </div>
+                <svg
+                  className="absolute -bottom-2 left-0 w-full"
+                  height="8"
+                  viewBox="0 0 100 8"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M0 0L50 7L100 0L100 8L0 8Z"
+                    fill="currentColor"
+                    className="text-primary/20"
+                  />
+                </svg>
+              </span>
+            </h3>
+            <p className="text-xl text-white/80 max-w-3xl mx-auto">
+              Our development approach combines innovative technologies with
+              proven methodologies to deliver exceptional digital experiences
+              that drive real business growth.
+            </p>
           </div>
 
-          {/* Background Accent */}
-          <div className="absolute top-1/2 -translate-y-1/2 -right-4 w-32 h-32 bg-primary/20 rounded-full blur-2xl"></div>
-          <div className="absolute top-1/2 -translate-y-1/2 -left-4 w-32 h-32 bg-primary/20 rounded-full blur-2xl"></div>
+          <div className="relative max-w-6xl mx-auto">
+            {/* Central Timeline Line */}
+            <div className="absolute left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary/30 via-primary/20 to-transparent" />
+
+            <div className="flex flex-col gap-8">
+              {developmentFeatures.map((feature, index) => (
+                <div key={index} className="group relative">
+                  {/* Container with alternating layout */}
+                  <div
+                    className={`flex items-center gap-8 ${
+                      index % 2 === 0 ? "" : "flex-row-reverse"
+                    }`}
+                  >
+                    {/* Step number */}
+                    <div className="absolute left-1/2 -translate-x-1/2 top-8 z-20">
+                      <div className="relative w-12 h-12">
+                        <div className="absolute inset-0 bg-gradient-to-br from-primary via-rose-500 to-primary rounded-full opacity-75 group-hover:animate-pulse" />
+                        <div className="absolute inset-[2px] bg-gray-900 rounded-full flex items-center justify-center">
+                          <span className="text-xl font-bold text-primary">
+                            {index + 1}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Content card - takes up roughly 45% of the container */}
+                    <div
+                      className={`w-[45%] ${
+                        index % 2 === 0 ? "text-right" : "text-left"
+                      }`}
+                    >
+                      <div className="relative h-full p-8 rounded-2xl border border-gray-800 bg-gradient-to-br from-gray-900/90 to-gray-950/90 backdrop-blur-xl transition-all duration-500 group-hover:border-primary/50 group-hover:translate-y-[-4px] group-hover:shadow-lg group-hover:shadow-primary/20">
+                        {/* Icon container */}
+                        <div
+                          className={`absolute top-0 ${
+                            index % 2 === 0 ? "-right-7" : "-left-7"
+                          } -translate-y-1/4`}
+                        >
+                          <div className="relative w-14 h-14">
+                            <div className="absolute inset-0 bg-gradient-to-br from-primary via-rose-500 to-primary rounded-lg opacity-75 group-hover:animate-pulse" />
+                            <div className="absolute inset-[2px] bg-gray-900 rounded-lg flex items-center justify-center">
+                              {React.cloneElement(feature.icon, {
+                                className:
+                                  "w-7 h-7 text-primary group-hover:scale-110 transition-transform duration-300",
+                              })}
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="space-y-3">
+                          <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors duration-300">
+                            {feature.title}
+                          </h3>
+                          <p className="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
+                            {feature.description}
+                          </p>
+                        </div>
+
+                        {/* Decorative elements */}
+                        <div
+                          className={`absolute top-0 ${
+                            index % 2 === 0 ? "left-0" : "right-0"
+                          } w-24 h-24 bg-primary/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-all duration-500`}
+                        />
+                        <div
+                          className={`absolute bottom-0 ${
+                            index % 2 === 0 ? "right-0" : "left-0"
+                          } w-24 h-24 bg-primary/5 rounded-tr-full opacity-0 group-hover:opacity-100 transition-all duration-500`}
+                        />
+                      </div>
+                    </div>
+
+                    {/* Empty space for the other side */}
+                    <div className="w-[45%]" />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Stats and CTA Section */}
+        <div className="max-w-3xl mx-auto text-center">
+          {/* <div className="grid grid-cols-3 gap-8 mb-12">
+              <div className="p-6 bg-white/5 rounded-xl">
+                <div className="text-4xl font-bold text-primary mb-2">98%</div>
+                <p className="text-white/70">Client Satisfaction</p>
+              </div>
+              <div className="p-6 bg-white/5 rounded-xl">
+                <div className="text-4xl font-bold text-primary mb-2">250+</div>
+                <p className="text-white/70">Projects Delivered</p>
+              </div>
+              <div className="p-6 bg-white/5 rounded-xl">
+                <div className="text-4xl font-bold text-primary mb-2">45%</div>
+                <p className="text-white/70">Avg. Conversion Increase</p>
+              </div>
+            </div> */}
+
+          <p className="text-lg text-white/80 mb-8">
+            Join hundreds of successful businesses who have transformed their
+            digital presence with our guaranteed web development services. Start
+            your journey to digital excellence today.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white text-lg font-semibold rounded-xl shadow-lg hover:bg-primary/90 transition-all duration-300 group relative">
+              <div className="absolute inset-0 bg-primary/40 rounded-xl blur-lg group-hover:blur-xl transition-all duration-300"></div>
+              <span className="relative z-10">Get Your Free Website Audit</span>
+            </button>
+            <button className="inline-flex items-center justify-center px-8 py-4 bg-white/10 text-white text-lg font-semibold rounded-xl hover:bg-white/20 transition-all duration-300">
+              View Our Portfolio
+            </button>
+          </div>
         </div>
       </Container>
     </FullContainer>

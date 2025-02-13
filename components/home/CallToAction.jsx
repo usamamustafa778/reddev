@@ -3,107 +3,98 @@ import FullContainer from "../common/FullContainer";
 import Container from "../common/Container";
 import Image from "next/image";
 import Form from "../common/Form";
-import { Check, ArrowRight } from "lucide-react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 function CallToAction() {
   const [showForm, setShowForm] = useState(false);
 
   return (
-    <FullContainer className="py-32 bg-gray-50 relative overflow-hidden">
-      {/* Subtle Background Elements */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#0000000a_1px,transparent_1px),linear-gradient(to_bottom,#0000000a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
-      <div className="absolute inset-0">
-        <div className="absolute -left-4 -top-24 w-96 h-96 bg-primary/5 rounded-full filter blur-3xl"></div>
-        <div className="absolute right-0 bottom-0 w-96 h-96 bg-secondary/5 rounded-full filter blur-3xl"></div>
+    <FullContainer className="py-24 bg-white relative">
+      {/* Decorative elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-primary-100/50" />
+        <div className="absolute -bottom-20 -left-20 w-72 h-72 rounded-full bg-purple-100/50" />
       </div>
 
-      <Container className="relative z-10">
+      <Container className="relative">
         <div className="max-w-7xl mx-auto">
-          {/* Main Content Card */}
-          <div className="relative bg-white rounded-3xl p-8 lg:p-12 shadow-xl border border-gray-100">
-            {/* Decorative Elements */}
-            <div className="absolute -top-6 -left-6 w-32 h-32 border-t-4 border-l-4 border-primary/30 rounded-tl-[3rem]"></div>
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 border-b-4 border-r-4 border-secondary/30 rounded-br-[3rem]"></div>
-
-            {/* Content Grid */}
-            <div className="grid lg:grid-cols-12 gap-12 items-center">
-              {/* Text Content */}
-              <div className="lg:col-span-7 relative">
-                <div className="space-y-8">
-                  <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
-                    Ready to Transform Your{" "}
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary animate-gradient-x">
-                      Digital Presence?
-                    </span>
-                  </h2>
-
-                  {/* Feature List */}
-                  <div className="grid sm:grid-cols-2 gap-6">
-                    {[
-                      "Custom Web Development",
-                      "Modern UI/UX Design",
-                      "24/7 Expert Support",
-                      "Scalable Solutions",
-                    ].map((feature, index) => (
-                      <div
-                        key={index}
-                        className="flex items-center space-x-3 text-gray-700"
-                      >
-                        <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
-                          <Check className="w-5 h-5 text-primary" />
-                        </span>
-                        <span>{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* CTA Button */}
-                  <button
-                    onClick={() => setShowForm(true)}
-                    className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 rounded-xl transition-all duration-300 overflow-hidden"
-                  >
-                    <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-white/0 via-white/20 to-white/0 skew-x-[-20deg] translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
-                    <span className="mr-3">Get Free Consultation</span>
-                    <ArrowRight className="w-6 h-6 transform group-hover:translate-x-2 transition-transform duration-300" />
-                  </button>
-                </div>
+          <div className="grid lg:grid-cols-12 gap-16 items-center">
+            {/* Left Content */}
+            <div className="lg:col-span-7 space-y-8">
+              <div className="space-y-4">
+                <span className="inline-block text-primary font-semibold tracking-wider uppercase text-sm">
+                  Start Growing Today
+                </span>
+                <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+                  Ready to take your business to the next level?
+                </h2>
+                <p className="text-gray-600 text-lg max-w-2xl">
+                  Join thousands of businesses that trust us to deliver exceptional digital solutions that drive real results.
+                </p>
               </div>
 
-              {/* Image Section */}
-              <div className="lg:col-span-5">
-                <div className="relative">
-                  {/* Main Image */}
-                  <div className="relative z-20 rounded-2xl overflow-hidden shadow-2xl">
-                    <Image
-                      src="/img/calltoaction.webp"
-                      alt="Digital Transformation"
-                      width={600}
-                      height={400}
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {[
+                  "Rapid Development",
+                  "Expert Consultation",
+                  "Dedicated Support",
+                  "Results Driven",
+                ].map((feature, index) => (
+                  <div key={index} className="flex items-center gap-2 bg-white shadow-sm rounded-lg p-4 border border-gray-100">
+                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
+                    <span className="text-gray-700">{feature}</span>
                   </div>
+                ))}
+              </div>
 
-                  {/* Floating Stats */}
-                  {[
-                    { label: "Projects", value: "100+" },
-                    { label: "Success Rate", value: "98%" },
-                  ].map((stat, index) => (
-                    <div
-                      key={index}
-                      className={`absolute ${
-                        index === 0 ? "-left-4 top-1/4" : "-right-4 bottom-1/4"
-                      } z-30 bg-white rounded-2xl p-4 shadow-xl border border-gray-100`}
-                    >
-                      <div className="text-2xl font-bold text-primary">
-                        {stat.value}
-                      </div>
-                      <div className="text-sm text-gray-600">{stat.label}</div>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button
+                  onClick={() => setShowForm(true)}
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white rounded-lg font-semibold hover:bg-primary-700 transition-colors"
+                >
+                  Get Started
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+                <a href="#" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gray-100 text-gray-700 rounded-lg font-semibold hover:bg-gray-200 transition-colors">
+                  Learn More
+                </a>
+              </div>
+
+              <div className="flex items-center gap-8 pt-4">
+                <div>
+                  <div className="text-3xl font-bold text-gray-900">95%</div>
+                  <div className="text-sm text-gray-600">Client Retention</div>
+                </div>
+                <div className="w-px h-12 bg-gray-200" />
+                <div>
+                  <div className="text-3xl font-bold text-gray-900">500+</div>
+                  <div className="text-sm text-gray-600">Projects Completed</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Content */}
+            <div className="lg:col-span-5">
+              <div className="relative">
+                <Image
+                  src="/img/calltoaction.webp"
+                  alt="Digital Solutions"
+                  width={500}
+                  height={600}
+                  className="rounded-2xl shadow-xl"
+                />
+                <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg">
+                  <div className="flex items-center gap-4">
+                    <div className="flex -space-x-3">
+                      {[1, 2, 3].map((_, i) => (
+                        <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-gray-200" />
+                      ))}
                     </div>
-                  ))}
-
-                  {/* Background Decoration */}
-                  <div className="absolute inset-0 z-10 translate-x-4 translate-y-4 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10"></div>
+                    <div className="text-sm">
+                      <div className="font-semibold text-gray-900">Join our clients</div>
+                      <div className="text-gray-600">Start your success story</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -112,25 +103,19 @@ function CallToAction() {
       </Container>
 
       {/* Form Modal */}
-      <div
-        className={`fixed inset-0 z-50 bg-black/70 backdrop-blur-sm transition-all duration-300 ${
-          showForm
-            ? "opacity-100 pointer-events-auto"
-            : "opacity-0 pointer-events-none"
-        }`}
-      >
-        <div className="min-h-screen flex items-center justify-center p-4">
+      {showForm && (
+        <div className="fixed inset-0 z-50 bg-black/40 flex items-center justify-center p-4">
           <div className="relative w-full max-w-2xl bg-white rounded-2xl shadow-2xl">
             <button
               onClick={() => setShowForm(false)}
-              className="absolute -top-4 -right-4 w-10 h-10 bg-gradient-to-br from-primary to-secondary text-white rounded-full flex items-center justify-center hover:from-primary/90 hover:to-secondary/90 transition-colors duration-300"
+              className="absolute -top-4 -right-4 w-10 h-10 bg-white text-gray-500 rounded-full flex items-center justify-center hover:bg-gray-100 shadow-lg"
             >
               ✕
             </button>
             <Form form={showForm} setform={setShowForm} />
           </div>
         </div>
-      </div>
+      )}
     </FullContainer>
   );
 }

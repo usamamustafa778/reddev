@@ -1,105 +1,135 @@
 import React from "react";
-import {
-  Search,
-  PenTool,
-  Rocket,
-  Code2,
-  LineChart,
-  Settings,
-} from "lucide-react";
-import FullContainer from "../common/FullContainer";
-import Container from "../common/Container";
 import BgAnimation from "../BgAnimation";
 
-const iconComponents = {
-  Search: Search,
-  PenTool: PenTool,
-  Rocket: Rocket,
-  Code2: Code2,
-  LineChart: LineChart,
-  Settings: Settings,
-};
+export default function ProcessSection() {
+  const processes = [
+    {
+      number: 1,
+      title: "Discovery & Planning",
+      description:
+        "We begin by understanding your business, goals, and target audience. Through collaborative discussions, we define project requirements, timelines, and resources to create a roadmap for success.",
+    },
+    {
+      number: 2,
+      title: "Design & Prototyping",
+      description:
+        "Our design team creates wireframes and prototypes that reflect the user journey and interface flow. We focus on ensuring intuitive navigation and visually appealing design to engage users from the first interaction.",
+    },
+    {
+      number: 3,
+      title: "Development & Coding",
+      description:
+        "Once designs are approved, we start building the website using the latest technologies and frameworks like React, Node.js, and Laravel. We ensure the website is responsive, secure, and high-performance.",
+    },
+    {
+      number: 4,
+      title: "Testing & Quality Assurance",
+      description:
+        "Our team rigorously tests the website across multiple devices and browsers to ensure optimal functionality. We address bugs, fix issues, and ensure the site performs flawlessly under all conditions.",
+    },
+    {
+      number: 5,
+      title: "Launch & Deployment",
+      description:
+        "After final approvals, we deploy the website to the live environment. Our team ensures smooth migration and scaling for minimal downtime and a successful launch.",
+    },
+    {
+      number: 6,
+      title: "Post-Launch Support & Maintenance",
+      description:
+        "After launch, we offer ongoing maintenance and support services to keep your website updated, secure, and running efficiently. We regularly monitor performance and provide enhancements as needed.",
+    },
+  ];
 
-export default function ProcessSection({ heading, des, data }) {
   return (
-    <FullContainer className="relative bg-[linear-gradient(125deg,#0a0505,#1a0808_40%,#2a0a0a_70%,#0a0505)] text-white overflow-hidden">
+    <section className="py-24 bg-gradient-to-br from-gray-950 via-zinc-950 to-gray-950 relative overflow-hidden">
       <BgAnimation />
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-0 -left-52 w-[50%] h-[50%] bg-red-950/50 rounded-full mix-blend-multiply filter blur-xl animate-blob" />
+        <div className="absolute top-0 -right-4 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000" />
+        <div className="absolute -bottom-8 left-20 w-72 h-72 animt bg-teal-500 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000" />
+      </div>
 
-      <Container className="container mx-auto px-4 md:px-12 relative z-10 py-16 md:py-24">
-        {/* Enhanced Header Section */}
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-            {heading}
+          <span className="text-primary font-semibold mb-4 block uppercase tracking-wider">
+            Our Development
+          </span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            Our Development
+            <span className="relative ml-3">
+              <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary/80 to-white">
+                Process
+              </span>
+              <svg
+                className="absolute -bottom-2 left-0 w-full"
+                height="8"
+                viewBox="0 0 100 8"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M0 0L50 7L100 0L100 8L0 8Z"
+                  fill="currentColor"
+                  className="text-primary/20"
+                />
+              </svg>
+            </span>
           </h2>
-          <p className="text-base md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
-            {des}
+          <p className="text-xl text-white/80 max-w-3xl mx-auto">
+            Transforming ideas into digital excellence through our cutting-edge
+            process
           </p>
         </div>
 
-        {/* Enhanced Process Steps Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {data.map((item, index) => (
-            <div
-              key={index}
-              data-aos="zoom-in"
-              data-aos-duration="800"
-              data-aos-delay={200 * index}
-              className="group relative rounded-2xl transition-all duration-300"
-            >
-              {/* Glassmorphism background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 rounded-2xl backdrop-blur-xl border border-white/10"></div>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            {processes.map((process) => (
+              <div key={process.number} className="group relative">
+                {/* Glow Effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-red-500/20 via-rose-500/20 to-orange-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300 opacity-0 group-hover:opacity-100" />
 
-              {/* Hover effects */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/30 to-primary/10 rounded-2xl"></div>
-              </div>
+                <div className="relative bg-gray-800/50 backdrop-blur-xl border border-gray-700/50 rounded-2xl p-8 hover:border-red-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-red-500/20 group-hover:-translate-y-1">
+                  <div className="flex items-start gap-6">
+                    <div className="flex-shrink-0">
+                      <div className="relative w-16 h-16">
+                        {/* Animated Number Container */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-red-600 via-rose-500 to-orange-400 rounded-xl rotate-3 group-hover:rotate-6 transition-transform duration-300 animate-pulse" />
+                        <div className="absolute inset-0.5 bg-gray-800 rounded-lg flex items-center justify-center">
+                          <span className="font-bold text-2xl bg-gradient-to-br from-red-400 via-rose-400 to-orange-400 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
+                            {process.number}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
 
-              {/* Card Content */}
-              <div className="relative p-8">
-                {/* Icon Container */}
-                <div className="mb-8">
-                  <div className="relative inline-flex p-3 rounded-xl bg-white/10">
-                    {React.createElement(
-                      iconComponents[item.icon] || Settings,
-                      {
-                        className:
-                          "w-10 h-10 text-primary group-hover:text-white transition-colors duration-300",
-                        strokeWidth: 1.5,
-                      }
-                    )}
-                    <div className="absolute inset-0 bg-primary/30 rounded-xl blur-lg group-hover:blur-xl transition-all duration-300"></div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold text-gray-100 mb-3 group-hover:text-red-400 transition-colors duration-300">
+                        {process.title}
+                      </h3>
+                      <p className="text-gray-400 leading-relaxed">
+                        {process.description}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Enhanced Decorative Elements */}
+                  <div className="absolute -right-2 -bottom-2 w-32 h-32 bg-gradient-to-br from-red-600/20 via-rose-500/20 to-orange-400/20 rounded-br-2xl blur-lg group-hover:blur-xl transition-all duration-300" />
+                  <div className="absolute right-0 bottom-0 w-1 h-20 bg-gradient-to-b from-transparent via-red-500/30 to-transparent rounded-full group-hover:h-full transition-all duration-500" />
+
+                  {/* Cyber Lines */}
+                  <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+                    <div className="absolute top-0 left-4 w-8 h-[1px] bg-gradient-to-r from-transparent via-red-500/50 to-transparent group-hover:w-16 transition-all duration-300" />
+                    <div className="absolute bottom-0 right-4 w-8 h-[1px] bg-gradient-to-r from-transparent via-rose-500/50 to-transparent group-hover:w-16 transition-all duration-300" />
                   </div>
                 </div>
-
-                {/* Heading */}
-                <h3 className="text-2xl font-bold text-white mb-6 group-hover:text-primary transition-colors duration-300">
-                  {item.heading}
-                </h3>
-
-                {/* Key Points */}
-                <ul className="space-y-4">
-                  {item.keypoint.map((point, idx) => (
-                    <li
-                      key={idx}
-                      className="flex items-start space-x-3 text-white/80 group-hover:text-white transition-colors duration-300"
-                    >
-                      <span className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center mt-1">
-                        <span className="text-primary group-hover:text-white text-sm transition-colors duration-300">
-                          ✓
-                        </span>
-                      </span>
-                      <span className="text-base leading-relaxed">{point}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
-
-              {/* Animated border */}
-              <div className="absolute inset-0 rounded-2xl transition-all duration-300 group-hover:border-2 group-hover:border-primary/50"></div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </Container>
-    </FullContainer>
+      </div>
+
+      {/* Mesh Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent pointer-events-none" />
+    </section>
   );
 }
