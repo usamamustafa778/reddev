@@ -91,9 +91,9 @@ export default function AboutHero() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="text-xl text-gray-300 max-w-2xl mx-auto"
               >
-                From humble beginnings to industry leadership, we've dedicated
-                ourselves to delivering exceptional digital solutions that
-                transform businesses.
+                From humble beginnings to industry leadership, {"we've"}{" "}
+                dedicated ourselves to delivering exceptional digital solutions
+                that transform businesses.
               </motion.p>
 
               {/* Stats Section */}
