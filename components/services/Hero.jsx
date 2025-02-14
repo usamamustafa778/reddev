@@ -49,14 +49,14 @@ export default function Hero() {
       <BgAnimation />
 
       <Container className="relative z-10">
-        <div className="w-full grid grid-cols-1 lg:grid-cols-2 text-center md:text-left py-16 md:py-24 md:pt-40 gap-14 md:gap-24">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 text-center md:text-left py-16 md:py-24 pt-28 md:pt-40 gap-14 md:gap-24">
           <div className="flex-1 space-y-7 md:space-y-10 flex flex-col justify-center">
             {/* Status Badge */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm w-fit"
+              className="inline-flex items-center mx-auto md:mx-0 gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm w-fit"
             >
               <span className="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse"></span>
               <span className="text-sm font-medium text-white/80">

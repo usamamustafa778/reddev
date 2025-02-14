@@ -247,42 +247,44 @@ const GuaranteeSection = () => {
           </div>
 
           <div className="relative max-w-6xl mx-auto">
-            {/* Central Timeline Line */}
-            <div className="absolute left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary/30 via-primary/20 to-transparent" />
+            {/* Central Timeline Line - Visible on all screens */}
+            <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary/30 via-primary/20 to-transparent" />
 
             <div className="flex flex-col gap-8">
               {developmentFeatures.map((feature, index) => (
                 <div key={index} className="group relative">
-                  {/* Container with alternating layout */}
+                  {/* Container with responsive layout */}
                   <div
-                    className={`flex items-center gap-8 ${
-                      index % 2 === 0 ? "" : "flex-row-reverse"
+                    className={`flex flex-col md:flex-row items-start md:items-center gap-8 ${
+                      index % 2 === 0 ? "" : "md:flex-row-reverse"
                     }`}
                   >
-                    {/* Step number */}
-                    <div className="absolute left-1/2 -translate-x-1/2 top-8 z-20">
-                      <div className="relative w-12 h-12">
+                    {/* Step number - Aligned with timeline on mobile */}
+                    <div className="relative ml-[0.35rem] md:ml-0 md:absolute md:left-1/2 md:-translate-x-1/2 md:top-8 z-20 mb-4 md:mb-0">
+                      <div className="relative w-10 h-10 md:w-12 md:h-12">
                         <div className="absolute inset-0 bg-gradient-to-br from-primary via-rose-500 to-primary rounded-full opacity-75 group-hover:animate-pulse" />
                         <div className="absolute inset-[2px] bg-gray-900 rounded-full flex items-center justify-center">
-                          <span className="text-xl font-bold text-primary">
+                          <span className="text-sm md:text-xl font-bold text-primary">
                             {index + 1}
                           </span>
                         </div>
                       </div>
                     </div>
 
-                    {/* Content card - takes up roughly 45% of the container */}
+                    {/* Content card - Adjusted padding for mobile timeline */}
                     <div
-                      className={`w-[45%] ${
-                        index % 2 === 0 ? "text-right" : "text-left"
+                      className={`w-full pl-16 md:pl-0 md:w-[45%] ${
+                        index % 2 === 0 ? "md:text-right" : "md:text-left"
                       }`}
                     >
-                      <div className="relative h-full p-8 rounded-2xl border border-gray-800 bg-gradient-to-br from-gray-900/90 to-gray-950/90 backdrop-blur-xl transition-all duration-500 group-hover:border-primary/50 group-hover:translate-y-[-4px] group-hover:shadow-lg group-hover:shadow-primary/20">
-                        {/* Icon container */}
+                      <div className="relative h-full p-6 md:p-8 rounded-2xl border border-gray-800 bg-gradient-to-br from-gray-900/90 to-gray-950/90 backdrop-blur-xl transition-all duration-500 group-hover:border-primary/50 group-hover:translate-y-[-4px] group-hover:shadow-lg group-hover:shadow-primary/20">
+                        {/* Icon container - Adjusted positioning for mobile */}
                         <div
                           className={`absolute top-0 ${
-                            index % 2 === 0 ? "-right-7" : "-left-7"
-                          } -translate-y-1/4`}
+                            index % 2 === 0
+                              ? "right-8 md:-right-7"
+                              : "left-8 md:-left-7"
+                          } -translate-y-3/4 md:-translate-y-1/4`}
                         >
                           <div className="relative w-14 h-14">
                             <div className="absolute inset-0 bg-gradient-to-br from-primary via-rose-500 to-primary rounded-lg opacity-75 group-hover:animate-pulse" />
@@ -318,8 +320,8 @@ const GuaranteeSection = () => {
                       </div>
                     </div>
 
-                    {/* Empty space for the other side */}
-                    <div className="w-[45%]" />
+                    {/* Empty space - Hidden on mobile */}
+                    <div className="hidden md:block md:w-[45%]" />
                   </div>
                 </div>
               ))}
