@@ -202,8 +202,8 @@ export default function ValueStack() {
             Ready to Transform Your Digital Presence?
           </h3>
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Let's discuss how our expertise can help achieve your business goals
-            and create exceptional digital experiences for your users.
+            {"Let's"} discuss how our expertise can help achieve your business
+            goals and create exceptional digital experiences for your users.
           </p>
           <button
             className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white text-lg 

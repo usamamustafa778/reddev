@@ -13,8 +13,11 @@ import {
   FaBolt,
   FaUserFriends,
 } from "react-icons/fa";
+import { useRouter } from "next/router";
 
 const GuaranteeSection = () => {
+  const router = useRouter();
+
   const guaranteePoints = [
     {
       icon: <FaRocket className="w-6 h-6 text-primary" />,
@@ -107,12 +110,29 @@ const GuaranteeSection = () => {
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Transform Your Online Presence with Our
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-white animate-gradient-x ml-2">
-              Triple Guarantee
-            </span>
+            <span className="relative inline-block">
+              <span className="relative">
+                <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-red-200 via-primary to-rose-300">
+                  Triple Guarantee
+                </span>
+                <svg
+                  className="absolute -bottom-2 left-0 w-full"
+                  height="8"
+                  viewBox="0 0 100 8"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M0 0L50 7L100 0L100 8L0 8Z"
+                    fill="currentColor"
+                    className="text-primary/20"
+                  />
+                </svg>
+              </span>
+              <span className="absolute inset-0 animate-[glitch_3s_infinite]"></span>
+            </span>{" "}
           </h2>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            We don't just build websites - we create high-performing digital
+            We {"don't"} just build websites - we create high-performing digital
             assets that drive real business results. Our guarantees ensure your
             investment is protected while we deliver exceptional value.
           </p>
@@ -335,7 +355,10 @@ const GuaranteeSection = () => {
               <div className="absolute inset-0 bg-primary/40 rounded-xl blur-lg group-hover:blur-xl transition-all duration-300"></div>
               <span className="relative z-10">Get Your Free Website Audit</span>
             </button>
-            <button className="inline-flex items-center justify-center px-8 py-4 bg-white/10 text-white text-lg font-semibold rounded-xl hover:bg-white/20 transition-all duration-300">
+            <button
+              onClick={() => router.push("/our-work")}
+              className="inline-flex items-center justify-center px-8 py-4 bg-white/10 text-white text-lg font-semibold rounded-xl hover:bg-white/20 transition-all duration-300"
+            >
               View Our Portfolio
             </button>
           </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import FullContainer from "../common/FullContainer";
 import Container from "../common/Container";
 import Form from "../common/Form";
@@ -7,8 +7,21 @@ import BgAnimation from "../BgAnimation";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 
-export default function Hero({ heading2, heading1, des }) {
+export default function Hero() {
   const [showForm, setShowForm] = useState(false);
+  const [offset, setOffset] = useState(0);
+
+  // Parallax effect
+  useEffect(() => {
+    const handleScroll = () => {
+      setOffset(window.pageYOffset);
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const stats = [
     { number: "500+", label: "Projects Delivered" },
@@ -17,17 +30,21 @@ export default function Hero({ heading2, heading1, des }) {
   ];
 
   return (
-    <FullContainer className="relative bg-gradient-to-br from-gray-950/90 via-zinc-950/90 to-gray-950/90 text-white overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 z-0"
+    <FullContainer className="relative min-h-screen text-white overflow-hidden">
+      {/* Background Image with Parallax */}
+      <div
+        className="absolute inset-0 z-0  brightness-[0.6]"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
+          backgroundImage:
+            'url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          transform: `translateY(${offset * 0.5}px)`, // Parallax effect
+          transition: "transform 0.1s ease-out",
         }}
       />
+      {/* <div className="absolute inset-0 z-0 bg-gradient-to-b from-gray-950/50 via-gray-950/40 to-gray-950/50" /> */}
       <BgAnimation />
 
       <Container className="relative z-10">
@@ -42,11 +59,25 @@ export default function Hero({ heading2, heading1, des }) {
             </div>
 
             {/* Main Heading - changed gradient to red */}
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.1] relative">
-              {heading1}{" "}
-              <span className="relative inline-block">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-600">
-                  {heading2}
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-10 relative">
+              Transform Your Online Presence with Custom
+              <span className="relative inline-block pb-3">
+                <span className="relative">
+                  <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-red-200 via-primary to-rose-300">
+                    Web Development
+                  </span>
+                  <svg
+                    className="absolute -bottom-2 left-0 w-full"
+                    height="8"
+                    viewBox="0 0 100 8"
+                    preserveAspectRatio="none"
+                  >
+                    <path
+                      d="M0 0L50 7L100 0L100 8L0 8Z"
+                      fill="currentColor"
+                      className="text-primary/20"
+                    />
+                  </svg>
                 </span>
                 <span className="absolute inset-0 animate-[glitch_3s_infinite]"></span>
               </span>{" "}
@@ -55,7 +86,8 @@ export default function Hero({ heading2, heading1, des }) {
 
             {/* Description with modern font */}
             <p className=" md:text-xl text-white/80 leading-relaxed max-w-2xl font-light">
-              {des}
+              Build a website that not only looks great but also drives results
+              and user engagement.
             </p>
 
             {/* Stats with enhanced styling */}
