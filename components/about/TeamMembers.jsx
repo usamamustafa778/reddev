@@ -37,25 +37,43 @@ export default function TeamMembers() {
   ];
 
   return (
-    <FullContainer className="relative bg-[linear-gradient(125deg,#0a0505,#1a0808_40%,#2a0a0a_70%,#0a0505)] text-white overflow-hidden">
+    <FullContainer className="relative bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white overflow-hidden">
       <BgAnimation />
 
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-0 -left-52 w-[50%] h-[50%] bg-red-950/50 rounded-full mix-blend-multiply filter blur-xl animate-blob" />
+        <div className="absolute top-0 -right-4 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000" />
+        <div className="absolute -bottom-8 left-20 w-72 h-72 animt bg-teal-500 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000" />
+      </div>
+
       <Container className="relative py-16 md:py-24">
-        <div className="max-w-5xl mx-auto text-center mb-20">
-          <div className="inline-flex items-center text-white gap-2 bg-gradient-to-r from-white/5 to-white/10 backdrop-blur-xl px-6 py-2.5 rounded-full border border-white/10 mb-6 hover:scale-105 transition-all duration-300">
-            <Sparkles className="w-5 h-5 text-primary animate-[pulse_2s_ease-in-out_infinite]" />
-            <span className="text-sm font-medium tracking-wider uppercase bg-gradient-to-r from-white to-primary/80 bg-clip-text text-transparent">
-              Meet Our Team
+        <div className="text-center mb-20" data-aos="fade-up">
+          <span className="text-primary font-semibold mb-4 block uppercase tracking-wider">
+            Our Leadership
+          </span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
+            Meet Our Visionary
+            <span className="relative ml-3">
+              <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-primary to-rose-500">
+                Team
+              </span>
+              <svg
+                className="absolute -bottom-2 left-0 w-full"
+                height="8"
+                viewBox="0 0 100 8"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M0 0L50 7L100 0L100 8L0 8Z"
+                  fill="currentColor"
+                  className="text-primary/20"
+                />
+              </svg>
             </span>
-          </div>
-
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-white via-primary/80 to-white bg-clip-text text-transparent">
-            Visionaries & Innovators
           </h2>
-
-          <p className="text-white/80 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
-            Pioneering the future of software development with creativity,
-            expertise, and unwavering dedication.
+          <p className="text-xl text-white/80 max-w-3xl mx-auto">
+            Our team is made up of passionate individuals who are dedicated to
+            delivering excellence in every project.
           </p>
         </div>
 
@@ -70,11 +88,11 @@ export default function TeamMembers() {
               }}
             >
               <div className="relative bg-gradient-to-br from-white/10 via-white/5 to-transparent backdrop-blur-xl rounded-2xl overflow-hidden transition-all duration-500 hover:transform hover:scale-105 hover:shadow-2xl hover:shadow-primary/20 border border-white/10 hover:border-primary/20">
-                <div className="relative h-[400px] overflow-hidden">
+                <div className="relative h-[450px] overflow-hidden">
                   <Image
                     src={member.img}
                     fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="object-cover scale-125 transition-transform duration-700 group-hover:scale-110"
                     alt={member.name}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>

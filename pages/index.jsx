@@ -62,22 +62,12 @@ export default function Home() {
         <link rel="canonical" href="https://yourwebsite.com" />
       </Head>
       <FirstNavbar />
-      <Hero
-        heading1={detail.heroheading1}
-        heading2={detail.heroheading2}
-        des={detail.herodescription}
-        img={detail.heroimage}
-      />
+      <Hero />
       <Testimonials
         heading={detail.testimonialheading}
         des={detail.testimonialdescription}
         data={detail.testimonial}
       />
-      {/* <ProcessSection
-        heading={detail.processheading}
-        des={detail.processdescription}
-        data={detail.processcard}
-      /> */}
       <GuaranteeSection />
       <PricingSection />
       <ValueStack />

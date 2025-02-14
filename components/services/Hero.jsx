@@ -6,6 +6,7 @@ import { ArrowRight, X } from "lucide-react";
 import BgAnimation from "../BgAnimation";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   const [showForm, setShowForm] = useState(false);
@@ -33,33 +34,43 @@ export default function Hero() {
     <FullContainer className="relative min-h-screen text-white overflow-hidden">
       {/* Background Image with Parallax */}
       <div
-        className="absolute inset-0 z-0  brightness-[0.6]"
+        className="absolute inset-0 z-0"
         style={{
           backgroundImage:
             'url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop")',
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          transform: `translateY(${offset * 0.5}px)`, // Parallax effect
+          transform: `translateY(${offset * 0.5}px)`,
           transition: "transform 0.1s ease-out",
         }}
       />
-      {/* <div className="absolute inset-0 z-0 bg-gradient-to-b from-gray-950/50 via-gray-950/40 to-gray-950/50" /> */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-gray-950/40 via-gray-950/30 to-gray-950/40" />
       <BgAnimation />
 
       <Container className="relative z-10">
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 text-center md:text-left py-16 md:py-24 md:pt-40 gap-14 md:gap-24">
           <div className="flex-1 space-y-7 md:space-y-10 flex flex-col justify-center">
-            {/* Status Badge - changed to red */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm w-fit">
+            {/* Status Badge */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm w-fit"
+            >
               <span className="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse"></span>
               <span className="text-sm font-medium text-white/80">
                 Available for New Projects
               </span>
-            </div>
+            </motion.div>
 
-            {/* Main Heading - changed gradient to red */}
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-10 relative">
+            {/* Main Heading */}
+            <motion.h1
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight"
+            >
               Transform Your Online Presence with Custom
               <span className="relative inline-block pb-3">
                 <span className="relative">
@@ -82,16 +93,26 @@ export default function Hero() {
                 <span className="absolute inset-0 animate-[glitch_3s_infinite]"></span>
               </span>{" "}
               Solutions
-            </h1>
+            </motion.h1>
 
-            {/* Description with modern font */}
-            <p className=" md:text-xl text-white/80 leading-relaxed max-w-2xl font-light">
+            {/* Description */}
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="md:text-xl text-white/80 leading-relaxed max-w-2xl font-light"
+            >
               Build a website that not only looks great but also drives results
               and user engagement.
-            </p>
+            </motion.p>
 
-            {/* Stats with enhanced styling */}
-            <div className="grid grid-cols-3 gap-8 pt-4 md:pt-5">
+            {/* Stats */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="grid grid-cols-3 gap-8 pt-4 md:pt-5"
+            >
               {stats.map((stat, index) => (
                 <div key={index} className="space-y-2 relative group">
                   <div className="text-3xl font-bold text-white relative">
@@ -101,11 +122,16 @@ export default function Hero() {
                   <div className="text-sm text-white/60">{stat.label}</div>
                 </div>
               ))}
-            </div>
+            </motion.div>
           </div>
 
-          {/* New Lead Form replacing the image */}
-          <div className="relative rounded-2xl overflow-hidden backdrop-blur-sm border border-white/10 shadow-xl">
+          {/* Form Section */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="relative rounded-2xl overflow-hidden backdrop-blur-sm border border-white/10 shadow-xl"
+          >
             <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-white/5 to-transparent"></div>
             <div className="relative p-8 md:p-10">
               <div className="space-y-8">
@@ -225,11 +251,11 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </Container>
 
-      {/* Form Modal - changed to red */}
+      {/* Form Modal */}
       {showForm && (
         <div className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
           <div className="relative w-full max-w-xl bg-gradient-to-br from-gray-900 to-red-900/30 rounded-2xl border border-white/10">

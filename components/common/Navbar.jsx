@@ -77,7 +77,7 @@ export default function Navbar({ className }) {
     <>
       <FullContainer
         className={`z-20 transition-all duration-300 ${
-          scrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "text-white pt-3 fixed top-0"
+          scrolled ? "hidden" : "text-white pt-3 fixed top-0"
         }`}
       >
         <Container className="flex items-center justify-between h-fit py-1.5 md:py-2.5">
