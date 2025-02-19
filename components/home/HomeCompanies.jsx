@@ -8,7 +8,7 @@ export default function HomeCompanies() {
     <>
       <FullContainer className=" bg-white   ">
         <Container>
-          <h1 className="text-4xl font-bold text-heading py-12 text-center">Brands Powered By Devbitties</h1>
+          <h1 className="text-4xl font-bold text-heading py-12 text-center">Brands Powered By reddev</h1>
           <div className="flex items-center md:gap-16 lg:gap-24 gap-8  justify-center overflow-scroll sm:overflow-visible">
             <Image src="/img/industry5.png" alt="image" width={120} height={120} />
             <Image src="/img/industry7.png" alt="image" width={120} height={120} />

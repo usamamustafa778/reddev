@@ -87,7 +87,7 @@ export default function Navbar({ className }) {
           >
             <Image
               src="/logo.png"
-              alt="Devbitties Logo"
+              alt="reddev Logo"
               width={180}
               height={48}
               className="h-11 md:h-12 w-auto object-contain"
@@ -192,7 +192,7 @@ export default function Navbar({ className }) {
             <div className="flex items-center justify-between mb-8">
               <Image
                 src="/logo.png"
-                alt="Devbitties Logo"
+                alt="reddev Logo"
                 width={120}
                 height={32}
                 className="h-8 w-auto"

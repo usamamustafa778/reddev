@@ -29,7 +29,7 @@ function Footer() {
               >
                 <Image
                   src="/logo-white.png"
-                  alt="Devbitties Logo"
+                  alt="reddev Logo"
                   width={180}
                   height={48}
                   className="h-12 w-auto object-contain"
@@ -45,7 +45,7 @@ function Footer() {
                   { icon: Facebook, link: "#" },
                   {
                     icon: Instagram,
-                    link: "https://www.instagram.com/devbitties",
+                    link: "https://www.instagram.com/reddev",
                   },
                   { icon: Linkedin, link: "#" },
                   { icon: Twitter, link: "#" },
@@ -157,7 +157,7 @@ function Footer() {
           {/* Copyright */}
           <div className="flex flex-col sm:flex-row justify-between items-center gap-6 mt-16">
             <p className="text-white/70">
-              © {new Date().getFullYear()} Devbities. All rights reserved.
+              © {new Date().getFullYear()} reddev. All rights reserved.
             </p>
             <div className="flex items-center gap-8">
               <Link

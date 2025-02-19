@@ -1,7 +1,7 @@
 // pages/_app.js
 import '@/styles/globals.css'
 import { Roboto } from "next/font/google";
-import React, { useEffect } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 
@@ -11,6 +11,9 @@ const myFont = Roboto({
 });
 
 export default function App({ Component, pageProps }) {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const cursorRef = useRef(null);
+
   useEffect(() => {
     AOS.init({
       offset: 120, // Offset (in px) from the original trigger point
@@ -22,18 +25,40 @@ export default function App({ Component, pageProps }) {
       anchorPlacement: 'top-bottom', // Defines which position of the element regarding to window should trigger the animation
     });
 
-    // Optional: Refresh AOS on route change if using dynamic content
-    // const handleRouteChange = () => {
-    //   AOS.refresh();
-    // };
-    // Router.events.on('routeChangeComplete', handleRouteChange);
-    // return () => {
-    //   Router.events.off('routeChangeComplete', handleRouteChange);
-    // };
+    const updateMousePosition = (e) => {
+      setMousePosition({ x: e.clientX, y: e.clientY });
+    };
+
+    const handleClick = () => {
+      if (cursorRef.current) {
+        cursorRef.current.classList.remove('cursor-click');
+        void cursorRef.current.offsetWidth; // Force reflow
+        cursorRef.current.classList.add('cursor-click');
+        setTimeout(() => {
+          cursorRef.current?.classList.remove('cursor-click');
+        }, 500);
+      }
+    };
+
+    window.addEventListener('mousemove', updateMousePosition);
+    window.addEventListener('click', handleClick);
+
+    return () => {
+      window.removeEventListener('mousemove', updateMousePosition);
+      window.removeEventListener('click', handleClick);
+    };
   }, []);
 
   return (
     <div className={myFont.className}>
+      <div 
+        ref={cursorRef}
+        className="cursor-follower"
+        style={{
+          left: `${mousePosition.x}px`,
+          top: `${mousePosition.y}px`,
+        }}
+      />
       <Component {...pageProps} />
     </div>
   );

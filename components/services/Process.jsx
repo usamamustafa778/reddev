@@ -27,7 +27,7 @@ export default function Process() {
       <Container className="py-24">
         <div className=" grid grid-cols-1 lg:grid-cols-3 text-white items-center text-center justify-center">
           <div className="col-span-1 flex flex-col gap-8">
-            <h1 className="text-5xl font-bold text-start">The Devbitties process</h1>
+            <h1 className="text-5xl font-bold text-start">The reddev process</h1>
             <p className="text-start">Our process is a systematic journey comprising four stages: Discovery, Proposal, Implementation, and Optimization.</p>
           </div>
           <div className="col-span-2 grid grid-col-1 sm:grid-cols-2 gap-6 justify-center">

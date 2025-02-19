@@ -13,7 +13,7 @@ export default function OurGlobalPresence() {
         "https://cdn.prod.website-files.com/653a706d0796f8d2a3e0559f/65b348c81f55e4b2d620bafc_caption.jpg",
       details: {
         title: "Pakistan Headquarters",
-        company: "Devbitties (Private) Limited",
+        company: "reddev (Private) Limited",
         address: "Islamabad",
         phone: "+92 331 557 988",
         email: "reddev0@gmail.com",
@@ -26,7 +26,7 @@ export default function OurGlobalPresence() {
         "https://images.unsplash.com/photo-1513735492246-483525079686?auto=format&fit=crop&q=80",
       details: {
         title: "European Office",
-        company: "Devbitties LDA",
+        company: "reddev LDA",
         address: "Lisbon",
         phone: "+351 920 323 764",
         email: "reddev0@gmail.com",

@@ -11,14 +11,14 @@ function OurWork() {
       title: "STARLIGHTxSOCIETY (SXS)",
       company: "STARLIGHTxSOCIETY-(SXS)",
       description:
-        "devbitties helped STARLIGHTxSOCIETY scale its NFT platform, enhance its music integration, and support collaborations with global musicians, creating unique experiences for collectors and fans.",
+        "reddev helped STARLIGHTxSOCIETY scale its NFT platform, enhance its music integration, and support collaborations with global musicians, creating unique experiences for collectors and fans.",
     },
     {
       img: "/img/openproject2.png",
       title: "United-Insurance",
       company: "United-Insurance",
       description:
-        "Devbitties collaborated with United-Insurance to innovate their insurance solutions, streamline policy management, and enhance customer experience through technology, ensuring comprehensive coverage for all clients.",
+        "reddev collaborated with United-Insurance to innovate their insurance solutions, streamline policy management, and enhance customer experience through technology, ensuring comprehensive coverage for all clients.",
     },
    
     {
@@ -33,7 +33,7 @@ function OurWork() {
       title: "Tekruiter",
       company: "Tekruiter",
       description:
-        "devbitties helped STARLIGHTxSOCIETY scale its NFT platform, enhance its music integration, and support collaborations with global musicians, creating unique experiences for collectors and fans.",
+        "reddev helped STARLIGHTxSOCIETY scale its NFT platform, enhance its music integration, and support collaborations with global musicians, creating unique experiences for collectors and fans.",
     },
     { 
       img: "/img/openproject5.png",
