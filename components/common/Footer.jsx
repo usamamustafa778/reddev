@@ -89,22 +89,22 @@ function Footer() {
                 <h5 className="text-xl font-semibold text-white">Industries</h5>
                 <div className="flex flex-col space-y-4">
                   {[
-                    "Healthcare",
-                    "E-commerce",
-                    "Hospitality",
-                    "Automotive",
-                    "SaaS",
-                    "Real Estate",
-                    "Gaming",
-                    "Public Sector",
-                  ].map((item, index) => (
+                    { name: "Healthcare", id: "healthcare" },
+                    { name: "E-commerce", id: "ecommerce" },
+                    { name: "Hospitality", id: "hospitality" },
+                    { name: "Automotive", id: "automotive" },
+                    { name: "SaaS", id: "saas" },
+                    { name: "Real Estate", id: "realestate" },
+                    { name: "Gaming", id: "gaming" },
+                    { name: "Public Sector", id: "publicsector" },
+                  ].map((industry, index) => (
                     <Link
                       key={index}
-                      href="/industries"
+                      href={`/industries?industry=${industry.id}`}
                       className="text-white/70 hover:text-white transition-colors duration-300 flex items-center group"
                     >
                       <span className="w-2 h-2 rounded-full bg-primary mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                      {item}
+                      {industry.name}
                     </Link>
                   ))}
                 </div>
