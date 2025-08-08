@@ -37,33 +37,7 @@ export default function App({ Component, pageProps }) {
     }
   };
 
-  const animateCursor = (time) => {
-    if (previousTimeRef.current === undefined) {
-      previousTimeRef.current = time;
-    }
-    
-    const delta = time - previousTimeRef.current;
-    
-    // Calculate the distance between the mouse and cursor
-    const dx = mousePosition.current.x - cursorPosition.current.x;
-    const dy = mousePosition.current.y - cursorPosition.current.y;
-    
-    // Update cursor position with a smooth damping effect
-    // The lower the divide number, the faster the cursor will follow
-    const smoothing = 8; // Adjust for desired smoothness
-    
-    cursorPosition.current.x += dx / smoothing;
-    cursorPosition.current.y += dy / smoothing;
-    
-    // Apply the position
-    if (cursorOuterRef.current && cursorInnerRef.current) {
-      cursorOuterRef.current.style.transform = `translate(${cursorPosition.current.x}px, ${cursorPosition.current.y}px)`;
-      cursorInnerRef.current.style.transform = `translate(${mousePosition.current.x}px, ${mousePosition.current.y}px)`;
-    }
-    
-    previousTimeRef.current = time;
-    requestRef.current = requestAnimationFrame(animateCursor);
-  };
+
 
   // Add event listeners for interactive elements
   const addCursorListeners = () => {
@@ -118,6 +92,34 @@ export default function App({ Component, pageProps }) {
   };
 
   useEffect(() => {
+    const animateCursor = (time) => {
+      if (previousTimeRef.current === undefined) {
+        previousTimeRef.current = time;
+      }
+      
+      const delta = time - previousTimeRef.current;
+      
+      // Calculate the distance between the mouse and cursor
+      const dx = mousePosition.current.x - cursorPosition.current.x;
+      const dy = mousePosition.current.y - cursorPosition.current.y;
+      
+      // Update cursor position with a smooth damping effect
+      // The lower the divide number, the faster the cursor will follow
+      const smoothing = 8; // Adjust for desired smoothness
+      
+      cursorPosition.current.x += dx / smoothing;
+      cursorPosition.current.y += dy / smoothing;
+      
+      // Apply the position
+      if (cursorOuterRef.current && cursorInnerRef.current) {
+        cursorOuterRef.current.style.transform = `translate(${cursorPosition.current.x}px, ${cursorPosition.current.y}px)`;
+        cursorInnerRef.current.style.transform = `translate(${mousePosition.current.x}px, ${mousePosition.current.y}px)`;
+      }
+      
+      previousTimeRef.current = time;
+      requestRef.current = requestAnimationFrame(animateCursor);
+    };
+
     AOS.init({
       offset: 120,
       delay: 0, 

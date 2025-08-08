@@ -175,7 +175,7 @@ export default function Industries() {
               },
               {
                 title: "Tailored Approach",
-                description: "We don't believe in one-size-fits-all. Every solution is custom-built for your industry's unique requirements."
+                description: "We don&apos;t believe in one-size-fits-all. Every solution is custom-built for your industry&apos;s unique requirements."
               },
               {
                 title: "Regulatory Compliance",
@@ -217,7 +217,7 @@ export default function Industries() {
                 Ready to discuss your industry-specific needs?
               </h2>
               <p className="text-lg text-gray-300 mb-8">
-                Contact our team today to explore how our tailored solutions can address your industry's unique challenges.
+                Contact our team today to explore how our tailored solutions can address your industry&apos;s unique challenges.
               </p>
               <Link 
                 href="/contact-us" 
