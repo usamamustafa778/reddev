@@ -1,8 +1,12 @@
 import React from "react";
 import BgAnimation from "../BgAnimation";
 
-export default function ProcessSection() {
-  const processes = [
+export default function ProcessSection({ 
+  heading = "Our Development Process",
+  description = "We follow a proven methodology to deliver exceptional results",
+  processData = null 
+}) {
+  const defaultProcesses = [
     {
       number: 1,
       title: "Discovery & Planning",
@@ -41,6 +45,14 @@ export default function ProcessSection() {
     },
   ];
 
+  // Convert processData format from JSON to component format
+  const processes = processData ? processData.map((item, index) => ({
+    number: index + 1,
+    title: item.heading,
+    description: `${item.keypoint.join('. ')}.`,
+    image: item.img
+  })) : defaultProcesses;
+
   return (
     <section className="py-24 bg-gradient-to-br from-gray-950 via-zinc-950 to-gray-950 relative overflow-hidden">
       <BgAnimation />
@@ -53,13 +65,13 @@ export default function ProcessSection() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-20">
           <span className="text-primary font-semibold mb-4 block uppercase tracking-wider">
-            Our Development
+            Process
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            Our Development
+            {heading}
             <span className="relative ml-3">
               <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary/80 to-white">
-                Process
+                
               </span>
               <svg
                 className="absolute -bottom-2 left-0 w-full"
@@ -76,8 +88,7 @@ export default function ProcessSection() {
             </span>
           </h2>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            Transforming ideas into digital excellence through our cutting-edge
-            process
+            {description}
           </p>
         </div>
 

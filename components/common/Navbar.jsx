@@ -24,27 +24,27 @@ export default function Navbar({ className }) {
 
   const services = [
     {
-      title: "UX/UI Design",
-      description: "Create beautiful interfaces",
-      href: "/services/ui-design",
-      icon: Layout,
-    },
-    {
       title: "Web Development",
       description: "Full-stack web solutions",
       href: "/services/web-development",
       icon: Code,
     },
     {
-      title: "App Development",
-      description: "Develop mobile applications",
-      href: "/services/app-development",
+      title: "Mobile Apps",
+      description: "iOS & Android applications",
+      href: "/services/mobile-apps",
       icon: Smartphone,
     },
     {
-      title: "Software Development",
-      description: "Develop software applications",
-      href: "/services/software-development",
+      title: "Ecommerce",
+      description: "Online store solutions",
+      href: "/services/ecommerce",
+      icon: Layout,
+    },
+    {
+      title: "Custom Solutions",
+      description: "Tailored software development",
+      href: "/services/custom-solutions",
       icon: Users,
     },
   ];
@@ -97,7 +97,7 @@ export default function Navbar({ className }) {
 
           {/* Desktop Navigation */}
           <ul className="hidden lg:flex items-center space-x-8">
-            {/* <li
+            <li
               className="group relative"
               onMouseEnter={() => setServicesHovered(true)}
               onMouseLeave={() => setServicesHovered(false)}
@@ -143,7 +143,7 @@ export default function Navbar({ className }) {
                   </ul>
                 </div>
               </div>
-            </li> */}
+            </li>
 
             <Link
               className="py-2 font-medium hover:text-primary transition-colors"

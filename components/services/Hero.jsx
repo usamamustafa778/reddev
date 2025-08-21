@@ -8,7 +8,12 @@ import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import { motion } from "framer-motion";
 
-export default function Hero() {
+export default function Hero({ 
+  heading1 = "Transform Your Online Presence with Custom",
+  heading2 = "Web Development",
+  description = "Build a website that not only looks great but also drives results and user engagement.",
+  image = null
+}) {
   const [showForm, setShowForm] = useState(false);
   const [offset, setOffset] = useState(0);
 
@@ -71,11 +76,11 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight"
             >
-              Transform Your Online Presence with Custom
+              {heading1}
               <span className="relative inline-block pb-3">
                 <span className="relative">
                   <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-red-200 via-primary to-rose-300">
-                    Web Development
+                    {heading2}
                   </span>
                   <svg
                     className="absolute -bottom-2 left-0 w-full"
@@ -102,8 +107,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="md:text-xl text-white/80 leading-relaxed max-w-2xl font-light"
             >
-              Build a website that not only looks great but also drives results
-              and user engagement.
+              {description}
             </motion.p>
 
             {/* Stats */}

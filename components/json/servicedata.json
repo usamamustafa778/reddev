@@ -366,6 +366,102 @@
           }
         ]
       }
+    },
+    {
+      "service": "ecommerce",
+      "detail": {
+        "title": "Ecommerce Development",
+        "heroheading1": "Boost Your Online Sales with Expert ",
+        "heroheading2": "Ecommerce Development",
+        "herodescription": "Build a powerful, conversion-optimized ecommerce platform that drives sales and enhances customer experience.",
+        "heroimage": "/hero.jpg",
+        "testimonialheading": "Success Stories from Our Ecommerce Clients",
+        "testimonialdescription": "We've helped numerous businesses increase their online revenue with our ecommerce solutions.",
+        "testimonial": [
+          {
+            "first": "reddev transformed our online store, resulting in a 200% increase in sales.",
+            "second": "The user experience is exceptional and our customers love the new interface.",
+            "clientname": "Sarah Johnson, CEO, FashionForward",
+            "fade": "fade-right"
+          },
+          {
+            "first": "Their ecommerce expertise helped us streamline our entire sales process.",
+            "second": "We now have a scalable platform that grows with our business.",
+            "clientname": "Mike Chen, Founder, TechGadgets",
+            "fade": "fade-down"
+          },
+          {
+            "first": "The custom features they built have given us a competitive edge.",
+            "second": "Our conversion rates have improved dramatically since launch.",
+            "clientname": "Emma Wilson, Director, HomeDecor Plus",
+            "fade": "fade-up"
+          },
+          {
+            "first": "Working with reddev was a game-changer for our online business.",
+            "second": "The platform they built handles our high-volume sales effortlessly.",
+            "clientname": "Carlos Rodriguez, Owner, SportsGear Pro",
+            "fade": "fade-down"
+          },
+          {
+            "first": "Their attention to detail in ecommerce development is unmatched.",
+            "second": "We've seen significant improvements in customer satisfaction and retention.",
+            "clientname": "Lisa Park, Marketing Director, BeautyEssentials",
+            "fade": "fade-left"
+          }
+        ],
+        "processheading": "Our Proven Ecommerce Development Process",
+        "processdescription": "We follow a strategic 3-step approach to create high-converting ecommerce platforms.",
+        "processcard": [
+          {
+            "img": "/img/discovery.png",
+            "heading": "Strategy & Planning",
+            "keypoint": [
+              "Business model analysis",
+              "Target audience research",
+              "Competitor analysis",
+              "Platform selection"
+            ]
+          },
+          {
+            "img": "/img/design.png",
+            "heading": "Design & Development",
+            "keypoint": [
+              "Custom ecommerce design",
+              "Mobile-responsive development",
+              "Payment gateway integration",
+              "Inventory management system"
+            ]
+          },
+          {
+            "img": "/img/launch.png",
+            "heading": "Launch & Optimization",
+            "keypoint": [
+              "Store launch",
+              "Performance optimization",
+              "SEO implementation",
+              "Analytics setup"
+            ]
+          }
+        ],
+        "faq": [
+          {
+            "question": "Which ecommerce platforms do you work with?",
+            "answer": "We specialize in custom solutions as well as popular platforms like Shopify, WooCommerce, Magento, and BigCommerce."
+          },
+          {
+            "question": "Can you integrate multiple payment gateways?",
+            "answer": "Yes, we can integrate various payment options including PayPal, Stripe, Square, and many other popular payment processors."
+          },
+          {
+            "question": "Do you provide inventory management solutions?",
+            "answer": "Absolutely. We build comprehensive inventory management systems that can handle complex product catalogs and multi-location warehouses."
+          },
+          {
+            "question": "How do you ensure the security of customer data?",
+            "answer": "We implement industry-standard security measures including SSL certificates, PCI compliance, and secure data encryption."
+          }
+        ]
+      }
     }
   ]
   

@@ -115,18 +115,18 @@ function Footer() {
                 <h5 className="text-xl font-semibold text-white">Services</h5>
                 <div className="flex flex-col space-y-4">
                   {[
-                    "Ecommerce",
-                    "Mobile Apps",
-                    "Web Development",
-                    "Custom Solutions",
+                    { name: "Ecommerce", slug: "ecommerce" },
+                    { name: "Mobile Apps", slug: "mobile-apps" },
+                    { name: "Web Development", slug: "web-development" },
+                    { name: "Custom Solutions", slug: "custom-solutions" },
                   ].map((item, index) => (
                     <Link
                       key={index}
-                      href="/services"
+                      href={`/services/${item.slug}`}
                       className="text-white/70 hover:text-white transition-colors duration-300 flex items-center group"
                     >
                       <span className="w-2 h-2 rounded-full bg-primary mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                      {item}
+                      {item.name}
                     </Link>
                   ))}
                 </div>
