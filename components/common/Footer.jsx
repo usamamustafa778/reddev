@@ -69,15 +69,19 @@ function Footer() {
               <div className="space-y-8">
                 <h5 className="text-xl font-semibold text-white">Company</h5>
                 <div className="flex flex-col space-y-4">
-                  {["Home", "About", "Work", "Client", "Contact us"].map(
-                    (item, index) => (
+                  {[
+                    { name: "Home", href: "/" },
+                    { name: "About", href: "/about" },
+                    { name: "Work", href: "/our-work" },
+                    { name: "Contact us", href: "/contact-us" },
+                  ].map((item, index) => (
                       <Link
                         key={index}
-                        href={`/${item.toLowerCase().replace(" ", "")}`}
+                        href={item.href}
                         className="text-white/70 hover:text-white transition-colors duration-300 flex items-center group"
                       >
                         <span className="w-2 h-2 rounded-full bg-primary mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                        {item}
+                        {item.name}
                       </Link>
                     )
                   )}
@@ -115,6 +119,7 @@ function Footer() {
                 <h5 className="text-xl font-semibold text-white">Services</h5>
                 <div className="flex flex-col space-y-4">
                   {[
+                    { name: "AI Solutions", slug: "ai-solutions", isRoot: true },
                     { name: "Ecommerce", slug: "ecommerce" },
                     { name: "Mobile Apps", slug: "mobile-apps" },
                     { name: "Web Development", slug: "web-development" },
@@ -122,7 +127,7 @@ function Footer() {
                   ].map((item, index) => (
                     <Link
                       key={index}
-                      href={`/services/${item.slug}`}
+                      href={item.isRoot ? `/${item.slug}` : `/services/${item.slug}`}
                       className="text-white/70 hover:text-white transition-colors duration-300 flex items-center group"
                     >
                       <span className="w-2 h-2 rounded-full bg-primary mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>

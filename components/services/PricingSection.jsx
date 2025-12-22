@@ -1,7 +1,15 @@
 import React from "react";
 import FullContainer from "../common/FullContainer";
 import Container from "../common/Container";
-import { FaCheck, FaStar, FaRocket, FaArrowRight, FaShoppingCart, FaMobile, FaCode, FaCog } from "react-icons/fa";
+import { FaCheck, FaStar, FaRocket, FaArrowRight, FaShoppingCart, FaMobile, FaCode, FaCog, FaBrain } from "react-icons/fa";
+
+// Pricing constants for easy editing
+const PRICING_CONSTANTS = {
+  tier1: { min: 15000, label: "From $15k" },
+  tier2: { min: 35000, max: 60000, label: "From $35k–$60k" },
+  tier3: { min: 75000, label: "From $75k+" },
+  discovery: { min: 2500, max: 7500, label: "$2.5k–$7.5k" }
+};
 
 const servicePricing = {
   "ecommerce": {
@@ -199,95 +207,111 @@ const servicePricing = {
     ]
   },
   "web-development": {
-    title: "Web Development Packages",
-    subtitle: "Professional websites that drive results",
+    title: "Web + AI Engagements",
+    subtitle: "Systems that drive pipeline growth, cost reduction, and operational efficiency",
     plans: [
       {
-        name: "Business Website",
-        subtitle: "Perfect for small businesses",
+        name: "Growth Website",
+        subtitle: "For established businesses ready to scale",
         icon: <FaCode className="w-6 h-6" />,
-        pricing: "$2,999",
-        monthlyOption: "$299/mo for 10 months",
-        deliveryTime: "2-3 Weeks",
-        popular: false,
-        features: [
-          "5-10 Custom Pages",
-          "Mobile Responsive Design",
-          "Content Management System",
-          "Contact Form Integration",
-          "Basic SEO Setup",
-          "Google Analytics",
-          "Social Media Integration",
-          "SSL Certificate",
-          "Speed Optimization",
-          "3 Months Free Support",
-        ],
-        additionalFeatures: [
-          "WordPress/Next.js Development",
-          "Basic Security Setup",
-          "Browser Compatibility",
-        ],
-        buttonText: "Launch My Website",
-      },
-      {
-        name: "Professional Website",
-        subtitle: "For growing companies",
-        icon: <FaStar className="w-6 h-6" />,
-        pricing: "$6,999",
-        monthlyOption: "$699/mo for 10 months",
+        pricing: PRICING_CONSTANTS.tier1.label,
+        monthlyOption: "Starting investment",
         deliveryTime: "4-6 Weeks",
-        popular: true,
-        features: [
-          "15-25 Custom Pages",
-          "Advanced Responsive Design",
-          "Custom CMS Development",
-          "Advanced Forms & Logic",
-          "Complete SEO Package",
-          "E-commerce Ready",
-          "Payment Integration",
-          "Custom Animations",
-          "Database Integration",
-          "Performance Optimization",
-          "Advanced Security",
-          "6 Months Free Support",
+        popular: false,
+        acquire: [
+          "Up to 15 pages built from approved templates",
+          "Technical SEO foundation + on-page optimization",
+          "Lead capture system with form analytics",
+          "Google Analytics 4 + conversion tracking"
         ],
-        additionalFeatures: [
-          "React/Next.js Development",
-          "API Integration",
-          "Custom Admin Dashboard",
-          "Marketing Tool Integration",
+        convert: [
+          "Conversion-focused page design",
+          "A/B testing setup for key pages"
         ],
-        buttonText: "Build Professional Site",
+        scale: [
+          "Next.js/React architecture",
+          "CMS integration for content updates"
+        ],
+        trust: [
+          "SSL + basic security hardening",
+          "GDPR-compliant data handling"
+        ],
+        warranty: "30-day launch warranty (bugs + fixes)",
+        buttonText: "Book a Discovery Call",
+        ctaRoute: "/contact-us"
       },
       {
-        name: "Enterprise Website",
-        subtitle: "For large-scale operations",
+        name: "Scale + AI Website",
+        subtitle: "Web platform with integrated AI automation",
+        icon: <FaBrain className="w-6 h-6" />,
+        pricing: PRICING_CONSTANTS.tier2.label,
+        monthlyOption: "Premium engagement",
+        deliveryTime: "6-8 Weeks",
+        popular: true,
+        acquire: [
+          "Up to 25 pages + custom templates",
+          "Technical SEO + content optimization for core pages",
+          "Advanced lead generation with scoring",
+          "Multi-channel analytics dashboard"
+        ],
+        convert: [
+          "Conversion rate optimization (CRO) audit + implementation",
+          "Funnel optimization with heat mapping"
+        ],
+        scale: [
+          "Custom API development",
+          "CRM integration (Salesforce, HubSpot, Pipedrive)",
+          "Performance monitoring + Core Web Vitals optimization"
+        ],
+        trust: [
+          "Enterprise security + penetration testing",
+          "Security & privacy best practices + data retention controls"
+        ],
+        aiModule: {
+          included: "AI lead qualification + CRM routing",
+          description: "Production-ready AI that enriches form submissions, scores leads, and routes to appropriate sales reps",
+          kpis: "Measures: lead-to-meeting rate, qualification accuracy, routing speed"
+        },
+        warranty: "30-day launch warranty + optional optimization retainer",
+        buttonText: "Book Discovery Call",
+        ctaRoute: "/contact-us"
+      },
+      {
+        name: "Enterprise Platform",
+        subtitle: "For market leaders and funded companies",
         icon: <FaRocket className="w-6 h-6" />,
-        pricing: "Custom",
-        monthlyOption: "Starting at $1,999/mo",
-        deliveryTime: "8-12 Weeks",
+        pricing: PRICING_CONSTANTS.tier3.label,
+        monthlyOption: "Custom scope",
+        deliveryTime: "10-16 Weeks",
         popular: false,
-        features: [
-          "Unlimited Pages",
-          "100% Custom Development",
-          "Enterprise CMS Solution",
-          "Complex Business Logic",
-          "Advanced SEO & Analytics",
-          "Full E-commerce Platform",
-          "Multiple Integrations",
-          "Custom API Development",
-          "Advanced Security Features",
-          "Scalable Architecture",
-          "Multi-Language Support",
-          "12 Months Free Support",
+        acquire: [
+          "Platform build + scalable page templates",
+          "Enterprise SEO strategy + technical implementation",
+          "Multi-channel lead generation system",
+          "Advanced analytics + executive reporting"
         ],
-        additionalFeatures: [
-          "Full-Stack Development",
-          "Cloud Infrastructure",
-          "CI/CD Pipeline Setup",
-          "24/7 Priority Support",
+        convert: [
+          "Comprehensive CRO program",
+          "Personalization engine + dynamic content"
         ],
-        buttonText: "Get Enterprise Quote",
+        scale: [
+          "Microservices architecture + API gateway",
+          "Multi-system integrations (CRM, ERP, marketing stack)",
+          "Auto-scaling infrastructure + SLA options available"
+        ],
+        trust: [
+          "SOC2-aligned practices + support for compliance",
+          "Advanced security + compliance documentation",
+          "Multi-region deployment + disaster recovery"
+        ],
+        aiModule: {
+          included: "Multiple AI modules available",
+          description: "Choose from: AI support agent, workflow automation, predictive analytics, or custom LLM integration",
+          kpis: "Measures: conversion rate, qualified leads, speed/Core Web Vitals, support deflection, reliability"
+        },
+        warranty: "30-day launch warranty + 90-day optimization period",
+        buttonText: "Request a Scope Call",
+        ctaRoute: "/contact-us"
       },
     ]
   },
@@ -396,16 +420,23 @@ const PricingSection = ({ service = "web-development" }) => {
   return (
     <FullContainer className="py-24 bg-gradient-to-b from-gray-50 to-white">
       <Container>
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
             💰 Transparent Pricing
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             {serviceData.title}
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             {serviceData.subtitle}
           </p>
+          
+          {/* Discovery Sprint Note */}
+          <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 max-w-2xl mx-auto">
+            <p className="text-blue-800 text-sm font-medium">
+              Most projects start with a 5–10 day Discovery Sprint ({PRICING_CONSTANTS.discovery.label}, credited if we build).
+            </p>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
@@ -449,34 +480,126 @@ const PricingSection = ({ service = "web-development" }) => {
                   </div>
                 </div>
 
-                {/* Features */}
-                <div className="space-y-4 mb-8">
-                  <h4 className="font-semibold text-gray-900">What&apos;s Included:</h4>
-                  <ul className="space-y-3">
-                    {plan.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start gap-3">
-                        <FaCheck className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        <span className="text-gray-700">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
+                {/* Features - New Structure */}
+                <div className="space-y-6 mb-8">
+                  {/* Legacy features for non-web-development services */}
+                  {plan.features && (
+                    <div className="space-y-4">
+                      <h4 className="font-semibold text-gray-900">What&apos;s Included:</h4>
+                      <ul className="space-y-3">
+                        {plan.features.map((feature, featureIndex) => (
+                          <li key={featureIndex} className="flex items-start gap-3">
+                            <FaCheck className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                            <span className="text-gray-700">{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {/* New categorized structure for web-development */}
+                  {plan.acquire && (
+                    <>
+                      {/* Acquire */}
+                      <div className="space-y-3">
+                        <h5 className="font-semibold text-green-600 text-sm uppercase tracking-wider">Acquire</h5>
+                        <ul className="space-y-2">
+                          {plan.acquire.map((feature, featureIndex) => (
+                            <li key={featureIndex} className="flex items-start gap-3">
+                              <FaCheck className="w-3 h-3 text-green-500 mt-1 flex-shrink-0" />
+                              <span className="text-gray-700 text-sm">{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      {/* Convert */}
+                      <div className="space-y-3">
+                        <h5 className="font-semibold text-blue-600 text-sm uppercase tracking-wider">Convert</h5>
+                        <ul className="space-y-2">
+                          {plan.convert.map((feature, featureIndex) => (
+                            <li key={featureIndex} className="flex items-start gap-3">
+                              <FaCheck className="w-3 h-3 text-blue-500 mt-1 flex-shrink-0" />
+                              <span className="text-gray-700 text-sm">{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      {/* Scale */}
+                      <div className="space-y-3">
+                        <h5 className="font-semibold text-purple-600 text-sm uppercase tracking-wider">Scale</h5>
+                        <ul className="space-y-2">
+                          {plan.scale.map((feature, featureIndex) => (
+                            <li key={featureIndex} className="flex items-start gap-3">
+                              <FaCheck className="w-3 h-3 text-purple-500 mt-1 flex-shrink-0" />
+                              <span className="text-gray-700 text-sm">{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      {/* Trust */}
+                      <div className="space-y-3">
+                        <h5 className="font-semibold text-orange-600 text-sm uppercase tracking-wider">Trust</h5>
+                        <ul className="space-y-2">
+                          {plan.trust.map((feature, featureIndex) => (
+                            <li key={featureIndex} className="flex items-start gap-3">
+                              <FaCheck className="w-3 h-3 text-orange-500 mt-1 flex-shrink-0" />
+                              <span className="text-gray-700 text-sm">{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      {/* AI Module (for tier 2 and 3) */}
+                      {plan.aiModule && (
+                        <div className="bg-gradient-to-r from-primary/5 to-primary/10 rounded-lg p-4 border border-primary/20">
+                          <div className="flex items-center gap-2 mb-2">
+                            <FaBrain className="w-4 h-4 text-primary" />
+                            <h5 className="font-semibold text-primary text-sm">AI Module Included</h5>
+                          </div>
+                          <p className="text-gray-700 text-sm mb-2">{plan.aiModule.included}</p>
+                          <p className="text-gray-600 text-xs mb-2">{plan.aiModule.description}</p>
+                          {plan.aiModule.kpis && (
+                            <p className="text-gray-500 text-xs italic">{plan.aiModule.kpis}</p>
+                          )}
+                          {index === 1 && (
+                            <p className="text-primary text-xs font-medium mt-2">
+                              + Additional AI modules available
+                            </p>
+                          )}
+                        </div>
+                      )}
+
+                      {/* Warranty */}
+                      <div className="bg-gray-50 rounded-lg p-3 border border-gray-200">
+                        <p className="text-gray-600 text-sm">
+                          <strong>Warranty:</strong> {plan.warranty}
+                        </p>
+                      </div>
+                    </>
+                  )}
                 </div>
 
-                {/* Additional Features */}
-                <div className="space-y-4 mb-8 pt-4 border-t border-gray-200">
-                  <h4 className="font-semibold text-gray-900">Bonus Features:</h4>
-                  <ul className="space-y-2">
-                    {plan.additionalFeatures.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start gap-3">
-                        <FaStar className="w-4 h-4 text-yellow-500 mt-1 flex-shrink-0" />
-                        <span className="text-gray-600 text-sm">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                {/* Legacy Additional Features */}
+                {plan.additionalFeatures && (
+                  <div className="space-y-4 mb-8 pt-4 border-t border-gray-200">
+                    <h4 className="font-semibold text-gray-900">Bonus Features:</h4>
+                    <ul className="space-y-2">
+                      {plan.additionalFeatures.map((feature, featureIndex) => (
+                        <li key={featureIndex} className="flex items-start gap-3">
+                          <FaStar className="w-4 h-4 text-yellow-500 mt-1 flex-shrink-0" />
+                          <span className="text-gray-600 text-sm">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
 
                 {/* CTA Button */}
-                <button
+                <a
+                  href={plan.ctaRoute || "/contact-us"}
                   className={`w-full py-4 px-6 rounded-xl font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-2 ${
                     plan.popular
                       ? "bg-primary text-white hover:bg-primary/90 shadow-lg hover:shadow-xl"
@@ -485,7 +608,7 @@ const PricingSection = ({ service = "web-development" }) => {
                 >
                   {plan.buttonText}
                   <FaArrowRight className="w-4 h-4" />
-                </button>
+                </a>
               </div>
             </div>
           ))}
@@ -500,10 +623,13 @@ const PricingSection = ({ service = "web-development" }) => {
             <p className="text-lg text-gray-600 mb-6">
               Every business is unique. Let&apos;s discuss your specific requirements and create a tailored solution.
             </p>
-            <button className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-primary/90 transition-colors">
-              Schedule Free Consultation
+            <a 
+              href="/contact-us"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-primary/90 transition-colors"
+            >
+              Book Discovery Call
               <FaArrowRight className="w-4 h-4" />
-            </button>
+            </a>
           </div>
         </div>
       </Container>

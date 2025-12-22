@@ -1,18 +1,15 @@
 import Service from "../components/json/home.json";
-import Testimonials from "@/components/services/Testimonials";
-import CallToAction from "@/components/home/CallToAction";
 import Footer from "@/components/common/Footer";
-import Portfolio from "@/components/services/Portfolio";
 import FirstNavbar from "@/components/common/Navbar";
 import Hero from "@/components/services/Hero";
-import ValueStack from "@/components/services/ValueStack";
-import BonusesSection from "@/components/services/BonusesSection";
-import GuaranteeSection from "@/components/services/GuaranteeSection";
 import PricingSection from "@/components/services/PricingSection";
-import UrgencySection from "@/components/services/UrgencySection";
-import FAQSection from "@/components/services/FAQSection";
-import ProcessSection from "@/components/services/ProcessSection";
-import WhyChooseUs from "@/components/services/WhyChooseUs";
+import ClientLogos from "@/components/services/ClientLogos";
+import WhatWeBuild from "@/components/services/WhatWeBuild";
+import TrustSection from "@/components/services/TrustSection";
+import StreamlinedProcess from "@/components/services/StreamlinedProcess";
+import ProofSection from "@/components/services/ProofSection";
+import WhyUs from "@/components/services/WhyUs";
+import FinalCTA from "@/components/services/FinalCTA";
 import Head from "next/head";
 
 export default function Home() {
@@ -21,25 +18,25 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Web Development Services | Professional Web Solutions</title>
+        <title>AI Agent Development & Web Solutions for B2B Companies | RedDev</title>
         <meta
           name="description"
-          content="Professional web development services offering custom solutions, responsive design, and modern web applications. Transform your online presence today."
+          content="We build AI agents for customer support, lead qualification, and workflow automation—plus high-performance web and mobile apps. Enterprise-grade AI development with human oversight and safety guardrails."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
         <meta
           name="keywords"
-          content="web development, web design, custom websites, responsive design, web applications, professional web services"
+          content="AI agent development, custom AI chatbot for business, RAG chatbot development, LLM integration services, AI workflow automation, enterprise chatbot development, Next.js development, B2B AI solutions"
         />
 
         <meta
           property="og:title"
-          content="Web Development Services | Professional Web Solutions"
+          content="AI Agent Development & Web Solutions for B2B Companies"
         />
         <meta
           property="og:description"
-          content="Professional web development services offering custom solutions, responsive design, and modern web applications."
+          content="We build AI agents for customer support, lead qualification, and workflow automation—plus high-performance web and mobile apps."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://yourwebsite.com" />
@@ -49,10 +46,10 @@ export default function Home() {
         />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Web Development Services" />
+        <meta name="twitter:title" content="AI Agent Development & Web Solutions for B2B" />
         <meta
           name="twitter:description"
-          content="Professional web development services offering custom solutions."
+          content="We build AI agents for customer support, lead qualification, and workflow automation—plus high-performance web and mobile apps."
         />
         <meta
           name="twitter:image"
@@ -62,20 +59,19 @@ export default function Home() {
         <link rel="canonical" href="https://yourwebsite.com" />
       </Head>
       <FirstNavbar />
-      <Hero />
-      <Testimonials
-        heading={detail.testimonialheading}
-        des={detail.testimonialdescription}
-        data={detail.testimonial}
+      <Hero 
+        heading1={detail.heroheading1}
+        heading2={detail.heroheading2}
+        description={detail.herodescription}
       />
-      <GuaranteeSection />
+      <ClientLogos />
+      <WhatWeBuild />
+      <ProofSection testimonialData={detail.testimonial} />
+      <TrustSection />
+      <StreamlinedProcess />
       <PricingSection />
-      <ValueStack />
-      <UrgencySection />
-      <BonusesSection />
-      <Portfolio />
-      <FAQSection data={detail.faq} />
-      <CallToAction />
+      <WhyUs />
+      <FinalCTA />
       <Footer />
     </>
   );

@@ -17,9 +17,9 @@ function Form() {
     <>
       <FullContainer>
         <Container className="  py-10 px-6 lg:px-24">
-          <h6 className="elementHeading6 text-center mx-16 py-10 ">
-            Fill out the form and a member from our sales team will get back to
-            you within 24 hours , or select more ways to get in touch.{" "}
+          <h6 className="text-xl text-center max-w-3xl mx-auto py-10 text-gray-600">
+            Share your project details and we'll respond within 48 hours with a strategic approach.
+            For qualified inquiries, we'll schedule a discovery call to discuss your requirements.
           </h6>
 
           <div className="form grid lg:grid-cols-form gap-8 bg-white shadow-2xl p-4 ">
@@ -36,7 +36,7 @@ function Form() {
               <div className="flex gap-2  ">
                 <LuMail  style={{ color: "lightgray" }} />
 
-                <p className="text-gray-400">+923136224778</p>
+                <p className="text-gray-400">hello@reddev.com</p>
               </div>
 
               <div className="flex  gap-2 ">
@@ -57,7 +57,7 @@ function Form() {
                     Full Name <span className="text-red-500 font-bold">*</span>{" "}
                   </label>
                   <input
-                    className="py-2 w-full bg-slate-100 px-4 mt-2"
+                    className="py-3 w-full bg-slate-100 px-4 mt-2 rounded-lg border border-gray-200 focus:border-primary focus:outline-none"
                     type="text"
                     placeholder="Your Name"
                   />
@@ -65,12 +65,12 @@ function Form() {
 
                 <div>
                   <label className="text-lg font-semibold">
-                    Email <span className="text-red-500 font-bold">*</span>{" "}
+                    Work Email <span className="text-red-500 font-bold">*</span>{" "}
                   </label>
                   <input
                     type="email"
-                    className="py-2 w-full bg-slate-100 px-4 mt-2"
-                    placeholder="Your Email"
+                    className="py-3 w-full bg-slate-100 px-4 mt-2 rounded-lg border border-gray-200 focus:border-primary focus:outline-none"
+                    placeholder="your.email@company.com"
                   />
                 </div>
               </div>
@@ -78,35 +78,64 @@ function Form() {
               <div className="grid gap-y-6 lg:grid-cols-2 lg:py-6 gap-x-8">
                 <div>
                   <label className="text-lg font-semibold">
-                    Phone Num <span className="text-red-500 font-bold">*</span>{" "}
-                  </label>
-                  <input
-                    type="text"
-                    pattern="[0-9]{11}"
-                    className="py-2 w-full bg-slate-100 px-4 mt-2"
-                    placeholder="Enter 11-digit Phone Number"
-                    title="Please enter a valid 11-digit phone number"
-                    required
-                  />
-                </div>
-                <div>
-                  <label className="text-lg font-semibold">
                     Company <span className="text-red-500 font-bold">*</span>{" "}
                   </label>
                   <input
                     type="text"
-                    className="py-2 w-full bg-slate-100 px-4 mt-2"
-                    placeholder="Company"
+                    className="py-3 w-full bg-slate-100 px-4 mt-2 rounded-lg border border-gray-200 focus:border-primary focus:outline-none"
+                    placeholder="Your Company"
+                  />
+                </div>
+                <div>
+                  <label className="text-lg font-semibold">
+                    Website
+                  </label>
+                  <input
+                    type="url"
+                    className="py-3 w-full bg-slate-100 px-4 mt-2 rounded-lg border border-gray-200 focus:border-primary focus:outline-none"
+                    placeholder="https://yourcompany.com"
                   />
                 </div>
               </div>
 
+              <div className="grid gap-y-6 lg:grid-cols-2 lg:py-6 gap-x-8">
+                <div>
+                  <label className="text-lg font-semibold">
+                    Budget Range <span className="text-red-500 font-bold">*</span>{" "}
+                  </label>
+                  <select className="py-3 w-full bg-slate-100 px-4 mt-2 rounded-lg border border-gray-200 focus:border-primary focus:outline-none">
+                    <option value="">Select Budget Range</option>
+                    <option value="10k-25k">$10k - $25k</option>
+                    <option value="25k-50k">$25k - $50k</option>
+                    <option value="50k-100k">$50k - $100k</option>
+                    <option value="100k+">$100k+</option>
+                    <option value="under-10k">Under $10k</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="text-lg font-semibold">
+                    Timeline
+                  </label>
+                  <select className="py-3 w-full bg-slate-100 px-4 mt-2 rounded-lg border border-gray-200 focus:border-primary focus:outline-none">
+                    <option value="">Select Timeline</option>
+                    <option value="asap">ASAP</option>
+                    <option value="1-3months">1-3 months</option>
+                    <option value="3-6months">3-6 months</option>
+                    <option value="6months+">6+ months</option>
+                    <option value="exploring">Just exploring</option>
+                  </select>
+                </div>
+              </div>
+
               <div className="py-6">
+                <label className="text-lg font-semibold block mb-2">
+                  What are you building? <span className="text-red-500 font-bold">*</span>
+                </label>
                 <textarea
-                  placeholder="Your Message"
-                  className="w-full py-2 px-4 bg-slate-100 decoration-clone"
+                  placeholder="Describe your project, goals, and any specific requirements..."
+                  className="w-full py-3 px-4 bg-slate-100 rounded-lg border border-gray-200 focus:border-primary focus:outline-none"
                   id="exampleFormControlTextarea1"
-                  rows="3"
+                  rows="4"
                 ></textarea>
               </div>
                 <div  >
@@ -121,11 +150,17 @@ function Form() {
                   </label>
                 </div>
 
-              <Link href="/">
-                <button className="btn px-10 my-4 bg-primary text-white py-2">
-                  Submit
+              <div className="flex flex-col gap-4">
+                <button 
+                  type="submit"
+                  className="bg-primary text-white py-4 px-8 rounded-lg font-semibold hover:bg-primary/90 transition-colors duration-300"
+                >
+                  Book Discovery Call
                 </button>
-              </Link>
+                <div className="text-sm text-gray-500 text-center">
+                  <p>Projects under $10k: We'll provide resources and referrals to help you get started.</p>
+                </div>
+              </div>
             </form>
           </div>
         </Container>

@@ -10,6 +10,19 @@ import { ArrowRight } from "lucide-react";
 export default function ServicesLanding() {
   const services = [
     {
+      name: "AI Agents & Automation",
+      slug: "ai-solutions",
+      description:
+        "Custom AI agents for customer support, lead qualification, and workflow automation with enterprise-grade security.",
+      features: [
+        "RAG-powered chatbots",
+        "AI workflow automation",
+        "Lead qualification agents",
+        "Human-in-the-loop escalation",
+      ],
+      icon: "🤖",
+    },
+    {
       name: "Ecommerce Development",
       slug: "ecommerce",
       description:
@@ -66,16 +79,16 @@ export default function ServicesLanding() {
   return (
     <>
       <Head>
-        <title>Our Services | Professional Development Solutions</title>
+        <title>Web Development, AI Agents & Custom Software Solutions | RedDev</title>
         <meta
           name="description"
-          content="Discover our comprehensive range of development services including web development, mobile apps, ecommerce solutions, and custom software development."
+          content="Professional web development, AI agent development, mobile apps, and custom software solutions. We build AI chatbots, workflow automation, and high-performance web applications for B2B companies."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
         <meta
           name="keywords"
-          content="web development services, mobile app development, ecommerce development, custom software solutions"
+          content="web development services, AI agent development, custom AI chatbot, mobile app development, ecommerce development, AI workflow automation, RAG chatbot development, custom software solutions"
         />
         <link rel="canonical" href="https://yourwebsite.com/services" />
       </Head>
@@ -113,8 +126,8 @@ export default function ServicesLanding() {
             </span>
           </h1>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            From web development to mobile apps, we provide comprehensive
-            solutions that drive your business forward
+            From AI agents and workflow automation to web development and mobile apps, 
+            we provide comprehensive solutions that drive your business forward
           </p>
         </Container>
       </FullContainer>
@@ -122,7 +135,7 @@ export default function ServicesLanding() {
       {/* Services Grid */}
       <FullContainer className="py-24 bg-white">
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div
                 key={index}
@@ -149,7 +162,7 @@ export default function ServicesLanding() {
                 </ul>
 
                 <Link
-                  href={`/services/${service.slug}`}
+                  href={service.slug === 'ai-solutions' ? '/ai-solutions' : `/services/${service.slug}`}
                   className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors duration-300 group-hover:gap-3"
                 >
                   Learn More

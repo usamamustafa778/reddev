@@ -8,11 +8,11 @@ import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import { motion } from "framer-motion";
 
-export default function Hero({ 
+export default function Hero({
   heading1 = "Transform Your Online Presence with Custom",
   heading2 = "Web Development",
   description = "Build a website that not only looks great but also drives results and user engagement.",
-  image = null
+  image = null,
 }) {
   const [showForm, setShowForm] = useState(false);
   const [offset, setOffset] = useState(0);
@@ -30,7 +30,7 @@ export default function Hero({
   }, []);
 
   const stats = [
-    { number: "500+", label: "Projects Delivered" },
+    { number: "50+", label: "Projects Delivered" },
     { number: "98%", label: "Client Satisfaction" },
     { number: "10+", label: "Years Experience" },
   ];
@@ -96,8 +96,7 @@ export default function Hero({
                   </svg>
                 </span>
                 <span className="absolute inset-0 animate-[glitch_3s_infinite]"></span>
-              </span>{" "}
-              Solutions
+              </span>
             </motion.h1>
 
             {/* Description */}
@@ -115,17 +114,27 @@ export default function Hero({
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="grid grid-cols-3 gap-8 pt-4 md:pt-5"
+              className="space-y-6 pt-4 md:pt-5"
             >
-              {stats.map((stat, index) => (
-                <div key={index} className="space-y-2 relative group">
-                  <div className="text-3xl font-bold text-white relative">
-                    {stat.number}
-                    <div className="absolute -inset-2 bg-white/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="grid grid-cols-3 gap-8">
+                {stats.map((stat, index) => (
+                  <div key={index} className="space-y-2 relative group">
+                    <div className="text-3xl font-bold text-white relative">
+                      {stat.number}
+                      <div className="absolute -inset-2 bg-white/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
+                    <div className="text-sm text-white/60">{stat.label}</div>
                   </div>
-                  <div className="text-sm text-white/60">{stat.label}</div>
+                ))}
+              </div>
+
+              {/* Pricing Qualifier */}
+              <div className="text-center">
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full text-sm text-white/80 border border-white/20">
+                  <span className="w-2 h-2 bg-primary rounded-full"></span>
+                  Projects start at $15k
                 </div>
-              ))}
+              </div>
             </motion.div>
           </div>
 
@@ -142,11 +151,11 @@ export default function Hero({
                 {/* Form Header */}
                 <div className="space-y-3">
                   <h3 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/80">
-                    Get Your Free Consultation
+                    Book a Discovery Call
                   </h3>
                   <p className="text-white/60 text-sm md:text-base">
-                    Fill out this form and {"we'll"} contact you within 24
-                    hours.
+                    Share your project details and we'll respond within 24-48
+                    hours with a strategic approach.
                   </p>
                 </div>
 
@@ -165,35 +174,57 @@ export default function Hero({
                       <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl"></div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                      <div className="relative group">
-                        <input
-                          type="email"
-                          placeholder="Email Address"
-                          className="w-full px-5 py-4 bg-white/5 rounded-xl border border-white/10 
-                          focus:border-white/50 focus:ring-2 focus:ring-white/20 focus:outline-none
-                          text-white placeholder:text-white/40 transition-all duration-300
-                          backdrop-blur-sm group-hover:border-white/20"
-                        />
-                        <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl"></div>
-                      </div>
+                    <div className="relative group">
+                      <input
+                        type="email"
+                        placeholder="Work Email"
+                        className="w-full px-5 py-4 bg-white/5 rounded-xl border border-white/10 
+                        focus:border-white/50 focus:ring-2 focus:ring-white/20 focus:outline-none
+                        text-white placeholder:text-white/40 transition-all duration-300
+                        backdrop-blur-sm group-hover:border-white/20"
+                      />
+                      <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl"></div>
+                    </div>
 
-                      <div className="relative group">
-                        <PhoneInput
-                          placeholder="Phone Number"
-                          className="w-full px-5 py-4 bg-white/5 rounded-xl border border-white/10 
+                    <div className="relative group">
+                      <input
+                        type="text"
+                        placeholder="Company Name"
+                        className="w-full px-5 py-4 bg-white/5 rounded-xl border border-white/10 
                           focus:border-white/50 focus:ring-2 focus:ring-white/20 focus:outline-none
                           text-white placeholder:text-white/40 transition-all duration-300
                           backdrop-blur-sm group-hover:border-white/20"
-                        />
-                        <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl"></div>
-                      </div>
+                      />
+                      <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl"></div>
+                    </div>
+
+                    <div className="relative group">
+                      <select
+                        className="w-full px-5 py-4 bg-white/5 rounded-xl border border-white/10 
+                          focus:border-white/50 focus:ring-2 focus:ring-white/20 focus:outline-none
+                          text-white transition-all duration-300
+                          backdrop-blur-sm group-hover:border-white/20"
+                      >
+                        <option value="" className="text-gray-900">
+                          Budget Range (Optional)
+                        </option>
+                        <option value="15k-35k" className="text-gray-900">
+                          $15k - $35k
+                        </option>
+                        <option value="35k-75k" className="text-gray-900">
+                          $35k - $75k
+                        </option>
+                        <option value="75k+" className="text-gray-900">
+                          $75k+
+                        </option>
+                      </select>
+                      <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl"></div>
                     </div>
 
                     <div className="relative group">
                       <textarea
-                        placeholder="Tell us about your project..."
-                        rows="3"
+                        placeholder="What are you building? (Optional)"
+                        rows="2"
                         className="w-full px-5 py-4 bg-white/5 rounded-xl border border-white/10 
                         focus:border-white/50 focus:ring-2 focus:ring-white/20 focus:outline-none
                         text-white placeholder:text-white/40 transition-all duration-300
@@ -211,45 +242,50 @@ export default function Hero({
                     flex items-center justify-center gap-2 group relative overflow-hidden font-medium
                     hover:bg-white/90 active:bg-white/80"
                   >
-                    <span className="relative z-10">Get Free Consultation</span>
+                    <span className="relative z-10">Book a Discovery Call</span>
                     <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform relative z-10" />
                   </button>
                 </form>
 
                 {/* Trust Indicators */}
                 <div className="pt-6 border-t border-white/10">
-                  <div className="flex items-center justify-center gap-6 text-white/60">
-                    <div className="flex items-center gap-2 group">
-                      <svg
-                        className="w-5 h-5 text-white/60 group-hover:text-white/80 transition-colors"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                      <span className="text-sm group-hover:text-white/80 transition-colors">
-                        Free Consultation
-                      </span>
+                  <div className="text-center space-y-3">
+                    <div className="text-white/70 text-sm">
+                      Response within 24–48h • Min engagement $15k
                     </div>
-                    <div className="flex items-center gap-2 group">
-                      <svg
-                        className="w-5 h-5 text-white/60 group-hover:text-white/80 transition-colors"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                      <span className="text-sm group-hover:text-white/80 transition-colors">
-                        24/7 Support
-                      </span>
+                    <div className="flex items-center justify-center gap-6 text-white/60">
+                      <div className="flex items-center gap-2 group">
+                        <svg
+                          className="w-5 h-5 text-white/60 group-hover:text-white/80 transition-colors"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                        <span className="text-sm group-hover:text-white/80 transition-colors">
+                          Strategic Consultation
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-2 group">
+                        <svg
+                          className="w-5 h-5 text-white/60 group-hover:text-white/80 transition-colors"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                        <span className="text-sm group-hover:text-white/80 transition-colors">
+                          Dedicated Support
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>

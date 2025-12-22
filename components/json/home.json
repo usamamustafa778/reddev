@@ -2,41 +2,46 @@
     
     "detail": {
       "title": "Web Development",
-      "heroheading1": "Transform Your Online Presence with Custom ",
-      "heroheading2": "Web Development",
-      "herodescription": "Build a website that not only looks great but also drives results and user engagement.",
+      "heroheading1": "Web, mobile, and AI systems that",
+      "heroheading2": "cut costs and grow revenue",
+      "herodescription": "We build high-performance products—and AI agents that automate support, sales, and operations. For B2B companies ready to scale with technology.",
       "heroimage": "/hero.jpg",
-      "testimonialheading": "Client Testimonials: See What Our Partners Say",
-      "testimonialdescription": "For over a decade, we've helped businesses of all sizes grow and succeed with our web development solutions.",
+      "testimonialheading": "Trusted by Growing B2B Companies",
+      "testimonialdescription": "Real results from real clients who've scaled their businesses with our high-performance web solutions.",
       "testimonial": [
           {
-              "first": "reddev created a sleek, responsive website that has boosted our online presence.",
-              "second": "Our traffic and conversion rates have dramatically improved.",
-              "clientname": "Anna Thompson, Marketing Director, FashionCo",
+              "first": "RedDev rebuilt our SaaS platform from the ground up using Next.js.",
+              "second": "We went from 2-second load times to 0.4 seconds, increasing our trial-to-paid conversion by 34%.",
+              "clientname": "Michael Chen, CTO at DataFlow Analytics",
+              "company": "dataflow-analytics.com",
               "fade": "fade-right"
             },
             {
-              "first": "Their ability to handle complex web development challenges is impressive.",
-              "second": "We now have a fast, scalable platform.",
-              "clientname": "Chris Adams, CTO, FinCorp",
+              "first": "Their B2B lead generation site generated 127 qualified leads in the first month.",
+              "second": "ROI was 340% within 90 days—best investment we've made.",
+              "clientname": "Sarah Rodriguez, VP Marketing at TechConsult Pro",
+              "company": "techconsultpro.com",
               "fade": "fade-down"
             },
             {
-              "first": "Working with reddev was seamless from start to finish.",
-              "second": "They delivered an outstanding e-commerce site for us.",
-              "clientname": "Sophia Nguyen, Founder, ShopEase",
+              "first": "RedDev's e-commerce platform handles our $2M+ monthly volume flawlessly.",
+              "second": "Cart abandonment dropped 28% and mobile conversions increased 45%.",
+              "clientname": "David Park, CEO at IndustrialSupply Co",
+              "company": "industrialsupply.co",
               "fade": "fade-up"
             },
             {
-              "first": "Their custom solutions helped us streamline our online operations.",
-              "second": "The integration with our backend systems was flawless.",
-              "clientname": "James Lee, COO, RetailMax",
+              "first": "They integrated our CRM, payment systems, and analytics into one seamless platform.",
+              "second": "Processing time reduced from 4 hours to 12 minutes per client onboarding.",
+              "clientname": "Jennifer Walsh, Operations Director at FinanceFlow",
+              "company": "financeflow.io",
               "fade": "fade-down"
             },
             {
-              "first": "reddev provided a user-friendly and secure platform.",
-              "second": "We are thrilled with the results and their ongoing support.",
-              "clientname": "Olivia Harris, Founder, Eventify",
+              "first": "Our enterprise web app now serves 50,000+ daily active users without issues.",
+              "second": "Uptime improved to 99.97% and customer satisfaction scores hit all-time highs.",
+              "clientname": "Robert Kim, Head of Product at CloudScale",
+              "company": "cloudscale.tech",
               "fade": "fade-left"
             }
       ],

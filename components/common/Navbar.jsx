@@ -13,6 +13,7 @@ import {
   Smartphone,
   Code,
   ArrowRight,
+  Brain,
 } from "lucide-react";
 import Image from "next/image";
 
@@ -147,6 +148,12 @@ export default function Navbar({ className }) {
 
             <Link
               className="py-2 font-medium hover:text-primary transition-colors"
+              href="/ai-solutions"
+            >
+              AI Solutions
+            </Link>
+            <Link
+              className="py-2 font-medium hover:text-primary transition-colors"
               href="/our-work"
             >
               Our Work
@@ -162,11 +169,11 @@ export default function Navbar({ className }) {
           {/* CTA Button */}
           <div className="hidden lg:flex items-center">
             <Link
-              href="/"
+              href="/contact-us"
               className="group relative inline-flex items-center justify-center px-5 py-3 text-lg font-semibold text-white bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 rounded-xl transition-all duration-300 overflow-hidden"
             >
               <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-white/0 via-white/20 to-white/0 skew-x-[-20deg] translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
-              <span className="mr-3">Get Free Consultation</span>
+              <span className="mr-3">Book Discovery Call</span>
               <ArrowRight className="w-6 h-6 transform group-hover:translate-x-2 transition-transform duration-300" />
             </Link>
           </div>
@@ -226,6 +233,12 @@ export default function Navbar({ className }) {
 
               <div className="space-y-3">
                 <Link
+                  href="/ai-solutions"
+                  className="block py-2 font-medium hover:text-primary transition-colors"
+                >
+                  AI Solutions
+                </Link>
+                <Link
                   href="/our-work"
                   className="block py-2 font-medium hover:text-primary transition-colors"
                 >
@@ -246,7 +259,7 @@ export default function Navbar({ className }) {
                 }}
                 className="w-full px-6 py-3 rounded-full bg-primary text-white font-medium hover:bg-primary/90 transition-colors"
               >
-                Get Free Consultation
+                Book Discovery Call
               </button>
             </nav>
           </div>
