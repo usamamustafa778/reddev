@@ -41,16 +41,16 @@ export default function WhyUs() {
     <FullContainer className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <Container>
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-purple-100 to-blue-100 text-purple-700 rounded-full text-sm font-semibold mb-6 border border-purple-200">
             ⭐ Why RedDev
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
             Why B2B Companies{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-violet-600 to-blue-600">
               Choose Us
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             We're not just developers—we're strategic partners focused on driving 
             measurable business outcomes through technology.
           </p>
@@ -60,18 +60,18 @@ export default function WhyUs() {
           {advantages.map((advantage, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-2xl border border-gray-200 hover:border-primary/30 hover:shadow-lg transition-all duration-300 group"
+              className="bg-white p-8 rounded-2xl border border-slate-200 hover:border-purple-300 hover:shadow-lg transition-all duration-300 group"
               data-aos="fade-up"
               data-aos-duration="600"
               data-aos-delay={index * 100}
             >
-              <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+              <div className="w-14 h-14 bg-gradient-to-br from-purple-100 to-blue-100 rounded-xl flex items-center justify-center text-purple-600 mb-6 group-hover:from-purple-600 group-hover:to-blue-600 group-hover:text-white transition-all duration-300">
                 {advantage.icon}
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
+              <h3 className="text-xl font-bold text-slate-900 mb-4">
                 {advantage.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-slate-600 leading-relaxed">
                 {advantage.description}
               </p>
             </div>

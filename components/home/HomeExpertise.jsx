@@ -8,7 +8,7 @@ export default function HomeExpertise() {
     <FullContainer className="py-24 ">
       <Container className="  ">
         <h1 className="text-4xl ">
-          <span className="text-blue-700">Industries</span> We Work With
+          <span className="text-orange-700">Industries</span> We Work With
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20   py-10 ">

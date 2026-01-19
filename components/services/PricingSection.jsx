@@ -421,19 +421,19 @@ const PricingSection = ({ service = "web-development" }) => {
     <FullContainer className="py-24 bg-gradient-to-b from-gray-50 to-white">
       <Container>
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-purple-100 to-blue-100 text-purple-700 rounded-full text-sm font-semibold mb-4 border border-purple-200">
             💰 Transparent Pricing
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
             {serviceData.title}
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-8">
             {serviceData.subtitle}
           </p>
           
           {/* Discovery Sprint Note */}
-          <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 max-w-2xl mx-auto">
-            <p className="text-blue-800 text-sm font-medium">
+          <div className="bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-xl p-5 max-w-2xl mx-auto shadow-sm">
+            <p className="text-slate-700 text-sm font-semibold">
               Most projects start with a 5–10 day Discovery Sprint ({PRICING_CONSTANTS.discovery.label}, credited if we build).
             </p>
           </div>
@@ -445,13 +445,13 @@ const PricingSection = ({ service = "web-development" }) => {
               key={index}
               className={`relative bg-white rounded-2xl border-2 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 ${
                 plan.popular
-                  ? "border-primary shadow-xl scale-105"
-                  : "border-gray-200 hover:border-primary/30"
+                  ? "border-purple-500 shadow-xl scale-105"
+                  : "border-slate-200 hover:border-purple-300"
               }`}
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <div className="bg-primary text-white px-4 py-2 rounded-full text-sm font-semibold">
+                  <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg">
                     Most Popular
                   </div>
                 </div>
@@ -460,22 +460,22 @@ const PricingSection = ({ service = "web-development" }) => {
               <div className="p-8">
                 {/* Header */}
                 <div className="text-center mb-8">
-                  <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4 text-primary">
+                  <div className="w-16 h-16 bg-gradient-to-br from-purple-100 to-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4 text-purple-600">
                     {plan.icon}
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-2">
                     {plan.name}
                   </h3>
-                  <p className="text-gray-600">{plan.subtitle}</p>
+                  <p className="text-slate-600">{plan.subtitle}</p>
                 </div>
 
                 {/* Pricing */}
                 <div className="text-center mb-8">
-                  <div className="text-4xl font-bold text-gray-900 mb-2">
+                  <div className="text-4xl font-bold text-slate-900 mb-2">
                     {plan.pricing}
                   </div>
-                  <div className="text-gray-600 mb-4">{plan.monthlyOption}</div>
-                  <div className="inline-flex items-center gap-2 px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">
+                  <div className="text-slate-600 mb-4">{plan.monthlyOption}</div>
+                  <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-green-100 text-green-700 rounded-full text-sm font-semibold border border-green-200">
                     🚀 {plan.deliveryTime}
                   </div>
                 </div>
@@ -602,8 +602,8 @@ const PricingSection = ({ service = "web-development" }) => {
                   href={plan.ctaRoute || "/contact-us"}
                   className={`w-full py-4 px-6 rounded-xl font-semibold text-lg transition-all duration-300 flex items-center justify-center gap-2 ${
                     plan.popular
-                      ? "bg-primary text-white hover:bg-primary/90 shadow-lg hover:shadow-xl"
-                      : "bg-gray-900 text-white hover:bg-gray-800"
+                      ? "bg-gradient-to-r from-purple-600 to-blue-600 text-white hover:from-purple-700 hover:to-blue-700 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                      : "bg-slate-900 text-white hover:bg-slate-800 shadow-md hover:shadow-lg"
                   }`}
                 >
                   {plan.buttonText}
@@ -616,18 +616,18 @@ const PricingSection = ({ service = "web-development" }) => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 border border-primary/20 rounded-2xl p-8 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+          <div className="bg-gradient-to-r from-purple-50 via-blue-50 to-purple-50 border border-purple-200 rounded-2xl p-8 max-w-4xl mx-auto shadow-sm">
+            <h3 className="text-2xl font-bold text-slate-900 mb-4">
               Need a Custom Solution?
             </h3>
-            <p className="text-lg text-gray-600 mb-6">
+            <p className="text-lg text-slate-600 mb-6">
               Every business is unique. Let&apos;s discuss your specific requirements and create a tailored solution.
             </p>
             <a 
               href="/contact-us"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white rounded-full font-semibold hover:bg-primary/90 transition-colors"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-xl font-semibold hover:from-purple-700 hover:to-blue-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
-              Book Discovery Call
+              Get In Touch
               <FaArrowRight className="w-4 h-4" />
             </a>
           </div>

@@ -1,13 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-body {
-  font-family: 'Poppins', sans-serif;
-  cursor: none;
+@layer base {
+  * {
+    @apply border-slate-200;
+  }
+  
+  body {
+    font-family: 'Inter', 'Poppins', sans-serif;
+    @apply text-slate-900 antialiased;
+    cursor: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
 }
 
 .bg-custom-color2 {
@@ -76,35 +86,27 @@ body {
   }
 
   .btnPrimary {
-    @apply bg-primary hover:bg-secondary border-white border-2 hover:border-primary capitalize rounded-full whitespace-nowrap font-medium py-3 text-center px-6 transition-all text-white
+    @apply bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 
+    border-0 capitalize rounded-xl whitespace-nowrap font-semibold py-3.5 text-center px-8 
+    transition-all text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5
   }
 
   .btnPrimarySmall {
-    @apply bg-primary capitalize whitespace-nowrap rounded font-medium py-2 text-center px-4 transition-all text-white
-  }
-
-  .btnPrimary:hover {
-    @apply opacity-90
-  }
-
-  .btnPrimary:hover {
-    @apply opacity-90
+    @apply bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 
+    capitalize whitespace-nowrap rounded-xl font-semibold py-2.5 text-center px-6 
+    transition-all text-white shadow-md hover:shadow-lg
   }
 
   .btnSecondary {
-    @apply bg-secondary whitespace-nowrap capitalize rounded-md font-medium py-3 text-center px-6 transition-all text-white
+    @apply bg-white border-2 border-slate-300 hover:border-purple-400 
+    whitespace-nowrap capitalize rounded-xl font-semibold py-3.5 text-center px-8 
+    transition-all text-slate-900 hover:bg-slate-50 shadow-sm hover:shadow-md
   }
 
   .btnSecondarySmall {
-    @apply bg-secondary whitespace-nowrap capitalize rounded-md font-medium py-2 text-center px-4 transition-all text-white
-  }
-
-  .btnSecondary:hover {
-    @apply opacity-90
-  }
-
-  .btnSecondary:hover {
-    @apply opacity-90
+    @apply bg-white border-2 border-slate-300 hover:border-purple-400 
+    whitespace-nowrap capitalize rounded-xl font-semibold py-2.5 text-center px-6 
+    transition-all text-slate-900 hover:bg-slate-50
   }
 }
 
@@ -123,7 +125,7 @@ body {
   position: fixed;
   width: 8px;
   height: 8px;
-  background-color: #dc2626;
+  background-color: #DC2626;
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
@@ -161,7 +163,7 @@ body {
   height: 12px;
   margin-left: -6px;
   margin-top: -6px;
-  background-color: #dc2626;
+  background-color: #DC2626;
   mix-blend-mode: difference;
 }
 
@@ -210,6 +212,30 @@ body {
   50% {
     opacity: 0.5;
   }
+}
+
+@keyframes blob {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s ease-in-out infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
 }
 
 /* Make all elements have no cursor to use our custom one */

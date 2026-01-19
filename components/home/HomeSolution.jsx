@@ -17,19 +17,19 @@ export default function HomeSolution() {
           </p>
         {/* FIRST ROW  */}
         <div className="grid grid-cols-2  lg:grid-cols-4 py-8 gap-6 text-center">
-          <div className="First bg-white p-2 hover:bg-blue-700 hover:text-white cursor-pointer  py-8">
+          <div className="First bg-white p-2 hover:bg-orange-700 hover:text-white cursor-pointer  py-8">
             <h5 className="elementHeading5">Enterprise applications</h5>
           </div>
 
-          <div className="Second bg-white p-2 hover:bg-blue-700 hover:text-white cursor-pointer  py-8">
+          <div className="Second bg-white p-2 hover:bg-orange-700 hover:text-white cursor-pointer  py-8">
             <h5 className="elementHeading5">ERP</h5>
           </div>
 
-          <div className="Third bg-white p-2 hover:bg-blue-700 hover:text-white cursor-pointer  py-8">
+          <div className="Third bg-white p-2 hover:bg-orange-700 hover:text-white cursor-pointer  py-8">
             <h5 className="elementHeading5">CRM</h5>
           </div>
 
-          <div className="Fourth bg-white p-2  hover:bg-blue-700 hover:text-white cursor-pointer  py-8">
+          <div className="Fourth bg-white p-2  hover:bg-orange-700 hover:text-white cursor-pointer  py-8">
             <h5 className="elementHeading5">HR software</h5>
           </div>
         </div>
@@ -37,19 +37,19 @@ export default function HomeSolution() {
         {/* SECOND ROW  */}
            
         <div className="grid grid-cols-2  lg:grid-cols-4 pb-8  gap-6 text-center">
-          <div className="First bg-white p-2 hover:bg-blue-700 hover:text-white cursor-pointer  py-8">
+          <div className="First bg-white p-2 hover:bg-orange-700 hover:text-white cursor-pointer  py-8">
             <h5 className="elementHeading5">eLearning software</h5>
           </div>
 
-          <div className="Second bg-white p-2 hover:bg-blue-700 hover:text-white cursor-pointer  py-8">
+          <div className="Second bg-white p-2 hover:bg-orange-700 hover:text-white cursor-pointer  py-8">
             <h5 className="elementHeading5">eCommerce</h5>
           </div>
 
-          <div className="Third bg-white p-2 hover:bg-blue-700 hover:text-white cursor-pointer  py-8">
+          <div className="Third bg-white p-2 hover:bg-orange-700 hover:text-white cursor-pointer  py-8">
             <h5 className="elementHeading5">Mobile Apps</h5>
           </div>
 
-          <div className="Fourth bg-white p-2  hover:bg-blue-700 hover:text-white cursor-pointer  py-8">
+          <div className="Fourth bg-white p-2  hover:bg-orange-700 hover:text-white cursor-pointer  py-8">
             <h5 className="elementHeading5"> productivity solutions</h5>
           </div>
         </div>
@@ -57,19 +57,19 @@ export default function HomeSolution() {
 
 
         <div className="grid grid-cols-2  lg:grid-cols-4 mb-8  gap-6 text-center">
-          <div className="First bg-white p-2 hover:bg-blue-700 hover:text-white cursor-pointer  py-8">
+          <div className="First bg-white p-2 hover:bg-orange-700 hover:text-white cursor-pointer  py-8">
             <h5 className="elementHeading5">Fleet management software</h5>
           </div>
 
-          <div className="Second bg-white p-2 hover:bg-blue-700 hover:text-white cursor-pointer  py-8">
+          <div className="Second bg-white p-2 hover:bg-orange-700 hover:text-white cursor-pointer  py-8">
             <h5 className="elementHeading5">Data Analytics</h5>
           </div>
 
-          <div className="Third bg-white p-2 hover:bg-blue-700 hover:text-white cursor-pointer  py-8">
+          <div className="Third bg-white p-2 hover:bg-orange-700 hover:text-white cursor-pointer  py-8">
             <h5 className="elementHeading5">Web Portals</h5>
           </div>
 
-          <div className="Fourth bg-white p-2  hover:bg-blue-700 hover:text-white cursor-pointer  py-8">
+          <div className="Fourth bg-white p-2  hover:bg-orange-700 hover:text-white cursor-pointer  py-8">
             <h5 className="elementHeading5"> ITSM</h5>
           </div>
         </div>

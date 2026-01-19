@@ -168,7 +168,7 @@ export default function App({ Component, pageProps }) {
   }, []);
 
   return (
-    <div className={myFont.className}>
+    <div className={`${myFont.className} antialiased`}>
       <div 
         ref={cursorOuterRef}
         className="cursor-outer"
@@ -177,7 +177,9 @@ export default function App({ Component, pageProps }) {
         ref={cursorInnerRef}
         className="cursor-inner"
       />
-      <Component {...pageProps} />
+      <div className="min-h-screen bg-white">
+        <Component {...pageProps} />
+      </div>
     </div>
   );
 }

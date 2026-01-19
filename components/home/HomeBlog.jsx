@@ -12,7 +12,7 @@ export default function HomeBlog() {
           <div className="  ">
             <h4 className="text-xl flex flex-col text-gray-600">OUR BLOG</h4>
             <h1 className="text-5xl pb-5">
-              Most <span className="text-blue-700">recent</span> articles
+              Most <span className="text-orange-700">recent</span> articles
             </h1>
             <p className="text-lg max-w-[600px]">
               The latest news, greatest tutorials and inspiration that’ll make
@@ -32,7 +32,7 @@ export default function HomeBlog() {
                 height={400}
               />
               <div className="flex flex-row justify-between">
-                <p className="bg-blue-200 rounded-full  inline text-blue-700 px-4 py-1">
+                <p className="bg-orange-200 rounded-full  inline text-orange-700 px-4 py-1">
                   Innovation
                 </p>
                 <div className="text-gray-500">22 August 2024</div>
@@ -54,7 +54,7 @@ export default function HomeBlog() {
                 height={400}
               />
               <div className="flex flex-row justify-between">
-                <p className="bg-blue-200 rounded-full  inline text-blue-700 px-4 py-1">
+                <p className="bg-orange-200 rounded-full  inline text-orange-700 px-4 py-1">
                   Innovation
                 </p>
                 <div className="text-gray-500">22 August 2024</div>
@@ -76,7 +76,7 @@ export default function HomeBlog() {
                 height={400}
               />
               <div className="flex flex-row justify-between">
-                <p className="bg-blue-200 rounded-full  inline text-blue-700 px-4 py-1">
+                <p className="bg-orange-200 rounded-full  inline text-orange-700 px-4 py-1">
                   Innovation
                 </p>
                 <div className="text-gray-500">22 August 2024</div>

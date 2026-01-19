@@ -8,35 +8,41 @@ import BgAnimation from "../BgAnimation";
 
 function Footer() {
   return (
-    <FullContainer className="relative bg-gradient-to-br from-gray-950 via-zinc-950 to-gray-950 text-white overflow-hidden">
+    <FullContainer className="relative bg-gradient-to-br from-slate-50 via-white to-purple-50/30 text-slate-900 overflow-hidden border-t border-slate-200">
       <BgAnimation />
 
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-0 -left-52 w-[50%] h-[50%] bg-red-950/50 rounded-full mix-blend-multiply filter blur-xl animate-blob" />
-        <div className="absolute top-0 -right-4 w-[50%] h-[50%] bg-blue-500/20 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000" />
-        <div className="absolute -bottom-32 -left-32 w-[50%] h-[50%] animt bg-teal-500/10 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000" />
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-0 -left-52 w-[50%] h-[50%] bg-purple-300/30 rounded-full mix-blend-multiply filter blur-xl animate-blob" />
+        <div className="absolute top-0 -right-4 w-[50%] h-[50%] bg-blue-300/30 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000" />
+        <div className="absolute -bottom-32 -left-32 w-[50%] h-[50%] bg-violet-300/20 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000" />
       </div>
 
       <Container className="z-10 py-16 md:py-24 ">
-        <div className="text-white/80">
+        <div className="text-slate-700">
           {/* Top Section */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
             {/* Company Info */}
             <div className="lg:col-span-4 space-y-8">
               <Link
-                className="relative z-10 hover:opacity-75 transition-opacity duration-300"
+                className="relative z-10 hover:opacity-75 transition-opacity duration-300 group"
                 href="/"
               >
-                <Image
-                  src="/logo-white.png"
-                  alt="reddev Logo"
-                  width={180}
-                  height={48}
-                  className="h-12 w-auto object-contain"
-                  priority
-                />
+                <div className="relative">
+                  <Image
+                    src="/logo.png"
+                    alt="reddev Logo"
+                    width={180}
+                    height={48}
+                    className="h-12 w-auto object-contain brightness-0 opacity-90"
+                    priority
+                    style={{
+                      filter: 'brightness(0) saturate(100%) invert(17%) sepia(97%) saturate(6213%) hue-rotate(356deg) brightness(91%) contrast(88%)'
+                    }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-red-600 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 mix-blend-overlay"></div>
+                </div>
               </Link>
-              <p className="text-white/90 max-w-sm text-lg">
+              <p className="text-slate-600 max-w-sm text-lg leading-relaxed">
                 Transforming ideas into exceptional digital experiences. Your
                 trusted partner in innovative software solutions.
               </p>
@@ -53,7 +59,7 @@ function Footer() {
                   <a
                     key={index}
                     href={social.link}
-                    className="w-12 h-12 rounded-xl bg-white/10 backdrop-blur-sm hover:bg-primary text-white/80 hover:text-white flex items-center justify-center transition-all duration-300"
+                    className="w-12 h-12 rounded-xl bg-white border border-slate-200 hover:bg-gradient-to-r hover:from-red-600 hover:to-orange-600 hover:border-transparent text-slate-600 hover:text-white flex items-center justify-center transition-all duration-300 shadow-sm hover:shadow-md"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -67,7 +73,7 @@ function Footer() {
             <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-12">
               {/* Company Links */}
               <div className="space-y-8">
-                <h5 className="text-xl font-semibold text-white">Company</h5>
+                <h5 className="text-xl font-bold text-slate-900">Company</h5>
                 <div className="flex flex-col space-y-4">
                   {[
                     { name: "Home", href: "/" },
@@ -78,9 +84,9 @@ function Footer() {
                       <Link
                         key={index}
                         href={item.href}
-                        className="text-white/70 hover:text-white transition-colors duration-300 flex items-center group"
+                        className="text-slate-600 hover:text-red-600 transition-colors duration-300 flex items-center group font-medium"
                       >
-                        <span className="w-2 h-2 rounded-full bg-primary mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                        <span className="w-2 h-2 rounded-full bg-red-600 mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                         {item.name}
                       </Link>
                     )
@@ -90,7 +96,7 @@ function Footer() {
 
               {/* Industries */}
               <div className="space-y-8">
-                <h5 className="text-xl font-semibold text-white">Industries</h5>
+                <h5 className="text-xl font-bold text-slate-900">Industries</h5>
                 <div className="flex flex-col space-y-4">
                   {[
                     { name: "Healthcare", id: "healthcare" },
@@ -105,9 +111,9 @@ function Footer() {
                     <Link
                       key={index}
                       href={`/industries?industry=${industry.id}`}
-                      className="text-white/70 hover:text-white transition-colors duration-300 flex items-center group"
+                      className="text-slate-600 hover:text-purple-600 transition-colors duration-300 flex items-center group font-medium"
                     >
-                      <span className="w-2 h-2 rounded-full bg-primary mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                      <span className="w-2 h-2 rounded-full bg-purple-600 mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                       {industry.name}
                     </Link>
                   ))}
@@ -116,7 +122,7 @@ function Footer() {
 
               {/* Services */}
               <div className="space-y-8">
-                <h5 className="text-xl font-semibold text-white">Services</h5>
+                <h5 className="text-xl font-bold text-slate-900">Services</h5>
                 <div className="flex flex-col space-y-4">
                   {[
                     { name: "AI Solutions", slug: "ai-solutions", isRoot: true },
@@ -128,9 +134,9 @@ function Footer() {
                     <Link
                       key={index}
                       href={item.isRoot ? `/${item.slug}` : `/services/${item.slug}`}
-                      className="text-white/70 hover:text-white transition-colors duration-300 flex items-center group"
+                      className="text-slate-600 hover:text-purple-600 transition-colors duration-300 flex items-center group font-medium"
                     >
-                      <span className="w-2 h-2 rounded-full bg-primary mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                      <span className="w-2 h-2 rounded-full bg-purple-600 mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                       {item.name}
                     </Link>
                   ))}
@@ -140,40 +146,40 @@ function Footer() {
           </div>
 
           {/* Newsletter Section */}
-          <div className="max-w-xl mt-16">
-            <h5 className="text-2xl font-semibold text-white mb-2">
+          <div className="max-w-xl mt-16 p-8 rounded-2xl bg-gradient-to-br from-purple-50 to-blue-50 border border-purple-100">
+            <h5 className="text-2xl font-bold text-slate-900 mb-2">
               Stay Updated
             </h5>
-            <p className="text-white/70 mb-5 text-lg">
+            <p className="text-slate-600 mb-6 text-lg">
               Subscribe to our newsletter for the latest updates and insights.
             </p>
             <div className="flex gap-3">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-6 py-3 bg-white/10 border border-white/10 rounded-xl focus:outline-none focus:border-primary text-white placeholder:text-white/50 backdrop-blur-sm"
+                className="flex-1 px-6 py-3.5 bg-white border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent text-slate-900 placeholder:text-slate-400 shadow-sm"
               />
-              <button className="px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-xl transition-colors duration-300 font-semibold">
+              <button className="px-8 py-3.5 bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white rounded-xl transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                 Subscribe
               </button>
             </div>
           </div>
 
           {/* Copyright */}
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-6 mt-16">
-            <p className="text-white/70">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-6 mt-16 pt-8 border-t border-slate-200">
+            <p className="text-slate-600">
               © {new Date().getFullYear()} reddev. All rights reserved.
             </p>
             <div className="flex items-center gap-8">
               <Link
                 href="/privacy"
-                className="text-white/70 hover:text-white transition-colors duration-300"
+                className="text-slate-600 hover:text-red-600 transition-colors duration-300 font-medium"
               >
                 Privacy Policy
               </Link>
               <Link
                 href="/terms"
-                className="text-white/70 hover:text-white transition-colors duration-300"
+                className="text-slate-600 hover:text-red-600 transition-colors duration-300 font-medium"
               >
                 Terms of Service
               </Link>

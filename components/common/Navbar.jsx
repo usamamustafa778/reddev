@@ -77,23 +77,31 @@ export default function Navbar({ className }) {
   return (
     <>
       <FullContainer
-        className={`z-20 transition-all duration-300 ${
-          scrolled ? "hidden" : "text-white pt-3 fixed top-0"
+        className={`z-50 transition-all duration-300 ${
+          scrolled 
+            ? "bg-white/95 backdrop-blur-md shadow-lg text-slate-900 fixed top-0" 
+            : "bg-transparent text-white pt-3 fixed top-0"
         }`}
       >
-        <Container className="flex items-center justify-between h-fit py-1.5 md:py-2.5">
+        <Container className="flex items-center justify-between h-fit py-3 md:py-4">
           <Link
-            className="relative z-10 hover:opacity-75 transition-opacity duration-300"
+            className="relative z-10 hover:opacity-75 transition-opacity duration-300 group"
             href="/"
           >
-            <Image
-              src="/logo.png"
-              alt="reddev Logo"
-              width={180}
-              height={48}
-              className="h-11 md:h-12 w-auto object-contain"
-              priority
-            />
+            <div className="relative">
+              <Image
+                src="/logo.png"
+                alt="reddev Logo"
+                width={180}
+                height={48}
+                className="h-11 md:h-12 w-auto object-contain brightness-0 opacity-90"
+                priority
+                style={{
+                  filter: 'brightness(0) saturate(100%) invert(17%) sepia(97%) saturate(6213%) hue-rotate(356deg) brightness(91%) contrast(88%)'
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-red-600 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 mix-blend-overlay"></div>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -103,7 +111,9 @@ export default function Navbar({ className }) {
               onMouseEnter={() => setServicesHovered(true)}
               onMouseLeave={() => setServicesHovered(false)}
             >
-              <span className="inline-flex items-center gap-1 py-2 font-medium hover:text-primary cursor-pointer transition-colors">
+              <span             className={`inline-flex items-center gap-1 py-2 font-semibold cursor-pointer transition-colors ${
+                scrolled ? "hover:text-red-600" : "hover:text-red-300"
+              }`}>
                 Services
                 <ChevronDown
                   className={`w-4 h-4 transition-transform duration-300 ${
@@ -147,19 +157,25 @@ export default function Navbar({ className }) {
             </li>
 
             <Link
-              className="py-2 font-medium hover:text-primary transition-colors"
+              className={`py-2 font-semibold transition-colors ${
+                scrolled ? "hover:text-red-600" : "hover:text-red-300"
+              }`}
               href="/ai-solutions"
             >
               AI Solutions
             </Link>
             <Link
-              className="py-2 font-medium hover:text-primary transition-colors"
+              className={`py-2 font-semibold transition-colors ${
+                scrolled ? "hover:text-red-600" : "hover:text-red-300"
+              }`}
               href="/our-work"
             >
               Our Work
             </Link>
             <Link
-              className="py-2 font-medium hover:text-primary transition-colors"
+              className={`py-2 font-semibold transition-colors ${
+                scrolled ? "hover:text-red-600" : "hover:text-red-300"
+              }`}
               href="/about"
             >
               About us
@@ -170,11 +186,11 @@ export default function Navbar({ className }) {
           <div className="hidden lg:flex items-center">
             <Link
               href="/contact-us"
-              className="group relative inline-flex items-center justify-center px-5 py-3 text-lg font-semibold text-white bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 rounded-xl transition-all duration-300 overflow-hidden"
+              className="group relative inline-flex items-center justify-center px-6 py-3.5 text-base font-semibold text-white bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 rounded-xl transition-all duration-300 overflow-hidden shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
               <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-white/0 via-white/20 to-white/0 skew-x-[-20deg] translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
-              <span className="mr-3">Book Discovery Call</span>
-              <ArrowRight className="w-6 h-6 transform group-hover:translate-x-2 transition-transform duration-300" />
+              <span className="mr-2 relative z-10">Get In Touch</span>
+              <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300 relative z-10" />
             </Link>
           </div>
 
@@ -197,13 +213,18 @@ export default function Navbar({ className }) {
           />
           <div className="absolute right-0 top-0 h-full w-[300px] bg-white shadow-2xl p-6 animate-slideIn">
             <div className="flex items-center justify-between mb-8">
-              <Image
-                src="/logo.png"
-                alt="reddev Logo"
-                width={120}
-                height={32}
-                className="h-8 w-auto"
-              />
+              <div className="relative">
+                <Image
+                  src="/logo.png"
+                  alt="reddev Logo"
+                  width={120}
+                  height={32}
+                  className="h-8 w-auto brightness-0 opacity-90"
+                  style={{
+                    filter: 'brightness(0) saturate(100%) invert(17%) sepia(97%) saturate(6213%) hue-rotate(356deg) brightness(91%) contrast(88%)'
+                  }}
+                />
+              </div>
               <button
                 onClick={handleSidebar}
                 className="p-2 rounded-lg hover:bg-gray-100 transition-colors"

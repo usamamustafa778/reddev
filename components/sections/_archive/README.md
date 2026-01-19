@@ -30,3 +30,4 @@ These archived components can still be used on dedicated pages:
 - Use Portfolio.jsx on /work or /case-studies pages  
 - Use SecurityCompliance.jsx on /security page
 - Use individual testimonials on service-specific pages
+

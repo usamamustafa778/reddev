@@ -2,14 +2,12 @@ import Service from "../components/json/home.json";
 import Footer from "@/components/common/Footer";
 import FirstNavbar from "@/components/common/Navbar";
 import Hero from "@/components/services/Hero";
-import PricingSection from "@/components/services/PricingSection";
-import ClientLogos from "@/components/services/ClientLogos";
-import WhatWeBuild from "@/components/services/WhatWeBuild";
-import TrustSection from "@/components/services/TrustSection";
-import StreamlinedProcess from "@/components/services/StreamlinedProcess";
-import ProofSection from "@/components/services/ProofSection";
-import WhyUs from "@/components/services/WhyUs";
-import FinalCTA from "@/components/services/FinalCTA";
+import ProblemSection from "@/components/home/ProblemSection";
+import SolutionFramework from "@/components/home/SolutionFramework";
+import OutcomesSection from "@/components/home/OutcomesSection";
+import WhoWeWorkWith from "@/components/home/WhoWeWorkWith";
+import ProofAuthority from "@/components/home/ProofAuthority";
+import FinalCTA from "@/components/home/FinalCTA";
 import Head from "next/head";
 
 export default function Home() {
@@ -18,25 +16,25 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>AI Agent Development & Web Solutions for B2B Companies | RedDev</title>
+        <title>AI-Powered Revenue Infrastructure | Built to Scale | RedDev</title>
         <meta
           name="description"
-          content="We build AI agents for customer support, lead qualification, and workflow automation—plus high-performance web and mobile apps. Enterprise-grade AI development with human oversight and safety guardrails."
+          content="Custom platforms and automation that turn traffic into predictable, scalable revenue. Selective partnerships with lead-gen, booking, and high-volume operations."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
         <meta
           name="keywords"
-          content="AI agent development, custom AI chatbot for business, RAG chatbot development, LLM integration services, AI workflow automation, enterprise chatbot development, Next.js development, B2B AI solutions"
+          content="revenue infrastructure, AI automation, lead generation systems, booking platforms, high-ticket development, enterprise automation, scalable platforms"
         />
 
         <meta
           property="og:title"
-          content="AI Agent Development & Web Solutions for B2B Companies"
+          content="AI-Powered Revenue Infrastructure | Built to Scale"
         />
         <meta
           property="og:description"
-          content="We build AI agents for customer support, lead qualification, and workflow automation—plus high-performance web and mobile apps."
+          content="Custom platforms and automation that turn traffic into predictable, scalable revenue."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://yourwebsite.com" />
@@ -46,10 +44,10 @@ export default function Home() {
         />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="AI Agent Development & Web Solutions for B2B" />
+        <meta name="twitter:title" content="AI-Powered Revenue Infrastructure | Built to Scale" />
         <meta
           name="twitter:description"
-          content="We build AI agents for customer support, lead qualification, and workflow automation—plus high-performance web and mobile apps."
+          content="Custom platforms and automation that turn traffic into predictable, scalable revenue."
         />
         <meta
           name="twitter:image"
@@ -62,15 +60,13 @@ export default function Home() {
       <Hero 
         heading1={detail.heroheading1}
         heading2={detail.heroheading2}
-        description={detail.herodescription}
+        description="Custom platforms and automation that turn traffic into predictable, scalable revenue."
       />
-      <ClientLogos />
-      <WhatWeBuild />
-      <ProofSection testimonialData={detail.testimonial} />
-      <TrustSection />
-      <StreamlinedProcess />
-      <PricingSection />
-      <WhyUs />
+      <ProblemSection />
+      <SolutionFramework />
+      <OutcomesSection />
+      <WhoWeWorkWith />
+      <ProofAuthority />
       <FinalCTA />
       <Footer />
     </>

@@ -14,14 +14,15 @@ module.exports = {
       },
 
       colors: {
-        primary: "#FF332C",
-        secondary: "#DC2626",
-        dgray: "#333333",
-        lgray: "#E8E8E8",
+        primary: "#DC2626",
+        secondary: "#EA580C",
+        accent: "#F97316",
+        dgray: "#1E293B",
+        lgray: "#F1F5F9",
         innerbanner: "#075861",
-        button: "#00A2FF",
+        button: "#DC2626",
         colorBanner: "#0E1859",
-        heading: "#180030",
+        heading: "#0F172A",
       },
       gridTemplateColumns: {
         navbar: "1fr 1fr 0.4fr",
@@ -40,11 +41,26 @@ module.exports = {
       },
       animation: {
         slideIn: "slideIn 0.2s ease-out",
+        gradient: "gradient 8s ease infinite",
+        "fade-in": "fadeIn 0.6s ease-out",
+        "fade-up": "fadeUp 0.6s ease-out",
       },
       keyframes: {
         slideIn: {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(0)" },
+        },
+        gradient: {
+          "0%, 100%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+        },
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        fadeUp: {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
         },
       },
     },
