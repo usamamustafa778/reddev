@@ -4,7 +4,6 @@ import Navbar from "@/components/common/Navbar";
 import OurMission from "@/components/about/OurMission";
 import HowHelp from "@/components/about/HowHelp";
 import OurGlobalPresence from "@/components/about/OurGlobalPresence";
-import TeamMembers from "@/components/about/TeamMembers";
 import CallToAction from "@/components/home/CallToAction";
 import AboutHero from "@/components/about/AboutHero";
 import Head from "next/head";
@@ -56,7 +55,6 @@ export default function about() {
       <Navbar className="lg:fixed" />
       <AboutHero />
       <HowHelp />
-      <TeamMembers />
       <OurMission />
       <OurGlobalPresence />
       <CallToAction />

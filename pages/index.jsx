@@ -7,6 +7,7 @@ import SolutionFramework from "@/components/home/SolutionFramework";
 import OutcomesSection from "@/components/home/OutcomesSection";
 import WhoWeWorkWith from "@/components/home/WhoWeWorkWith";
 import ProofAuthority from "@/components/home/ProofAuthority";
+import Leadership from "@/components/home/Leadership";
 import FinalCTA from "@/components/home/FinalCTA";
 import Head from "next/head";
 
@@ -65,8 +66,9 @@ export default function Home() {
       <ProblemSection />
       <SolutionFramework />
       <OutcomesSection />
-      <WhoWeWorkWith />
       <ProofAuthority />
+      <WhoWeWorkWith />
+      <Leadership />
       <FinalCTA />
       <Footer />
     </>

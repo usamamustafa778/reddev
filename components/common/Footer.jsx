@@ -8,23 +8,23 @@ import BgAnimation from "../BgAnimation";
 
 function Footer() {
   return (
-    <FullContainer className="relative bg-gradient-to-br from-slate-50 via-white to-purple-50/30 text-slate-900 overflow-hidden border-t border-slate-200">
+    <FullContainer className="relative bg-gradient-to-br from-slate-50 via-white to-slate-50/50 text-slate-900 overflow-hidden border-t border-slate-200">
       <BgAnimation />
 
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-0 -left-52 w-[50%] h-[50%] bg-purple-300/30 rounded-full mix-blend-multiply filter blur-xl animate-blob" />
-        <div className="absolute top-0 -right-4 w-[50%] h-[50%] bg-blue-300/30 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000" />
-        <div className="absolute -bottom-32 -left-32 w-[50%] h-[50%] bg-violet-300/20 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000" />
+        <div className="absolute top-0 -left-52 w-[50%] h-[50%] bg-red-200/30 rounded-full mix-blend-multiply filter blur-xl animate-blob" />
+        <div className="absolute top-0 -right-4 w-[50%] h-[50%] bg-orange-200/30 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000" />
+        <div className="absolute -bottom-32 -left-32 w-[50%] h-[50%] bg-slate-200/30 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000" />
       </div>
 
-      <Container className="z-10 py-16 md:py-24 ">
+      <Container className="relative z-10 py-16 md:py-24">
         <div className="text-slate-700">
           {/* Top Section */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
             {/* Company Info */}
             <div className="lg:col-span-4 space-y-8">
               <Link
-                className="relative z-10 hover:opacity-75 transition-opacity duration-300 group"
+                className="relative z-10"
                 href="/"
               >
                 <div className="relative">
@@ -33,18 +33,13 @@ function Footer() {
                     alt="reddev Logo"
                     width={180}
                     height={48}
-                    className="h-12 w-auto object-contain brightness-0 opacity-90"
+                    className="h-12 w-auto object-contain"
                     priority
-                    style={{
-                      filter: 'brightness(0) saturate(100%) invert(17%) sepia(97%) saturate(6213%) hue-rotate(356deg) brightness(91%) contrast(88%)'
-                    }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-red-600 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 mix-blend-overlay"></div>
                 </div>
               </Link>
               <p className="text-slate-600 max-w-sm text-lg leading-relaxed">
-                Transforming ideas into exceptional digital experiences. Your
-                trusted partner in innovative software solutions.
+                Building revenue infrastructure for high-growth companies. We turn operational bottlenecks into scalable systems.
               </p>
               <div className="flex items-center gap-4">
                 {[
@@ -102,18 +97,15 @@ function Footer() {
                     { name: "Healthcare", id: "healthcare" },
                     { name: "E-commerce", id: "ecommerce" },
                     { name: "Hospitality", id: "hospitality" },
-                    { name: "Automotive", id: "automotive" },
                     { name: "SaaS", id: "saas" },
                     { name: "Real Estate", id: "realestate" },
-                    { name: "Gaming", id: "gaming" },
-                    { name: "Public Sector", id: "publicsector" },
                   ].map((industry, index) => (
                     <Link
                       key={index}
                       href={`/industries?industry=${industry.id}`}
-                      className="text-slate-600 hover:text-purple-600 transition-colors duration-300 flex items-center group font-medium"
+                      className="text-slate-600 hover:text-red-600 transition-colors duration-300 flex items-center group font-medium"
                     >
-                      <span className="w-2 h-2 rounded-full bg-purple-600 mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                      <span className="w-2 h-2 rounded-full bg-red-600 mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                       {industry.name}
                     </Link>
                   ))}
@@ -134,9 +126,9 @@ function Footer() {
                     <Link
                       key={index}
                       href={item.isRoot ? `/${item.slug}` : `/services/${item.slug}`}
-                      className="text-slate-600 hover:text-purple-600 transition-colors duration-300 flex items-center group font-medium"
+                      className="text-slate-600 hover:text-red-600 transition-colors duration-300 flex items-center group font-medium"
                     >
-                      <span className="w-2 h-2 rounded-full bg-purple-600 mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                      <span className="w-2 h-2 rounded-full bg-red-600 mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                       {item.name}
                     </Link>
                   ))}
@@ -146,7 +138,7 @@ function Footer() {
           </div>
 
           {/* Newsletter Section */}
-          <div className="max-w-xl mt-16 p-8 rounded-2xl bg-gradient-to-br from-purple-50 to-blue-50 border border-purple-100">
+          <div className="max-w-xl mt-16 p-8 rounded-2xl bg-gradient-to-br from-red-50 to-orange-50 border border-red-100">
             <h5 className="text-2xl font-bold text-slate-900 mb-2">
               Stay Updated
             </h5>
@@ -157,7 +149,7 @@ function Footer() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-6 py-3.5 bg-white border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent text-slate-900 placeholder:text-slate-400 shadow-sm"
+                className="flex-1 px-6 py-3.5 bg-white border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent text-slate-900 placeholder:text-slate-400 shadow-sm"
               />
               <button className="px-8 py-3.5 bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white rounded-xl transition-all duration-300 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                 Subscribe

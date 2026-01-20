@@ -10,78 +10,109 @@ export default function SolutionFramework() {
       number: "01",
       icon: Search,
       title: "Diagnose",
-      description: "Revenue & operations analysis"
+      description: "Analyze revenue and operations to uncover bottlenecks and growth opportunities"
     },
     {
       number: "02",
       icon: Pencil,
       title: "Design",
-      description: "AI-enabled system architecture"
+      description: "Architect AI-enabled systems built for scale and automation"
     },
     {
       number: "03",
       icon: Code,
       title: "Build",
-      description: "Platform & integrations"
+      description: "Develop robust platforms with seamless integrations that handle growth"
     },
     {
       number: "04",
       icon: Zap,
       title: "Scale",
-      description: "Automate, optimize, and expand"
+      description: "Optimize and automate operations without increasing complexity"
     }
   ];
 
   return (
-    <FullContainer className="py-24 bg-white">
-      <Container>
+    <FullContainer className="relative py-16 md:py-20 bg-gradient-to-b from-white via-slate-50 to-white overflow-hidden">
+      {/* Subtle background effects */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-0 right-1/4 w-96 h-96 bg-slate-200/60 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-slate-300/40 rounded-full blur-3xl"></div>
+      </div>
+
+      <Container className="relative z-10">
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-red-100 to-orange-100 text-red-700 rounded-full text-sm font-semibold mb-6 border border-red-200">
-            🎯 Our Framework
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center transform -rotate-12">
+              <Code className="w-6 h-6 text-white" />
+            </div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-            How We Build{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-rose-600 to-orange-600">
-              Revenue Infrastructure
+          
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight text-slate-900 max-w-3xl">
+            Our Proven{" "}
+            <span className="relative inline-block">
+              <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">
+                Approach To Achieve
+              </span>
             </span>
+            {" "}Your Objectives
           </h2>
         </motion.div>
 
+        {/* Process Steps - Grid Layout */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="relative"
+              className="relative group"
             >
-              <div className="text-center">
-                <div className="relative inline-block mb-6">
-                  <div className="text-7xl font-bold text-slate-100 absolute -top-4 -left-2">
-                    {step.number}
-                  </div>
-                  <div className="relative w-20 h-20 bg-gradient-to-br from-red-600 to-orange-600 rounded-2xl flex items-center justify-center mx-auto shadow-lg">
-                    <step.icon className="w-10 h-10 text-white" />
+              {/* Card */}
+              <div className="relative h-full p-8 bg-white rounded-2xl border-2 border-slate-200 hover:border-red-300 hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1">
+                {/* Step Number */}
+                <div className="absolute top-6 right-6 text-5xl font-black text-slate-100 group-hover:text-red-100 transition-colors duration-300">
+                  {step.number}
+                </div>
+
+                {/* Icon */}
+                <div className="mb-6 relative z-10">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-red-600 to-orange-600 flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
+                    <step.icon className="w-7 h-7 text-white" strokeWidth={2} />
                   </div>
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-3">
-                  {step.title}
-                </h3>
-                <p className="text-slate-600 leading-relaxed">
-                  {step.description}
-                </p>
+
+                {/* Content */}
+                <div className="space-y-3 relative z-10">
+                  <h3 className="text-xl font-black text-slate-900">
+                    {step.title}
+                  </h3>
+                  <p className="text-slate-600 leading-relaxed text-sm">
+                    {step.description}
+                  </p>
+                </div>
+
+                {/* Subtle hover effect */}
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-red-50/0 to-orange-50/0 group-hover:from-red-50/50 group-hover:to-orange-50/50 transition-all duration-300 -z-10"></div>
               </div>
-              
+
+              {/* Step connector arrow (hidden on mobile) */}
               {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-10 -right-4 w-8 h-0.5 bg-gradient-to-r from-red-300 to-transparent"></div>
+                <div className="hidden lg:block absolute top-14 -right-4 z-20">
+                  <div className="flex items-center">
+                    <div className="w-6 h-0.5 bg-gradient-to-r from-slate-300 via-slate-400 to-transparent"></div>
+                    <div className="w-0 h-0 border-t-4 border-t-transparent border-b-4 border-b-transparent border-l-4 border-l-slate-400 -ml-px"></div>
+                  </div>
+                </div>
               )}
             </motion.div>
           ))}

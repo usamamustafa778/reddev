@@ -85,7 +85,7 @@ export default function Navbar({ className }) {
       >
         <Container className="flex items-center justify-between h-fit py-3 md:py-4">
           <Link
-            className="relative z-10 hover:opacity-75 transition-opacity duration-300 group"
+            className="relative z-10"
             href="/"
           >
             <div className="relative">
@@ -94,13 +94,9 @@ export default function Navbar({ className }) {
                 alt="reddev Logo"
                 width={180}
                 height={48}
-                className="h-11 md:h-12 w-auto object-contain brightness-0 opacity-90"
+                className="h-11 md:h-12 w-auto object-contain"
                 priority
-                style={{
-                  filter: 'brightness(0) saturate(100%) invert(17%) sepia(97%) saturate(6213%) hue-rotate(356deg) brightness(91%) contrast(88%)'
-                }}
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-red-600 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 mix-blend-overlay"></div>
             </div>
           </Link>
 

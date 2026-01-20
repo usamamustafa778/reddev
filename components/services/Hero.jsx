@@ -53,7 +53,7 @@ export default function Hero({
       <div className="absolute inset-0 opacity-[0.02] mix-blend-overlay" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 400 400\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noiseFilter\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\' /%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noiseFilter)\' /%3E%3C/svg%3E")' }}></div>
 
       <Container className="relative z-10">
-        <div className="w-full flex flex-col lg:flex-row text-center md:text-left py-24 md:py-32 pt-36 md:pt-48 gap-16 lg:gap-24 items-center">
+        <div className="w-full flex flex-col lg:flex-row text-center md:text-left py-16 md:py-20 pt-24 md:pt-32 gap-16 lg:gap-24 items-center">
           {/* Left Column - Main Content */}
           <div className="flex-1 space-y-10 md:space-y-12 flex flex-col justify-center max-w-4xl mx-auto lg:mx-0">
             {/* Status Badge */}
