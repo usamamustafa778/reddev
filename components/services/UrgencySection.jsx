@@ -107,8 +107,8 @@ export default function CapacitySection() {
             Ready to Discuss Your Project?
           </h3>
           <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
-            We review each inquiry carefully to ensure we're the right fit. 
-            Share your project details and we'll respond within 48 hours.
+            We review each inquiry carefully to ensure we&apos;re the right fit. 
+            Share your project details and we&apos;ll respond within 48 hours.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white text-lg font-semibold rounded-xl shadow-lg hover:bg-primary/90 transition-all duration-300 group relative">

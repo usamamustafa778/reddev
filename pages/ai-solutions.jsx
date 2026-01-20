@@ -392,7 +392,7 @@ export default function AISolutions() {
               Ready to Build Your AI Solution?
             </h2>
             <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
-              Let's discuss your specific requirements and create a custom AI solution 
+              Let&apos;s discuss your specific requirements and create a custom AI solution 
               that drives real business results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

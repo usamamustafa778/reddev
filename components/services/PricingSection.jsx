@@ -2,6 +2,7 @@ import React from "react";
 import FullContainer from "../common/FullContainer";
 import Container from "../common/Container";
 import { FaCheck, FaStar, FaRocket, FaArrowRight, FaShoppingCart, FaMobile, FaCode, FaCog, FaBrain } from "react-icons/fa";
+import Link from "next/link";
 
 // Pricing constants for easy editing
 const PRICING_CONSTANTS = {
@@ -623,13 +624,13 @@ const PricingSection = ({ service = "web-development" }) => {
             <p className="text-lg text-slate-600 mb-6">
               Every business is unique. Let&apos;s discuss your specific requirements and create a tailored solution.
             </p>
-            <a 
+            <Link 
               href="/contact-us"
               className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-xl font-semibold hover:from-purple-700 hover:to-blue-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
               Get In Touch
               <FaArrowRight className="w-4 h-4" />
-            </a>
+            </Link>
           </div>
         </div>
       </Container>

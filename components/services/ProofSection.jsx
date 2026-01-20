@@ -55,7 +55,7 @@ export default function ProofSection({ testimonialData }) {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Measurable results from B2B companies who've transformed their 
+            Measurable results from B2B companies who&apos;ve transformed their 
             digital presence and operations with our solutions.
           </p>
         </div>
@@ -96,7 +96,7 @@ export default function ProofSection({ testimonialData }) {
                 {/* Integrated Testimonial Quote */}
                 <div className="bg-gray-50 rounded-lg p-4 border-l-4 border-primary">
                   <p className="text-gray-700 text-sm italic mb-3">
-                    "{study.quote}"
+                    &ldquo;{study.quote}&rdquo;
                   </p>
                   <div className="flex items-center gap-2">
                     <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">

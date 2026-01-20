@@ -35,7 +35,7 @@ export default function FinalCTA() {
 
           {/* Description */}
           <p className="text-xl md:text-2xl text-slate-600 leading-relaxed mb-12 max-w-3xl mx-auto">
-            We work with a limited number of clients to ensure exceptional results. Let's discuss your infrastructure needs.
+            We work with a limited number of clients to ensure exceptional results. Let&apos;s discuss your infrastructure needs.
           </p>
 
           {/* CTA Buttons */}

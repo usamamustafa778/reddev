@@ -45,26 +45,26 @@ export default function ProblemSection() {
             {/* Body Text */}
             <div className="space-y-6 text-slate-600 text-base md:text-lg leading-relaxed">
               <p>
-                Your leads are increasing — but revenue isn't scaling at the same rate. 
+                Your leads are increasing — but revenue isn&apos;t scaling at the same rate. 
                 Manual handling, poor routing, and disconnected systems are leaking money 
                 at every step of your growth journey.
               </p>
               
               <p>
                 Your operations require more people instead of better systems. As volume 
-                grows, margins shrink. You're making critical decisions without real-time 
+                grows, margins shrink. You&apos;re making critical decisions without real-time 
                 visibility, scaling blind in a market that punishes inefficiency.
               </p>
               
               <p>
-                Your tech stack wasn't designed for scale — it was stitched together to 
+                Your tech stack wasn&apos;t designed for scale — it was stitched together to 
                 survive, not to grow. Partner with infrastructure experts who understand 
                 that sustainable growth requires robust systems that compound results, 
                 not collapse under pressure.
               </p>
               
               <p className="text-slate-900 font-bold text-lg md:text-xl">
-                Growth without infrastructure doesn't compound. It collapses.
+                Growth without infrastructure doesn&apos;t compound. It collapses.
               </p>
             </div>
 

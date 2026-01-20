@@ -3,6 +3,7 @@ import FullContainer from "../common/FullContainer";
 import Container from "../common/Container";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Hero({
   heading1 = "AI-Powered Revenue Infrastructure.",
@@ -110,7 +111,7 @@ export default function Hero({
               transition={{ duration: 0.8, delay: 0.4 }}
               className="flex flex-col sm:flex-row gap-5 mx-auto md:mx-0"
             >
-              <a
+              <Link
                 href="/contact-us"
                 className="group relative px-10 py-5 bg-white text-black rounded-2xl font-bold text-lg
                 hover:shadow-2xl hover:shadow-red-500/30 transition-all duration-500 
@@ -120,7 +121,7 @@ export default function Hero({
                 <span className="absolute inset-0 bg-gradient-to-r from-red-600 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
                 <span className="relative z-10 group-hover:text-white transition-colors duration-500">Book a Strategy Call</span>
                 <ArrowRight className="w-6 h-6 transform group-hover:translate-x-2 transition-transform relative z-10 group-hover:text-white" />
-              </a>
+              </Link>
               
               <a
                 href="#solution"

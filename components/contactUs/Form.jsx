@@ -18,8 +18,8 @@ function Form() {
       <FullContainer>
         <Container className="  py-10 px-6 lg:px-24">
           <h6 className="text-xl text-center max-w-3xl mx-auto py-10 text-gray-600">
-            Share your project details and we'll respond within 48 hours with a strategic approach.
-            For qualified inquiries, we'll schedule a discovery call to discuss your requirements.
+            Share your project details and we&apos;ll respond within 48 hours with a strategic approach.
+            For qualified inquiries, we&apos;ll schedule a discovery call to discuss your requirements.
           </h6>
 
           <div className="form grid lg:grid-cols-form gap-8 bg-white shadow-2xl p-4 ">
@@ -45,7 +45,7 @@ function Form() {
                 <p className="text-gray-400">Islamabad Pakistan</p>
               </div>
               <p className="text-gray-300">
-                Ready to make things happen? Reach out to us and let`&apos;`s turn your
+                Ready to make things happen? Reach out to us and let&apos;s turn your
                 ideas into reality together!
               </p>
             </div>
@@ -158,7 +158,7 @@ function Form() {
                   Book Discovery Call
                 </button>
                 <div className="text-sm text-gray-500 text-center">
-                  <p>Projects under $10k: We'll provide resources and referrals to help you get started.</p>
+                  <p>Projects under $10k: We&apos;ll provide resources and referrals to help you get started.</p>
                 </div>
               </div>
             </form>

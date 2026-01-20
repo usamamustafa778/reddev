@@ -2,6 +2,7 @@ import React from "react";
 import FullContainer from "../common/FullContainer";
 import Container from "../common/Container";
 import { Calendar, Users, CheckCircle, Clock, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function FinalCTA() {
 
@@ -34,14 +35,14 @@ export default function FinalCTA() {
             🎯 Ready to Start?
           </div>
           <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-slate-900">
-            Let's Build Your{" "}
+            Let&apos;s Build Your{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-violet-600 to-blue-600">
               Next Growth Engine
             </span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-12">
             We take 2-3 new builds per month to protect quality and ensure dedicated attention. 
-            Share your project details and we'll respond within 48 hours.
+            Share your project details and we&apos;ll respond within 48 hours.
           </p>
         </div>
 
@@ -74,19 +75,19 @@ export default function FinalCTA() {
         {/* Main CTA */}
         <div className="text-center">
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
-            <a
+            <Link
               href="/contact-us"
               className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl hover:from-purple-700 hover:to-blue-700 transition-all duration-300 group transform hover:-translate-y-0.5"
             >
               <span className="mr-3">Get In Touch</span>
               <ArrowRight className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" />
-            </a>
-            <a
+            </Link>
+            <Link
               href="/ai-solutions"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-slate-900 text-lg font-semibold rounded-xl hover:bg-slate-50 transition-all duration-300 border-2 border-slate-300 hover:border-purple-400 shadow-sm"
             >
               View AI Solutions
-            </a>
+            </Link>
           </div>
           
           <div className="text-slate-600 text-sm">

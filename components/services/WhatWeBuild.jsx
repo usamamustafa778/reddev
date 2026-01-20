@@ -2,6 +2,7 @@ import React from "react";
 import FullContainer from "../common/FullContainer";
 import Container from "../common/Container";
 import { Brain, MessageSquare, Users, Zap, Code, Smartphone } from "lucide-react";
+import Link from "next/link";
 
 export default function WhatWeBuild() {
   const solutions = [
@@ -94,7 +95,7 @@ export default function WhatWeBuild() {
 
         <div className="text-center mt-16">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
-            <a 
+            <Link 
               href="/ai-solutions" 
               className="inline-flex items-center gap-2 px-8 py-3.5 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-xl hover:from-purple-700 hover:to-blue-700 transition-all duration-300 font-semibold group shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
@@ -102,8 +103,8 @@ export default function WhatWeBuild() {
               <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </a>
-            <a 
+            </Link>
+            <Link 
               href="/contact-us" 
               className="inline-flex items-center gap-2 px-8 py-3.5 bg-white border-2 border-slate-300 hover:border-purple-400 text-slate-900 rounded-xl hover:bg-slate-50 transition-all duration-300 font-semibold group shadow-sm"
             >
@@ -111,7 +112,7 @@ export default function WhatWeBuild() {
               <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </a>
+            </Link>
           </div>
           <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-slate-100 rounded-full text-sm text-slate-700 font-medium border border-slate-200">
             <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>

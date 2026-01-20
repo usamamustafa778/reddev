@@ -75,7 +75,7 @@ export default function WhoWeWorkWith() {
             </span>
           </h2>
           <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto">
-            We work with a limited number of clients to ensure exceptional results. Here's who we're built for.
+            We work with a limited number of clients to ensure exceptional results. Here&apos;s who we&apos;re built for.
           </p>
         </motion.div>
 
@@ -140,7 +140,7 @@ export default function WhoWeWorkWith() {
                 Not For
               </h3>
               <p className="text-slate-600">
-                To protect outcomes and standards, we're transparent about fit.
+                To protect outcomes and standards, we&apos;re transparent about fit.
               </p>
             </div>
             
@@ -186,8 +186,8 @@ export default function WhoWeWorkWith() {
           <div className="relative inline-block">
             <div className="absolute inset-0 bg-gradient-to-r from-slate-200 to-slate-100 blur-2xl opacity-50"></div>
             <p className="relative text-xl md:text-2xl font-bold text-slate-900 leading-relaxed">
-              Not sure if we're a fit?{" "}
-              <span className="text-slate-600">Let's talk.</span>
+              Not sure if we&apos;re a fit?{" "}
+              <span className="text-slate-600">Let&apos;s talk.</span>
             </p>
           </div>
         </motion.div>

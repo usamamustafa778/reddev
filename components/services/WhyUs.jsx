@@ -51,7 +51,7 @@ export default function WhyUs() {
             </span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            We're not just developers—we're strategic partners focused on driving 
+            We&apos;re not just developers—we&apos;re strategic partners focused on driving 
             measurable business outcomes through technology.
           </p>
         </div>

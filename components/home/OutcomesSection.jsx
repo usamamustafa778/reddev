@@ -218,7 +218,7 @@ export default function OutcomesSection() {
             </div>
             
             <p className="text-base text-slate-400 italic border-t border-slate-700 pt-6">
-              We don't sell development in isolation. We build revenue infrastructure that happens to include development.
+              We don&apos;t sell development in isolation. We build revenue infrastructure that happens to include development.
             </p>
           </div>
         </motion.div>

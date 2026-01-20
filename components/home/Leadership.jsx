@@ -28,13 +28,13 @@ export default function Leadership() {
     {
       name: "Umar Janjua",
       role: "Chief Marketing Officer",
-      image: "/img/member1.png",
+      image: "/img/member.png",
       linkedin: "#"
     },
     {
       name: "Hunain Abbasi",
       role: "Business Developer",
-      image: "/img/member2.png",
+      image: "/img/member.png",
       linkedin: "#"
     }
   ];
