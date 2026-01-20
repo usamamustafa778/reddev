@@ -81,7 +81,21 @@ export default function Leadership() {
           content="Meet the leadership team building RedDev for decades. Founder-led, execution-driven, and focused on long-term client partnerships."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://yourwebsite.com/leadership" />
+        
+        <meta property="og:title" content="Leadership | Who We Are | RedDev" />
+        <meta property="og:description" content="Meet the leadership team building RedDev for decades. Founder-led, execution-driven." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://reddev.vercel.app/leadership" />
+        <meta property="og:image" content="https://reddev.vercel.app/reddev.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Leadership | Who We Are | RedDev" />
+        <meta name="twitter:description" content="Founder-led, execution-driven, building for decades." />
+        <meta name="twitter:image" content="https://reddev.vercel.app/reddev.png" />
+        
+        <link rel="canonical" href="https://reddev.vercel.app/leadership" />
       </Head>
 
       <Navbar />

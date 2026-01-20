@@ -148,7 +148,21 @@ export default function Services() {
           content="We design, build, and scale AI-powered digital products for growing businesses. Custom SaaS, intelligent automation, and revenue infrastructure."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://yourwebsite.com/services" />
+        
+        <meta property="og:title" content="Services | AI-Powered Development & Automation | RedDev" />
+        <meta property="og:description" content="We design, build, and scale AI-powered digital products for growing businesses." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://reddev.vercel.app/services" />
+        <meta property="og:image" content="https://reddev.vercel.app/reddev.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Services | AI-Powered Development | RedDev" />
+        <meta name="twitter:description" content="AI-powered digital products and automation for growing businesses." />
+        <meta name="twitter:image" content="https://reddev.vercel.app/reddev.png" />
+        
+        <link rel="canonical" href="https://reddev.vercel.app/services" />
       </Head>
 
       <Navbar />

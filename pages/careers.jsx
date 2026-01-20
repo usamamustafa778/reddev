@@ -98,7 +98,21 @@ export default function Careers() {
           content="Join a team building AI-driven products and systems for the long term. For self-driven engineers who want ownership, growth, and impact."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://yourwebsite.com/careers" />
+        
+        <meta property="og:title" content="Careers | Build With Us | RedDev" />
+        <meta property="og:description" content="Join a team building AI-driven products and systems for the long term." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://reddev.vercel.app/careers" />
+        <meta property="og:image" content="https://reddev.vercel.app/reddev.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Careers | Build With Us | RedDev" />
+        <meta name="twitter:description" content="Join a team building AI-driven products for the long term." />
+        <meta name="twitter:image" content="https://reddev.vercel.app/reddev.png" />
+        
+        <link rel="canonical" href="https://reddev.vercel.app/careers" />
       </Head>
 
       <Navbar />

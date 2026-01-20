@@ -38,11 +38,13 @@ export default function Home() {
           content="Custom platforms and automation that turn traffic into predictable, scalable revenue."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourwebsite.com" />
+        <meta property="og:url" content="https://reddev.vercel.app" />
         <meta
           property="og:image"
-          content="https://yourwebsite.com/og-image.jpg"
+          content="https://reddev.vercel.app/reddev.png"
         />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="AI-Powered Revenue Infrastructure | Built to Scale" />
@@ -52,10 +54,10 @@ export default function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://yourwebsite.com/twitter-image.jpg"
+          content="https://reddev.vercel.app/reddev.png"
         />
 
-        <link rel="canonical" href="https://yourwebsite.com" />
+        <link rel="canonical" href="https://reddev.vercel.app" />
       </Head>
       <FirstNavbar />
       <Hero 

@@ -82,7 +82,21 @@ export default function Contact() {
           content="Ready to build AI-powered infrastructure that scales? Let's discuss your project, challenges, and how we can help."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://yourwebsite.com/contact" />
+        
+        <meta property="og:title" content="Start a Conversation | RedDev" />
+        <meta property="og:description" content="Ready to build AI-powered infrastructure that scales? Let's discuss your project." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://reddev.vercel.app/contact" />
+        <meta property="og:image" content="https://reddev.vercel.app/reddev.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Start a Conversation | RedDev" />
+        <meta name="twitter:description" content="Let's discuss your AI-powered infrastructure project." />
+        <meta name="twitter:image" content="https://reddev.vercel.app/reddev.png" />
+        
+        <link rel="canonical" href="https://reddev.vercel.app/contact" />
       </Head>
 
       <Navbar />

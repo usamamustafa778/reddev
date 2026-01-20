@@ -46,7 +46,21 @@ export default function About() {
           content="Building revenue infrastructure for high-growth companies. Learn about our mission, vision, and long-term approach to software development."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://yourwebsite.com/about" />
+        
+        <meta property="og:title" content="About Us | RedDev" />
+        <meta property="og:description" content="Building revenue infrastructure for high-growth companies. Learn about our mission, vision, and long-term approach." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://reddev.vercel.app/about" />
+        <meta property="og:image" content="https://reddev.vercel.app/reddev.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Us | RedDev" />
+        <meta name="twitter:description" content="Building revenue infrastructure for high-growth companies." />
+        <meta name="twitter:image" content="https://reddev.vercel.app/reddev.png" />
+        
+        <link rel="canonical" href="https://reddev.vercel.app/about" />
       </Head>
 
       <Navbar />
