@@ -28,7 +28,7 @@ export default function Hero({
     { number: "10K+", label: "Leads/Day", delay: 0.7 },
     { number: "5K+", label: "Bookings/Month", delay: 0.8 },
     { number: "85%", label: "Repeat Clients", delay: 0.9 },
-    { number: "8+", label: "Years Building", delay: 1 }
+    { number: "6+", label: "Years Building", delay: 1 }
   ];
 
   return (

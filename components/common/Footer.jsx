@@ -73,8 +73,10 @@ function Footer() {
                   {[
                     { name: "Home", href: "/" },
                     { name: "About", href: "/about" },
-                    { name: "Work", href: "/our-work" },
-                    { name: "Contact us", href: "/contact-us" },
+                    { name: "Services", href: "/services" },
+                    { name: "Leadership", href: "/leadership" },
+                    { name: "Careers", href: "/careers" },
+                    { name: "Contact", href: "/contact" },
                   ].map((item, index) => (
                       <Link
                         key={index}
@@ -89,49 +91,42 @@ function Footer() {
                 </div>
               </div>
 
-              {/* Industries */}
+              {/* Resources */}
               <div className="space-y-8">
-                <h5 className="text-xl font-bold text-slate-900">Industries</h5>
+                <h5 className="text-xl font-bold text-slate-900">Resources</h5>
                 <div className="flex flex-col space-y-4">
                   {[
-                    { name: "Healthcare", id: "healthcare" },
-                    { name: "E-commerce", id: "ecommerce" },
-                    { name: "Hospitality", id: "hospitality" },
-                    { name: "SaaS", id: "saas" },
-                    { name: "Real Estate", id: "realestate" },
-                  ].map((industry, index) => (
-                    <Link
-                      key={index}
-                      href={`/industries?industry=${industry.id}`}
-                      className="text-slate-600 hover:text-red-600 transition-colors duration-300 flex items-center group font-medium"
-                    >
-                      <span className="w-2 h-2 rounded-full bg-red-600 mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                      {industry.name}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-
-              {/* Services */}
-              <div className="space-y-8">
-                <h5 className="text-xl font-bold text-slate-900">Services</h5>
-                <div className="flex flex-col space-y-4">
-                  {[
-                    { name: "AI Solutions", slug: "ai-solutions", isRoot: true },
-                    { name: "Ecommerce", slug: "ecommerce" },
-                    { name: "Mobile Apps", slug: "mobile-apps" },
-                    { name: "Web Development", slug: "web-development" },
-                    { name: "Custom Solutions", slug: "custom-solutions" },
+                    { name: "Privacy Policy", href: "/privacy" },
+                    { name: "Terms of Service", href: "/terms" },
                   ].map((item, index) => (
                     <Link
                       key={index}
-                      href={item.isRoot ? `/${item.slug}` : `/services/${item.slug}`}
+                      href={item.href}
                       className="text-slate-600 hover:text-red-600 transition-colors duration-300 flex items-center group font-medium"
                     >
                       <span className="w-2 h-2 rounded-full bg-red-600 mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                       {item.name}
                     </Link>
                   ))}
+                </div>
+              </div>
+
+              {/* Connect */}
+              <div className="space-y-8">
+                <h5 className="text-xl font-bold text-slate-900">Connect</h5>
+                <div className="flex flex-col space-y-4">
+                  <div className="text-slate-600 font-medium">
+                    <p>Email</p>
+                    <a href="mailto:hello@reddev.com" className="text-red-600 hover:text-red-700 transition-colors">
+                      hello@reddev.com
+                    </a>
+                  </div>
+                  <div className="text-slate-600 font-medium">
+                    <p>Phone</p>
+                    <a href="tel:+923136224778" className="text-red-600 hover:text-red-700 transition-colors">
+                      +92 313 6224778
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
