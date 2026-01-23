@@ -9,42 +9,44 @@ export default function OutcomesSection() {
 
   const services = [
     {
-      icon: TrendingUp,
-      title: "AI-Powered Lead Systems",
-      tagline: "Turn attention into qualified conversations—automatically.",
-      description: "We design lead engines that capture intent, segment prospects, and follow up with intelligence so you're not relying on \"post and pray.\"",
+      icon: Calendar,
+      title: "Booking Management Systems",
+      tagline: "Streamline reservations. Reduce no-shows. Scale predictably.",
+      description: "We build custom booking platforms specifically for travel and accommodation businesses. From real-time availability management to automated confirmations, our systems handle high-volume bookings without breaking.",
       includes: [
-        "Landing pages built for conversion",
-        "CRM + pipeline automation",
-        "AI chat / qualification flows",
-        "Email, WhatsApp, and follow-up sequences",
-        "Analytics dashboards for lead quality and ROI"
+        "Real-time booking portals for hotels, rentals, and travel services",
+        "Multi-channel booking synchronization (OTAs, direct, API)",
+        "Automated confirmation and reminder systems",
+        "Payment processing and invoicing automation",
+        "Booking analytics and revenue optimization dashboards"
       ]
     },
     {
-      icon: Calendar,
-      title: "Booking & Transaction Platforms",
-      tagline: "Reduce friction. Increase completion rates. Scale predictably.",
-      description: "If your business depends on appointments, bookings, subscriptions, or payments—this is your revenue infrastructure. We build platforms that make scaling predictable.",
+      icon: Layers,
+      title: "Property Management Platforms",
+      tagline: "Manage properties, tasks, and operations—all in one system.",
+      description: "Your accommodation business needs more than just bookings. We build comprehensive property management systems that handle maintenance tasks, guest communications, inventory, cleaning schedules, and operational workflows.",
       includes: [
-        "Booking portals & service marketplaces",
-        "Payment flows, subscriptions, invoices",
-        "Admin panels & customer dashboards",
-        "Secure user accounts & role access",
-        "Integrations with payment providers and tools"
+        "Property and unit management dashboards",
+        "Task automation and assignment systems",
+        "Maintenance request and tracking workflows",
+        "Guest communication and support automation",
+        "Inventory and supply chain management",
+        "Multi-property portfolio management"
       ]
     },
     {
       icon: Bot,
-      title: "Automation & Intelligence",
-      tagline: "Operations bottlenecks, solved.",
-      description: "Most businesses don't have a \"marketing problem\"—they have an operations bottleneck. We connect your tools, remove manual work, and build automations that make the business run smoother, faster, and cheaper.",
+      title: "Task & Operations Automation",
+      tagline: "Eliminate manual work. Scale operations. Reduce costs.",
+      description: "Travel and accommodation operations are complex. We automate repetitive tasks—from check-in/check-out workflows to cleaning schedules, guest communications, and reporting—so your team focuses on what matters.",
       includes: [
-        "Workflow automations (sales, ops, support)",
-        "Integrations across platforms (CRM, forms, email, payments)",
-        "Reporting + real-time visibility",
-        "AI copilots for internal teams",
-        "Process redesign for scale"
+        "Automated check-in/check-out workflows",
+        "Cleaning and maintenance task scheduling",
+        "Guest communication automation (emails, SMS, WhatsApp)",
+        "Integration with booking platforms and property management tools",
+        "Real-time reporting and operational dashboards",
+        "AI-powered task prioritization and routing"
       ]
     }
   ];
@@ -81,15 +83,15 @@ export default function OutcomesSection() {
           </div>
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight text-slate-900 max-w-3xl mx-auto mb-6">
-            Revenue Infrastructure,{" "}
+            Travel & Accommodation Infrastructure,{" "}
             <span className="relative inline-block">
               <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">
-                Not Software Projects
+                Built for Your Niche
               </span>
             </span>
           </h2>
           <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto">
-            We build systems that generate, process, and scale revenue. Choose what you need:
+            We build booking platforms, property management systems, and automation solutions specifically for travel and accommodation businesses. Choose what you need:
           </p>
         </motion.div>
 

@@ -33,10 +33,10 @@ export default function ProblemSection() {
               </div>
               
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight text-slate-900">
-                Infrastructure{" "}
+                Travel & Accommodation Operations{" "}
                 <span className="relative inline-block">
                   <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">
-                    Is the Bottleneck
+                    Are the Bottleneck
                   </span>
                 </span>
               </h2>
@@ -45,26 +45,27 @@ export default function ProblemSection() {
             {/* Body Text */}
             <div className="space-y-6 text-slate-600 text-base md:text-lg leading-relaxed">
               <p>
-                Your leads are increasing — but revenue isn&apos;t scaling at the same rate. 
-                Manual handling, poor routing, and disconnected systems are leaking money 
-                at every step of your growth journey.
+                Your bookings are increasing — but revenue isn&apos;t scaling at the same rate. 
+                Manual booking management, disconnected property systems, and inefficient task 
+                handling are leaking money at every step of your growth journey.
               </p>
               
               <p>
-                Your operations require more people instead of better systems. As volume 
-                grows, margins shrink. You&apos;re making critical decisions without real-time 
-                visibility, scaling blind in a market that punishes inefficiency.
+                Your accommodation operations require more staff instead of better systems. As 
+                bookings grow, margins shrink. You&apos;re managing properties, tasks, and 
+                guest communications manually, scaling blind in a market that punishes inefficiency.
               </p>
               
               <p>
-                Your tech stack wasn&apos;t designed for scale — it was stitched together to 
-                survive, not to grow. Partner with infrastructure experts who understand 
-                that sustainable growth requires robust systems that compound results, 
-                not collapse under pressure.
+                Your tech stack wasn&apos;t designed for travel and accommodation scale — it was 
+                stitched together to survive, not to grow. Partner with infrastructure experts 
+                who understand that sustainable growth in travel and accommodation requires robust 
+                booking platforms, property management systems, and task automation that compound 
+                results, not collapse under pressure.
               </p>
               
               <p className="text-slate-900 font-bold text-lg md:text-xl">
-                Growth without infrastructure doesn&apos;t compound. It collapses.
+                Growth in travel & accommodation without proper infrastructure doesn&apos;t compound. It collapses.
               </p>
             </div>
 

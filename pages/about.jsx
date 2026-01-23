@@ -40,15 +40,15 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About Us | RedDev</title>
+        <title>About Us | Travel & Accommodation Infrastructure Specialists | RedDev</title>
         <meta
           name="description"
-          content="Building revenue infrastructure for high-growth companies. Learn about our mission, vision, and long-term approach to software development."
+          content="Building booking platforms, property management systems, and automation solutions for travel and accommodation businesses. Learn about our mission, vision, and specialized approach."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         
-        <meta property="og:title" content="About Us | RedDev" />
-        <meta property="og:description" content="Building revenue infrastructure for high-growth companies. Learn about our mission, vision, and long-term approach." />
+        <meta property="og:title" content="About Us | Travel & Accommodation Infrastructure Specialists | RedDev" />
+        <meta property="og:description" content="Building booking platforms, property management systems, and automation solutions for travel and accommodation businesses." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://reddev.vercel.app/about" />
         <meta property="og:image" content="https://reddev.vercel.app/reddev.png" />
@@ -56,8 +56,8 @@ export default function About() {
         <meta property="og:image:height" content="630" />
         
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About Us | RedDev" />
-        <meta name="twitter:description" content="Building revenue infrastructure for high-growth companies." />
+        <meta name="twitter:title" content="About Us | Travel & Accommodation Infrastructure Specialists" />
+        <meta name="twitter:description" content="Building booking platforms, property management systems, and automation solutions for travel and accommodation businesses." />
         <meta name="twitter:image" content="https://reddev.vercel.app/reddev.png" />
         
         <link rel="canonical" href="https://reddev.vercel.app/about" />
@@ -93,13 +93,14 @@ export default function About() {
               Building infrastructure that
               <span className="relative block mt-2">
                 <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-red-200 via-primary to-rose-300">
-                  turns revenue operations into systems
+                  powers travel & accommodation operations
                 </span>
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl mx-auto">
-              We build platforms and automations for companies processing thousands of leads, 
-              bookings, or transactions per day—where operational efficiency directly impacts bottom line.
+              We build booking platforms, property management systems, and automation solutions 
+              for travel and accommodation businesses processing thousands of bookings per day—where 
+              operational efficiency directly impacts revenue and guest satisfaction.
             </p>
           </div>
         </Container>
@@ -140,26 +141,29 @@ export default function About() {
             
             <div className="space-y-6 text-base md:text-lg text-slate-600 leading-relaxed">
               <p>
-                RedDev started because we kept seeing the same problem: companies generating 
-                significant revenue through marketing and sales, but losing 30-40% of it to 
-                operational inefficiency.
+                RedDev started because we kept seeing the same problem in travel and accommodation: 
+                businesses generating significant bookings through marketing, but losing 30-40% of 
+                revenue to operational inefficiency.
               </p>
               
               <p>
-                Manual lead routing. Disconnected tools. People doing work that should be automated. 
-                Critical business logic living in spreadsheets and Slack threads instead of actual systems.
+                Manual booking management. Disconnected property systems. Staff doing repetitive tasks 
+                that should be automated. Critical operations—from check-ins to cleaning schedules to 
+                guest communications—living in spreadsheets and WhatsApp threads instead of integrated systems.
               </p>
               
               <p>
-                We started building infrastructure to fix this—not as a service business, but as 
-                problem-solvers who happened to write code. The pattern was clear: companies that 
-                invested in proper revenue infrastructure grew faster and operated leaner than those 
-                that didn&apos;t.
+                We started building infrastructure specifically for travel and accommodation businesses—not 
+                as a generic service, but as specialists who understand the unique challenges of managing 
+                properties, bookings, and guest experiences at scale. The pattern was clear: companies that 
+                invested in proper booking and property management infrastructure grew faster and operated 
+                leaner than those that didn&apos;t.
               </p>
               
               <p>
-                Today, we work with businesses processing thousands of leads and bookings daily, 
-                building the platforms and automations that let small teams operate at scale.
+                Today, we work with hotels, vacation rentals, and travel booking platforms processing 
+                thousands of bookings daily, building the systems that automate tasks, streamline 
+                management, and let small teams operate at enterprise scale.
               </p>
             </div>
           </motion.div>
@@ -196,9 +200,10 @@ export default function About() {
                   </div>
                 </div>
                 <p className="text-base md:text-lg text-slate-600 leading-relaxed">
-                  Build revenue infrastructure that helps high-growth companies turn operational 
-                  bottlenecks into competitive advantages. We measure success by how much manual 
-                  work we eliminate and how much faster our clients can scale.
+                  Build booking platforms, property management systems, and automation solutions that 
+                  help travel and accommodation businesses turn operational bottlenecks into competitive 
+                  advantages. We measure success by how much manual work we eliminate—from booking 
+                  management to property tasks—and how much faster our clients can scale.
                 </p>
               </div>
             </motion.div>
@@ -223,9 +228,10 @@ export default function About() {
                   </div>
                 </div>
                 <p className="text-base md:text-lg text-slate-600 leading-relaxed">
-                  Become the infrastructure partner for companies building for the long term. 
-                  Not chasing trends or quick contracts—building systems, teams, and expertise 
-                  that compound in value over decades.
+                  Become the infrastructure partner for travel and accommodation businesses building 
+                  for the long term. Not chasing trends or quick contracts—building specialized 
+                  booking systems, property management platforms, and automation expertise that 
+                  compound in value over decades.
                 </p>
               </div>
             </motion.div>
@@ -349,7 +355,7 @@ export default function About() {
             <div className="grid md:grid-cols-3 gap-8 pt-12 border-t border-slate-700">
               <div>
                 <div className="text-3xl md:text-4xl font-black text-white mb-2">6+</div>
-                <div className="text-slate-400">Years building systems</div>
+                <div className="text-slate-400">Years building travel infrastructure</div>
               </div>
               <div>
                 <div className="text-3xl md:text-4xl font-black text-white mb-2">85%</div>
@@ -357,7 +363,7 @@ export default function About() {
               </div>
               <div>
                 <div className="text-3xl md:text-4xl font-black text-white mb-2">10K+</div>
-                <div className="text-slate-400">Daily operations automated</div>
+                <div className="text-slate-400">Bookings processed daily</div>
               </div>
             </div>
           </motion.div>

@@ -22,7 +22,7 @@ export default function Leadership() {
     {
       name: "Aman Zaheer",
       role: "Chief Operating Officer",
-      image: "/img/member3.png",
+      image: "/img/aman12.png",
       linkedin: "#"
     },
     {
@@ -34,7 +34,7 @@ export default function Leadership() {
     {
       name: "Hunain Abbasi",
       role: "Business Developer",
-      image: "/img/member.png",
+      image: "/img/hunain.png",
       linkedin: "#"
     }
   ];

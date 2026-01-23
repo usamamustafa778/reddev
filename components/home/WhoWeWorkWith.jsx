@@ -7,20 +7,20 @@ import { motion } from "framer-motion";
 export default function WhoWeWorkWith() {
   const idealClients = [
     {
-      title: "Lead-gen & arbitrage businesses",
-      description: "Scaling paid acquisition and need infrastructure to handle volume"
+      title: "Hotels & Accommodation Providers",
+      description: "Managing multiple properties, bookings, and operations at scale"
     },
     {
-      title: "Booking & marketplace operators",
-      description: "Managing appointments, transactions, or service delivery at scale"
+      title: "Vacation Rental & Property Managers",
+      description: "Handling bookings, property maintenance, guest communications, and task management"
     },
     {
-      title: "Revenue-driven companies",
-      description: "Focused on measurable outcomes, not just launching features"
+      title: "Travel Booking Platforms",
+      description: "Processing high-volume reservations and need robust booking infrastructure"
     },
     {
-      title: "High-volume operations",
-      description: "Processing hundreds or thousands of transactions monthly"
+      title: "Accommodation Operations Teams",
+      description: "Looking to automate tasks, streamline management, and scale efficiently"
     }
   ];
 

@@ -56,17 +56,17 @@ export default function Careers() {
   const openRoles = [
     {
       title: "Full-Stack Engineer",
-      description: "Build AI-powered platforms and automation systems",
+      description: "Build booking platforms, property management systems, and automation solutions for travel and accommodation businesses",
       type: "Engineering"
     },
     {
-      title: "AI Integration Specialist",
-      description: "Design and implement intelligent automation workflows",
+      title: "Travel Tech Integration Specialist",
+      description: "Design and implement integrations for booking platforms, OTAs, payment systems, and property management tools",
       type: "Engineering"
     },
     {
       title: "Product Engineer",
-      description: "Own features end-to-end from concept to production",
+      description: "Own booking and property management features end-to-end from concept to production",
       type: "Engineering"
     }
   ];
@@ -92,15 +92,15 @@ export default function Careers() {
   return (
     <>
       <Head>
-        <title>Careers | Build With Us | RedDev</title>
+        <title>Careers | Build Travel & Accommodation Systems | RedDev</title>
         <meta
           name="description"
-          content="Join a team building AI-driven products and systems for the long term. For self-driven engineers who want ownership, growth, and impact."
+          content="Join a team building booking platforms, property management systems, and automation solutions for travel and accommodation businesses. For self-driven engineers who want ownership, growth, and impact."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         
-        <meta property="og:title" content="Careers | Build With Us | RedDev" />
-        <meta property="og:description" content="Join a team building AI-driven products and systems for the long term." />
+        <meta property="og:title" content="Careers | Build Travel & Accommodation Systems | RedDev" />
+        <meta property="og:description" content="Join a team building booking platforms, property management systems, and automation solutions for travel and accommodation businesses." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://reddev.vercel.app/careers" />
         <meta property="og:image" content="https://reddev.vercel.app/reddev.png" />
@@ -108,8 +108,8 @@ export default function Careers() {
         <meta property="og:image:height" content="630" />
         
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Careers | Build With Us | RedDev" />
-        <meta name="twitter:description" content="Join a team building AI-driven products for the long term." />
+        <meta name="twitter:title" content="Careers | Build Travel & Accommodation Systems | RedDev" />
+        <meta name="twitter:description" content="Join a team building booking platforms and property management systems for travel businesses." />
         <meta name="twitter:image" content="https://reddev.vercel.app/reddev.png" />
         
         <link rel="canonical" href="https://reddev.vercel.app/careers" />
@@ -142,16 +142,17 @@ export default function Careers() {
         <Container className="relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
-              Build systems that
+              Build booking & management systems that
               <span className="relative block mt-2">
                 <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-red-200 via-primary to-rose-300">
-                  compound over decades
+                  power travel & accommodation
                 </span>
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl mx-auto">
-              We&apos;re building AI-driven products, systems, and businesses for the long term. 
-              If you want ownership, responsibility, and real growth—keep reading.
+              We&apos;re building booking platforms, property management systems, and automation 
+              solutions for travel and accommodation businesses. If you want ownership, responsibility, 
+              and real growth—keep reading.
             </p>
           </div>
         </Container>
@@ -192,19 +193,21 @@ export default function Careers() {
             <div className="space-y-6 text-base md:text-lg text-slate-600 leading-relaxed">
               <p>
                 We&apos;re not building a corporate ladder or a comfort-driven workplace. 
-                We&apos;re building infrastructure that helps real businesses scale—and we need 
+                We&apos;re building booking platforms, property management systems, and automation 
+                solutions that help travel and accommodation businesses scale—and we need 
                 people who want to own that process from end to end.
               </p>
               
               <p>
-                That means learning fast, making decisions, shipping code that matters, and 
-                growing into roles with more responsibility. If you want someone to tell you 
-                exactly what to do every day, this isn&apos;t the place.
+                That means learning fast, making decisions, shipping code that matters for hotels, 
+                vacation rentals, and booking operations, and growing into roles with more 
+                responsibility. If you want someone to tell you exactly what to do every day, 
+                this isn&apos;t the place.
               </p>
               
               <p className="text-slate-900 font-black text-lg md:text-xl">
-                If you want to build systems that compound in value and grow your skills 
-                exponentially—this is where you belong.
+                If you want to build systems that power travel and accommodation operations and 
+                grow your skills exponentially—this is where you belong.
               </p>
             </div>
           </motion.div>
@@ -478,7 +481,8 @@ export default function Careers() {
             </h2>
             <p className="text-xl md:text-2xl text-slate-300 leading-relaxed mb-10 max-w-3xl mx-auto">
               Joining isn&apos;t about filling a seat. It&apos;s about committing to building 
-              systems that matter and growing alongside a company built for decades.
+              booking platforms and property management systems that power travel and accommodation 
+              businesses, and growing alongside a company built for decades.
             </p>
             <Link
               href="/contact"

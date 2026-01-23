@@ -9,14 +9,14 @@ export default function ProofAuthority() {
     {
       icon: TrendingUp,
       number: "10K+",
-      label: "Leads/Day Processed",
-      description: "Across client platforms"
+      label: "Bookings/Day Processed",
+      description: "Across travel & accommodation platforms"
     },
     {
       icon: Users,
       number: "5K+",
-      label: "Bookings/Month",
-      description: "Automated & tracked"
+      label: "Properties Managed",
+      description: "Hotels, rentals & accommodations"
     },
     {
       icon: RefreshCw,
@@ -26,21 +26,21 @@ export default function ProofAuthority() {
     },
     {
       icon: Award,
-      number: "8+",
+      number: "6+",
       label: "Years",
-      description: "Building revenue systems"
+      description: "Building travel infrastructure"
     }
   ];
 
   const industries = [
-    "Lead Generation",
-    "Healthcare",
-    "Legal Services",
-    "Home Services",
-    "E-commerce",
-    "SaaS",
-    "Marketplace",
-    "Hospitality"
+    "Hotels",
+    "Vacation Rentals",
+    "Property Management",
+    "Travel Booking",
+    "Accommodation Platforms",
+    "Resort Management",
+    "Hostel Operations",
+    "Short-term Rentals"
   ];
 
   return (
@@ -71,12 +71,12 @@ export default function ProofAuthority() {
             Built for{" "}
             <span className="relative inline-block">
               <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-400">
-                High-Volume Operations
+                Travel & Accommodation Scale
               </span>
             </span>
           </h2>
           <p className="text-lg md:text-xl text-slate-300 max-w-2xl">
-            Real infrastructure, real scale, real results.
+            Real booking infrastructure, real property management, real operational results for travel businesses.
           </p>
         </motion.div>
 
@@ -129,10 +129,10 @@ export default function ProofAuthority() {
         >
           <div className="text-center mb-8">
             <h3 className="text-2xl md:text-3xl font-black text-white mb-3">
-              Industries We Serve
+              Travel & Accommodation Sectors
             </h3>
             <p className="text-slate-400">
-              Experience across diverse sectors requiring scalable infrastructure
+              Specialized infrastructure for all types of travel and accommodation businesses
             </p>
           </div>
           

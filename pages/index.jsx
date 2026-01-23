@@ -17,25 +17,25 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>AI-Powered Revenue Infrastructure | Built to Scale | RedDev</title>
+        <title>Travel & Accommodation Revenue Infrastructure | Booking & Management Systems | RedDev</title>
         <meta
           name="description"
-          content="Custom platforms and automation that turn traffic into predictable, scalable revenue. Selective partnerships with lead-gen, booking, and high-volume operations."
+          content="Custom booking platforms, property management systems, and automation solutions for travel and accommodation businesses. Specialized in bookings, management, and task automation."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
         <meta
           name="keywords"
-          content="revenue infrastructure, AI automation, lead generation systems, booking platforms, high-ticket development, enterprise automation, scalable platforms"
+          content="travel booking platform, accommodation management system, property management software, booking automation, travel tech, hotel booking system, vacation rental management, task automation travel"
         />
 
         <meta
           property="og:title"
-          content="AI-Powered Revenue Infrastructure | Built to Scale"
+          content="Travel & Accommodation Revenue Infrastructure | Built to Scale"
         />
         <meta
           property="og:description"
-          content="Custom platforms and automation that turn traffic into predictable, scalable revenue."
+          content="Custom booking platforms, property management systems, and automation solutions for travel and accommodation businesses."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://reddev.vercel.app" />
@@ -61,9 +61,9 @@ export default function Home() {
       </Head>
       <FirstNavbar />
       <Hero 
-        heading1={detail.heroheading1}
-        heading2={detail.heroheading2}
-        description="Custom platforms and automation that turn traffic into predictable, scalable revenue."
+        heading1="Travel & Accommodation Revenue Infrastructure."
+        heading2="Built to Scale."
+        description="Custom booking platforms, property management systems, and automation solutions that turn traffic into predictable, scalable revenue for travel and accommodation businesses."
       />
       <ProblemSection />
       <SolutionFramework />
