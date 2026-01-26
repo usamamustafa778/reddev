@@ -11,7 +11,7 @@ export default function Leadership() {
       name: "Usama Bhatti",
       role: "Founder and CEO",
       image: "/img/uxama.PNG",
-      linkedin: "#"
+      linkedin: "https://www.linkedin.com/in/uxamabt/"
     },
     {
       name: "Hamza Ali",

@@ -39,7 +39,7 @@ export default function Leadership() {
       role: "Founder and CEO",
       focus: "Product vision, client strategy, long-term direction",
       image: "/img/uxama.PNG",
-      linkedin: "#"
+      linkedin: "https://www.linkedin.com/in/uxamabt/"
     },
     {
       name: "Hamza Ali",
