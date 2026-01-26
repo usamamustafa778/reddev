@@ -40,15 +40,15 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About Us | Travel & Accommodation Infrastructure Specialists | RedDev</title>
+        <title>About Us | AI-Powered Hospitality Infrastructure Specialists | RedDev</title>
         <meta
           name="description"
-          content="Building booking platforms, property management systems, and automation solutions for travel and accommodation businesses. Learn about our mission, vision, and specialized approach."
+          content="Building AI-powered booking platforms, property management systems, and automation solutions for hotels, resorts, serviced apartments, and property managers. Learn about our mission, vision, and specialized approach."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         
-        <meta property="og:title" content="About Us | Travel & Accommodation Infrastructure Specialists | RedDev" />
-        <meta property="og:description" content="Building booking platforms, property management systems, and automation solutions for travel and accommodation businesses." />
+        <meta property="og:title" content="About Us | AI-Powered Hospitality Infrastructure Specialists | RedDev" />
+        <meta property="og:description" content="Building AI-powered booking platforms, property management systems, and automation solutions for hotels, resorts, serviced apartments, and property managers." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://reddev.vercel.app/about" />
         <meta property="og:image" content="https://reddev.vercel.app/reddev.png" />
@@ -56,8 +56,8 @@ export default function About() {
         <meta property="og:image:height" content="630" />
         
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About Us | Travel & Accommodation Infrastructure Specialists" />
-        <meta name="twitter:description" content="Building booking platforms, property management systems, and automation solutions for travel and accommodation businesses." />
+        <meta name="twitter:title" content="About Us | AI-Powered Hospitality Infrastructure Specialists" />
+        <meta name="twitter:description" content="Building AI-powered booking platforms, property management systems, and automation solutions for hotels, resorts, serviced apartments, and property managers." />
         <meta name="twitter:image" content="https://reddev.vercel.app/reddev.png" />
         
         <link rel="canonical" href="https://reddev.vercel.app/about" />
@@ -90,17 +90,17 @@ export default function About() {
         <Container className="relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
-              Building infrastructure that
+              Building AI-powered infrastructure that
               <span className="relative block mt-2">
                 <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-red-200 via-primary to-rose-300">
-                  powers travel & accommodation operations
+                  scales hospitality operations
                 </span>
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl mx-auto">
-              We build booking platforms, property management systems, and automation solutions 
-              for travel and accommodation businesses processing thousands of bookings per day—where 
-              operational efficiency directly impacts revenue and guest satisfaction.
+              We build AI-enhanced booking platforms, property management systems, and operations automation 
+              for hotels, resorts, serviced apartments, and property managers processing thousands of bookings 
+              per day—where operational efficiency directly impacts revenue and guest satisfaction.
             </p>
           </div>
         </Container>
@@ -141,29 +141,31 @@ export default function About() {
             
             <div className="space-y-6 text-base md:text-lg text-slate-600 leading-relaxed">
               <p>
-                RedDev started because we kept seeing the same problem in travel and accommodation: 
-                businesses generating significant bookings through marketing, but losing 30-40% of 
-                revenue to operational inefficiency.
+                RedDev started because we kept seeing the same problem in hospitality: hotels, resorts, 
+                and serviced apartments generating significant bookings through marketing, but losing 30-40% 
+                of revenue to operational inefficiency—overbookings, pricing sync issues, slow guest 
+                communication, and missed upsell opportunities.
               </p>
               
               <p>
-                Manual booking management. Disconnected property systems. Staff doing repetitive tasks 
-                that should be automated. Critical operations—from check-ins to cleaning schedules to 
-                guest communications—living in spreadsheets and WhatsApp threads instead of integrated systems.
+                Manual booking management between PMS, channel managers, and OTAs. Disconnected property 
+                systems. Staff drowning in repetitive tasks that should be automated. Critical operations—from 
+                check-ins to housekeeping schedules to guest communications—living in spreadsheets and WhatsApp 
+                threads instead of integrated, AI-powered systems.
               </p>
               
               <p>
-                We started building infrastructure specifically for travel and accommodation businesses—not 
+                We started building AI-enhanced infrastructure specifically for hospitality businesses—not 
                 as a generic service, but as specialists who understand the unique challenges of managing 
                 properties, bookings, and guest experiences at scale. The pattern was clear: companies that 
-                invested in proper booking and property management infrastructure grew faster and operated 
-                leaner than those that didn&apos;t.
+                invested in proper booking and property management infrastructure with AI automation grew faster 
+                and operated leaner than those that didn&apos;t.
               </p>
               
               <p>
-                Today, we work with hotels, vacation rentals, and travel booking platforms processing 
-                thousands of bookings daily, building the systems that automate tasks, streamline 
-                management, and let small teams operate at enterprise scale.
+                Today, we work with hotels, resorts, serviced apartments, and property managers processing 
+                thousands of bookings daily, building AI-powered systems that eliminate overbookings, automate 
+                workflows, and let small teams operate at enterprise scale—without operational chaos.
               </p>
             </div>
           </motion.div>
@@ -200,10 +202,10 @@ export default function About() {
                   </div>
                 </div>
                 <p className="text-base md:text-lg text-slate-600 leading-relaxed">
-                  Build booking platforms, property management systems, and automation solutions that 
-                  help travel and accommodation businesses turn operational bottlenecks into competitive 
-                  advantages. We measure success by how much manual work we eliminate—from booking 
-                  management to property tasks—and how much faster our clients can scale.
+                  Build AI-powered booking platforms, property management systems, and operations automation 
+                  that help hotels, resorts, and serviced apartments turn operational bottlenecks into competitive 
+                  advantages. We measure success by how much manual work we eliminate—from booking management 
+                  to property tasks—and how much faster our clients can scale without operational chaos.
                 </p>
               </div>
             </motion.div>
@@ -228,9 +230,9 @@ export default function About() {
                   </div>
                 </div>
                 <p className="text-base md:text-lg text-slate-600 leading-relaxed">
-                  Become the infrastructure partner for travel and accommodation businesses building 
+                  Become the AI-powered infrastructure partner for hospitality businesses building 
                   for the long term. Not chasing trends or quick contracts—building specialized 
-                  booking systems, property management platforms, and automation expertise that 
+                  booking systems, property management platforms, and AI automation expertise that 
                   compound in value over decades.
                 </p>
               </div>
@@ -355,15 +357,15 @@ export default function About() {
             <div className="grid md:grid-cols-3 gap-8 pt-12 border-t border-slate-700">
               <div>
                 <div className="text-3xl md:text-4xl font-black text-white mb-2">6+</div>
-                <div className="text-slate-400">Years building travel infrastructure</div>
+                <div className="text-slate-400">Years building AI-powered hospitality infrastructure</div>
               </div>
               <div>
                 <div className="text-3xl md:text-4xl font-black text-white mb-2">85%</div>
-                <div className="text-slate-400">Long-term client retention</div>
+                <div className="text-slate-400">Long-term hospitality client retention</div>
               </div>
               <div>
                 <div className="text-3xl md:text-4xl font-black text-white mb-2">10K+</div>
-                <div className="text-slate-400">Bookings processed daily</div>
+                <div className="text-slate-400">Bookings processed daily across hotels & resorts</div>
               </div>
             </div>
           </motion.div>

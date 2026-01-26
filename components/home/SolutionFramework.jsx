@@ -10,25 +10,25 @@ export default function SolutionFramework() {
       number: "01",
       icon: Search,
       title: "Diagnose",
-      description: "Analyze revenue and operations to uncover bottlenecks and growth opportunities"
+      description: "Audit your booking, ops, and guest communication flow to uncover revenue leaks (overbookings, slow responses, missed upsells) and bottlenecks."
     },
     {
       number: "02",
       icon: Pencil,
       title: "Design",
-      description: "Architect AI-enabled systems built for scale and automation"
+      description: "Map a scalable hospitality workflow — PMS + channel manager + OTAs + CRM — with automation points your team will actually use."
     },
     {
       number: "03",
       icon: Code,
       title: "Build",
-      description: "Develop robust platforms with seamless integrations that handle growth"
+      description: "Develop and integrate reliable systems: real-time availability/pricing sync, unified inbox, automated guest messaging, and ops dashboards."
     },
     {
       number: "04",
       icon: Zap,
       title: "Scale",
-      description: "Optimize and automate operations without increasing complexity"
+      description: "Optimize performance as you grow — improve direct bookings, streamline staff workload, and standardize operations across properties."
     }
   ];
 
@@ -56,13 +56,13 @@ export default function SolutionFramework() {
           </div>
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight text-slate-900 max-w-3xl">
-            Our Proven{" "}
+            How We Help Hotels{" "}
             <span className="relative inline-block">
               <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">
-                Approach To Achieve
+                Scale Without Chaos
               </span>
             </span>
-            {" "}Your Objectives
+            .
           </h2>
         </motion.div>
 

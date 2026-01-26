@@ -36,7 +36,7 @@ export default function Careers() {
     {
       icon: TrendingUp,
       title: "Learning bias",
-      description: "Every project is a chance to get better at building systems."
+      description: "Every hospitality project is a chance to get better at building AI-powered systems."
     },
     {
       icon: Users,
@@ -49,24 +49,25 @@ export default function Careers() {
     "Self-driven builders who don't need hand-holding",
     "People who enjoy responsibility and making decisions",
     "Those who want to grow into leadership roles",
-    "Engineers who think about business outcomes, not just code",
-    "Anyone who measures success by impact, not hours logged"
+    "Engineers who think about hospitality business outcomes, not just code",
+    "Anyone interested in AI-powered systems that eliminate operational bottlenecks",
+    "Developers who measure success by impact on hotels, resorts, and property managers"
   ];
 
   const openRoles = [
     {
       title: "Full-Stack Engineer",
-      description: "Build booking platforms, property management systems, and automation solutions for travel and accommodation businesses",
+      description: "Build AI-powered booking platforms, property management systems, and operations automation for hotels, resorts, serviced apartments, and property managers",
       type: "Engineering"
     },
     {
-      title: "Travel Tech Integration Specialist",
-      description: "Design and implement integrations for booking platforms, OTAs, payment systems, and property management tools",
+      title: "Hospitality Tech Integration Specialist",
+      description: "Design and implement AI-enhanced integrations for PMS, channel managers, OTAs, payment systems, and property management tools with real-time sync",
       type: "Engineering"
     },
     {
-      title: "Product Engineer",
-      description: "Own booking and property management features end-to-end from concept to production",
+      title: "AI/ML Engineer",
+      description: "Build AI-powered features for pricing optimization, task automation, upsell recommendations, and predictive analytics in hospitality systems",
       type: "Engineering"
     }
   ];
@@ -92,15 +93,15 @@ export default function Careers() {
   return (
     <>
       <Head>
-        <title>Careers | Build Travel & Accommodation Systems | RedDev</title>
+        <title>Careers | Build AI-Powered Hospitality Systems | RedDev</title>
         <meta
           name="description"
-          content="Join a team building booking platforms, property management systems, and automation solutions for travel and accommodation businesses. For self-driven engineers who want ownership, growth, and impact."
+          content="Join a team building AI-powered booking platforms, property management systems, and automation solutions for hotels, resorts, serviced apartments, and property managers. For self-driven engineers who want ownership, growth, and impact."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         
-        <meta property="og:title" content="Careers | Build Travel & Accommodation Systems | RedDev" />
-        <meta property="og:description" content="Join a team building booking platforms, property management systems, and automation solutions for travel and accommodation businesses." />
+        <meta property="og:title" content="Careers | Build AI-Powered Hospitality Systems | RedDev" />
+        <meta property="og:description" content="Join a team building AI-powered booking platforms, property management systems, and automation solutions for hotels, resorts, serviced apartments, and property managers." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://reddev.vercel.app/careers" />
         <meta property="og:image" content="https://reddev.vercel.app/reddev.png" />
@@ -108,8 +109,8 @@ export default function Careers() {
         <meta property="og:image:height" content="630" />
         
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Careers | Build Travel & Accommodation Systems | RedDev" />
-        <meta name="twitter:description" content="Join a team building booking platforms and property management systems for travel businesses." />
+        <meta name="twitter:title" content="Careers | Build AI-Powered Hospitality Systems | RedDev" />
+        <meta name="twitter:description" content="Join a team building AI-powered booking platforms and property management systems for hotels, resorts, and serviced apartments." />
         <meta name="twitter:image" content="https://reddev.vercel.app/reddev.png" />
         
         <link rel="canonical" href="https://reddev.vercel.app/careers" />
@@ -142,17 +143,17 @@ export default function Careers() {
         <Container className="relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
-              Build booking & management systems that
+              Build AI-powered booking & management systems that
               <span className="relative block mt-2">
                 <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-red-200 via-primary to-rose-300">
-                  power travel & accommodation
+                  scale hospitality operations
                 </span>
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl mx-auto">
-              We&apos;re building booking platforms, property management systems, and automation 
-              solutions for travel and accommodation businesses. If you want ownership, responsibility, 
-              and real growth—keep reading.
+              We&apos;re building AI-enhanced booking platforms, property management systems, and operations 
+              automation for hotels, resorts, serviced apartments, and property managers. If you want ownership, 
+              responsibility, and real growth—keep reading.
             </p>
           </div>
         </Container>
@@ -193,20 +194,19 @@ export default function Careers() {
             <div className="space-y-6 text-base md:text-lg text-slate-600 leading-relaxed">
               <p>
                 We&apos;re not building a corporate ladder or a comfort-driven workplace. 
-                We&apos;re building booking platforms, property management systems, and automation 
-                solutions that help travel and accommodation businesses scale—and we need 
+                We&apos;re building AI-powered booking platforms, property management systems, and automation 
+                solutions that help hotels, resorts, and serviced apartments scale without operational chaos—and we need 
                 people who want to own that process from end to end.
               </p>
               
               <p>
-                That means learning fast, making decisions, shipping code that matters for hotels, 
-                vacation rentals, and booking operations, and growing into roles with more 
-                responsibility. If you want someone to tell you exactly what to do every day, 
-                this isn&apos;t the place.
+                That means learning fast, making decisions, shipping AI-enhanced code that eliminates overbookings, 
+                syncs pricing across PMS and channel managers, automates guest communications, and scales hospitality 
+                operations. If you want someone to tell you exactly what to do every day, this isn&apos;t the place.
               </p>
               
               <p className="text-slate-900 font-black text-lg md:text-xl">
-                If you want to build systems that power travel and accommodation operations and 
+                If you want to build AI-powered systems that scale hospitality operations and 
                 grow your skills exponentially—this is where you belong.
               </p>
             </div>
@@ -314,7 +314,8 @@ export default function Careers() {
               <Minus className="w-5 h-5 text-slate-400 mt-1 flex-shrink-0" />
               <p className="text-base text-slate-600">
                 This won&apos;t be a good fit if you prefer clear 9-5 boundaries, need extensive 
-                management, or want a role that doesn&apos;t change as the company grows.
+                management, want a role that doesn&apos;t change as the company grows, or aren&apos;t interested 
+                in building AI-powered solutions for the hospitality industry.
               </p>
             </div>
           </motion.div>
@@ -481,8 +482,8 @@ export default function Careers() {
             </h2>
             <p className="text-xl md:text-2xl text-slate-300 leading-relaxed mb-10 max-w-3xl mx-auto">
               Joining isn&apos;t about filling a seat. It&apos;s about committing to building 
-              booking platforms and property management systems that power travel and accommodation 
-              businesses, and growing alongside a company built for decades.
+              AI-powered booking platforms and property management systems that scale hotels, resorts, 
+              and serviced apartments without operational chaos, and growing alongside a company built for decades.
             </p>
             <Link
               href="/contact"

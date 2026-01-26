@@ -14,45 +14,45 @@ export default function Services() {
     {
       icon: Brain,
       name: "Booking Management Platforms",
-      description: "Custom booking systems for hotels, vacation rentals, and travel services that handle high-volume reservations, real-time availability, and multi-channel synchronization.",
+      description: "AI-powered booking systems for hotels, resorts, and serviced apartments that eliminate overbookings, handle high-volume reservations, real-time availability sync across PMS and channel managers, and multi-channel synchronization.",
       outcomes: [
-        "Real-time booking portals and availability management",
-        "Multi-channel booking sync (OTAs, direct, API)",
-        "Automated confirmation and payment processing",
-        "Booking analytics and revenue optimization"
+        "Real-time booking portals with AI-driven availability management",
+        "Multi-channel sync (PMS, channel managers, OTAs, direct) with conflict resolution",
+        "AI-powered pricing optimization and automated confirmations",
+        "Booking analytics, occupancy tracking, and revenue optimization dashboards"
       ]
     },
     {
       icon: Smartphone,
-      name: "Property Management Systems",
-      description: "Comprehensive property management platforms that handle unit management, maintenance workflows, guest communications, and operational tasks.",
+      name: "Property Management Platforms",
+      description: "AI-enhanced property management platforms that integrate with your existing PMS, handle unit management, maintenance workflows, guest communications, inventory, and housekeeping schedules across multiple properties.",
       outcomes: [
-        "Property and unit management dashboards",
-        "Task automation and assignment systems",
-        "Maintenance request and tracking workflows",
-        "Multi-property portfolio management"
+        "Property and room/unit management dashboards with real-time status",
+        "AI-driven task automation and assignment systems for housekeeping and maintenance",
+        "Maintenance request tracking and vendor management workflows",
+        "Multi-property portfolio management with centralized reporting and analytics"
       ]
     },
     {
       icon: Code,
       name: "Task & Operations Automation",
-      description: "Purpose-built automation that eliminates manual work in travel and accommodation operations—from check-in/out workflows to cleaning schedules and guest communications.",
+      description: "AI-powered automation that eliminates manual work in hospitality operations—from check-in/check-out workflows to housekeeping schedules, guest communications, and upsell opportunities.",
       outcomes: [
-        "Automated check-in/check-out workflows",
-        "Cleaning and maintenance task scheduling",
-        "Guest communication automation",
-        "Integration with booking and property systems"
+        "Automated check-in/check-out workflows and digital key management",
+        "AI-powered housekeeping and maintenance task scheduling with intelligent assignment",
+        "AI-driven guest communication automation (emails, SMS, WhatsApp) with personalization",
+        "Integration with PMS, channel managers, booking platforms, and CRM systems"
       ]
     },
     {
       icon: Zap,
-      name: "Travel Tech Integrations",
-      description: "Connect booking platforms, property management tools, payment systems, and communication channels into unified, automated workflows.",
+      name: "Hospitality Tech Integrations",
+      description: "Connect PMS, channel managers, booking platforms, payment systems, and communication channels into unified, AI-enhanced automated workflows with real-time visibility.",
       outcomes: [
-        "OTA and booking platform integrations",
-        "Payment gateway and invoicing automation",
-        "Communication channel automation (email, SMS, WhatsApp)",
-        "Real-time reporting and operational dashboards"
+        "PMS, channel manager, and OTA integrations with real-time sync",
+        "Payment gateway, invoicing, and revenue management automation",
+        "AI-powered communication channel automation (email, SMS, WhatsApp)",
+        "Real-time operational dashboards with occupancy, revenue, and KPI tracking"
       ]
     }
   ];
@@ -107,8 +107,8 @@ export default function Services() {
     },
     {
       icon: TrendingUp,
-      title: "Travel & accommodation specialization",
-      description: "We optimize for booking systems, property management, and operational automation that directly impact your bottom line"
+      title: "Hospitality specialization",
+      description: "We optimize for AI-powered booking systems, property management, and operational automation that eliminate overbookings and directly impact your bottom line"
     },
     {
       icon: Zap,
@@ -133,24 +133,24 @@ export default function Services() {
   ];
 
   const idealClients = [
-    "Hotels and accommodation providers scaling operations",
-    "Vacation rental and property management companies",
-    "Travel booking platforms processing high volumes",
-    "Accommodation businesses automating tasks and management"
+    "Hotels, resorts, and serviced apartments scaling operations",
+    "Property management companies managing multiple properties",
+    "Hospitality businesses processing high booking volumes",
+    "Accommodation businesses automating tasks and eliminating overbookings"
   ];
 
   return (
     <>
       <Head>
-        <title>Services | Travel & Accommodation Booking & Management Systems | RedDev</title>
+        <title>Services | AI-Powered Hospitality Booking & Management Systems | RedDev</title>
         <meta
           name="description"
-          content="We design, build, and scale booking platforms, property management systems, and automation solutions for travel and accommodation businesses. Specialized infrastructure for hotels, rentals, and booking operations."
+          content="We design, build, and scale AI-powered booking platforms, property management systems, and automation solutions for hotels, resorts, serviced apartments, and property managers. Specialized hospitality infrastructure."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         
-        <meta property="og:title" content="Services | Travel & Accommodation Booking & Management Systems | RedDev" />
-        <meta property="og:description" content="Booking platforms, property management systems, and automation solutions for travel and accommodation businesses." />
+        <meta property="og:title" content="Services | AI-Powered Hospitality Booking & Management Systems | RedDev" />
+        <meta property="og:description" content="AI-powered booking platforms, property management systems, and automation solutions for hotels, resorts, serviced apartments, and property managers." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://reddev.vercel.app/services" />
         <meta property="og:image" content="https://reddev.vercel.app/reddev.png" />
@@ -158,8 +158,8 @@ export default function Services() {
         <meta property="og:image:height" content="630" />
         
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Services | Travel & Accommodation Systems | RedDev" />
-        <meta name="twitter:description" content="Booking platforms, property management systems, and automation for travel and accommodation businesses." />
+        <meta name="twitter:title" content="Services | AI-Powered Hospitality Systems | RedDev" />
+        <meta name="twitter:description" content="AI-powered booking platforms, property management systems, and automation for hotels, resorts, serviced apartments, and property managers." />
         <meta name="twitter:image" content="https://reddev.vercel.app/reddev.png" />
         
         <link rel="canonical" href="https://reddev.vercel.app/services" />
@@ -192,17 +192,17 @@ export default function Services() {
         <Container className="relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
-              Booking & management systems that
+              AI-powered booking & management systems that
               <span className="relative block mt-2">
                 <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-red-200 via-primary to-rose-300">
-                  scale travel & accommodation operations
+                  scale hospitality operations
                 </span>
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl mx-auto mb-10">
-              We design, build, and scale booking platforms, property management systems, and automation 
-              solutions for travel and accommodation businesses—turning operational bottlenecks into 
-              automated systems that compound value over time.
+              We design, build, and scale AI-enhanced booking platforms, property management systems, and operations 
+              automation for hotels, resorts, serviced apartments, and property managers—turning operational 
+              bottlenecks into automated systems that eliminate overbookings, streamline workflows, and compound value over time.
             </p>
             <Link
               href="/contact"
@@ -257,7 +257,7 @@ export default function Services() {
               <Minus className="w-5 h-5 text-slate-400 mt-1 flex-shrink-0" />
               <p className="text-base">
                 Not a fit for quick-turnaround projects, low-budget builds, or businesses outside 
-                the travel and accommodation industry looking for generic solutions.
+                the hospitality industry looking for generic solutions.
               </p>
             </div>
           </motion.div>
@@ -294,7 +294,7 @@ export default function Services() {
               </span>
             </h2>
             <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
-              Specialized services for travel and accommodation businesses designed to create measurable operational impact.
+              AI-powered services for hotels, resorts, serviced apartments, and property managers designed to eliminate operational bottlenecks and create measurable impact.
             </p>
           </motion.div>
 
@@ -540,9 +540,9 @@ export default function Services() {
               ?
             </h2>
             <p className="text-xl md:text-2xl text-slate-600 leading-relaxed mb-10 max-w-3xl mx-auto">
-              Let&apos;s have a strategic conversation about your travel or accommodation business, 
-              operational challenges, and how booking platforms and property management systems can 
-              accelerate your growth.
+              Let&apos;s have a strategic conversation about your hospitality business, operational challenges 
+              (overbookings, pricing sync issues, manual workflows), and how AI-powered booking platforms and 
+              property management systems can accelerate your growth without operational chaos.
             </p>
             <Link
               href="/contact"

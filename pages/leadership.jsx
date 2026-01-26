@@ -35,22 +35,39 @@ export default function Leadership() {
 
   const leadershipTeam = [
     {
-      name: "[Founder Name]",
-      role: "Founder & CEO",
+      name: "Usama Bhatti",
+      role: "Founder and CEO",
       focus: "Product vision, client strategy, long-term direction",
-      image: "/img/member1.png"
+      image: "/img/uxama.png",
+      linkedin: "#"
     },
     {
-      name: "[CTO Name]",
-      role: "Chief Technology Officer",
-      focus: "Architecture, engineering standards, infrastructure decisions",
-      image: "/img/member2.png"
+      name: "Hamza Ali",
+      role: "Chief Technical Officer",
+      focus: "Architecture, engineering standards, AI-powered infrastructure decisions",
+      image: "/img/hamza2.png",
+      linkedin: "https://www.linkedin.com/in/hamza-ali-2644742b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     },
     {
-      name: "[Head of Delivery]",
-      role: "Head of Delivery",
-      focus: "Project execution, quality assurance, client outcomes",
-      image: "/img/member3.png"
+      name: "Aman Zaheer",
+      role: "Chief Operating Officer & Co-Founder",
+      focus: "Project execution, quality assurance, hospitality client outcomes",
+      image: "/img/aman12.png",
+      linkedin: "https://www.linkedin.com/in/aman-zaheer-96664a373?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+    },
+    {
+      name: "Umar Janjua",
+      role: "Chief Marketing Officer",
+      focus: "Brand strategy, market positioning, hospitality industry growth",
+      image: "/img/umer.png",
+      linkedin: "https://www.linkedin.com/in/umer-janjua-875870352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+    },
+    {
+      name: "Hunain Abbasi",
+      role: "Business Developer",
+      focus: "Client relationships, hospitality partnerships, business development",
+      image: "/img/hunain.png",
+      linkedin: "https://www.linkedin.com/in/hunain-mubashir-abbasi-257491368?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     }
   ];
 
@@ -75,15 +92,15 @@ export default function Leadership() {
   return (
     <>
       <Head>
-        <title>Leadership | Who We Are | RedDev</title>
+        <title>Leadership | AI-Powered Hospitality Infrastructure Team | RedDev</title>
         <meta
           name="description"
-          content="Meet the leadership team building RedDev for decades. Founder-led, execution-driven, and focused on long-term client partnerships."
+          content="Meet the leadership team building AI-powered hospitality infrastructure for hotels, resorts, and serviced apartments. Founder-led, execution-driven, and focused on long-term hospitality partnerships."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         
-        <meta property="og:title" content="Leadership | Who We Are | RedDev" />
-        <meta property="og:description" content="Meet the leadership team building RedDev for decades. Founder-led, execution-driven." />
+        <meta property="og:title" content="Leadership | AI-Powered Hospitality Infrastructure Team | RedDev" />
+        <meta property="og:description" content="Meet the leadership team building AI-powered hospitality infrastructure. Founder-led, execution-driven." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://reddev.vercel.app/leadership" />
         <meta property="og:image" content="https://reddev.vercel.app/reddev.png" />
@@ -91,8 +108,8 @@ export default function Leadership() {
         <meta property="og:image:height" content="630" />
         
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Leadership | Who We Are | RedDev" />
-        <meta name="twitter:description" content="Founder-led, execution-driven, building for decades." />
+        <meta name="twitter:title" content="Leadership | AI-Powered Hospitality Infrastructure Team | RedDev" />
+        <meta name="twitter:description" content="Founder-led, execution-driven, building AI-powered hospitality infrastructure for decades." />
         <meta name="twitter:image" content="https://reddev.vercel.app/reddev.png" />
         
         <link rel="canonical" href="https://reddev.vercel.app/leadership" />
@@ -134,7 +151,7 @@ export default function Leadership() {
             </h1>
             <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl mx-auto">
               Founder-led and execution-driven. We build the company the same way we build 
-              products—with ownership, clarity, and long-term thinking.
+              AI-powered hospitality products—with ownership, clarity, and long-term thinking.
             </p>
           </div>
         </Container>
@@ -158,12 +175,13 @@ export default function Leadership() {
             <div className="grid lg:grid-cols-5 gap-12 items-start">
               {/* Photo */}
               <div className="lg:col-span-2">
-                <div className="relative aspect-square rounded-2xl overflow-hidden bg-slate-100 border-2 border-slate-200">
+                <div className="relative w-full aspect-square rounded-2xl overflow-hidden bg-slate-100 border-2 border-slate-200">
                   <Image
-                    src="/img/member1.png"
-                    alt="Founder"
+                    src="/img/uxama.png"
+                    alt="Usama Bhatti"
                     fill
-                    className="object-cover"
+                    className="object-cover object-center"
+                    sizes="(max-width: 1024px) 100vw, 40vw"
                   />
                 </div>
               </div>
@@ -172,32 +190,34 @@ export default function Leadership() {
               <div className="lg:col-span-3 space-y-6">
                 <div>
                   <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-2">
-                    [Founder Name]
+                    Usama Bhatti
                   </h2>
                   <p className="text-xl text-slate-600 font-bold">
-                    Founder & CEO
+                    Founder and CEO
                   </p>
                 </div>
 
                 <div className="space-y-6 text-base md:text-lg text-slate-600 leading-relaxed">
                   <p>
-                    RedDev exists because too many businesses lose revenue to operational 
-                    inefficiency. We saw companies spending millions on marketing while their 
-                    infrastructure leaked 30-40% of that investment through manual processes, 
-                    disconnected tools, and systems that couldn&apos;t scale.
+                    RedDev exists because too many hospitality businesses lose revenue to operational 
+                    inefficiency. We saw hotels, resorts, and serviced apartments spending millions on 
+                    marketing while their infrastructure leaked 30-40% of that investment through 
+                    overbookings, pricing sync issues, manual processes, disconnected PMS and channel 
+                    managers, and systems that couldn&apos;t scale.
                   </p>
                   
                   <p>
-                    I approach building products the same way we approach building the company: 
-                    solve real problems, own the outcomes, and optimize for long-term value. 
-                    That means saying no to most projects, working with fewer clients, and 
-                    investing in systems that compound rather than quick wins.
+                    I approach building AI-powered hospitality products the same way we approach building 
+                    the company: solve real problems, own the outcomes, and optimize for long-term value. 
+                    That means saying no to most projects, working with fewer hospitality clients, and 
+                    investing in AI-enhanced systems that compound rather than quick wins.
                   </p>
                   
                   <p>
                     The goal isn&apos;t to be the biggest development shop. It&apos;s to be the 
-                    infrastructure partner that companies trust for decades—the team they call 
-                    when scaling matters more than speed.
+                    AI-powered infrastructure partner that hospitality companies trust for decades—the 
+                    team they call when scaling matters more than speed, and when operational chaos 
+                    isn&apos;t an option.
                   </p>
                 </div>
               </div>
@@ -298,7 +318,7 @@ export default function Leadership() {
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
             {leadershipTeam.map((leader, index) => (
               <motion.div
                 key={index}
@@ -308,13 +328,15 @@ export default function Leadership() {
                 viewport={{ once: true }}
                 className="group"
               >
-                <div className="bg-white rounded-xl border-2 border-slate-200 hover:border-slate-300 hover:shadow-lg transition-all duration-300 overflow-hidden">
-                  <div className="relative aspect-square bg-slate-100">
+                <div className="bg-white rounded-xl border-2 border-slate-200 hover:border-slate-300 hover:shadow-lg transition-all duration-300 overflow-hidden h-full flex flex-col">
+                  <div className="relative w-full aspect-[3/4] bg-slate-100 overflow-hidden flex-shrink-0">
                     <Image
                       src={leader.image}
                       alt={leader.name}
                       fill
                       className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      style={{ objectPosition: 'center 30%' }}
                     />
                   </div>
                   <div className="p-6">
@@ -324,9 +346,21 @@ export default function Leadership() {
                     <p className="text-sm font-bold text-red-600 mb-3">
                       {leader.role}
                     </p>
-                    <p className="text-sm text-slate-600 leading-relaxed">
+                    <p className="text-sm text-slate-600 leading-relaxed mb-3">
                       {leader.focus}
                     </p>
+                    {leader.linkedin && leader.linkedin !== "#" && (
+                      <a
+                        href={leader.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-slate-100 hover:bg-gradient-to-r hover:from-red-500 hover:to-orange-500 transition-all duration-300"
+                      >
+                        <svg className="w-4 h-4 text-slate-600 hover:text-white fill-current" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                      </a>
+                    )}
                   </div>
                 </div>
               </motion.div>
@@ -408,10 +442,10 @@ export default function Leadership() {
             className="max-w-4xl mx-auto text-center"
           >
             <p className="text-xl md:text-2xl text-slate-300 leading-relaxed font-medium">
-              We&apos;re building a company that will still be solving hard infrastructure 
-              problems a decade from now. Every client relationship, every hire, and every 
+              We&apos;re building a company that will still be solving hard AI-powered hospitality 
+              infrastructure problems a decade from now. Every client relationship, every hire, and every 
               decision is made with that timeline in mind. If you&apos;re looking for a 
-              long-term partner who takes responsibility seriously—that&apos;s what we&apos;re 
+              long-term partner who takes responsibility seriously and understands hospitality operations—that&apos;s what we&apos;re 
               building here.
             </p>
           </motion.div>

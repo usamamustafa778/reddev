@@ -33,10 +33,10 @@ export default function ProblemSection() {
               </div>
               
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight text-slate-900">
-                Travel & Accommodation Operations{" "}
+                Your Hospitality Operations{" "}
                 <span className="relative inline-block">
                   <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">
-                    Are the Bottleneck
+                    Can&apos;t Keep Up With Growth
                   </span>
                 </span>
               </h2>
@@ -45,27 +45,28 @@ export default function ProblemSection() {
             {/* Body Text */}
             <div className="space-y-6 text-slate-600 text-base md:text-lg leading-relaxed">
               <p>
-                Your bookings are increasing — but revenue isn&apos;t scaling at the same rate. 
-                Manual booking management, disconnected property systems, and inefficient task 
-                handling are leaking money at every step of your growth journey.
+                Bookings are up, but your operations and guest experience aren&apos;t scaling. 
+                You&apos;re juggling manual updates between your PMS, channel manager, OTAs, CRM, 
+                and spreadsheets — creating overbookings, pricing sync issues, and inconsistent 
+                workflows across properties.
               </p>
               
               <p>
-                Your accommodation operations require more staff instead of better systems. As 
-                bookings grow, margins shrink. You&apos;re managing properties, tasks, and 
-                guest communications manually, scaling blind in a market that punishes inefficiency.
+                Slow guest communication means missed upsell opportunities. You lack real-time 
+                visibility into occupancy, revenue, and operations KPIs. Your team is drowning 
+                in manual tasks instead of delivering exceptional guest experiences that drive 
+                repeat bookings and higher margins.
               </p>
               
               <p>
-                Your tech stack wasn&apos;t designed for travel and accommodation scale — it was 
-                stitched together to survive, not to grow. Partner with infrastructure experts 
-                who understand that sustainable growth in travel and accommodation requires robust 
-                booking platforms, property management systems, and task automation that compound 
-                results, not collapse under pressure.
+                Your tech stack was stitched together to survive, not to scale. As you grow, 
+                these disconnected systems compound operational chaos instead of compounding 
+                results. Partner with hospitality software experts who build robust integrations, 
+                automation, and dashboards that scale with your business — not against it.
               </p>
               
               <p className="text-slate-900 font-bold text-lg md:text-xl">
-                Growth in travel & accommodation without proper infrastructure doesn&apos;t compound. It collapses.
+                Growth in hospitality without proper infrastructure doesn&apos;t compound. It collapses.
               </p>
             </div>
 

@@ -10,35 +10,35 @@ export default function ProofAuthority() {
       icon: TrendingUp,
       number: "10K+",
       label: "Bookings/Day Processed",
-      description: "Across travel & accommodation platforms"
+      description: "Across hotels, resorts & serviced apartments"
     },
     {
       icon: Users,
       number: "5K+",
       label: "Properties Managed",
-      description: "Hotels, rentals & accommodations"
+      description: "Hotels, resorts, serviced apartments & rentals"
     },
     {
       icon: RefreshCw,
       number: "85%",
       label: "Repeat Clients",
-      description: "Long-term partnerships"
+      description: "Long-term hospitality partnerships"
     },
     {
       icon: Award,
       number: "6+",
       label: "Years",
-      description: "Building travel infrastructure"
+      description: "Building AI-powered hospitality infrastructure"
     }
   ];
 
   const industries = [
     "Hotels",
-    "Vacation Rentals",
+    "Resorts",
+    "Serviced Apartments",
     "Property Management",
-    "Travel Booking",
-    "Accommodation Platforms",
-    "Resort Management",
+    "Vacation Rentals",
+    "Boutique Hotels",
     "Hostel Operations",
     "Short-term Rentals"
   ];
@@ -71,12 +71,12 @@ export default function ProofAuthority() {
             Built for{" "}
             <span className="relative inline-block">
               <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-400">
-                Travel & Accommodation Scale
+                Hospitality Scale
               </span>
             </span>
           </h2>
           <p className="text-lg md:text-xl text-slate-300 max-w-2xl">
-            Real booking infrastructure, real property management, real operational results for travel businesses.
+            AI-powered booking infrastructure, property management systems, and operational automation that scale hotels, resorts, and serviced apartments without chaos.
           </p>
         </motion.div>
 
@@ -129,10 +129,10 @@ export default function ProofAuthority() {
         >
           <div className="text-center mb-8">
             <h3 className="text-2xl md:text-3xl font-black text-white mb-3">
-              Travel & Accommodation Sectors
+              Hospitality Sectors We Serve
             </h3>
             <p className="text-slate-400">
-              Specialized infrastructure for all types of travel and accommodation businesses
+              AI-powered systems built specifically for hotels, resorts, serviced apartments, and property management companies
             </p>
           </div>
           

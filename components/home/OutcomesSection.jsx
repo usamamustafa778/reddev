@@ -12,41 +12,41 @@ export default function OutcomesSection() {
       icon: Calendar,
       title: "Booking Management Systems",
       tagline: "Streamline reservations. Reduce no-shows. Scale predictably.",
-      description: "We build custom booking platforms specifically for travel and accommodation businesses. From real-time availability management to automated confirmations, our systems handle high-volume bookings without breaking.",
+      description: "We build custom booking platforms powered by AI that eliminate overbookings and pricing sync issues. Real-time availability sync across your PMS, channel managers, and OTAs ensures accurate inventory. AI-driven pricing optimization and automated confirmations reduce no-shows while improving guest experience.",
       includes: [
-        "Real-time booking portals for hotels, rentals, and travel services",
-        "Multi-channel booking synchronization (OTAs, direct, API)",
-        "Automated confirmation and reminder systems",
-        "Payment processing and invoicing automation",
-        "Booking analytics and revenue optimization dashboards"
+        "Real-time booking portals for hotels, resorts, and serviced apartments",
+        "Multi-channel synchronization (PMS, channel managers, OTAs, direct bookings) with conflict resolution",
+        "Automated confirmation and pre-arrival communication systems to reduce no-shows",
+        "Payment processing, invoicing, and revenue management automation",
+        "AI-powered booking analytics, occupancy tracking, and revenue optimization dashboards with real-time visibility"
       ]
     },
     {
       icon: Layers,
       title: "Property Management Platforms",
       tagline: "Manage properties, tasks, and operations—all in one system.",
-      description: "Your accommodation business needs more than just bookings. We build comprehensive property management systems that handle maintenance tasks, guest communications, inventory, cleaning schedules, and operational workflows.",
+      description: "Centralize operations across multiple properties with AI-enhanced systems that integrate seamlessly with your existing PMS. Handle maintenance tasks, guest communications, inventory, and housekeeping schedules from a single dashboard. AI-powered predictive analytics provide real-time visibility into occupancy, revenue, and operational KPIs across your portfolio.",
       includes: [
-        "Property and unit management dashboards",
-        "Task automation and assignment systems",
-        "Maintenance request and tracking workflows",
-        "Guest communication and support automation",
-        "Inventory and supply chain management",
-        "Multi-property portfolio management"
+        "Property and room/unit management dashboards with real-time status and availability",
+        "Task automation and assignment systems for housekeeping and maintenance workflows",
+        "Maintenance request tracking and vendor management systems",
+        "Guest communication automation and unified support ticket systems",
+        "AI-driven inventory, supplies, and asset management with intelligent automated reordering",
+        "Multi-property portfolio management with centralized reporting and analytics"
       ]
     },
     {
       icon: Bot,
       title: "Task & Operations Automation",
       tagline: "Eliminate manual work. Scale operations. Reduce costs.",
-      description: "Travel and accommodation operations are complex. We automate repetitive tasks—from check-in/check-out workflows to cleaning schedules, guest communications, and reporting—so your team focuses on what matters.",
+      description: "Automate repetitive tasks with AI that drain your team&apos;s time. From check-in/check-out workflows to housekeeping schedules, guest communications, and upsell opportunities—our AI-powered automation systems ensure consistent workflows across properties. Your staff focuses on guest experience while operations scale efficiently.",
       includes: [
-        "Automated check-in/check-out workflows",
-        "Cleaning and maintenance task scheduling",
-        "Guest communication automation (emails, SMS, WhatsApp)",
-        "Integration with booking platforms and property management tools",
-        "Real-time reporting and operational dashboards",
-        "AI-powered task prioritization and routing"
+        "Automated check-in/check-out workflows and digital key management systems",
+        "Housekeeping and maintenance task scheduling with intelligent assignment",
+        "AI-powered guest communication automation (emails, SMS, WhatsApp) with intelligent personalized messaging",
+        "Integration with PMS, channel managers, booking platforms, and CRM systems",
+        "Real-time operational dashboards with occupancy, revenue, and KPI tracking",
+        "AI-powered task prioritization, upsell recommendations, and workflow routing"
       ]
     }
   ];
@@ -55,6 +55,7 @@ export default function OutcomesSection() {
     "Web platforms (React, Next.js, etc.)",
     "Mobile applications (iOS / Android when needed)",
     "Backend systems & APIs",
+    "AI & machine learning integration",
     "Databases, security, and scalable infrastructure",
     "Integrations, automation, and marketing tech"
   ];
@@ -83,15 +84,15 @@ export default function OutcomesSection() {
           </div>
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight text-slate-900 max-w-3xl mx-auto mb-6">
-            Travel & Accommodation Infrastructure,{" "}
+            AI-Powered Hospitality Systems{" "}
             <span className="relative inline-block">
               <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">
-                Built for Your Niche
+                That Scale With Your Growth
               </span>
             </span>
           </h2>
           <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto">
-            We build booking platforms, property management systems, and automation solutions specifically for travel and accommodation businesses. Choose what you need:
+            AI-enhanced booking platforms, property management systems, and operations automation built for hotels, resorts, serviced apartments, and property managers. Select the solution you need:
           </p>
         </motion.div>
 
@@ -204,10 +205,10 @@ export default function OutcomesSection() {
           
           <div className="relative z-10">
             <h3 className="text-2xl md:text-3xl font-black text-white mb-4">
-              Under the Hood
+              Built With Modern Technology
             </h3>
             <p className="text-lg text-slate-300 mb-8 max-w-3xl">
-              Our solutions are delivered using a combination of capabilities—selected based on the problem, not the trend.
+              We deliver AI-powered hospitality software using proven technologies—selected based on your operational needs, not industry trends. Every system integrates seamlessly with your existing PMS, channel managers, and booking platforms.
             </p>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
@@ -220,7 +221,7 @@ export default function OutcomesSection() {
             </div>
             
             <p className="text-base text-slate-400 italic border-t border-slate-700 pt-6">
-              We don&apos;t sell development in isolation. We build revenue infrastructure that happens to include development.
+              We don&apos;t sell development in isolation. We build AI-enhanced operational infrastructure that eliminates overbookings, automates workflows, and scales your hospitality revenue—without operational chaos.
             </p>
           </div>
         </motion.div>

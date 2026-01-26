@@ -61,9 +61,9 @@ export default function Home() {
       </Head>
       <FirstNavbar />
       <Hero 
-        heading1="Travel & Accommodation Revenue Infrastructure."
+        heading1="AI-Powered Revenue Infrastructure."
         heading2="Built to Scale."
-        description="Custom booking platforms, property management systems, and automation solutions that turn traffic into predictable, scalable revenue for travel and accommodation businesses."
+        description="Custom platforms and automation  that turn traffic into predictable, scalable revenue."
       />
       <ProblemSection />
       <SolutionFramework />
