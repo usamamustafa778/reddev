@@ -10,31 +10,31 @@ export default function Leadership() {
     {
       name: "Usama Bhatti",
       role: "Founder and CEO",
-      image: "/img/uxama.png",
+      image: "/img/uxama.PNG",
       linkedin: "#"
     },
     {
       name: "Hamza Ali",
       role: "Chief Technical Officer",
-      image: "/img/hamza2.png",
+      image: "/img/hamza2.PNG",
       linkedin: "https://www.linkedin.com/in/hamza-ali-2644742b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     },
     {
       name: "Aman Zaheer",
       role: "Chief Operating Officer & Co-Founder",
-      image: "/img/aman12.png",
+      image: "/img/aman12.PNG",
       linkedin: "https://www.linkedin.com/in/aman-zaheer-96664a373?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     },
     {
       name: "Umar Janjua",
       role: "Chief Marketing Officer",
-      image: "/img/umer.png",
+      image: "/img/umer.PNG",
       linkedin: "https://www.linkedin.com/in/umer-janjua-875870352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     },
     {
       name: "Hunain Abbasi",
       role: "Business Developer",
-      image: "/img/hunain.png",
+      image: "/img/hunain.PNG",
       linkedin: "https://www.linkedin.com/in/hunain-mubashir-abbasi-257491368?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     }
   ];

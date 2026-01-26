@@ -38,35 +38,35 @@ export default function Leadership() {
       name: "Usama Bhatti",
       role: "Founder and CEO",
       focus: "Product vision, client strategy, long-term direction",
-      image: "/img/uxama.png",
+      image: "/img/uxama.PNG",
       linkedin: "#"
     },
     {
       name: "Hamza Ali",
       role: "Chief Technical Officer",
       focus: "Architecture, engineering standards, AI-powered infrastructure decisions",
-      image: "/img/hamza2.png",
+      image: "/img/hamza2.PNG",
       linkedin: "https://www.linkedin.com/in/hamza-ali-2644742b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     },
     {
       name: "Aman Zaheer",
       role: "Chief Operating Officer & Co-Founder",
       focus: "Project execution, quality assurance, hospitality client outcomes",
-      image: "/img/aman12.png",
+      image: "/img/aman12.PNG",
       linkedin: "https://www.linkedin.com/in/aman-zaheer-96664a373?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     },
     {
       name: "Umar Janjua",
       role: "Chief Marketing Officer",
       focus: "Brand strategy, market positioning, hospitality industry growth",
-      image: "/img/umer.png",
+      image: "/img/umer.PNG",
       linkedin: "https://www.linkedin.com/in/umer-janjua-875870352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     },
     {
       name: "Hunain Abbasi",
       role: "Business Developer",
       focus: "Client relationships, hospitality partnerships, business development",
-      image: "/img/hunain.png",
+      image: "/img/hunain.PNG",
       linkedin: "https://www.linkedin.com/in/hunain-mubashir-abbasi-257491368?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     }
   ];
@@ -177,7 +177,7 @@ export default function Leadership() {
               <div className="lg:col-span-2">
                 <div className="relative w-full aspect-square rounded-2xl overflow-hidden bg-slate-100 border-2 border-slate-200">
                   <Image
-                    src="/img/uxama.png"
+                    src="/img/uxama.PNG"
                     alt="Usama Bhatti"
                     fill
                     className="object-cover object-center"
