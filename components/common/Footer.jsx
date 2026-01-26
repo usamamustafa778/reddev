@@ -118,7 +118,7 @@ function Footer() {
                   <div className="text-slate-600 font-medium">
                     <p>Email</p>
                     <a href="mailto:hello@reddev.com" className="text-red-600 hover:text-red-700 transition-colors">
-                      hello@reddev.com
+                      info.reddev@gmail.com
                     </a>
                   </div>
                   <div className="text-slate-600 font-medium">

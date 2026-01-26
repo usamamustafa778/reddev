@@ -13,46 +13,46 @@ export default function Services() {
   const services = [
     {
       icon: Brain,
-      name: "Booking Management Platforms",
-      description: "AI-powered booking systems for hotels, resorts, and serviced apartments that eliminate overbookings, handle high-volume reservations, real-time availability sync across PMS and channel managers, and multi-channel synchronization.",
+      name: "AI-Powered Software Development",
+      description: "AI-enhanced software solutions built to solve your specific business challenges, from intelligent web applications to AI-driven mobile apps and enterprise systems.",
       outcomes: [
-        "Real-time booking portals with AI-driven availability management",
-        "Multi-channel sync (PMS, channel managers, OTAs, direct) with conflict resolution",
-        "AI-powered pricing optimization and automated confirmations",
-        "Booking analytics, occupancy tracking, and revenue optimization dashboards"
+        "AI-powered web and mobile applications",
+        "Scalable architecture with AI capabilities",
+        "Intelligent user interfaces and experiences",
+        "AI-driven performance optimization and analytics"
       ]
     },
     {
       icon: Smartphone,
-      name: "Property Management Platforms",
-      description: "AI-enhanced property management platforms that integrate with your existing PMS, handle unit management, maintenance workflows, guest communications, inventory, and housekeeping schedules across multiple properties.",
+      name: "AI-Enhanced Platform Development",
+      description: "Comprehensive AI-powered platforms and management systems that handle operations, workflows, communications, and business processes with intelligent automation.",
       outcomes: [
-        "Property and room/unit management dashboards with real-time status",
-        "AI-driven task automation and assignment systems for housekeeping and maintenance",
-        "Maintenance request tracking and vendor management workflows",
-        "Multi-property portfolio management with centralized reporting and analytics"
+        "AI-driven management dashboards and admin panels",
+        "Intelligent task automation and workflow systems",
+        "AI-powered request tracking and management",
+        "Smart multi-entity portfolio management"
       ]
     },
     {
       icon: Code,
-      name: "Task & Operations Automation",
-      description: "AI-powered automation that eliminates manual work in hospitality operations—from check-in/check-out workflows to housekeeping schedules, guest communications, and upsell opportunities.",
+      name: "AI-Powered Operations Automation",
+      description: "Intelligent automation that eliminates manual work across your operations—from AI-driven workflow automation to smart scheduling and communication systems.",
       outcomes: [
-        "Automated check-in/check-out workflows and digital key management",
-        "AI-powered housekeeping and maintenance task scheduling with intelligent assignment",
-        "AI-driven guest communication automation (emails, SMS, WhatsApp) with personalization",
-        "Integration with PMS, channel managers, booking platforms, and CRM systems"
+        "AI-enhanced automated workflow systems",
+        "Intelligent task scheduling and assignment",
+        "AI-powered communication automation (email, SMS, notifications)",
+        "Smart integration with existing systems and tools"
       ]
     },
     {
       icon: Zap,
-      name: "Hospitality Tech Integrations",
-      description: "Connect PMS, channel managers, booking platforms, payment systems, and communication channels into unified, AI-enhanced automated workflows with real-time visibility.",
+      name: "AI System Integrations",
+      description: "Connect your existing platforms, tools, payment systems, and communication channels into unified, AI-enhanced automated workflows with intelligent data processing.",
       outcomes: [
-        "PMS, channel manager, and OTA integrations with real-time sync",
-        "Payment gateway, invoicing, and revenue management automation",
-        "AI-powered communication channel automation (email, SMS, WhatsApp)",
-        "Real-time operational dashboards with occupancy, revenue, and KPI tracking"
+        "AI-powered third-party platform and API integrations",
+        "Intelligent payment gateway and invoicing automation",
+        "AI-driven communication channel automation",
+        "Real-time AI analytics and operational dashboards"
       ]
     }
   ];
@@ -107,8 +107,8 @@ export default function Services() {
     },
     {
       icon: TrendingUp,
-      title: "Hospitality specialization",
-      description: "We optimize for AI-powered booking systems, property management, and operational automation that eliminate overbookings and directly impact your bottom line"
+      title: "AI-driven business solutions",
+      description: "We optimize for AI-powered systems and automation that directly impact your bottom line and operational efficiency"
     },
     {
       icon: Zap,
@@ -133,24 +133,24 @@ export default function Services() {
   ];
 
   const idealClients = [
-    "Hotels, resorts, and serviced apartments scaling operations",
-    "Property management companies managing multiple properties",
-    "Hospitality businesses processing high booking volumes",
-    "Accommodation businesses automating tasks and eliminating overbookings"
+    "Businesses scaling operations and need AI-powered solutions",
+    "Companies managing complex workflows with AI automation",
+    "Organizations processing high volumes with intelligent systems",
+    "Businesses looking to leverage AI for automation and efficiency"
   ];
 
   return (
     <>
       <Head>
-        <title>Services | AI-Powered Hospitality Booking & Management Systems | RedDev</title>
+        <title>Services | AI-Powered Software Development & Automation Solutions | RedDev</title>
         <meta
           name="description"
-          content="We design, build, and scale AI-powered booking platforms, property management systems, and automation solutions for hotels, resorts, serviced apartments, and property managers. Specialized hospitality infrastructure."
+          content="We design, build, and scale AI-powered custom software solutions, platforms, and automation systems for businesses across industries. AI-enhanced infrastructure that scales with your growth."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         
-        <meta property="og:title" content="Services | AI-Powered Hospitality Booking & Management Systems | RedDev" />
-        <meta property="og:description" content="AI-powered booking platforms, property management systems, and automation solutions for hotels, resorts, serviced apartments, and property managers." />
+        <meta property="og:title" content="Services | AI-Powered Software Development & Automation Solutions | RedDev" />
+        <meta property="og:description" content="AI-powered custom software solutions, platforms, and automation systems for businesses across industries." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://reddev.vercel.app/services" />
         <meta property="og:image" content="https://reddev.vercel.app/reddev.png" />
@@ -158,8 +158,8 @@ export default function Services() {
         <meta property="og:image:height" content="630" />
         
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Services | AI-Powered Hospitality Systems | RedDev" />
-        <meta name="twitter:description" content="AI-powered booking platforms, property management systems, and automation for hotels, resorts, serviced apartments, and property managers." />
+        <meta name="twitter:title" content="Services | AI-Powered Software & Automation | RedDev" />
+        <meta name="twitter:description" content="AI-powered custom software solutions, platforms, and automation systems for businesses." />
         <meta name="twitter:image" content="https://reddev.vercel.app/reddev.png" />
         
         <link rel="canonical" href="https://reddev.vercel.app/services" />
@@ -192,17 +192,17 @@ export default function Services() {
         <Container className="relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
-              AI-powered booking & management systems that
+              AI-powered software & automation systems that
               <span className="relative block mt-2">
                 <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-red-200 via-primary to-rose-300">
-                  scale hospitality operations
+                  scale your business operations
                 </span>
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-3xl mx-auto mb-10">
-              We design, build, and scale AI-enhanced booking platforms, property management systems, and operations 
-              automation for hotels, resorts, serviced apartments, and property managers—turning operational 
-              bottlenecks into automated systems that eliminate overbookings, streamline workflows, and compound value over time.
+              We design, build, and scale AI-powered custom software solutions, platforms, and automation 
+              systems for businesses across industries—turning operational bottlenecks into 
+              AI-enhanced automated systems that compound value over time.
             </p>
             <Link
               href="/contact"
@@ -256,8 +256,7 @@ export default function Services() {
             <div className="flex items-start gap-3 justify-center text-slate-600 italic max-w-2xl mx-auto">
               <Minus className="w-5 h-5 text-slate-400 mt-1 flex-shrink-0" />
               <p className="text-base">
-                Not a fit for quick-turnaround projects, low-budget builds, or businesses outside 
-                the hospitality industry looking for generic solutions.
+                Not a fit for quick-turnaround projects, low-budget builds, or businesses looking for generic off-the-shelf solutions.
               </p>
             </div>
           </motion.div>
@@ -294,7 +293,7 @@ export default function Services() {
               </span>
             </h2>
             <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
-              AI-powered services for hotels, resorts, serviced apartments, and property managers designed to eliminate operational bottlenecks and create measurable impact.
+              AI-powered services designed to create measurable operational impact for businesses across industries.
             </p>
           </motion.div>
 
@@ -540,9 +539,8 @@ export default function Services() {
               ?
             </h2>
             <p className="text-xl md:text-2xl text-slate-600 leading-relaxed mb-10 max-w-3xl mx-auto">
-              Let&apos;s have a strategic conversation about your hospitality business, operational challenges 
-              (overbookings, pricing sync issues, manual workflows), and how AI-powered booking platforms and 
-              property management systems can accelerate your growth without operational chaos.
+              Let&apos;s have a strategic conversation about your business, operational challenges, 
+              and how AI-powered software solutions and automation systems can accelerate your growth.
             </p>
             <Link
               href="/contact"
