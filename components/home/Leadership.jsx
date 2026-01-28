@@ -33,7 +33,7 @@ export default function Leadership() {
     },
     {
       name: "Hunain Abbasi",
-      role: "Business Developer",
+      role: "Chief Business Officer",
       image: "/img/hunain.PNG",
       linkedin: "https://www.linkedin.com/in/hunain-mubashir-abbasi-257491368?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     }

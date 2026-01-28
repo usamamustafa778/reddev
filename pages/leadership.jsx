@@ -37,21 +37,21 @@ export default function Leadership() {
     {
       name: "Usama Bhatti",
       role: "Founder and CEO",
-      focus: "Product vision, client strategy, long-term direction",
+      focus: "Product vision, Client strategy, long-term direction",
       image: "/img/uxama.PNG",
       linkedin: "https://www.linkedin.com/in/uxamabt/"
     },
     {
       name: "Hamza Ali",
       role: "Chief Technical Officer",
-      focus: "Architecture, engineering standards, AI-powered infrastructure decisions",
+      focus: "Architecture, Engineering standards, AI-powered Infrastructure decisions",
       image: "/img/hamza2.PNG",
       linkedin: "https://www.linkedin.com/in/hamza-ali-2644742b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     },
     {
       name: "Aman Zaheer",
       role: "Chief Operating Officer & Co-Founder",
-      focus: "Project execution, quality assurance, hospitality client outcomes",
+      focus: "Project execution, Quality assurance, Hospitality client outcomes",
       image: "/img/aman12.PNG",
       linkedin: "https://www.linkedin.com/in/aman-zaheer-96664a373?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     },
@@ -64,8 +64,8 @@ export default function Leadership() {
     },
     {
       name: "Hunain Abbasi",
-      role: "Business Developer",
-      focus: "Client relationships, hospitality partnerships, business development",
+      role: "Chief Business Officer",
+      focus: "Client Relationships, Hospitality Partnerships, Business Development",
       image: "/img/hunain.PNG",
       linkedin: "https://www.linkedin.com/in/hunain-mubashir-abbasi-257491368?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     }
