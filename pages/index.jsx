@@ -7,7 +7,7 @@ import SolutionFramework from "@/components/home/SolutionFramework";
 import OutcomesSection from "@/components/home/OutcomesSection";
 import WhoWeWorkWith from "@/components/home/WhoWeWorkWith";
 import ProofAuthority from "@/components/home/ProofAuthority";
-import Leadership from "@/components/home/Leadership";
+/*import Leadership from "@/components/home/Leadership"; */
 import FinalCTA from "@/components/home/FinalCTA";
 import Head from "next/head";
 
@@ -31,7 +31,7 @@ export default function Home() {
 
         <meta
           property="og:title"
-          content="Travel & Accommodation Revenue Infrastructure | Built to Scale"
+          content="Next-Gen Digital Solutions. Built to Scale."
         />
         <meta
           property="og:description"
@@ -47,7 +47,7 @@ export default function Home() {
         <meta property="og:image:height" content="630" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="AI-Powered Revenue Infrastructure | Built to Scale" />
+        <meta name="twitter:title" content="Next-Gen Digital Solutions. Built to Scale." />
         <meta
           name="twitter:description"
           content="Custom platforms and automation that turn traffic into predictable, scalable revenue."
@@ -61,16 +61,16 @@ export default function Home() {
       </Head>
       <FirstNavbar />
       <Hero 
-        heading1="AI-Powered Revenue Infrastructure."
+        heading1="AI driven business solutions"
         heading2="Built to Scale."
-        description="Custom platforms and automation  that turn traffic into predictable, scalable revenue."
+        description="Custom web and mobile applications designed to transform your ideas into high-performance digital products."
       />
       <ProblemSection />
       <SolutionFramework />
       <OutcomesSection />
       <ProofAuthority />
       <WhoWeWorkWith />
-      <Leadership />
+      
       <FinalCTA />
       <Footer />
     </>

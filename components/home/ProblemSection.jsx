@@ -14,118 +14,127 @@ export default function ProblemSection() {
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-slate-300/40 rounded-full blur-3xl"></div>
       </div>
 
-      <Container className="relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left Content */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7 }}
-            viewport={{ once: true }}
-            className="space-y-8"
-          >
-            {/* Title with Icon */}
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center transform -rotate-12">
-                  <TrendingUp className="w-6 h-6 text-white" />
-                </div>
-              </div>
-              
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight text-slate-900">
-                Your Hospitality Operations{" "}
-                <span className="relative inline-block">
-                  <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">
-                    Can&apos;t Keep Up With Growth
-                  </span>
-                </span>
-              </h2>
-            </div>
-
-            {/* Body Text */}
-            <div className="space-y-6 text-slate-600 text-base md:text-lg leading-relaxed">
-              <p>
-                Bookings are up, but your operations and guest experience aren&apos;t scaling. 
-                You&apos;re juggling manual updates between your PMS, channel manager, OTAs, CRM, 
-                and spreadsheets — creating overbookings, pricing sync issues, and inconsistent 
-                workflows across properties.
-              </p>
-              
-              <p>
-                Slow guest communication means missed upsell opportunities. You lack real-time 
-                visibility into occupancy, revenue, and operations KPIs. Your team is drowning 
-                in manual tasks instead of delivering exceptional guest experiences that drive 
-                repeat bookings and higher margins.
-              </p>
-              
-              <p>
-                Your tech stack was stitched together to survive, not to scale. As you grow, 
-                these disconnected systems compound operational chaos instead of compounding 
-                results. Partner with hospitality software experts who build robust integrations, 
-                automation, and dashboards that scale with your business — not against it.
-              </p>
-              
-              <p className="text-slate-900 font-bold text-lg md:text-xl">
-                Growth in hospitality without proper infrastructure doesn&apos;t compound. It collapses.
-              </p>
-            </div>
-
-            {/* CTA Button */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
-            >
-              <Link href="/contact-us">
-                <button className="px-8 py-4 bg-gradient-to-r from-red-600 to-orange-600 text-white font-bold rounded-lg text-lg hover:shadow-2xl hover:shadow-red-500/30 transform hover:-translate-y-1 transition-all duration-300">
-                  Get A Free Quote
-                </button>
-              </Link>
-            </motion.div>
-          </motion.div>
-
-          {/* Right Visual */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="relative"
-          >
-            <div className="relative">
-              {/* Decorative shapes */}
-              <div className="absolute -top-8 -right-8 w-32 h-32 bg-gradient-to-br from-red-400 to-orange-400 rounded-3xl transform rotate-12 opacity-20 blur-xl"></div>
-              <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-gradient-to-br from-red-500 to-orange-500 rounded-3xl transform -rotate-12 opacity-20 blur-xl"></div>
-              
-              {/* Main visual container */}
-              <div className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-3xl p-12 shadow-2xl overflow-hidden">
-                {/* Grid pattern overlay */}
-                <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:32px_32px]"></div>
-                
-                {/* Accent shapes */}
-                <div className="absolute top-8 right-8 w-20 h-20 bg-gradient-to-br from-red-500 to-orange-500 rounded-2xl transform rotate-12 opacity-80"></div>
-                <div className="absolute bottom-12 left-12 w-16 h-16 bg-gradient-to-br from-red-400 to-orange-400 rounded-xl transform -rotate-12 opacity-60"></div>
-                
-                {/* Center icon/graphic */}
-                <div className="relative z-10 flex items-center justify-center py-20">
-                  <div className="relative">
-                    <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-orange-500 rounded-full blur-2xl opacity-60 animate-pulse"></div>
-                    <div className="relative w-48 h-48 rounded-full bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center border-4 border-white/20 shadow-2xl">
-                      <TrendingUp className="w-24 h-24 text-white" strokeWidth={2} />
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Floating elements */}
-                <div className="absolute top-1/4 left-8 w-3 h-3 bg-red-400 rounded-full animate-pulse"></div>
-                <div className="absolute top-1/3 right-12 w-2 h-2 bg-orange-400 rounded-full animate-pulse delay-75"></div>
-                <div className="absolute bottom-1/4 left-16 w-2 h-2 bg-red-300 rounded-full animate-pulse delay-150"></div>
-              </div>
-            </div>
-          </motion.div>
+     
+      
+<Container className="relative z-10">
+  <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center min-h-[600px]">
+    {/* Left Column - Text Content */}
+    <motion.div
+      initial={{ opacity: 0, x: -30 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.7 }}
+      viewport={{ once: true }}
+      className="flex flex-col justify-center space-y-8 py-10" // Padding added for safety
+    >
+      <div>
+        <div className="flex items-center gap-3 mb-6">
+          <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center transform -rotate-12">
+            <TrendingUp className="w-6 h-6 text-white" />
+          </div>
         </div>
-      </Container>
+        
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight text-slate-900 max-w-2xl">
+          Your Business Potential{" "}
+          <span className="relative inline-block">
+            <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">
+              Is Restricted by Outdated Systems
+            </span>
+          </span>
+        </h2>
+      </div>
+
+      <div className="space-y-6 text-slate-600 text-base md:text-lg leading-relaxed max-w-2xl">
+        <p>
+          Clients are demanding more, but your current workflows and delivery models aren’t scaling. 
+          Juggling manual updates between disconnected tools creates delivery delays and 
+          fragmented project visibility.
+        </p>
+        
+        <p>
+          Slow response times mean missed opportunities. You lack real-time visibility into 
+          performance and ROI. Your team is drowning in manual tasks instead of delivering 
+          exceptional digital products.
+        </p>
+        
+        <p className="text-slate-900 font-bold text-lg md:text-xl border-l-4 border-red-500 pl-4">
+          Growth without a robust digital ecosystem doesn&apos;t compound. It collapses.
+        </p>
+      </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        viewport={{ once: true }}
+      >
+        <Link href="/contact-us">
+          <button className="px-10 py-5 bg-gradient-to-r from-red-600 to-orange-600 text-white font-bold rounded-2xl text-lg hover:shadow-2xl hover:shadow-red-500/30 transform hover:-translate-y-1 transition-all duration-300 w-full sm:w-fit">
+            Get A Free Audit →
+          </button>
+        </Link>
+      </motion.div>
+    </motion.div>
+
+    {/* Right Visual - Same as before but with better scaling */}
+    {/* Right Visual - Increased Height Version */}
+<motion.div
+  initial={{ opacity: 0, x: 30 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.7, delay: 0.2 }}
+  viewport={{ once: true }}
+  className="relative w-full h-full flex items-center" // 'h-full' added to fill parent space
+>
+  <div className="relative w-full">
+    {/* Background Glows */}
+    <div className="absolute -top-12 -right-12 w-64 h-64 bg-red-600/20 rounded-full blur-[100px]"></div>
+    <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-orange-600/10 rounded-full blur-[100px]"></div>
+
+    {/* Main Black Card - Height increased with 'aspect-[4/5]' or custom min-h */}
+    <div className="relative bg-[#0B0F1A] rounded-[3rem] p-12 md:p-16 shadow-2xl overflow-hidden min-h-[500px] md:min-h-[600px] flex flex-col items-center justify-center border border-white/5">
+      
+      {/* 1. Grid Pattern Overlay */}
+      <div 
+        className="absolute inset-0 opacity-20" 
+        style={{ 
+          backgroundImage: 'linear-gradient(#ffffff10 1px, transparent 1px), linear-gradient(90deg, #ffffff10 1px, transparent 1px)', 
+          backgroundSize: '45px 45px' 
+        }}
+      ></div>
+      
+      {/* 2. Top-Right Decorative Element */}
+      <div className="absolute top-12 right-12 w-20 h-20 bg-gradient-to-br from-red-500 to-orange-600 rounded-3xl transform rotate-12 shadow-2xl"></div>
+      
+      {/* 3. Bottom-Left Decorative Element */}
+      <div className="absolute bottom-12 left-12 w-16 h-16 bg-gradient-to-br from-slate-700 to-slate-900 rounded-2xl transform -rotate-12 opacity-80 shadow-xl"></div>
+      
+      {/* 4. Center Glowing Icon Section */}
+      <div className="relative z-10 flex flex-col items-center gap-6">
+        <div className="relative">
+          {/* Pulsing Glow */}
+          <div className="absolute inset-0 bg-orange-600 rounded-full blur-[60px] opacity-30 animate-pulse"></div>
+          
+          {/* Main Circle */}
+          <div className="relative w-40 h-40 md:w-56 md:h-56 rounded-full bg-gradient-to-br from-red-500 via-orange-500 to-orange-600 flex items-center justify-center shadow-[0_0_60px_rgba(234,88,12,0.5)] border-4 border-white/10">
+            <TrendingUp className="w-20 h-20 md:w-28 md:h-28 text-white drop-shadow-2xl" strokeWidth={2.5} />
+          </div>
+        </div>
+
+        {/* Optional: Add a small label inside the card to fill height if needed */}
+        <div className="mt-8 text-center">
+          <span className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/60 text-sm font-medium tracking-widest uppercase">
+            Scalable Infrastructure
+          </span>
+        </div>
+      </div>
+
+      {/* 5. Floating Accents */}
+      <div className="absolute top-1/4 left-12 w-3 h-3 bg-red-500 rounded-full animate-bounce"></div>
+      <div className="absolute bottom-1/4 right-16 w-2 h-2 bg-orange-400 rounded-full opacity-60"></div>
+    </div>
+  </div>
+</motion.div>
+  </div>
+</Container>
     </FullContainer>
   );
 }

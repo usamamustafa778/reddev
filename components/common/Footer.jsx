@@ -39,7 +39,7 @@ function Footer() {
                 </div>
               </Link>
               <p className="text-slate-600 max-w-sm text-lg leading-relaxed">
-                Building booking platforms, property management systems, and automation solutions for travel and accommodation businesses. We turn operational bottlenecks into scalable systems.
+              Building high-performance web platforms, custom mobile applications, and AI-driven automation for modern businesses. We turn technical bottlenecks into scalable digital ecosystems.
               </p>
               <div className="flex items-center gap-4">
                 {[
@@ -138,7 +138,7 @@ function Footer() {
               Stay Updated
             </h5>
             <p className="text-slate-600 mb-6 text-lg">
-              Subscribe to our newsletter for the latest updates and insights.
+              Subscribe to our newsletter for the latest insights on AI integration, web performance, and digital scaling strategies.
             </p>
             <div className="flex gap-3">
               <input

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function Hero({
-  heading1 = "AI-Powered Revenue Infrastructure.",
+  heading1 = "Next-Gen Digital Solutions.",
   heading2 = "Built to Scale.",
   description = "Custom platforms and automation that turn traffic into predictable, scalable revenue.",
   image = null,
@@ -25,10 +25,10 @@ export default function Hero({
   }, []);
 
   const stats = [
-    { number: "10K+", label: "Leads/Day", delay: 0.7 },
-    { number: "5K+", label: "Bookings/Month", delay: 0.8 },
-    { number: "85%", label: "Repeat Clients", delay: 0.9 },
-    { number: "6+", label: "Years Building", delay: 1 }
+    { number: "250+ ", label: "Projects Delivered", delay: 0.7 },
+    { number: "50+", label: "Tech Stack Experts", delay: 0.8 },
+    { number: "98%", label: "Client Satisfaction", delay: 0.9 },
+    { number: "8+", label: "Years of Innovation", delay: 1 }
   ];
 
   return (

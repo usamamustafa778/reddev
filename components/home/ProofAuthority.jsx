@@ -9,38 +9,38 @@ export default function ProofAuthority() {
     {
       icon: TrendingUp,
       number: "10K+",
-      label: "Bookings/Day Processed",
-      description: "Across hotels, resorts & serviced apartments"
+      label: "API Requests Processed",
+      description: "Across high-traffic web platforms and scalable cloud infrastructures."
     },
     {
       icon: Users,
-      number: "5K+",
-      label: "Properties Managed",
-      description: "Hotels, resorts, serviced apartments & rentals"
+      number: "200+",
+      label: "Digital Products Delivered",
+      description: "Custom web apps, mobile solutions, and AI-integrated ecosystems for global clients."
     },
     {
       icon: RefreshCw,
-      number: "85%",
-      label: "Repeat Clients",
-      description: "Long-term hospitality partnerships"
+      number: "92%",
+      label: "Client Retention Rate",
+      description: "Built on long-term technical partnerships and consistent delivery of high-performance software."
     },
     {
       icon: Award,
-      number: "6+",
-      label: "Years",
-      description: "Building AI-powered hospitality infrastructure"
+      number: "5+",
+      label: "Years of Innovation",
+      description: "Pioneering in full-stack development and cutting-edge AI-powered business automation."
     }
   ];
 
   const industries = [
-    "Hotels",
-    "Resorts",
-    "Serviced Apartments",
-    "Property Management",
-    "Vacation Rentals",
-    "Boutique Hotels",
-    "Hostel Operations",
-    "Short-term Rentals"
+    "SaaS Platforms",
+    "E-commerce",
+    "FinTech Solutions",
+    "AI & Machine Learning",
+    "HealthTech",
+    "EdTech Systems",
+    "Real Estate Tech",
+    "Enterprise ERPs"
   ];
 
   return (
@@ -71,13 +71,13 @@ export default function ProofAuthority() {
             Built for{" "}
             <span className="relative inline-block">
               <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-400">
-                Hospitality Scale
+                Digital Scale
               </span>
             </span>
           </h2>
           <p className="text-lg md:text-xl text-slate-300 max-w-2xl">
-            AI-powered booking infrastructure, property management systems, and operational automation that scale hotels, resorts, and serviced apartments without chaos.
-          </p>
+          AI-powered web infrastructure, enterprise-grade applications, and intelligent automation designed to scale startups and global businesses without technical friction.
+            </p>
         </motion.div>
 
         {/* Metrics Grid */}
@@ -129,10 +129,10 @@ export default function ProofAuthority() {
         >
           <div className="text-center mb-8">
             <h3 className="text-2xl md:text-3xl font-black text-white mb-3">
-              Hospitality Sectors We Serve
+            Industries We Transform
             </h3>
             <p className="text-slate-400">
-              AI-powered systems built specifically for hotels, resorts, serviced apartments, and property management companies
+            AI-integrated digital solutions tailored for startups, modern enterprises, and industry leaders across the global digital landscape.
             </p>
           </div>
           

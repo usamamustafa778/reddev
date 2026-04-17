@@ -6,42 +6,43 @@ import { motion } from "framer-motion";
 
 export default function WhoWeWorkWith() {
   const idealClients = [
-    {
-      title: "Hotels & Accommodation Providers",
-      description: "Managing multiple properties, bookings, and operations at scale"
-    },
-    {
-      title: "Vacation Rental & Property Managers",
-      description: "Handling bookings, property maintenance, guest communications, and task management"
-    },
-    {
-      title: "Travel Booking Platforms",
-      description: "Processing high-volume reservations and need robust booking infrastructure"
-    },
-    {
-      title: "Accommodation Operations Teams",
-      description: "Looking to automate tasks, streamline management, and scale efficiently"
-    }
-  ];
-
-  const notFor = [
-    {
-      title: "Idea-stage startups",
-      description: "No validated revenue model or market fit yet"
-    },
-    {
-      title: "Small brochure sites",
-      description: "Looking for basic websites without complex functionality"
-    },
-    {
-      title: "Cheap development seekers",
-      description: "Shopping on price rather than investing in outcomes"
-    },
-    {
-      title: "Low-commitment projects",
-      description: "Not ready to commit resources to infrastructure transformation"
-    }
-  ];
+   
+      {
+        title: "Established Enterprises",
+        description: "Companies managing complex operations that need scalable digital infrastructure."
+      },
+      {
+        title: "SaaS & Product Teams",
+        description: "Teams building high-volume platforms that require robust backends and AI sync."
+      },
+      {
+        title: "Data-Driven Businesses",
+        description: "Organizations looking to leverage AI for automated insights and decision making."
+      },
+      {
+        title: "High-Growth Scale-ups",
+        description: "Businesses ready to automate manual workflows to prepare for massive growth."
+      }
+    ];
+    
+    const notFor = [
+      {
+        title: "Idea-stage startups",
+        description: "Projects without a validated revenue model or technical roadmap."
+      },
+      {
+        title: "Simple brochure sites",
+        description: "Basic 5-page websites that don't require complex engineering or AI."
+      },
+      {
+        title: "Price-shoppers",
+        description: "Clients focused on the lowest cost rather than high-performance ROI."
+      },
+      {
+        title: "Short-term fixes",
+        description: "Businesses not ready to invest in long-term digital transformation."
+      }
+    ];
 
   return (
     <FullContainer className="relative py-16 md:py-20 bg-gradient-to-b from-white via-slate-50 to-white overflow-hidden">
@@ -75,7 +76,7 @@ export default function WhoWeWorkWith() {
             </span>
           </h2>
           <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto">
-            We work with a limited number of clients to ensure exceptional results. Here&apos;s who we&apos;re built for.
+          We work with a limited number of clients to ensure exceptional results. Here&apos;s who we&apos;re built for.
           </p>
         </motion.div>
 

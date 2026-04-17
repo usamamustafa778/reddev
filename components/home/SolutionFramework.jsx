@@ -10,25 +10,25 @@ export default function SolutionFramework() {
       number: "01",
       icon: Search,
       title: "Diagnose",
-      description: "Audit your booking, ops, and guest communication flow to uncover revenue leaks (overbookings, slow responses, missed upsells) and bottlenecks."
+      description: "We conduct a comprehensive audit of your current digital infrastructure and workflows. Our goal is to identify technical bottlenecks, revenue leaks, and specific areas where AI-driven automation can eliminate manual overhead and increase efficiency."
     },
     {
       number: "02",
       icon: Pencil,
       title: "Design",
-      description: "Map a scalable hospitality workflow — PMS + channel manager + OTAs + CRM — with automation points your team will actually use."
+      description: "We don’t just create interfaces; we design future-proof ecosystems. This includes high-fidelity UI/UX design and a robust system architecture that integrates Custom AI Workflows—ensuring your web or mobile application is built for long-term growth."
     },
     {
       number: "03",
       icon: Code,
       title: "Build",
-      description: "Develop and integrate reliable systems: real-time availability/pricing sync, unified inbox, automated guest messaging, and ops dashboards."
+      description: "Our engineers develop high-performance, secure, and reliable digital products. We integrate specialized AI Modules—such as intelligent chatbots, predictive analytics, and automated guest messaging—into unified dashboards that give you total operational control."
     },
     {
       number: "04",
       icon: Zap,
       title: "Scale",
-      description: "Optimize performance as you grow — improve direct bookings, streamline staff workload, and standardize operations across properties."
+      description: "Growth without infrastructure leads to chaos. We optimize your platform as it grows—leveraging Cloud-Scaling and AI Insights to streamline workloads, increase direct conversions, and standardize your digital operations across all business units."
     }
   ];
 
@@ -56,10 +56,10 @@ export default function SolutionFramework() {
           </div>
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight text-slate-900 max-w-3xl">
-            How We Help Hotels{" "}
+            How We Help Business{" "}
             <span className="relative inline-block">
               <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">
-                Scale Without Chaos
+              Scale with AI & Innovation
               </span>
             </span>
             .

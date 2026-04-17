@@ -10,43 +10,43 @@ export default function OutcomesSection() {
   const services = [
     {
       icon: Calendar,
-      title: "Booking Management Systems",
-      tagline: "Streamline reservations. Reduce no-shows. Scale predictably.",
-      description: "We build custom booking platforms powered by AI that eliminate overbookings and pricing sync issues. Real-time availability sync across your PMS, channel managers, and OTAs ensures accurate inventory. AI-driven pricing optimization and automated confirmations reduce no-shows while improving guest experience.",
+      title: "Web & App Development",
+      tagline: "Elevate your digital presence. We build lightning-fast, SEO-optimized websites and cross-platform mobile apps using Next.js and React Native. Built for performance and designed to convert.",
+      description: "We specialize in creating lightning-fast, SEO-friendly web platforms and cross-platform mobile applications. By leveraging modern frameworks like Next.js, React, and Node.js, we ensure your product is not only visually stunning but also technically superior. Whether it's an e-commerce platform or a complex internal tool, our development process focuses on user retention, speed, and seamless functionality across all devices.",
       includes: [
-        "Real-time booking portals for hotels, resorts, and serviced apartments",
-        "Multi-channel synchronization (PMS, channel managers, OTAs, direct bookings) with conflict resolution",
-        "Automated confirmation and pre-arrival communication systems to reduce no-shows",
-        "Payment processing, invoicing, and revenue management automation",
-        "AI-powered booking analytics, occupancy tracking, and revenue optimization dashboards with real-time visibility"
+        "High-Performance Web Portals: Custom-built Next.js and React websites optimized for speed, SEO, and enterprise-level scalability.",
+        "Cross-Platform Mobile Apps: Native-feel iOS and Android applications developed with React Native and Flutter for a seamless user experience.",
+        "Dynamic UI/UX Design: User-centric, high-fidelity interfaces designed to maximize conversion rates and brand engagement.",
+        "Dynamic UI/UX Design: User-centric, high-fidelity interfaces designed to maximize conversion rates and brand engagement.",
+        "Cloud Infrastructure & Security: Robust backend deployment on AWS/Vercel with advanced security protocols and real-time database synchronization.",
       ]
     },
     {
       icon: Layers,
-      title: "Property Management Platforms",
-      tagline: "Manage properties, tasks, and operations—all in one system.",
-      description: "Centralize operations across multiple properties with AI-enhanced systems that integrate seamlessly with your existing PMS. Handle maintenance tasks, guest communications, inventory, and housekeeping schedules from a single dashboard. AI-powered predictive analytics provide real-time visibility into occupancy, revenue, and operational KPIs across your portfolio.",
+      title: "Custom AI Integrations",
+      tagline: "Work smarter, not harder. From intelligent chatbots to predictive data models, we integrate custom AI agents into your existing systems to automate complex workflows and enhance user experience.",
+      description: "Empowering Your Business with Artificial Intelligence Move beyond basic software with our custom AI solutions. we integrate Large Language Models (LLMs), predictive analytics, and specialized AI agents directly into your existing workflow. From automated customer support bots that sound human to intelligent data processing systems that predict market trends, we help you leverage the power of AI to stay ahead of the competition.",
       includes: [
-        "Property and room/unit management dashboards with real-time status and availability",
-        "Task automation and assignment systems for housekeeping and maintenance workflows",
-        "Maintenance request tracking and vendor management systems",
-        "Guest communication automation and unified support ticket systems",
-        "AI-driven inventory, supplies, and asset management with intelligent automated reordering",
-        "Multi-property portfolio management with centralized reporting and analytics"
+        "Custom AI Agents & Chatbots: Development of intelligent, context-aware assistants trained on your specific business data for 24/7 automated customer support.",
+        "LLM Implementation & Fine-tuning: Integration and optimization of models like GPT-4, Gemini, or Claude to handle complex text generation, summarization, and reasoning tasks.",
+        "Predictive Analytics & Data Insights: AI-driven dashboards that analyze historical data to predict market trends, user behavior, and operational bottlenecks.",
+        "Computer Vision & Image Processing: Automated visual inspection, OCR (Optical Character Recognition), and AI-based image/video analysis for specialized business needs.",
+        "Workflow Automation & NLP: Using Natural Language Processing to automate document sorting, sentiment analysis, and email triage to reduce human error.",
+        
       ]
     },
     {
       icon: Bot,
-      title: "Task & Operations Automation",
-      tagline: "Eliminate manual work. Scale operations. Reduce costs.",
-      description: "Automate repetitive tasks with AI that drain your team&apos;s time. From check-in/check-out workflows to housekeeping schedules, guest communications, and upsell opportunities—our AI-powered automation systems ensure consistent workflows across properties. Your staff focuses on guest experience while operations scale efficiently.",
+      title: "SaaS & Enterprise Automation",
+      tagline: "Streamline your operations. Eliminate manual tasks with robust cloud-based software. We build centralized dashboards and automated pipelines that scale your business operations without increasing headcount.",
+      description: "Streamlining Operations through Intelligent Software Manual processes are the biggest hurdle to scaling. Our SaaS solutions and enterprise tools are designed to automate repetitive tasks, manage complex data, and provide real-time insights through centralized dashboards. We build robust API integrations and automated pipelines that allow your business to handle 10x the workload without increasing your operational costs.",
       includes: [
-        "Automated check-in/check-out workflows and digital key management systems",
-        "Housekeeping and maintenance task scheduling with intelligent assignment",
-        "AI-powered guest communication automation (emails, SMS, WhatsApp) with intelligent personalized messaging",
-        "Integration with PMS, channel managers, booking platforms, and CRM systems",
-        "Real-time operational dashboards with occupancy, revenue, and KPI tracking",
-        "AI-powered task prioritization, upsell recommendations, and workflow routing"
+        "Custom SaaS Architecture: End-to-end development of multi-tenant cloud applications with secure data isolation and scalable user management.",
+        "Workflow & Business Logic Automation: Elimination of repetitive manual tasks through custom-built automated pipelines and intelligent decision-making logic.",
+        "Centralized Operations Dashboards: Unified control centers that consolidate data from various departments into a single, real-time visual interface",
+        "Enterprise Resource Integration: Seamless synchronization between CRM, ERP, and legacy systems to ensure a Single Source of Truth' for your business data.",
+        "Automated Reporting & Compliance: System-generated performance audits, financial reports, and compliance tracking to maintain operational standards without human intervention.",
+        
       ]
     }
   ];
@@ -56,8 +56,8 @@ export default function OutcomesSection() {
     "Mobile applications (iOS / Android when needed)",
     "Backend systems & APIs",
     "AI & machine learning integration",
-    "Databases, security, and scalable infrastructure",
-    "Integrations, automation, and marketing tech"
+    "Cloud Security & Database Management",
+    "Workflow Automation & DevOps"
   ];
 
   return (
@@ -84,7 +84,7 @@ export default function OutcomesSection() {
           </div>
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight text-slate-900 max-w-3xl mx-auto mb-6">
-            AI-Powered Hospitality Systems{" "}
+            AI-Powered Digital Solutions{" "}
             <span className="relative inline-block">
               <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">
                 That Scale With Your Growth
@@ -92,7 +92,7 @@ export default function OutcomesSection() {
             </span>
           </h2>
           <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto">
-            AI-enhanced booking platforms, property management systems, and operations automation built for hotels, resorts, serviced apartments, and property managers. Select the solution you need:
+          High-performance web platforms, custom mobile applications, and intelligent automation built for startups, enterprises, and digital disruptors. Select the solution your business needs:
           </p>
         </motion.div>
 
@@ -208,7 +208,8 @@ export default function OutcomesSection() {
               Built With Modern Technology
             </h3>
             <p className="text-lg text-slate-300 mb-8 max-w-3xl">
-              We deliver AI-powered hospitality software using proven technologies—selected based on your operational needs, not industry trends. Every system integrates seamlessly with your existing PMS, channel managers, and booking platforms.
+            Built With Modern Technology
+            We deliver high-performance digital ecosystems using proven technologies—selected based on your business goals, not just industry hype. Every system we build integrates seamlessly with your existing enterprise tools, APIs, and cloud infrastructure.
             </p>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
@@ -221,7 +222,7 @@ export default function OutcomesSection() {
             </div>
             
             <p className="text-base text-slate-400 italic border-t border-slate-700 pt-6">
-              We don&apos;t sell development in isolation. We build AI-enhanced operational infrastructure that eliminates overbookings, automates workflows, and scales your hospitality revenue—without operational chaos.
+              We don&apos;t just sell code. We build AI-enhanced digital infrastructure that eliminates technical debt, automates repetitive workflows, and scales your business revenue—without operational chaos.
             </p>
           </div>
         </motion.div>
