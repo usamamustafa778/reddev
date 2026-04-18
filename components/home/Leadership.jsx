@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import FullContainer from "../common/FullContainer";
 import Container from "../common/Container";
 import { motion } from "framer-motion";
@@ -41,16 +41,16 @@ export default function Leadership() {
 
   return (
     <div className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
-      {/* Grid pattern overlay */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:32px_32px] opacity-30"></div>
+      {/* Grid pattern overlay */
+      /* <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:32px_32px] opacity-30"></div>
       
-      {/* Accent shapes */}
-      <div className="absolute top-20 right-20 w-64 h-64 bg-gradient-to-br from-red-500/20 to-orange-500/20 rounded-full blur-3xl"></div>
+      {/* Accent shapes */
+      /*<div className="absolute top-20 right-20 w-64 h-64 bg-gradient-to-br from-red-500/20 to-orange-500/20 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-20 w-64 h-64 bg-gradient-to-br from-red-500/10 to-orange-500/10 rounded-full blur-3xl"></div>
 
       <div className="grid lg:grid-cols-2 gap-0 items-center relative z-10">
-        {/* Left Content */}
-        <Container>
+        {/* Left Content */
+        /*<Container>
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -59,8 +59,8 @@ export default function Leadership() {
             className="py-16 md:py-24 lg:py-32 pl-4 md:pl-8 lg:pl-12"
           >
             <div className="space-y-8">
-              {/* Icon */}
-              <div className="flex items-center gap-3 mb-6">
+              {/* Icon */
+              /*<div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center transform -rotate-12 shadow-lg">
                   <ShieldCheck className="w-6 h-6 text-white" />
                 </div>
@@ -88,8 +88,8 @@ export default function Leadership() {
           </motion.div>
         </Container>
 
-        {/* Right: Team Photos - Full bleed */}
-        <div className="grid grid-cols-3 md:grid-cols-5 gap-0 h-full min-h-[500px] lg:min-h-[600px]">
+        {/* Right: Team Photos - Full bleed */
+       /* <div className="grid grid-cols-3 md:grid-cols-5 gap-0 h-full min-h-[500px] lg:min-h-[600px]">
           {leadership.map((leader, index) => (
             <motion.div
               key={index}
@@ -99,28 +99,28 @@ export default function Leadership() {
               viewport={{ once: true }}
               className="relative group"
             >
-              {/* Image */}
-              <div className="relative h-full">
+              {/* Image */
+             /* <div className="relative h-full">
                 <Image
                   src={leader.image}
                   alt={leader.name}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500 brightness-110"
                 />
-                {/* Lighter Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/30 to-transparent group-hover:via-slate-900/50 transition-all duration-300"></div>
+                {/* Lighter Gradient Overlay */
+               /* <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/30 to-transparent group-hover:via-slate-900/50 transition-all duration-300"></div>
               </div>
 
-              {/* Name, Role & LinkedIn */}
-              <div className="absolute bottom-0 left-0 right-0 p-3 md:p-4 text-center transform group-hover:-translate-y-1 transition-transform duration-300">
+              {/* Name, Role & LinkedIn */
+             /* <div className="absolute bottom-0 left-0 right-0 p-3 md:p-4 text-center transform group-hover:-translate-y-1 transition-transform duration-300">
                 <h3 className="text-sm md:text-base lg:text-lg font-black text-white mb-1">
                   {leader.name}
                 </h3>
                 <p className="text-xs md:text-sm text-slate-300 font-medium mb-3">
                   {leader.role}
                 </p>
-                {/* LinkedIn Icon */}
-                <a
+                {/* LinkedIn Icon */
+                /*<a
                   href={leader.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -137,4 +137,4 @@ export default function Leadership() {
       </div>
     </div>
   );
-}
+}    */
