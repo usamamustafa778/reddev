@@ -31,42 +31,14 @@ export default function Navbar({ className }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Grouped Services based on your image
-  const serviceGroups = [
-    {
-      heading: "Digital Transformation",
-      services: [
-        { label: "Web development", href: "/services/web-development" },
-        { label: "App Development", href: "/services/app-development" },
-        { label: "Custom Software Development", href: "/services/custom-software" },
-        { label: "UX/UI Design", href: "/services/ux-ui-design" },
-      ],
-    },
-    {
-      heading: "Core Solutions",
-      services: [
-        { label: "Quality Assurance", href: "/services/quality-assurance" },
-        { label: "DevOps", href: "/services/devops" },
-        { label: "Cybersecurity", href: "/services/cybersecurity" },
-        { label: "SaaS", href: "/services/saas-development" },
-      ],
-    },
-    {
-      heading: "E-commerce",
-      services: [
-        { label: "Design & Development", href: "/services/ecom-design" },
-        { label: "Maintenance & Support", href: "/services/ecom-support" },
-        { label: "Automation & Apps", href: "/services/ecom-automation" },
-      ],
-    },
-    {
-      heading: "Gaming & Web3",
-      services: [
-        { label: "Art & Design", href: "/services/gaming-art" },
-        { label: "Web3", href: "/services/webthree-development" },
-        { label: "AR/VR/XR", href: "/services/ar-vr-xr" },
-      ],
-    },
+  const serviceLinks = [
+    { label: "Web Development", href: "/services/web-development" },
+    { label: "Mobile App Development", href: "/services/app-development" },
+    { label: "SaaS Development", href: "/services/saas-development" },
+    { label: "CRM Development", href: "/services/crm-development" },
+    { label: "Lead Generation Systems", href: "/lead-engine" },
+    { label: "E-commerce Development", href: "/services/ecom-development" },
+    { label: "Restaurant Tech", href: "/restaurants" },
   ];
 
   return (
@@ -86,9 +58,8 @@ export default function Navbar({ className }) {
           {/* Desktop Navigation */}
           <ul className="hidden lg:flex items-center space-x-8">
             <li><Link href="/" className={`py-2 font-semibold transition-colors ${scrolled ? "hover:text-red-600" : "hover:text-red-300"}`}>Home</Link></li>
-            <li><Link href="/about" className={`py-2 font-semibold transition-colors ${scrolled ? "hover:text-red-600" : "hover:text-red-300"}`}>About</Link></li>
 
-            {/* Grouped Dropdown */}
+            {/* Services Dropdown */}
             <li 
               className="relative group"
               onMouseEnter={() => setIsDropdownOpen(true)}
@@ -98,31 +69,25 @@ export default function Navbar({ className }) {
                 Services <ChevronDown size={14} className={`transition-transform duration-300 ${isDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
 
-              {/* Mega Dropdown Menu */}
-              <div className={`absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white shadow-2xl rounded-2xl p-6 text-slate-900 border border-gray-100 transition-all duration-300 ${isDropdownOpen ? 'opacity-100 visible translate-y-2' : 'opacity-0 invisible translate-y-0'}`}>
-                <div className="grid grid-cols-2 gap-8">
-                  {serviceGroups.map((group, idx) => (
-                    <div key={idx} className="space-y-3">
-                      <h3 className="text-sm font-bold text-red-600 uppercase tracking-wider border-b border-gray-50 pb-1">
-                        {group.heading}
-                      </h3>
-                      <ul className="space-y-2">
-                        {group.services.map((service, sIdx) => (
-                          <li key={sIdx}>
-                            <Link href={service.href} className="text-[13px] text-slate-600 hover:text-red-600 hover:pl-1 transition-all block">
-                              {service.label}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+              <div className={`absolute top-full left-1/2 -translate-x-1/2 w-[280px] bg-white shadow-2xl rounded-2xl p-5 text-slate-900 border border-gray-100 transition-all duration-300 ${isDropdownOpen ? 'opacity-100 visible translate-y-2' : 'opacity-0 invisible translate-y-0'}`}>
+                <ul className="space-y-1">
+                  {serviceLinks.map((service, idx) => (
+                    <li key={idx}>
+                      <Link href={service.href} className="text-[13px] text-slate-600 hover:text-red-600 hover:pl-1 transition-all block py-1.5">
+                        {service.label}
+                      </Link>
+                    </li>
                   ))}
-                </div>
+                </ul>
               </div>
             </li>
 
-            <li><Link href="/leadership" className={`py-2 font-semibold transition-colors ${scrolled ? "hover:text-red-600" : "hover:text-red-300"}`}>Leadership</Link></li>
-            <li><Link href="/careers" className={`py-2 font-semibold transition-colors ${scrolled ? "hover:text-red-600" : "hover:text-red-300"}`}>Careers</Link></li>
+            <li>
+              <Link href="/portfolio" className={`py-2 font-bold transition-colors ${scrolled ? "text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600" : "text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-400"}`}>
+                Portfolio
+              </Link>
+            </li>
+            <li><Link href="/about" className={`py-2 font-semibold transition-colors ${scrolled ? "hover:text-red-600" : "hover:text-red-300"}`}>About</Link></li>
           </ul>
 
           <div className="hidden lg:flex items-center">
@@ -151,25 +116,21 @@ export default function Navbar({ className }) {
             <nav className="space-y-6">
               <Link href="/" className="block font-semibold" onClick={handleSidebar}>Home</Link>
               
-              {/* Mobile Services Grouped */}
-              <div className="space-y-4">
-                <p className="text-red-600 font-bold text-xs uppercase">Our Services</p>
-                {serviceGroups.map((group, idx) => (
-                  <div key={idx} className="pl-2 space-y-2">
-                    <p className="text-[13px] font-bold text-slate-800">{group.heading}</p>
-                    <div className="pl-3 space-y-2 border-l border-red-100">
-                      {group.services.map((service, sIdx) => (
-                        <Link key={sIdx} href={service.href} className="block text-sm text-slate-500" onClick={handleSidebar}>
-                          {service.label}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                ))}
+              {/* Mobile Services */}
+              <div className="space-y-3">
+                <p className="text-red-600 font-bold text-xs uppercase">Services</p>
+                <div className="pl-3 space-y-2 border-l border-red-100">
+                  {serviceLinks.map((service, idx) => (
+                    <Link key={idx} href={service.href} className="block text-sm text-slate-500 hover:text-red-600" onClick={handleSidebar}>
+                      {service.label}
+                    </Link>
+                  ))}
+                </div>
               </div>
 
-              <Link href="/leadership" className="block font-semibold" onClick={handleSidebar}>Leadership</Link>
-              <Link href="/contact" className="block w-full py-3 bg-red-600 text-white rounded-xl text-center font-bold">Get In Touch</Link>
+              <Link href="/portfolio" className="block font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600" onClick={handleSidebar}>Portfolio</Link>
+              <Link href="/about" className="block font-semibold" onClick={handleSidebar}>About</Link>
+              <Link href="/contact" className="block w-full py-3 bg-red-600 text-white rounded-xl text-center font-bold" onClick={handleSidebar}>Get In Touch</Link>
             </nav>
           </div>
         </div>

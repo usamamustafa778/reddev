@@ -2,131 +2,112 @@ import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 import FullContainer from "@/components/common/FullContainer";
 import Container from "@/components/common/Container";
-import { ArrowRight, Users, BarChart3, CreditCard, Layers, Globe, ShieldCheck, CheckCircle2 } from "lucide-react";
+import { ArrowRight, ShoppingCart, CreditCard, BarChart3, Package, Globe, Zap, CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Head from "next/head";
 
 const features = [
   {
-    icon: Users,
-    title: "Multi-Tenancy Architecture",
-    desc: "Isolated data environments for every customer. Thousands of users on one platform with zero data bleed. Proper SaaS from the ground up.",
+    icon: ShoppingCart,
+    title: "Custom Storefront",
+    desc: "No Shopify templates. A fully custom e-commerce frontend built to match your brand — product pages, collections, filtering, search, and mobile checkout.",
   },
   {
     icon: CreditCard,
-    title: "Subscription & Billing",
-    desc: "Flexible pricing tiers, recurring payments, trial periods, and usage-based billing — integrated with Stripe or your preferred payment provider.",
+    title: "Cart & Checkout",
+    desc: "Frictionless checkout flows. Guest checkout, saved addresses, multiple payment methods, discount codes, and cart abandonment recovery.",
   },
   {
-    icon: BarChart3,
-    title: "Custom Dashboards & Analytics",
-    desc: "Role-based dashboards showing exactly what each user type needs to see. Real-time data, charts, and exportable reports.",
-  },
-  {
-    icon: Layers,
-    title: "Scalable Infrastructure",
-    desc: "Built to handle 10x your current user base without re-architecture. We use cloud-native stacks designed for growth from day one.",
+    icon: Package,
+    title: "Inventory Management",
+    desc: "Real-time stock tracking, low-stock alerts, variant management (size, colour, SKU), and multi-warehouse support if needed.",
   },
   {
     icon: Globe,
-    title: "API-First Design",
-    desc: "Your SaaS can be integrated with anything. We build proper REST APIs with documentation so you can extend, connect, and white-label.",
+    title: "Multi-Currency & Markets",
+    desc: "Sell internationally with localised pricing, currency switching, and tax handling. Built for cross-border commerce from day one.",
   },
   {
-    icon: ShieldCheck,
-    title: "Auth, Roles & Security",
-    desc: "Secure authentication, granular role-based permissions, audit logs, and data encryption. Enterprise-grade security baked in.",
+    icon: BarChart3,
+    title: "Analytics & Profit Intelligence",
+    desc: "Track revenue, margins, returns, and customer lifetime value. We can build custom analytics or integrate with tools like Google Analytics and SalesLens.",
+  },
+  {
+    icon: Zap,
+    title: "Performance & SEO",
+    desc: "Fast product pages, clean URLs, structured data markup, and image optimisation. Google loves fast e-commerce — and so do customers.",
   },
 ];
 
 const process = [
   {
     number: "1",
-    title: "Architecture Design",
-    desc: "We design the full technical architecture — database schema, API structure, and infrastructure — before writing code.",
+    title: "Strategy & Scoping",
+    desc: "We learn about your products, your customers, and your current conversion problems — then design the right solution.",
   },
   {
     number: "2",
-    title: "MVP Build",
-    desc: "Core features built and launched first. Real users, real feedback. We iterate from a working foundation.",
+    title: "Design & UX",
+    desc: "Custom designs built for conversion. Product pages, collection layouts, and checkout flows reviewed and approved before build.",
   },
   {
     number: "3",
-    title: "Feature Expansion",
-    desc: "Additional modules, integrations, and advanced features added on a planned roadmap based on user behaviour.",
+    title: "Build & Integrate",
+    desc: "Full store development, payment gateway integration, inventory setup, and connection to your existing tools.",
   },
   {
     number: "4",
-    title: "Scale & Optimise",
-    desc: "Performance tuning, infrastructure scaling, and product refinement as your user base grows.",
+    title: "Launch & Optimise",
+    desc: "We go live, monitor performance, and handle any post-launch issues within the included support window.",
   },
 ];
 
 const deliverables = [
-  "Multi-tenant SaaS architecture",
-  "Subscription & billing system",
-  "Admin and user dashboards",
-  "Role-based access control",
-  "REST API with documentation",
-  "Authentication system",
-  "Analytics & reporting",
+  "Custom e-commerce storefront",
+  "Product & inventory management",
+  "Cart, checkout & payment integration",
+  "Discount codes & promotions",
+  "Customer accounts & order history",
+  "SEO-optimised product pages",
+  "Mobile-first responsive design",
+  "Analytics & conversion tracking",
+  "30-day post-launch support",
   "Full source code ownership",
 ];
 
 const proofProjects = [
   {
-    name: "EatsDesk",
-    tag: "Restaurant Tech · SaaS",
-    desc: "Restaurant management SaaS with table management, online ordering, CMS, and real-time reporting. Our own product.",
-    badge: "Own Product",
-    url: "eatsdesk.com",
-  },
-  {
     name: "SalesLens",
-    tag: "E-commerce · Analytics SaaS",
-    desc: "Multi-channel profit intelligence platform for e-commerce merchants. Full analytics suite built as a standalone SaaS.",
+    tag: "E-commerce · Analytics",
+    desc: "Multi-channel profit intelligence platform. Gives merchants full visibility into real profitability across every sales channel.",
     badge: "Own Product",
     url: "saleslens.co",
   },
   {
-    name: "ReplyWay",
-    tag: "Communication · SaaS",
-    desc: "Full-featured team chat application with real-time messaging, channels, and file sharing — built from scratch.",
+    name: "500+ Lead Gen Stores",
+    tag: "Local Services · US Market",
+    desc: "Built hundreds of niche e-commerce and lead gen sites across 70+ US local service verticals — roofing, HVAC, plumbing and more.",
+    badge: "500+ Sites",
+    url: null,
+  },
+  {
+    name: "Custom Storefronts",
+    tag: "Various Industries",
+    desc: "Custom e-commerce builds for clients across multiple markets — product catalogues, booking flows, and subscription stores.",
     badge: null,
-    url: "replyway.com",
-  },
-  {
-    name: "ZuhaHost",
-    tag: "Hospitality · SaaS",
-    desc: "Hotel management system handling reservations, room management, guest experience and property operations.",
-    badge: "Own Product",
-    url: "zuhahost.com",
-  },
-  {
-    name: "SiteBuilderz",
-    tag: "CMS · Platform SaaS",
-    desc: "Custom CMS platform enabling non-technical users to manage and publish content without developer dependency.",
-    badge: "Own Product",
-    url: "sitebuilderz.com",
-  },
-  {
-    name: "RoboAnywhere",
-    tag: "SEO · Automation SaaS",
-    desc: "Automated backlink building system. Scalable SEO automation for agencies running link campaigns at scale.",
-    badge: null,
-    url: "roboanywhere.com",
+    url: null,
   },
 ];
 
-export default function SaaSDevelopment() {
+export default function EcomDevelopment() {
   return (
     <>
       <Head>
-        <title>SaaS Development Services | RedDev</title>
-        <meta name="description" content="We build SaaS platforms from scratch — multi-tenancy, subscriptions, dashboards, and APIs. We've built and own multiple SaaS products ourselves." />
+        <title>E-commerce Development Services | RedDev</title>
+        <meta name="description" content="Custom e-commerce development — no templates, no Shopify constraints. Full-stack online stores with custom checkout, inventory management, and analytics." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://reddevsystems.com/services/saas-development" />
+        <link rel="canonical" href="https://reddevsystems.com/services/ecom-development" />
       </Head>
 
       <Navbar />
@@ -144,29 +125,29 @@ export default function SaaSDevelopment() {
           <div className="flex flex-col items-center text-center pt-36 pb-24 md:pt-44 md:pb-32">
             <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white/5 border border-white/10 backdrop-blur-xl mb-10">
               <span className="relative flex h-2.5 w-2.5"><span className="animate-ping absolute h-full w-full rounded-full bg-red-500 opacity-75" /><span className="relative h-2.5 w-2.5 bg-red-500 rounded-full" /></span>
-              <span className="text-xs font-bold text-white/90 uppercase">SaaS Development</span>
+              <span className="text-xs font-bold text-white/90 uppercase">E-commerce Development</span>
             </motion.div>
 
             <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black max-w-5xl">
-              <span className="block text-white">We Build SaaS Products</span>
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-orange-500 to-red-500">That Actually Scale.</span>
+              <span className="block text-white">E-commerce Built</span>
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-orange-500 to-red-500">to Sell.</span>
             </motion.h1>
 
             <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className="mt-6 text-lg md:text-xl text-white/70 max-w-3xl">
-              We&apos;ve built and own multiple SaaS products ourselves. Multi-tenancy, subscription billing, custom dashboards — we know what proper SaaS architecture looks like because we use it every day.
+              Custom online stores with no template constraints. Fast product pages, frictionless checkout, real inventory management, and analytics that show you what&apos;s actually making money.
             </motion.p>
 
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} className="mt-10 flex flex-col sm:flex-row gap-4">
               <Link href="/contact" className="px-8 py-4 bg-white text-black rounded-xl font-bold flex items-center justify-center gap-2">
-                Start Your SaaS <ArrowRight className="w-5 h-5" />
+                Build My Store <ArrowRight className="w-5 h-5" />
               </Link>
               <Link href="/portfolio" className="px-8 py-4 border border-white/20 rounded-xl text-white text-center font-semibold">
-                See Our Products
+                View Our Work
               </Link>
             </motion.div>
 
             <div className="mt-16 grid grid-cols-3 gap-8 md:gap-16">
-              {[{ number: "6+", label: "Own SaaS Products" }, { number: "Multi-Tenant", label: "Architecture" }, { number: "Full Stack", label: "End-to-End Build" }].map((s, i) => (
+              {[{ number: "Custom", label: "No Templates" }, { number: "Full Stack", label: "End-to-End Build" }, { number: "100%", label: "You Own It" }].map((s, i) => (
                 <motion.div key={i} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 + i * 0.1 }} className="text-center">
                   <div className="text-lg md:text-xl font-black text-white">{s.number}</div>
                   <div className="text-sm text-white/60 mt-1">{s.label}</div>
@@ -184,9 +165,9 @@ export default function SaaSDevelopment() {
         <Container className="relative z-10">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 mb-4">
-              What Every SaaS <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">We Build Includes</span>
+              What Every Store <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">We Build Includes</span>
             </h2>
-            <p className="text-lg text-slate-600 max-w-xl mx-auto">The foundations that make a SaaS product work at scale — not as add-ons, but built in from the start.</p>
+            <p className="text-lg text-slate-600 max-w-xl mx-auto">The six capabilities that turn a website into a store that actually converts.</p>
           </motion.div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((f, i) => (
@@ -211,7 +192,7 @@ export default function SaaSDevelopment() {
           <div className="grid md:grid-cols-2 gap-16 items-center max-w-5xl mx-auto">
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7 }} viewport={{ once: true }}>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-6">What You <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">Get.</span></h2>
-              <p className="text-white/70 text-lg leading-relaxed mb-8">A complete, production-ready SaaS — not a prototype. Proper architecture, full source code, and a product you can grow.</p>
+              <p className="text-white/70 text-lg leading-relaxed mb-8">A complete, production-ready store — custom built, properly tested, and handed over with full ownership. No monthly platform fees to us.</p>
               <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-red-600 to-orange-600 text-white font-bold rounded-xl shadow-xl">
                 Get a Free Quote <ArrowRight className="w-5 h-5" />
               </Link>
@@ -233,7 +214,7 @@ export default function SaaSDevelopment() {
         <Container className="relative z-10">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 mb-4">
-              How We <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">Build SaaS.</span>
+              How We <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">Build Your Store.</span>
             </h2>
           </motion.div>
           <div className="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto">
@@ -253,17 +234,17 @@ export default function SaaSDevelopment() {
         </Container>
       </FullContainer>
 
-      {/* PROOF — OUR OWN PRODUCTS */}
+      {/* PROOF */}
       <FullContainer className="relative py-20 md:py-28 bg-black overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-black via-slate-900 to-black" />
         <Container className="relative z-10">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-white mb-3">SaaS Products We&apos;ve Built.</h2>
-            <p className="text-white/60">Including several we own and run ourselves.</p>
+            <h2 className="text-3xl md:text-4xl font-black text-white mb-3">From Our Portfolio.</h2>
+            <p className="text-white/60">Real e-commerce and commerce-adjacent projects we&apos;ve built.</p>
           </motion.div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {proofProjects.map((p, i) => (
-              <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: (i % 3) * 0.1 }} viewport={{ once: true }}>
+              <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: i * 0.1 }} viewport={{ once: true }}>
                 <div className="relative h-full p-8 bg-white/5 rounded-2xl border border-white/10 hover:border-red-500/30 transition-all duration-300">
                   {p.badge && (
                     <span className="absolute top-6 right-6 inline-flex items-center px-3 py-1 rounded-full bg-gradient-to-r from-red-600 to-orange-600 text-white text-xs font-bold">{p.badge}</span>
@@ -271,7 +252,7 @@ export default function SaaSDevelopment() {
                   <span className="inline-flex items-center px-3 py-1 rounded-full bg-red-600/20 border border-red-500/30 text-xs font-semibold text-red-300 mb-4">{p.tag}</span>
                   <h3 className="text-xl font-black text-white mb-3">{p.name}</h3>
                   <p className="text-sm text-white/60 leading-relaxed mb-4">{p.desc}</p>
-                  <p className="text-xs text-white/30 font-mono">{p.url}</p>
+                  {p.url && <p className="text-xs text-white/30 font-mono">{p.url}</p>}
                 </div>
               </motion.div>
             ))}
@@ -289,9 +270,9 @@ export default function SaaSDevelopment() {
         <Container className="relative z-10">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} viewport={{ once: true }} className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 mb-6">
-              Ready to Build Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">SaaS?</span>
+              Ready to Build Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">Online Store?</span>
             </h2>
-            <p className="text-xl text-slate-600 mb-12 max-w-2xl mx-auto">We&apos;ve built it before. Tell us what you&apos;re building and we&apos;ll tell you how to make it real.</p>
+            <p className="text-xl text-slate-600 mb-12 max-w-2xl mx-auto">Tell us what you sell and how you sell it. We&apos;ll design an e-commerce experience built to convert.</p>
             <Link href="/contact">
               <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="group inline-flex items-center justify-center px-10 py-5 bg-gradient-to-r from-red-600 to-orange-600 text-white text-lg font-bold rounded-xl shadow-xl hover:shadow-2xl hover:shadow-red-500/30 transition-all duration-300">
                 Start a Project <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" strokeWidth={2.5} />

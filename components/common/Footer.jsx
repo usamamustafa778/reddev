@@ -73,8 +73,8 @@ function Footer() {
                   {[
                     { name: "Home", href: "/" },
                     { name: "About", href: "/about" },
-                    { name: "Services", href: "/services" },
-                    { name: "Leadership", href: "/leadership" },
+                    { name: "Portfolio", href: "/portfolio" },
+                    { name: "Lead Engine", href: "/lead-engine" },
                     { name: "Careers", href: "/careers" },
                     { name: "Contact", href: "/contact" },
                   ].map((item, index) => (
@@ -117,8 +117,8 @@ function Footer() {
                 <div className="flex flex-col space-y-4">
                   <div className="text-slate-600 font-medium">
                     <p>Email</p>
-                    <a href="mailto:hello@reddev.com" className="text-red-600 hover:text-red-700 transition-colors">
-                      info.reddev@gmail.com
+                    <a href="mailto:info@reddevsystems.com" className="text-red-600 hover:text-red-700 transition-colors">
+                      info@reddevsystems.com
                     </a>
                   </div>
                   <div className="text-slate-600 font-medium">

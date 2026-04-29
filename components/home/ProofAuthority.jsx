@@ -8,39 +8,79 @@ export default function ProofAuthority() {
   const metrics = [
     {
       icon: TrendingUp,
-      number: "10K+",
-      label: "API Requests Processed",
-      description: "Across high-traffic web platforms and scalable cloud infrastructures."
+      number: "15+",
+      label: "Products Built",
+      description: "Real products shipped across 8 industries for clients in the US, UK, Canada and Africa."
     },
     {
       icon: Users,
-      number: "200+",
-      label: "Digital Products Delivered",
-      description: "Custom web apps, mobile solutions, and AI-integrated ecosystems for global clients."
+      number: "8+",
+      label: "Industries Served",
+      description: "HealthTech, Travel, FinTech, Hospitality, Real Estate, Restaurant Tech and more."
     },
     {
       icon: RefreshCw,
-      number: "92%",
-      label: "Client Retention Rate",
-      description: "Built on long-term technical partnerships and consistent delivery of high-performance software."
+      number: "500+",
+      label: "Lead Gen Sites",
+      description: "Built over 500 niche lead generation websites for a $5M/year US operation."
     },
     {
       icon: Award,
-      number: "5+",
-      label: "Years of Innovation",
-      description: "Pioneering in full-stack development and cutting-edge AI-powered business automation."
+      number: "6+",
+      label: "Years Experience",
+      description: "Six years building funded startups, enterprise platforms, and everything in between."
     }
   ];
 
   const industries = [
-    "SaaS Platforms",
-    "E-commerce",
-    "FinTech Solutions",
-    "AI & Machine Learning",
-    "HealthTech",
-    "EdTech Systems",
-    "Real Estate Tech",
-    "Enterprise ERPs"
+    {
+      icon: "🏥",
+      title: "HealthTech",
+      desc: "HIPAA-aware platforms, patient portals, and healthcare financing systems.",
+      tag: "Sunfish — $10M funded US startup",
+    },
+    {
+      icon: "✈️",
+      title: "Travel Tech",
+      desc: "Enterprise travel portals, GDS integrations, and booking systems at scale.",
+      tag: "Built on Sabre GDS",
+    },
+    {
+      icon: "🍽️",
+      title: "Restaurant Tech",
+      desc: "Restaurant management SaaS, online ordering, POS integrations, and marketing systems.",
+      tag: "EatsDesk — own SaaS product",
+    },
+    {
+      icon: "🏨",
+      title: "Hospitality",
+      desc: "Hotel management systems, property management, and guest experience platforms.",
+      tag: "ZuhaHost — own SaaS product",
+    },
+    {
+      icon: "💰",
+      title: "FinTech",
+      desc: "Trading platforms, profit intelligence tools, and financial management systems.",
+      tag: "BullionCRM + DigiKhata",
+    },
+    {
+      icon: "🏠",
+      title: "Real Estate",
+      desc: "Property listing platforms, CRMs, and lead generation systems for real estate.",
+      tag: "Multiple US clients",
+    },
+    {
+      icon: "📋",
+      title: "CRM & Operations",
+      desc: "Custom CRMs, ticketing systems, and call center management platforms.",
+      tag: "VerifiedCRM + ReplySystem",
+    },
+    {
+      icon: "📍",
+      title: "Local Services",
+      desc: "500+ lead generation websites across 70+ US niches — HVAC, roofing, plumbing, chimney, pest control and more.",
+      tag: "$5M/year US operation",
+    },
   ];
 
   return (
@@ -68,16 +108,16 @@ export default function ProofAuthority() {
           </div>
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight text-white max-w-3xl mb-6">
-            Built for{" "}
+            Built{" "}
             <span className="relative inline-block">
               <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-400">
-                Digital Scale
+                Across Industries
               </span>
             </span>
           </h2>
           <p className="text-lg md:text-xl text-slate-300 max-w-2xl">
-          AI-powered web infrastructure, enterprise-grade applications, and intelligent automation designed to scale startups and global businesses without technical friction.
-            </p>
+            15+ real products. 8 industries. 6 years of shipping software that works.
+          </p>
         </motion.div>
 
         {/* Metrics Grid */}
@@ -125,31 +165,30 @@ export default function ProofAuthority() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 md:p-12"
         >
-          <div className="text-center mb-8">
+          <div className="text-center mb-10">
             <h3 className="text-2xl md:text-3xl font-black text-white mb-3">
-            Industries We Transform
+              Industries We&apos;ve Built For
             </h3>
-            <p className="text-slate-400">
-            AI-integrated digital solutions tailored for startups, modern enterprises, and industry leaders across the global digital landscape.
-            </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {industries.map((industry, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.4, delay: index * 0.05 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: index * 0.06 }}
                 viewport={{ once: true }}
                 className="group"
               >
-                <div className="p-4 bg-white/5 border border-white/10 rounded-xl text-center hover:bg-white/10 hover:border-white/20 transition-all duration-300">
-                  <span className="text-white/90 font-semibold text-sm group-hover:text-white transition-colors duration-300">
-                    {industry}
-                  </span>
+                <div className="h-full p-6 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 hover:border-white/20 transition-all duration-300">
+                  <div className="text-3xl mb-3">{industry.icon}</div>
+                  <h4 className="text-base font-black text-white mb-2">{industry.title}</h4>
+                  <p className="text-sm text-white/60 leading-relaxed mb-4">{industry.desc}</p>
+                  <div className="inline-flex items-center px-3 py-1 rounded-full bg-red-600/20 border border-red-500/30">
+                    <span className="text-xs font-semibold text-red-300">{industry.tag}</span>
+                  </div>
                 </div>
               </motion.div>
             ))}
