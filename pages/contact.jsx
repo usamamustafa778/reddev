@@ -76,27 +76,27 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Start a Conversation | RedDev</title>
-        <meta
-          name="description"
-          content="Ready to build AI-powered infrastructure that scales? Let's discuss your project, challenges, and how we can help."
-        />
+        <title>Hire a Custom Software Development Agency | Get a Free Quote | RedDev</title>
+        <meta name="description" content="Ready to build your next software product? Contact RedDev — a custom software development agency that ships SaaS platforms, mobile apps, CRMs, and more. Get a free quote today." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        
-        <meta property="og:title" content="Start a Conversation | RedDev" />
-        <meta property="og:description" content="Ready to build AI-powered infrastructure that scales? Let's discuss your project." />
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="hire software development agency, custom software development quote, software development services contact, get software development quote" />
+
+        <meta property="og:title" content="Hire a Custom Software Development Agency | RedDev" />
+        <meta property="og:description" content="Contact RedDev to build your next software product. SaaS platforms, mobile apps, CRMs, lead gen systems. Free quote, fixed pricing, full ownership." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://reddev.vercel.app/contact" />
-        <meta property="og:image" content="https://reddev.vercel.app/reddev.png" />
+        <meta property="og:url" content="https://reddevsystems.com/contact" />
+        <meta property="og:image" content="https://reddevsystems.com/reddev.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        
+        <meta property="og:site_name" content="RedDev" />
+
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Start a Conversation | RedDev" />
-        <meta name="twitter:description" content="Let's discuss your AI-powered infrastructure project." />
-        <meta name="twitter:image" content="https://reddev.vercel.app/reddev.png" />
+        <meta name="twitter:title" content="Hire RedDev | Start Your Software Project" />
+        <meta name="twitter:description" content="Custom software development agency — SaaS, mobile apps, CRMs and more. Get a free project quote." />
+        <meta name="twitter:image" content="https://reddevsystems.com/reddev.png" />
         
-        <link rel="canonical" href="https://reddev.vercel.app/contact" />
+        <link rel="canonical" href="https://reddevsystems.com/contact" />
       </Head>
 
       <Navbar />

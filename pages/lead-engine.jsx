@@ -132,16 +132,26 @@ export default function LeadEngine() {
   return (
     <>
       <Head>
-        <title>The Lead Engine — Done-For-You Lead Generation System | RedDev</title>
-        <meta
-          name="description"
-          content="The complete done-for-you lead generation system for US marketing agencies — website, CRM, and Google Ads structure delivered in 14 days for $3,500. Guaranteed."
-        />
+        <title>Lead Generation Website Development for Home Services | RedDev</title>
+        <meta name="description" content="Done-for-you lead generation websites for US home service businesses — plumbers, HVAC, roofers & 70+ niches. Website + CRM + Google Ads structure delivered in 14 days. $3,500 flat fee." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="The Lead Engine — Done-For-You Lead Generation System | RedDev" />
-        <meta property="og:description" content="Website + CRM + Google Ads structure — delivered in 14 days. $3,500 one-time. Guaranteed." />
+        <meta name="keywords" content="lead generation website development, home service lead gen sites, done-for-you lead generation, contractor lead generation website, plumber HVAC roofer website" />
+
+        <meta property="og:title" content="Lead Generation Website Development for Home Services | RedDev" />
+        <meta property="og:description" content="Done-for-you lead gen websites for US home service businesses. 70+ niches. Website + CRM + Google Ads in 14 days. $3,500 one-time. Guaranteed." />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://reddevsystems.com/lead-engine" />
+        <meta property="og:image" content="https://reddevsystems.com/reddev.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="RedDev" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Lead Generation Websites for Home Services | RedDev" />
+        <meta name="twitter:description" content="70+ niches. Website + CRM + Google Ads delivered in 14 days for $3,500. Guaranteed." />
+        <meta name="twitter:image" content="https://reddevsystems.com/reddev.png" />
+
         <link rel="canonical" href="https://reddevsystems.com/lead-engine" />
       </Head>
 

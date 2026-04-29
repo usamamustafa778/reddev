@@ -101,9 +101,26 @@ export default function CrmDevelopment() {
   return (
     <>
       <Head>
-        <title>Custom CRM Development | RedDev</title>
-        <meta name="description" content="Custom CRMs built for your exact workflow. Lead management, sales pipelines, automation, and dashboards — we've built CRMs for call centers, trading firms, and more." />
+        <title>Custom CRM Development Services | Built for Your Workflow | RedDev</title>
+        <meta name="description" content="Custom CRM software development built for your exact sales workflow. Lead management, pipelines, automated workflows & dashboards — no generic tool forcing you to adapt." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="custom CRM development services, CRM software development company, bespoke CRM development, custom CRM software, CRM development agency" />
+
+        <meta property="og:title" content="Custom CRM Development Services | Built for Your Workflow | RedDev" />
+        <meta property="og:description" content="Stop bending your business to fit a generic CRM. We build custom CRM software for your exact workflow — leads, pipelines, automation, and dashboards." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://reddevsystems.com/services/crm-development" />
+        <meta property="og:image" content="https://reddevsystems.com/reddev.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="RedDev" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Custom CRM Development Services | RedDev" />
+        <meta name="twitter:description" content="Custom CRM software built for your exact workflow. Lead management, pipelines, automation, dashboards. Fixed price." />
+        <meta name="twitter:image" content="https://reddevsystems.com/reddev.png" />
+
         <link rel="canonical" href="https://reddevsystems.com/services/crm-development" />
       </Head>
 

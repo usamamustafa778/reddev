@@ -104,9 +104,26 @@ export default function EcomDevelopment() {
   return (
     <>
       <Head>
-        <title>E-commerce Development Services | RedDev</title>
-        <meta name="description" content="Custom e-commerce development — no templates, no Shopify constraints. Full-stack online stores with custom checkout, inventory management, and analytics." />
+        <title>E-commerce Development Services | Custom Online Store | RedDev</title>
+        <meta name="description" content="Custom e-commerce development — no Shopify constraints, no templates. Full-stack online stores with custom checkout, inventory management, multi-currency, and profit analytics." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="ecommerce web development services, custom ecommerce development, ecommerce website development company, online store development services, custom online store development" />
+
+        <meta property="og:title" content="E-commerce Development Services | Custom Online Store | RedDev" />
+        <meta property="og:description" content="We build custom e-commerce stores that sell — no Shopify limits. Custom checkout, inventory, multi-currency & analytics. Full ownership, fixed price." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://reddevsystems.com/services/ecom-development" />
+        <meta property="og:image" content="https://reddevsystems.com/reddev.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="RedDev" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="E-commerce Development Services | Custom Online Store | RedDev" />
+        <meta name="twitter:description" content="Custom e-commerce stores — no Shopify constraints. Custom checkout, inventory, multi-currency. Fixed price, full ownership." />
+        <meta name="twitter:image" content="https://reddevsystems.com/reddev.png" />
+
         <link rel="canonical" href="https://reddevsystems.com/services/ecom-development" />
       </Head>
 

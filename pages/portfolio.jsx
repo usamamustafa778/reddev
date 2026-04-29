@@ -112,16 +112,26 @@ export default function Portfolio() {
   return (
     <>
       <Head>
-        <title>Portfolio — Products We&apos;ve Built | RedDev</title>
-        <meta
-          name="description"
-          content="15+ real products. 8 industries. 6 years. See what we've shipped — from funded startups like Sunfish ($10M) to enterprise platforms and 500+ lead gen sites."
-        />
+        <title>Software Development Portfolio | 15+ Products Built | RedDev</title>
+        <meta name="description" content="RedDev's software development portfolio — 15+ products across 8 industries. SaaS platforms, mobile apps, CRMs, e-commerce stores, and 500+ lead generation sites. See what we've shipped." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Portfolio — Products We've Built | RedDev" />
-        <meta property="og:description" content="15+ real products. 8 industries. 6 years. Here's what we've shipped." />
+        <meta name="keywords" content="software development portfolio, RedDev portfolio, SaaS products built, mobile apps portfolio, web development projects" />
+
+        <meta property="og:title" content="Software Development Portfolio | 15+ Products Built | RedDev" />
+        <meta property="og:description" content="15+ real software products shipped. SaaS platforms, CRMs, mobile apps, e-commerce stores & lead gen systems across 8 industries." />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://reddevsystems.com/portfolio" />
+        <meta property="og:image" content="https://reddevsystems.com/reddev.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="RedDev" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Software Development Portfolio | 15+ Products | RedDev" />
+        <meta name="twitter:description" content="SaaS, CRMs, mobile apps, e-commerce & lead gen systems — 15+ products shipped across 8 industries." />
+        <meta name="twitter:image" content="https://reddevsystems.com/reddev.png" />
+
         <link rel="canonical" href="https://reddevsystems.com/portfolio" />
       </Head>
 

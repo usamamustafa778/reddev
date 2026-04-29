@@ -123,9 +123,26 @@ export default function SaaSDevelopment() {
   return (
     <>
       <Head>
-        <title>SaaS Development Services | RedDev</title>
-        <meta name="description" content="We build SaaS platforms from scratch — multi-tenancy, subscriptions, dashboards, and APIs. We've built and own multiple SaaS products ourselves." />
+        <title>SaaS Development Company | Custom SaaS Platform Development | RedDev</title>
+        <meta name="description" content="We build SaaS platforms that actually scale — multi-tenancy, subscription billing, custom dashboards & APIs. 6+ SaaS products shipped. Fixed price, full code ownership." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="SaaS development company, custom SaaS platform development, SaaS product development services, build SaaS application, SaaS software development agency" />
+
+        <meta property="og:title" content="SaaS Development Company | Custom SaaS Platform Development | RedDev" />
+        <meta property="og:description" content="We build SaaS products from scratch — multi-tenancy, subscriptions, dashboards, APIs. We've shipped 6+ SaaS platforms and own several ourselves." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://reddevsystems.com/services/saas-development" />
+        <meta property="og:image" content="https://reddevsystems.com/reddev.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="RedDev" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="SaaS Development Company | Custom SaaS Platform | RedDev" />
+        <meta name="twitter:description" content="6+ SaaS platforms shipped. Multi-tenancy, subscriptions, dashboards, APIs. Fixed price, full ownership." />
+        <meta name="twitter:image" content="https://reddevsystems.com/reddev.png" />
+
         <link rel="canonical" href="https://reddevsystems.com/services/saas-development" />
       </Head>
 

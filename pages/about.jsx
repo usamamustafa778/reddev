@@ -47,18 +47,26 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About RedDev — We Build Digital Products That Grow Businesses</title>
-        <meta
-          name="description"
-          content="RedDev is a software development company with 6+ years and 15+ real products built across 8 industries. From funded startups to 500+ lead gen sites — we ship things that work."
-        />
+        <title>About RedDev | Custom Software Development Company</title>
+        <meta name="description" content="RedDev is a custom software development company with 6+ years and 15+ products shipped across 8 industries. From HealthTech startups to 500+ lead gen systems — we build software that works." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="About RedDev — We Build Digital Products That Grow Businesses" />
-        <meta property="og:description" content="6+ years. 15+ real products. 8 industries. Clients in the US, UK, Canada, Romania, Uganda and South Africa." />
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="software development company, custom software development agency, about RedDev, software development team" />
+
+        <meta property="og:title" content="About RedDev | Custom Software Development Company" />
+        <meta property="og:description" content="6+ years. 15+ real software products. 8 industries. Clients in the US, UK, Canada, Romania, Uganda and South Africa. We build things that ship." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://reddevsystems.com/about" />
         <meta property="og:image" content="https://reddevsystems.com/reddev.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="RedDev" />
+
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About RedDev | Custom Software Development Company" />
+        <meta name="twitter:description" content="6+ years. 15+ products. 8 industries. A software development company that actually ships." />
+        <meta name="twitter:image" content="https://reddevsystems.com/reddev.png" />
+
         <link rel="canonical" href="https://reddevsystems.com/about" />
       </Head>
 

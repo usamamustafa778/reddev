@@ -99,9 +99,26 @@ export default function WebDevelopment() {
   return (
     <>
       <Head>
-        <title>Web Development Services | RedDev</title>
-        <meta name="description" content="Custom web development using React and Next.js. Performance-first, SEO-ready, mobile-optimized websites built for real business goals." />
+        <title>Custom Web Development Services | React & Next.js Agency | RedDev</title>
+        <meta name="description" content="Custom web development services using React & Next.js — no templates, no shortcuts. Performance-first, SEO-ready, AI-enhanced websites with fixed pricing and full code ownership." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="custom web development services, React Next.js development agency, web application development company, hire web developer agency, custom website development" />
+
+        <meta property="og:title" content="Custom Web Development Services | React & Next.js Agency | RedDev" />
+        <meta property="og:description" content="We build custom websites and web apps using React & Next.js. Performance-first, SEO-ready, mobile-optimized — with optional AI features. Fixed price, full ownership." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://reddevsystems.com/services/web-development" />
+        <meta property="og:image" content="https://reddevsystems.com/reddev.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="RedDev" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Custom Web Development Services | React & Next.js | RedDev" />
+        <meta name="twitter:description" content="Performance-first, SEO-ready websites built with React & Next.js. Fixed price, full code ownership." />
+        <meta name="twitter:image" content="https://reddevsystems.com/reddev.png" />
+
         <link rel="canonical" href="https://reddevsystems.com/services/web-development" />
       </Head>
 

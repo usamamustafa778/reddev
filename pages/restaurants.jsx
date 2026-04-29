@@ -134,16 +134,26 @@ export default function Restaurants() {
   return (
     <>
       <Head>
-        <title>Restaurant Websites & Online Ordering | RedDev</title>
-        <meta
-          name="description"
-          content="Professional restaurant websites, online ordering, and management systems — built in 7 days. Plus EatsDesk integration to run your entire restaurant from one dashboard."
-        />
+        <title>Restaurant Website & Online Ordering Development | RedDev</title>
+        <meta name="description" content="Custom restaurant websites with online ordering, digital menus, and table booking — built in 7 days. You own everything. No recurring platform fees. Starting at $800." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Restaurant Websites & Online Ordering | RedDev" />
-        <meta property="og:description" content="Professional restaurant websites, online ordering, and management systems — built in 7 days." />
+        <meta name="keywords" content="restaurant website development, restaurant online ordering system, custom restaurant website, restaurant tech solutions, restaurant web design development" />
+
+        <meta property="og:title" content="Restaurant Website & Online Ordering Development | RedDev" />
+        <meta property="og:description" content="Custom restaurant websites with online ordering, digital menus & booking — delivered in 7 days. Full ownership, no platform fees. Starting at $800." />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://reddevsystems.com/restaurants" />
+        <meta property="og:image" content="https://reddevsystems.com/reddev.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="RedDev" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Restaurant Website & Online Ordering Development | RedDev" />
+        <meta name="twitter:description" content="Custom restaurant websites with online ordering — delivered in 7 days. Full ownership, no platform fees." />
+        <meta name="twitter:image" content="https://reddevsystems.com/reddev.png" />
+
         <link rel="canonical" href="https://reddevsystems.com/restaurants" />
       </Head>
 

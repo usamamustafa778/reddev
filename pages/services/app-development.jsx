@@ -99,9 +99,26 @@ export default function AppDevelopment() {
   return (
     <>
       <Head>
-        <title>Mobile App Development Services | RedDev</title>
-        <meta name="description" content="Cross-platform mobile apps for iOS and Android. React Native development with native-level performance, offline support, and full backend integration." />
+        <title>Mobile App Development Services | iOS & Android | RedDev</title>
+        <meta name="description" content="Cross-platform mobile app development for iOS & Android using React Native. Native-level performance, offline support, push notifications, and full backend integration. Fixed price." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="mobile app development services, React Native app development, iOS Android app development company, cross-platform mobile app development, hire mobile app developer" />
+
+        <meta property="og:title" content="Mobile App Development Services | iOS & Android | RedDev" />
+        <meta property="og:description" content="We build cross-platform iOS & Android apps with React Native — native performance, offline support, push notifications, and seamless backend integration." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://reddevsystems.com/services/app-development" />
+        <meta property="og:image" content="https://reddevsystems.com/reddev.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="RedDev" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Mobile App Development Services | iOS & Android | RedDev" />
+        <meta name="twitter:description" content="Cross-platform iOS & Android apps with React Native. Native performance, full ownership, fixed price." />
+        <meta name="twitter:image" content="https://reddevsystems.com/reddev.png" />
+
         <link rel="canonical" href="https://reddevsystems.com/services/app-development" />
       </Head>
 
