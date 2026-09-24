@@ -75,9 +75,9 @@ export default function Home() {
       </Head>
       <FirstNavbar />
       <Hero
-        heading1="We Build Digital Products"
-        heading2="That Grow Your Business."
-        description="From SaaS platforms and CRMs to lead generation systems and mobile apps — we've shipped 15+ real products across 8 industries for clients worldwide."
+        heading1="AI native teams."
+        heading2="Enterprise outcomes, shipped today."
+        description="Domain expert remote developers vetted and matched to your team, stack and workflow in 24 hours."
         cta1Text="See Our Work"
         cta1Href="/portfolio"
         cta2Text="Start a Project"
